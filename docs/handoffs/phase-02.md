@@ -1,6 +1,6 @@
 # Phase 2 handoff
 
-Status: READY_FOR_REVIEW
+Status: IN_REVIEW
 
 ## Verified baseline
 
@@ -29,6 +29,7 @@ Status: READY_FOR_REVIEW
   integration comparisons and join-key failure cases.
 - Run metrics and per-transformation proof are in `reports/evidence/P2/`.
 - Implementation commit: `c9c5f3e4eae89ab460ef360a9300d7705554c4d5`.
+- Review PR: https://github.com/Manthan2106/Fitinsight/pull/2
 
 ## Scope
 
@@ -45,7 +46,7 @@ generated values with the references, and write outputs under
 
 ## Next action
 
-Push this branch and open a Phase 2 review PR. Do not merge automatically.
+Review PR #2. Do not merge automatically; wait for an explicit user decision.
 
 ## Limits
 

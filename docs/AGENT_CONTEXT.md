@@ -34,8 +34,8 @@ no paid model, API, add-on, deployment, or compute.
 
 P1 is DONE. PR #1 was merged into `main` at
 `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`; commit `9357d85` is in its
-history. P2 is implemented and ready for review on
-`phase-2-reproducible-preprocessing`, created from that verified main commit.
+history. P2 is IN_REVIEW on
+`phase-2-reproducible-preprocessing`; PR #2 is open against `main`.
 
 ## Phase 2 findings so far
 
@@ -70,10 +70,10 @@ history. P2 is implemented and ready for review on
 
 ## Next three tasks
 
-1. Push the Phase 2 branch and open a review PR; do not merge it.
+1. Review PR #2; do not merge automatically.
 2. Address review feedback without changing the raw files, notebooks, or
    separate Phase 4 branch.
-3. Start Phase 3 only after the Phase 2 review is accepted.
+3. Start Phase 3 only after Phase 2 is accepted and integrated.
 
 ## Last verified commands
 
@@ -86,6 +86,7 @@ history. P2 is implemented and ready for review on
 - `python src/preprocess.py` — PASS for all six generated exports; exact
   reference match, 525 sleep duplicates removed, and per-transform proof saved.
 - `python -m unittest discover -s tests -v` — 22 PASS, including integration.
+- GitHub confirms PR #2 is open, unmerged, and based on current `main`.
 - Python 3.13.11; 355 MiB memory and 800 MiB temporary storage were available
   before P2; no packages were installed.
 
