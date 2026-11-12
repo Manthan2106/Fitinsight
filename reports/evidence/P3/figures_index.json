@@ -1,5 +1,5 @@
 {
-  "figure_count": 8,
+  "figure_count": 9,
   "figures": [
     {
       "file": "01_daily_steps_distribution.svg",
@@ -56,6 +56,18 @@
       "sample_count": 161,
       "size_bytes": 16946,
       "title": "Recorded sleep-log rows and waking-day steps"
+    },
+    {
+      "exact_1440_count": 45,
+      "file": "09_time_accounting_by_date.svg",
+      "highlighted_boundary_date": "2016-04-12",
+      "interpretation": "The reference is arithmetic only; April 12 is highlighted as a boundary-date sensitivity, not automatically excluded.",
+      "plotted_rows": 161,
+      "sample_count": 161,
+      "size_bytes": 26326,
+      "target_minutes": 1440,
+      "title": "Activity and sleep rows sometimes sum near 1,440",
+      "within_30_minutes_count": 91
     }
   ],
   "format": "SVG",
