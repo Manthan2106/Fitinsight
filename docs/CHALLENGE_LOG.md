@@ -85,10 +85,13 @@
   Seaborn, NumPy, pandas, or SciPy.
 - Root cause: A package-based chart pipeline would require installation and
   would no longer use only already-verified local resources.
-- Solution: Generate eight accessible, deterministic SVG figures using Python
-  standard-library string and XML-compatible output.
-- Verification: The analysis emits the same eight named figures and sample
-  counts in `reports/evidence/P3/figures_index.json`; tests parse each SVG.
+- Solution: The initial Phase 3 analysis generated eight accessible,
+  deterministic SVG figures using Python standard-library string and
+  XML-compatible output. The later time-accounting review added a ninth figure
+  for combined activity and recorded sleep-row minutes by date.
+- Verification: The initial figure index recorded eight figures; the final
+  index records nine. Tests parse all SVGs and compare the ninth figure's
+  plotted date/value points with the computed time-accounting CSV.
 - Remaining limitation: Charts are static and need maintenance alongside the
   analysis code.
 - Presentation takeaway: The EDA figures can be regenerated locally without
