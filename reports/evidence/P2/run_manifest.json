@@ -1,0 +1,524 @@
+{
+  "alignment": {
+    "hourly": {
+      "aligned_and_unique": true,
+      "duplicate_key_rows": 0,
+      "files": [
+        "hourlyCalories_merged.csv",
+        "hourlyIntensities_merged.csv",
+        "hourlySteps_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "hourlyCalories_merged.csv": 24084,
+        "hourlyIntensities_merged.csv": 24084,
+        "hourlySteps_merged.csv": 24084
+      },
+      "key_fields": [
+        "id",
+        "activity_hour"
+      ],
+      "key_order_mismatch_rows": 0,
+      "length_mismatch_rows": 0,
+      "mismatch_examples": [],
+      "missing_key_rows": 0,
+      "rows_compared": 24084,
+      "task": "P2-ALIGN-HOURLY"
+    },
+    "minute": {
+      "aligned_and_unique": true,
+      "duplicate_key_rows": 0,
+      "files": [
+        "minuteCaloriesNarrow_merged.csv",
+        "minuteIntensitiesNarrow_merged.csv",
+        "minuteMETsNarrow_merged.csv",
+        "minuteStepsNarrow_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "minuteCaloriesNarrow_merged.csv": 1445040,
+        "minuteIntensitiesNarrow_merged.csv": 1445040,
+        "minuteMETsNarrow_merged.csv": 1445040,
+        "minuteStepsNarrow_merged.csv": 1445040
+      },
+      "key_fields": [
+        "id",
+        "activity_minute"
+      ],
+      "key_order_mismatch_rows": 0,
+      "length_mismatch_rows": 0,
+      "mismatch_examples": [],
+      "missing_key_rows": 0,
+      "rows_compared": 1445040,
+      "task": "P2-ALIGN-MINUTE"
+    }
+  },
+  "command": "python src/preprocess.py",
+  "created_at_utc": "2026-11-12T12:58:22.669524+00:00",
+  "datasets": [
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "activity_date": "date",
+        "calories": "integer",
+        "component_distance_sum": "number",
+        "distance_discrepancy": "boolean",
+        "fairly_active_minutes": "integer",
+        "id": "string",
+        "is_complete_day": "boolean",
+        "light_active_distance": "number",
+        "lightly_active_minutes": "integer",
+        "logged_activities_distance": "number",
+        "moderately_active_distance": "number",
+        "sedentary_active_distance": "number",
+        "sedentary_minutes": "integer",
+        "total_distance": "number",
+        "total_recorded_minutes": "integer",
+        "total_steps": "integer",
+        "tracker_distance": "number",
+        "very_active_distance": "number",
+        "very_active_minutes": "integer"
+      },
+      "command": "python src/preprocess.py",
+      "evidence_file": "reports/evidence/P2/daily_activity/metrics.json",
+      "input_files": [
+        "dailyActivity_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "dailyActivity_merged.csv": 457
+      },
+      "input_rows_total": 457,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "activity_date",
+          "total_steps",
+          "total_distance",
+          "tracker_distance",
+          "logged_activities_distance",
+          "very_active_distance",
+          "moderately_active_distance",
+          "light_active_distance",
+          "sedentary_active_distance",
+          "very_active_minutes",
+          "fairly_active_minutes",
+          "lightly_active_minutes",
+          "sedentary_minutes",
+          "calories",
+          "total_recorded_minutes",
+          "is_complete_day",
+          "component_distance_sum",
+          "distance_discrepancy"
+        ],
+        "date_range": [
+          "2016-03-12",
+          "2016-04-12"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 35,
+        "range_field": "activity_date",
+        "rows": 457
+      },
+      "output_file": "reports/generated/preprocessed/daily_activity_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 457,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 457,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/daily_activity_clean.csv",
+      "rows_removed": 0,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-DAILY_ACTIVITY"
+    },
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "no_conflicting_sleep_duplicates": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "calendar_date": "date",
+        "date": "datetime",
+        "id": "string",
+        "log_id": "string",
+        "value": "integer"
+      },
+      "command": "python src/preprocess.py",
+      "conflicting_duplicate_keys": 0,
+      "duplicate_occurrences_identical": 525,
+      "evidence_file": "reports/evidence/P2/minute_sleep/metrics.json",
+      "input_files": [
+        "minuteSleep_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "minuteSleep_merged.csv": 198559
+      },
+      "input_rows_total": 198559,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "date",
+          "value",
+          "log_id",
+          "calendar_date"
+        ],
+        "date_range": [
+          "2016-03-11 21:19:30",
+          "2016-04-12 08:35:00"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 23,
+        "range_field": "date",
+        "rows": 198034
+      },
+      "output_file": "reports/generated/preprocessed/minute_sleep_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 198034,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 198034,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/minute_sleep_clean.csv",
+      "rows_removed": 525,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-MINUTE_SLEEP"
+    },
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "bmi": "number",
+        "date": "datetime",
+        "id": "string",
+        "is_manual_report": "boolean",
+        "log_id": "string",
+        "weight_kg": "number",
+        "weight_pounds": "number"
+      },
+      "command": "python src/preprocess.py",
+      "evidence_file": "reports/evidence/P2/weight/metrics.json",
+      "input_files": [
+        "weightLogInfo_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "weightLogInfo_merged.csv": 33
+      },
+      "input_rows_total": 33,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "date",
+          "weight_kg",
+          "weight_pounds",
+          "bmi",
+          "is_manual_report",
+          "log_id"
+        ],
+        "date_range": [
+          "2016-03-30 23:59:59",
+          "2016-04-12 23:59:59"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 11,
+        "range_field": "date",
+        "rows": 33
+      },
+      "output_file": "reports/generated/preprocessed/weight_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 33,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 33,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/weight_clean.csv",
+      "rows_removed": 0,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-WEIGHT"
+    },
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "activity_hour": "datetime",
+        "average_intensity": "number",
+        "calories": "integer",
+        "date": "date",
+        "id": "string",
+        "step_total": "integer",
+        "total_intensity": "integer"
+      },
+      "command": "python src/preprocess.py",
+      "evidence_file": "reports/evidence/P2/hourly_activity/metrics.json",
+      "input_files": [
+        "hourlyCalories_merged.csv",
+        "hourlyIntensities_merged.csv",
+        "hourlySteps_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "hourlyCalories_merged.csv": 24084,
+        "hourlyIntensities_merged.csv": 24084,
+        "hourlySteps_merged.csv": 24084
+      },
+      "input_rows_total": 72252,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "activity_hour",
+          "calories",
+          "date",
+          "total_intensity",
+          "average_intensity",
+          "step_total"
+        ],
+        "date_range": [
+          "2016-03-12 00:00:00",
+          "2016-04-12 10:00:00"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 34,
+        "range_field": "activity_hour",
+        "rows": 24084
+      },
+      "output_file": "reports/generated/preprocessed/hourly_activity_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 24084,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 24084,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/hourly_activity_clean.csv",
+      "rows_removed": 0,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-HOURLY_ACTIVITY"
+    },
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "activity_minute": "datetime",
+        "calories": "number",
+        "date": "date",
+        "id": "string",
+        "intensity": "integer",
+        "mets": "integer",
+        "steps": "integer"
+      },
+      "command": "python src/preprocess.py",
+      "evidence_file": "reports/evidence/P2/minute_activity/metrics.json",
+      "input_files": [
+        "minuteCaloriesNarrow_merged.csv",
+        "minuteIntensitiesNarrow_merged.csv",
+        "minuteMETsNarrow_merged.csv",
+        "minuteStepsNarrow_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "minuteCaloriesNarrow_merged.csv": 1445040,
+        "minuteIntensitiesNarrow_merged.csv": 1445040,
+        "minuteMETsNarrow_merged.csv": 1445040,
+        "minuteStepsNarrow_merged.csv": 1445040
+      },
+      "input_rows_total": 5780160,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "activity_minute",
+          "calories",
+          "date",
+          "intensity",
+          "mets",
+          "steps"
+        ],
+        "date_range": [
+          "2016-03-12 00:00:00",
+          "2016-04-12 10:59:00"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 34,
+        "range_field": "activity_minute",
+        "rows": 1445040
+      },
+      "output_file": "reports/generated/preprocessed/minute_activity_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 1445040,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 1445040,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/minute_activity_clean.csv",
+      "rows_removed": 0,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-MINUTE_ACTIVITY"
+    },
+    {
+      "checks": {
+        "columns_match_contract": true,
+        "keys_complete": true,
+        "reference_schema_matches": true,
+        "reference_values_match": true,
+        "unique_output_keys": true
+      },
+      "column_types": {
+        "date": "date",
+        "heart_rate": "integer",
+        "hour": "integer",
+        "id": "string",
+        "time": "datetime"
+      },
+      "command": "python src/preprocess.py",
+      "evidence_file": "reports/evidence/P2/heartrate/metrics.json",
+      "input_files": [
+        "heartrate_seconds_merged.csv"
+      ],
+      "input_rows_by_file": {
+        "heartrate_seconds_merged.csv": 1154681
+      },
+      "input_rows_total": 1154681,
+      "limitations": [
+        "Source units are not independently verified.",
+        "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+      ],
+      "output": {
+        "columns": [
+          "id",
+          "time",
+          "heart_rate",
+          "date",
+          "hour"
+        ],
+        "date_range": [
+          "2016-03-29 00:00:05",
+          "2016-04-12 11:03:15"
+        ],
+        "duplicate_key_rows": 0,
+        "missing_key_rows": 0,
+        "null_counts": {},
+        "participants": 14,
+        "range_field": "time",
+        "rows": 1154681
+      },
+      "output_file": "reports/generated/preprocessed/heartrate_seconds_clean.csv",
+      "reference_comparison": {
+        "examples": [],
+        "exists": true,
+        "generated_rows": 1154681,
+        "matches": true,
+        "mismatch_fields": 0,
+        "mismatch_rows": 0,
+        "numeric_tolerance": {
+          "absolute": 1e-09,
+          "relative": 1e-12
+        },
+        "reference_rows": 1154681,
+        "schema_matches": true
+      },
+      "reference_file": "data/processed/heartrate_seconds_clean.csv",
+      "rows_removed": 0,
+      "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+      "status": "PASS",
+      "task": "P2-HEARTRATE"
+    }
+  ],
+  "phase1_merge_commit": "a6170a2caf64d66b1a622bd50c0b1a69805d34b0",
+  "python": "3.13.11",
+  "raw_files_unchanged": true,
+  "reference_files_overwritten": false,
+  "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5"
+}

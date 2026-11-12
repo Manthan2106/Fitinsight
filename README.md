@@ -26,6 +26,22 @@ manifest files under `reports/evidence/P1/`. It reports schemas, lexical type
 inference, missing values, participant counts, date coverage, duplicate
 composite keys, and input hashes. It does not modify source data.
 
+## Reproduce processed datasets
+
+From the repository root:
+
+```bash
+python src/preprocess.py
+python -m unittest discover -s tests -v
+```
+
+The preprocessing command validates hourly/minute key order before streaming
+joins, generates the six CSVs under the ignored
+`reports/generated/preprocessed/` directory, and compares each output to its
+committed reference in `data/processed/`. It writes compact metrics and a run
+manifest under `reports/evidence/P2/`. It uses only the Python standard
+library; raw files and committed reference outputs are never overwritten.
+
 ## Existing notebooks
 
 The original notebooks contain executed analysis results and are retained as

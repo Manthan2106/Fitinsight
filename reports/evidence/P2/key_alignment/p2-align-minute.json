@@ -1,0 +1,26 @@
+{
+  "aligned_and_unique": true,
+  "duplicate_key_rows": 0,
+  "files": [
+    "minuteCaloriesNarrow_merged.csv",
+    "minuteIntensitiesNarrow_merged.csv",
+    "minuteMETsNarrow_merged.csv",
+    "minuteStepsNarrow_merged.csv"
+  ],
+  "input_rows_by_file": {
+    "minuteCaloriesNarrow_merged.csv": 1445040,
+    "minuteIntensitiesNarrow_merged.csv": 1445040,
+    "minuteMETsNarrow_merged.csv": 1445040,
+    "minuteStepsNarrow_merged.csv": 1445040
+  },
+  "key_fields": [
+    "id",
+    "activity_minute"
+  ],
+  "key_order_mismatch_rows": 0,
+  "length_mismatch_rows": 0,
+  "mismatch_examples": [],
+  "missing_key_rows": 0,
+  "rows_compared": 1445040,
+  "task": "P2-ALIGN-MINUTE"
+}
