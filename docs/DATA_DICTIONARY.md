@@ -8,7 +8,7 @@ with these files and are not inferred here.
 
 | File | Grain and key checked | Fields / cautious description |
 | --- | --- | --- |
-| `dailyActivity_merged.csv` | Participant-day; `(Id, ActivityDate)` | `Id`; `ActivityDate`; `TotalSteps`; distance fields `TotalDistance`, `TrackerDistance`, `LoggedActivitiesDistance`, `VeryActiveDistance`, `ModeratelyActiveDistance`, `LightActiveDistance`, `SedentaryActiveDistance`; minute fields `VeryActiveMinutes`, `FairlyActiveMinutes`, `LightlyActiveMinutes`, `SedentaryMinutes`; `Calories`. Exact distance and calorie units are not independently verified. |
+| `dailyActivity_merged.csv` | Participant-day; `(Id, ActivityDate)` | `Id`; `ActivityDate`; `TotalSteps`; distance fields `TotalDistance`, `TrackerDistance`, `LoggedActivitiesDistance`, `VeryActiveDistance`, `ModeratelyActiveDistance`, `LightActiveDistance`, `SedentaryActiveDistance`; minute fields `VeryActiveMinutes`, `FairlyActiveMinutes`, `LightlyActiveMinutes`, `SedentaryMinutes`; `Calories`. Exact distance and calorie units are not independently verified; distance consistency flags are summarized in `DATA_QUALITY.md`. |
 | `heartrate_seconds_merged.csv` | Participant-timestamp; `(Id, Time)` | `Id`; `Time`; `Value` (heart-rate measurement; unit not verified from a source specification). |
 | `hourlyCalories_merged.csv` | Participant-hour; `(Id, ActivityHour)` | `Id`; `ActivityHour`; `Calories` (unit not independently verified). |
 | `hourlyIntensities_merged.csv` | Participant-hour; `(Id, ActivityHour)` | `Id`; `ActivityHour`; `TotalIntensity`; `AverageIntensity` (scale/definition not independently verified). |

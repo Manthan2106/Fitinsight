@@ -26,3 +26,19 @@
 - Trade-off: Composite-key choices need to remain aligned with each table's
   documented grain; key uniqueness does not establish measurement validity.
 - Files: `src/data_audit.py`, `docs/DATA_QUALITY.md`.
+
+## D-003 — Keep distance mismatches as flags
+
+- Date: 2026-11-12
+- Question: Should distance values that disagree be corrected or excluded?
+- Choices: Choose one field as authoritative; drop mismatched days; preserve
+  values and report the comparisons.
+- Selected: Preserve all values and report differences greater than 0.01.
+- Why: No field specification establishes which value is authoritative; the
+  mismatch itself is the supported finding.
+- Evidence: 104/457 component-sum differences; 16/457 `TotalDistance` versus
+  `TrackerDistance` differences; 29/32 component mismatches for participant
+  `4020332650`.
+- Trade-off: Downstream analyses need a deliberate feature choice and should
+  disclose this uncertainty.
+- Files: `src/data_audit.py`, `docs/DATA_QUALITY.md`.

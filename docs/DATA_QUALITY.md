@@ -6,6 +6,10 @@ The source archive was streamed without modifying it. The audit command is
 `python src/data_audit.py`; machine-readable results and SHA-256 hashes are in
 `reports/evidence/P1/`. Counts below are computed from the current `main`
 source tree, not copied from the earlier project snapshot.
+The supplied project brief identifies the source archive as
+`mturkfitbit_export_3.12.16-4.11.16.zip`. That archive, a source license, and
+an upstream provenance record are not present in this repository, so those
+items have not been independently verified.
 
 | File | Rows | Participants | Observed time range | Missing values | Duplicate key rows |
 | --- | ---: | ---: | --- | ---: | ---: |
@@ -24,8 +28,22 @@ source tree, not copied from the earlier project snapshot.
 Across all 11 files: 7,206,142 rows and 271,592,676 bytes. In the daily table,
 61 of 457 observations have zero steps, across 14 participants. They remain
 in the source and should be flagged for investigation, not silently removed.
+Of those 61 rows, 56 also record positive calories and 3 have positive active
+minutes. These combinations are flags for review, not proof of an invalid
+record.
 The sleep key repeats correspond to 525 rows; retain the source and make any
 deduplication a documented preprocessing choice.
+
+The audit compares distance values at an absolute difference threshold of
+0.01 in the stored units. `TotalDistance` differs from `TrackerDistance` on
+16/457 participant-days. The sum of `VeryActiveDistance`,
+`ModeratelyActiveDistance`, `LightActiveDistance`, and
+`SedentaryActiveDistance` differs from `TotalDistance` on 104/457 days. For
+participant `4020332650`, the latter comparison differs on 29/32 days; 11
+differences exceed 1 stored unit, with a maximum absolute difference of 7.41
+on 2016-03-20. `TotalDistance` and `TrackerDistance` match within the stated
+threshold for this participant. These comparisons identify inconsistencies;
+they do not establish which field is correct.
 
 ## Feasibility and caveats
 
@@ -42,8 +60,8 @@ deduplication a documented preprocessing choice.
   composite keys, counts, and date ranges. It does not validate physical
   plausibility, official units, or whether missing time means inactivity.
 - Reported distance inconsistencies and suspicious active-minute combinations
-  remain questions for downstream review; the audit does not alter or reject
-  those observations.
+  have been quantified above and remain questions for downstream review; the
+  audit does not alter or reject those observations.
 
 ## Method note
 
