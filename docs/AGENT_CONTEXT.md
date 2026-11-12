@@ -42,8 +42,12 @@ history. PR #2 was merged into `main` at
 `2e233a1de22a7f808bdea3939b75d80e0848a483`; Phase 2 head
 `ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 is DONE:
 [PR #3](https://github.com/Manthan2106/Fitinsight/pull/3) merged at
-`77abf8354db99cb48e84ff931e335e2ec2f4c73a`. P4 is IN_PROGRESS on the fresh
-`phase-4-validated-clustering` branch based on that commit.
+`77abf8354db99cb48e84ff931e335e2ec2f4c73a`. P4 is IN_REVIEW in
+[PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) on
+`phase-4-validated-clustering`. The live PR head verified before this
+documentation-only correction was
+`ac88632231528a1b21b8535596715bc803ea8211`; pushing this correction advances
+the PR head.
 
 ## Phase 2 findings so far
 
