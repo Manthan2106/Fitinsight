@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "columns_match_contract": true,
+    "keys_complete": true,
+    "reference_schema_matches": true,
+    "reference_values_match": true,
+    "unique_output_keys": true
+  },
+  "column_types": {
+    "activity_hour": "datetime",
+    "average_intensity": "number",
+    "calories": "integer",
+    "date": "date",
+    "id": "string",
+    "step_total": "integer",
+    "total_intensity": "integer"
+  },
+  "command": "python src/preprocess.py",
+  "evidence_file": "reports/evidence/P2/hourly_activity/metrics.json",
+  "input_files": [
+    "hourlyCalories_merged.csv",
+    "hourlyIntensities_merged.csv",
+    "hourlySteps_merged.csv"
+  ],
+  "input_rows_by_file": {
+    "hourlyCalories_merged.csv": 24084,
+    "hourlyIntensities_merged.csv": 24084,
+    "hourlySteps_merged.csv": 24084
+  },
+  "input_rows_total": 72252,
+  "limitations": [
+    "Source units are not independently verified.",
+    "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+  ],
+  "output": {
+    "columns": [
+      "id",
+      "activity_hour",
+      "calories",
+      "date",
+      "total_intensity",
+      "average_intensity",
+      "step_total"
+    ],
+    "date_range": [
+      "2016-03-12 00:00:00",
+      "2016-04-12 10:00:00"
+    ],
+    "duplicate_key_rows": 0,
+    "missing_key_rows": 0,
+    "null_counts": {},
+    "participants": 34,
+    "range_field": "activity_hour",
+    "rows": 24084
+  },
+  "output_file": "reports/generated/preprocessed/hourly_activity_clean.csv",
+  "reference_comparison": {
+    "examples": [],
+    "exists": true,
+    "generated_rows": 24084,
+    "matches": true,
+    "mismatch_fields": 0,
+    "mismatch_rows": 0,
+    "numeric_tolerance": {
+      "absolute": 1e-09,
+      "relative": 1e-12
+    },
+    "reference_rows": 24084,
+    "schema_matches": true
+  },
+  "reference_file": "data/processed/hourly_activity_clean.csv",
+  "rows_removed": 0,
+  "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+  "status": "PASS",
+  "task": "P2-HOURLY_ACTIVITY"
+}

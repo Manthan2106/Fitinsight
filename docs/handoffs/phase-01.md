@@ -1,10 +1,10 @@
 # Phase 1 handoff
 
-Status: REVIEW
+Status: DONE
 
-## Completed locally
+## Completed and integrated
 
-- Added a standard-library streaming audit and seven unit tests.
+- Added and merged a standard-library streaming audit and seven unit tests.
 - Audited all 11 raw CSVs: 7,206,142 rows and 271,592,676 bytes.
 - Audit checks passed for headers, row widths, composite-key completeness, and
   date parsing. Sleep contains 525 repeated `(Id, date, logId)` keys.
@@ -17,20 +17,21 @@ Status: REVIEW
 
 ## Pending acceptance items
 
-- PR #1 is open and mergeable, based on `main`; it remains unmerged.
-- `main` remains at `201268635a04a7fee03a00cb7030e8106f6d13ec`; the latest PR
-  head is available directly from the GitHub PR page rather than copied here.
-- The repository owner must approve integration; do not merge automatically.
+- PR #1 is merged. Merge commit:
+  `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`.
+- Verified `9357d8597b270df93e8a012e892e90ba7aaf8965` is an ancestor of
+  `main` at the merge commit.
+- The Phase 4 branch remains separate and unchanged.
 
 ## Risks and limits
 
 - Lexical type inference does not verify official field units or device
   validity.
 - Free mode is active, but remaining account allowance is not exposed here.
-- The six existing processed exports and notebook workflows have not yet been
-  regenerated or compared.
+- The six existing processed exports are reference outputs; Phase 2 will
+  reproduce and compare them without overwriting the originals.
 
 ## Next action
 
-Merge PR #1 after owner review. Start P2 only after verifying the integrated
-`main` head.
+Phase 1 is complete. Phase 2 begins from `main` at
+`a6170a2caf64d66b1a622bd50c0b1a69805d34b0`.

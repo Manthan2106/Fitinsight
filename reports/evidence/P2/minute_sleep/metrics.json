@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "columns_match_contract": true,
+    "keys_complete": true,
+    "no_conflicting_sleep_duplicates": true,
+    "reference_schema_matches": true,
+    "reference_values_match": true,
+    "unique_output_keys": true
+  },
+  "column_types": {
+    "calendar_date": "date",
+    "date": "datetime",
+    "id": "string",
+    "log_id": "string",
+    "value": "integer"
+  },
+  "command": "python src/preprocess.py",
+  "conflicting_duplicate_keys": 0,
+  "duplicate_occurrences_identical": 525,
+  "evidence_file": "reports/evidence/P2/minute_sleep/metrics.json",
+  "input_files": [
+    "minuteSleep_merged.csv"
+  ],
+  "input_rows_by_file": {
+    "minuteSleep_merged.csv": 198559
+  },
+  "input_rows_total": 198559,
+  "limitations": [
+    "Source units are not independently verified.",
+    "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+  ],
+  "output": {
+    "columns": [
+      "id",
+      "date",
+      "value",
+      "log_id",
+      "calendar_date"
+    ],
+    "date_range": [
+      "2016-03-11 21:19:30",
+      "2016-04-12 08:35:00"
+    ],
+    "duplicate_key_rows": 0,
+    "missing_key_rows": 0,
+    "null_counts": {},
+    "participants": 23,
+    "range_field": "date",
+    "rows": 198034
+  },
+  "output_file": "reports/generated/preprocessed/minute_sleep_clean.csv",
+  "reference_comparison": {
+    "examples": [],
+    "exists": true,
+    "generated_rows": 198034,
+    "matches": true,
+    "mismatch_fields": 0,
+    "mismatch_rows": 0,
+    "numeric_tolerance": {
+      "absolute": 1e-09,
+      "relative": 1e-12
+    },
+    "reference_rows": 198034,
+    "schema_matches": true
+  },
+  "reference_file": "data/processed/minute_sleep_clean.csv",
+  "rows_removed": 525,
+  "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+  "status": "PASS",
+  "task": "P2-MINUTE_SLEEP"
+}

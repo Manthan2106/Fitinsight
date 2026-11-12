@@ -1,0 +1,96 @@
+{
+  "checks": {
+    "columns_match_contract": true,
+    "keys_complete": true,
+    "reference_schema_matches": true,
+    "reference_values_match": true,
+    "unique_output_keys": true
+  },
+  "column_types": {
+    "activity_date": "date",
+    "calories": "integer",
+    "component_distance_sum": "number",
+    "distance_discrepancy": "boolean",
+    "fairly_active_minutes": "integer",
+    "id": "string",
+    "is_complete_day": "boolean",
+    "light_active_distance": "number",
+    "lightly_active_minutes": "integer",
+    "logged_activities_distance": "number",
+    "moderately_active_distance": "number",
+    "sedentary_active_distance": "number",
+    "sedentary_minutes": "integer",
+    "total_distance": "number",
+    "total_recorded_minutes": "integer",
+    "total_steps": "integer",
+    "tracker_distance": "number",
+    "very_active_distance": "number",
+    "very_active_minutes": "integer"
+  },
+  "command": "python src/preprocess.py",
+  "evidence_file": "reports/evidence/P2/daily_activity/metrics.json",
+  "input_files": [
+    "dailyActivity_merged.csv"
+  ],
+  "input_rows_by_file": {
+    "dailyActivity_merged.csv": 457
+  },
+  "input_rows_total": 457,
+  "limitations": [
+    "Source units are not independently verified.",
+    "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+  ],
+  "output": {
+    "columns": [
+      "id",
+      "activity_date",
+      "total_steps",
+      "total_distance",
+      "tracker_distance",
+      "logged_activities_distance",
+      "very_active_distance",
+      "moderately_active_distance",
+      "light_active_distance",
+      "sedentary_active_distance",
+      "very_active_minutes",
+      "fairly_active_minutes",
+      "lightly_active_minutes",
+      "sedentary_minutes",
+      "calories",
+      "total_recorded_minutes",
+      "is_complete_day",
+      "component_distance_sum",
+      "distance_discrepancy"
+    ],
+    "date_range": [
+      "2016-03-12",
+      "2016-04-12"
+    ],
+    "duplicate_key_rows": 0,
+    "missing_key_rows": 0,
+    "null_counts": {},
+    "participants": 35,
+    "range_field": "activity_date",
+    "rows": 457
+  },
+  "output_file": "reports/generated/preprocessed/daily_activity_clean.csv",
+  "reference_comparison": {
+    "examples": [],
+    "exists": true,
+    "generated_rows": 457,
+    "matches": true,
+    "mismatch_fields": 0,
+    "mismatch_rows": 0,
+    "numeric_tolerance": {
+      "absolute": 1e-09,
+      "relative": 1e-12
+    },
+    "reference_rows": 457,
+    "schema_matches": true
+  },
+  "reference_file": "data/processed/daily_activity_clean.csv",
+  "rows_removed": 0,
+  "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+  "status": "PASS",
+  "task": "P2-DAILY_ACTIVITY"
+}

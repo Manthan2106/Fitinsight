@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "columns_match_contract": true,
+    "keys_complete": true,
+    "reference_schema_matches": true,
+    "reference_values_match": true,
+    "unique_output_keys": true
+  },
+  "column_types": {
+    "date": "date",
+    "heart_rate": "integer",
+    "hour": "integer",
+    "id": "string",
+    "time": "datetime"
+  },
+  "command": "python src/preprocess.py",
+  "evidence_file": "reports/evidence/P2/heartrate/metrics.json",
+  "input_files": [
+    "heartrate_seconds_merged.csv"
+  ],
+  "input_rows_by_file": {
+    "heartrate_seconds_merged.csv": 1154681
+  },
+  "input_rows_total": 1154681,
+  "limitations": [
+    "Source units are not independently verified.",
+    "Composite-key uniqueness uses 16-byte BLAKE2b digests; collision risk is extremely small but nonzero."
+  ],
+  "output": {
+    "columns": [
+      "id",
+      "time",
+      "heart_rate",
+      "date",
+      "hour"
+    ],
+    "date_range": [
+      "2016-03-29 00:00:05",
+      "2016-04-12 11:03:15"
+    ],
+    "duplicate_key_rows": 0,
+    "missing_key_rows": 0,
+    "null_counts": {},
+    "participants": 14,
+    "range_field": "time",
+    "rows": 1154681
+  },
+  "output_file": "reports/generated/preprocessed/heartrate_seconds_clean.csv",
+  "reference_comparison": {
+    "examples": [],
+    "exists": true,
+    "generated_rows": 1154681,
+    "matches": true,
+    "mismatch_fields": 0,
+    "mismatch_rows": 0,
+    "numeric_tolerance": {
+      "absolute": 1e-09,
+      "relative": 1e-12
+    },
+    "reference_rows": 1154681,
+    "schema_matches": true
+  },
+  "reference_file": "data/processed/heartrate_seconds_clean.csv",
+  "rows_removed": 0,
+  "source_commit": "c9c5f3e4eae89ab460ef360a9300d7705554c4d5",
+  "status": "PASS",
+  "task": "P2-HEARTRATE"
+}
