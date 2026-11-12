@@ -54,8 +54,8 @@
     "reports/evidence/P4/test_results.json"
   ],
   "figure_count": 12,
-  "generated_at_utc": "2026-11-12T16:21:04+00:00",
-  "git_head_at_run": "77abf8354db99cb48e84ff931e335e2ec2f4c73a",
+  "generated_at_utc": "2026-11-12T16:27:54+00:00",
+  "git_head_at_run": "2d1e9d57a3f754949567026cc12520ca6940582b",
   "input_file": "data/processed/daily_activity_clean.csv",
   "input_sha256": "6d1ad35a4e8dd138e9cadabf242baff7cf6190b40724c1c09eff28c46e5122d1",
   "kmeans": {
@@ -69,7 +69,7 @@
   },
   "phase": "P4",
   "python_version": "3.13.11",
-  "runtime_seconds": 1.002213676,
+  "runtime_seconds": 1.045413144999,
   "scientific_limitations": [
     "Participant count is small and daily coverage is unequal.",
     "Recorded device fields and units are not independently validated.",
