@@ -6,13 +6,16 @@ medical classifier, or a source of health recommendations.
 
 ## Current state
 
+- Phases 1–5 are merged into `main` at
+  `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
+- The current `phase-notebook-conversion` branch converts Phases 1–5 into
+  reproducible, step-by-step notebooks and provides an interactive Phase 6
+  evidence browser. The conversion is being prepared for review; it is not
+  merged.
 - The original audit and EDA notebooks are preserved under `notebooks/`.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.
 - The Phase 1 streaming audit uses only the Python standard library.
-- Phases 1–4 are merged into `main`; Phase 5 is under review in
-  [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5) and remains
-  unmerged.
 - Phase 4 produced nine analysis tables, 12 SVG figures, and machine-readable
   validation evidence; its small-sample cluster findings remain exploratory.
 
@@ -56,8 +59,30 @@ research artifacts:
 - `notebooks/EDA_analysis.ipynb` — descriptive activity analysis.
 
 Their original package environment is not pinned; notebook outputs remain
-historical. Current reproducible preprocessing, EDA, and clustering commands
-run from the processed CSVs rather than notebook state.
+historical. They are retained unchanged alongside the phase-specific workflow
+notebooks below.
+
+## Phase notebooks
+
+`notebooks/phases/` contains six notebooks designed to run in order from a
+fresh Python 3 kernel. Phases 1–5 include separate reasoning, implementation,
+proof, and result cells; they write regenerated outputs to scratch paths and
+compare them with committed evidence where applicable. Phase 6 provides
+interactive filters over stored results and does not refit models. The web
+dashboard remains paused until the notebook conversion is reviewed.
+
+Install the pinned notebook runtime and run the notebooks from the repository
+root:
+
+```bash
+python -m pip install -r notebooks/requirements.txt
+jupyter lab notebooks/phases/
+```
+
+The analysis logic in Phases 1–5 uses the Python standard library; the pinned
+packages provide Jupyter execution and free `ipywidgets` controls. See
+`reports/evidence/notebook_conversion/README.md` for clean-kernel results and
+parity checks.
 
 ## Phase 4 clustering and PCA
 
