@@ -10,9 +10,10 @@ medical classifier, or a source of health recommendations.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.
 - The Phase 1 streaming audit uses only the Python standard library.
-- Phases 1–3 are merged into `main`; Phase 4 clustering/PCA is under review
-  from `phase-4-validated-clustering`. See `docs/AGENT_CONTEXT.md`.
-- Phase 4 produces nine analysis tables, 12 SVG figures, and machine-readable
+- Phases 1–4 are merged into `main`; Phase 5 is under review in
+  [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5) and remains
+  unmerged.
+- Phase 4 produced nine analysis tables, 12 SVG figures, and machine-readable
   validation evidence; its small-sample cluster findings remain exploratory.
 
 ## Run the raw-data audit
@@ -73,6 +74,28 @@ figures under `reports/`. The historical implementation on
 `phase-4-activity-clustering` is retained as a separate reference branch. See
 `docs/CLUSTERING_FINDINGS.md` for the results and caveats and
 `docs/handoffs/phase-04.md` for the review handoff.
+
+## Phase 5 association rules and anomaly screening
+
+From the repository root, run:
+
+```bash
+python src/preprocess.py
+python src/eda_analysis.py
+python src/phase5_analysis.py
+python src/phase5_validation.py
+```
+
+Phase 5 uses Python's standard library only. It builds one categorical
+transaction per participant-day, mines bounded Apriori rules, and compares
+global IQR, within-participant robust, and coverage-stratified k-nearest-
+neighbor screens. Outputs, proof JSON, 21 analysis CSV tables, and eight SVG
+figures are written under
+`reports/generated/associations/`, `reports/generated/anomalies/`, and
+`reports/evidence/P5/`. Existing candidate rows are retained; these screens do
+not confirm errors or make health claims. See
+`docs/ASSOCIATION_FINDINGS.md`, `docs/ANOMALY_FINDINGS.md`, and
+`docs/handoffs/phase-05.md`.
 
 ## Data and scientific limits
 

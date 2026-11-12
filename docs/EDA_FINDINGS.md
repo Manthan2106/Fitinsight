@@ -6,8 +6,8 @@ Run `python src/eda_analysis.py` from the repository root with Python's standard
 library. The analysis reads the committed Phase 2 files
 `data/processed/daily_activity_clean.csv` and
 `data/processed/minute_sleep_clean.csv`; it does not modify raw data, processed
-references, or notebooks. CSV tables and eight vector figures are written under
-`reports/generated/eda/`; compact metrics and run evidence are under
+references, or notebooks. Thirteen CSV analysis tables and nine vector figures
+are written under `reports/generated/eda/`; compact metrics and run evidence are under
 `reports/evidence/P3/`.
 
 The run validated 457 participant-days from 35 participants and 198,034 cleaned

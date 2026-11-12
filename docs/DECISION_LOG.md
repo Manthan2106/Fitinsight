@@ -277,3 +277,92 @@
   and direct interpretation.
 - Files: `src/activity_clustering.py`,
   `reports/generated/activity_clustering/figures/`.
+
+## D-017 — Use one family-exclusive transaction per participant-day
+
+- Date: 2026-11-12
+- Question: How can daily co-occurrences be mined without duplicating days or
+  turning category definitions into rules?
+- Choices: Treat each participant-day as a transaction with independent,
+  potentially overlapping flags; or use bounded categorical item families and
+  prune incompatible combinations.
+- Selected: Create one transaction per participant-day with six families:
+  step bins, active-minute share, very-active minutes, calories, calendar day,
+  and the existing Phase 2 completeness flag. Cap itemsets at size three.
+- Why: The observation grain must remain auditable, and same-family categories
+  cannot co-occur. Active share also shares its numerator with very-active
+  minutes and its denominator with the coverage definition.
+- Evidence: 457 mapped transactions, 2,742 item occurrences, 215 frequent
+  itemsets at 5% support; synthetic tests validate family exclusion and
+  Apriori subset pruning.
+- Trade-off: Excluding active-share/very-active and active-share/coverage
+  combinations avoids structural associations but also omits those
+  comparisons intentionally.
+- Files: `src/association_rules.py`,
+  `reports/evidence/P5/association_metrics.json`,
+  `tests/test_phase5_associations.py`.
+
+## D-018 — Report rule thresholds and equal-participant sensitivities
+
+- Date: 2026-11-12
+- Question: Which co-occurrences should be surfaced without hiding their
+  denominators or participant imbalance?
+- Choices: Rank by confidence alone; or report support, confidence, lift,
+  leverage, joint participant counts, and threshold checks together.
+- Selected: Require support 5%, confidence 60%, lift 1.10, and at least five
+  distinct participants; vary one threshold at a time and rerun on complete
+  days. Also report within-person averaged prevalence and conditional
+  confidence.
+- Why: Repeated days from some participants could dominate pooled support and
+  confidence, while a confidence-only rule can be common by chance.
+- Evidence: Baseline minimum support is 23/457 days; 89 of 860 rules meet every
+  threshold. One eligible rule's pooled confidence is 86.0%, versus 57.1%
+  participant-balanced across 14 antecedent-bearing participants.
+- Trade-off: The declared thresholds are analysis choices, not inferential
+  cutoffs; small changes produce different rule counts.
+- Files: `src/association_rules.py`,
+  `reports/generated/associations/threshold_sensitivity.csv`,
+  `reports/generated/associations/participant_balanced_sensitivity.csv`.
+
+## D-019 — Keep anomaly screens complementary and non-destructive
+
+- Date: 2026-11-12
+- Question: How should different kinds of unusual records be compared without
+  silently removing data or confusing coverage with wear status?
+- Choices: Use a single global fence; or retain the Phase 3 flags, add global
+  IQR and within-person robust screens, and compare coverage-stratified kNN
+  rankings.
+- Selected: Apply 1.5×IQR to seven fields, within-person modified robust scores
+  to steps and active share with a zero-MAD fallback, and kNN to recorded-hour
+  rates in pooled and complete/incomplete cohorts.
+- Why: Each screen answers a different question; comparing overlaps and
+  completeness cohorts makes those differences visible.
+- Evidence: 36 global-IQR candidate days, 48 within-person candidate days,
+  23 pooled kNN candidates and 24 stratified candidates; all 457 input rows
+  remain in the registry.
+- Trade-off: The screens can disagree and the kNN top-five-percent cutoff is
+  a ranking rule, not a calibrated anomaly probability.
+- Files: `src/anomaly_detection.py`,
+  `reports/evidence/P5/anomaly_metrics.json`,
+  `reports/generated/anomalies/detector_overlaps.csv`.
+
+## D-020 — Preserve both distance definitions and the final observed date
+
+- Date: 2026-11-12
+- Question: Should the Phase 5 review consolidate the two historical distance
+  flags or omit the dataset's final date?
+- Choices: Treat the counts as equivalent and remove the boundary date; or
+  preserve each definition and use a clearly labeled date sensitivity only.
+- Selected: Keep the strict Phase 1 `>0.01` absolute-difference screen separate
+  from the committed Phase 2 distance flag; retain April 12 in the primary
+  analysis and recalculate selected screens without it for sensitivity.
+- Why: The two distance screens encode different tolerances, and the last
+  observed date has unusual coverage but is still part of the source data.
+- Evidence: Phase 1 flags 104 days, Phase 2 flags 65 (all within the 104), and
+  removing April 12 changes the daily cohort from 457 to 433 without changing
+  the primary result.
+- Trade-off: Historical candidate counts remain method-specific; the
+  sensitivity does not establish why the final date differs.
+- Files: `src/anomaly_detection.py`,
+  `reports/generated/anomalies/date_boundary_sensitivity.csv`,
+  `reports/evidence/P5/anomaly_metrics.json`.

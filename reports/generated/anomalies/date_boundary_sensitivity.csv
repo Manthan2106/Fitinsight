@@ -1,0 +1,11 @@
+method,primary_candidate_days,excluding_last_date_candidate_days,change_after_excluding_last_date,boundary_date,primary_includes_boundary,sensitivity_recomputed,note
+global_iqr_any_field,36,21,-15,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+knn_pooled_k10_top_5pct,23,22,-1,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+knn_pooled_k5_top_5pct,23,22,-1,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+knn_stratified_k10_top_5pct,24,23,-1,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+knn_stratified_k5_top_5pct,24,23,-1,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+phase1_absolute_distance_gt_0_01,104,101,-3,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+phase2_distance_flag,65,64,-1,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+phase3_daily_candidates,140,127,-13,2016-04-12,True,False,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+within_person_robust,48,42,-6,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.
+zero_steps_with_positive_calories_or_activity,56,54,-2,2016-04-12,True,True,Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.

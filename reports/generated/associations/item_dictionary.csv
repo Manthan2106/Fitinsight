@@ -1,0 +1,18 @@
+item,family,definition
+active_share:lower,active_share,total_active_minutes / total_recorded_minutes < 0.10
+active_share:middle,active_share,0.10 <= active share < 0.25
+active_share:upper,active_share,active share >= 0.25
+calories:lower,calories,calories < Q1 (1776)
+calories:middle,calories,Q1 (1776) <= calories < Q3 (2667)
+calories:upper,calories,calories >= Q3 (2667)
+coverage:complete,coverage,Phase 2 is_complete_day is True (1440 recorded minutes)
+coverage:incomplete,coverage,Phase 2 is_complete_day is False
+day:weekday,day_type,Monday through Friday
+day:weekend,day_type,Saturday or Sunday
+steps:lower,steps,0 < total_steps < 5000
+steps:middle,steps,5000 <= total_steps < 10000
+steps:upper,steps,total_steps >= 10000
+steps:zero,steps,total_steps = 0
+very_active:lower,very_active_minutes,1 <= very_active_minutes < 30
+very_active:upper,very_active_minutes,very_active_minutes >= 30
+very_active:zero,very_active_minutes,very_active_minutes = 0

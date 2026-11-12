@@ -120,3 +120,42 @@
   DBSCAN grid, PCA scores/loadings/variance, cohort sensitivity, 12 SVGs,
   and task-specific JSON proofs under `reports/generated/activity_clustering/`
   and `reports/evidence/P4/`.
+
+## P5 — Mine daily co-occurrences and investigate unusual records
+
+- Transaction design: One transaction per participant-day, with one item from
+  each of six non-overlapping families: step bins, active-minute share,
+  very-active minutes, calories, weekday/weekend, and Phase 2 completeness.
+  The full-cohort calorie cutpoints are Q1=1,776 and Q3=2,667. The 457
+  transactions preserve participant/date mapping and all 61 zero-step days.
+- Association method: Standard-library Apriori uses a maximum itemset size of
+  three, 5% support (23/457 days), 60% confidence, lift 1.10, and at least five
+  distinct participants. Same-family categories and direct active-share
+  numerator/denominator combinations are excluded.
+- Association result: 215 itemsets generate 860 directed rules; 89 meet every
+  baseline threshold. `steps:zero -> active_share:lower` has 13.1% support,
+  98.4% pooled confidence, and lift 3.33; its participant-balanced confidence
+  is 98.8% across 14 participants with antecedent records. Another eligible
+  rule's pooled confidence is 86.0% and its equal-participant value is 57.1%,
+  demonstrating why repeated days should not be read as equal-person evidence.
+- Sensitivity: Support, confidence, lift, and distinct-participant thresholds
+  are each varied separately. The complete-day subset has 233 days across
+  28 participants and yields 108 eligible rules at the same baseline settings.
+- Anomaly methods: Preserve 140 Phase 3 participant-day candidates and 111
+  separate sleep-episode candidates; add global 1.5×IQR, within-person robust
+  scores, and pooled/complete/incomplete kNN rankings. The screens flag
+  overlapping sets, so their counts are not additive.
+- Quality flags: The strict Phase 1 distance screen flags 104 days; the
+  committed Phase 2 flag marks 65, all within the strict set. The 39
+  strict-only cases remain distinct rather than being relabeled.
+- Result and limits: Ten daily screening sets have a union of 217 unique
+  review candidates. Seven selected records are retained for focused review;
+  no cause is inferred and no row is removed. Excluding April 12 is a
+  sensitivity only; the primary analysis retains all 457 days.
+- Reproducibility: The standard-library pipeline emits 21 CSV tables, eight
+  SVGs, machine-readable metrics and input/source hashes. The complete
+  repository suite passes 89 tests with no failures, errors, or skips.
+- Caveat: Association and anomaly screens are descriptive candidates in a
+  small historical tracker sample; they are not causal findings, predictive
+  validation, device-wear verification, diagnoses, or health advice.
+- Evidence: P5-ASSOCIATION-ANOMALIES.

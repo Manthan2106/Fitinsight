@@ -1,0 +1,1076 @@
+entity_type,entity,pooled_rate,participant_balanced_rate,participants_contributing,participant_rate_denominator,difference_balanced_minus_pooled
+itemset_prevalence,"[""active_share:lower""]",0.29540481400437635,0.2911385471253892,35,35,-0.004266266878987124
+itemset_prevalence,"[""active_share:middle""]",0.4048140043763676,0.3995700425305688,35,35,-0.0052439618457987835
+itemset_prevalence,"[""active_share:upper""]",0.29978118161925604,0.3092914103440419,35,35,0.009510228724785852
+itemset_prevalence,"[""calories:lower""]",0.23413566739606126,0.23750086797079278,35,35,0.003365200574731525
+itemset_prevalence,"[""calories:middle""]",0.5142231947483589,0.5174738795039547,35,35,0.0032506847555958673
+itemset_prevalence,"[""calories:upper""]",0.25164113785557984,0.2450252525252525,35,35,-0.006615885330327337
+itemset_prevalence,"[""coverage:complete""]",0.5098468271334792,0.515068637502848,35,35,0.005221810369368862
+itemset_prevalence,"[""coverage:incomplete""]",0.49015317286652077,0.484931362497152,35,35,-0.005221810369368751
+itemset_prevalence,"[""day:weekday""]",0.6783369803063457,0.6761076392279399,35,35,-0.0022293410784057777
+itemset_prevalence,"[""day:weekend""]",0.32166301969365424,0.32389236077206,35,35,0.0022293410784057777
+itemset_prevalence,"[""steps:lower""]",0.2975929978118162,0.29330314422419684,35,35,-0.004289853587619352
+itemset_prevalence,"[""steps:middle""]",0.2910284463894967,0.2780131334830583,35,35,-0.013015312906438425
+itemset_prevalence,"[""steps:upper""]",0.2778993435448578,0.27675911911814166,35,35,-0.0011402244267161299
+itemset_prevalence,"[""steps:zero""]",0.13347921225382933,0.15192460317460318,35,35,0.018445390920773852
+itemset_prevalence,"[""very_active:lower""]",0.25820568927789933,0.2581265528539965,35,35,-7.913642390283693e-05
+itemset_prevalence,"[""very_active:upper""]",0.21444201312910285,0.22389488331217655,35,35,0.009452870183073697
+itemset_prevalence,"[""very_active:zero""]",0.5273522975929978,0.517978563833827,35,35,-0.009373733759170833
+itemset_prevalence,"[""active_share:lower"",""calories:lower""]",0.11597374179431072,0.11568219791904001,35,35,-0.00029154387527070835
+itemset_prevalence,"[""active_share:lower"",""calories:middle""]",0.15973741794310722,0.16742063492063494,35,35,0.007683216977527718
+itemset_prevalence,"[""active_share:lower"",""day:weekday""]",0.19693654266958424,0.19643303334092807,35,35,-0.0005035093286561709
+itemset_prevalence,"[""active_share:lower"",""day:weekend""]",0.09846827133479212,0.09470551378446115,35,35,-0.003762757550330967
+itemset_prevalence,"[""active_share:lower"",""steps:lower""]",0.1422319474835886,0.13175780359990888,35,35,-0.010474143883679732
+itemset_prevalence,"[""active_share:lower"",""steps:zero""]",0.13129102844638948,0.14835317460317463,35,35,0.01706214615678514
+itemset_prevalence,"[""active_share:middle"",""calories:lower""]",0.08533916849015317,0.08503759398496241,35,35,-0.0003015745051907631
+itemset_prevalence,"[""active_share:middle"",""calories:middle""]",0.20568927789934355,0.2047507025138604,35,35,-0.0009385753854831425
+itemset_prevalence,"[""active_share:middle"",""calories:upper""]",0.1137855579868709,0.10978174603174602,35,35,-0.004003811955124878
+itemset_prevalence,"[""active_share:middle"",""day:weekday""]",0.29321663019693656,0.28276439204070786,35,35,-0.0104522381562287
+itemset_prevalence,"[""active_share:middle"",""day:weekend""]",0.11159737417943107,0.116805650489861,35,35,0.0052082763104299296
+itemset_prevalence,"[""active_share:middle"",""steps:lower""]",0.13785557986870897,0.13990031897926636,35,35,0.0020447391105573864
+itemset_prevalence,"[""active_share:middle"",""steps:middle""]",0.17067833698030635,0.1629281537176274,35,35,-0.007750183262678956
+itemset_prevalence,"[""active_share:middle"",""steps:upper""]",0.0962800875273523,0.0967415698336751,35,35,0.00046148230632279963
+itemset_prevalence,"[""active_share:upper"",""calories:middle""]",0.1487964989059081,0.14530254206945936,35,35,-0.003493956836448736
+itemset_prevalence,"[""active_share:upper"",""calories:upper""]",0.11816192560175055,0.12720779220779221,35,35,0.009045866606041661
+itemset_prevalence,"[""active_share:upper"",""day:weekday""]",0.18818380743982493,0.19691021384630406,35,35,0.00872640640647912
+itemset_prevalence,"[""active_share:upper"",""day:weekend""]",0.11159737417943107,0.11238119649773785,35,35,0.0007838223183067872
+itemset_prevalence,"[""active_share:upper"",""steps:middle""]",0.10065645514223195,0.10495026798598227,35,35,0.004293812843750314
+itemset_prevalence,"[""active_share:upper"",""steps:upper""]",0.17943107221006566,0.17912469214160945,35,35,-0.0003063800684562079
+itemset_prevalence,"[""calories:lower"",""coverage:complete""]",0.10284463894967177,0.09571428571428571,35,35,-0.007130353235386064
+itemset_prevalence,"[""calories:lower"",""coverage:incomplete""]",0.13129102844638948,0.14178658225650706,35,35,0.010495553810117575
+itemset_prevalence,"[""calories:lower"",""day:weekday""]",0.1487964989059081,0.14681582202258894,35,35,-0.0019806768833191546
+itemset_prevalence,"[""calories:lower"",""day:weekend""]",0.08533916849015317,0.09068504594820384,35,35,0.005345877458050666
+itemset_prevalence,"[""calories:lower"",""steps:lower""]",0.13566739606126915,0.13437818029923293,35,35,-0.0012892157620362221
+itemset_prevalence,"[""calories:lower"",""very_active:zero""]",0.19037199124726478,0.19256189716716032,35,35,0.0021899059198955406
+itemset_prevalence,"[""calories:middle"",""coverage:complete""]",0.2778993435448578,0.2884200083542189,35,35,0.010520664809361091
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete""]",0.2363238512035011,0.2290538711497358,35,35,-0.007269980053765307
+itemset_prevalence,"[""calories:middle"",""day:weekday""]",0.36323851203501095,0.36712911879265264,35,35,0.0038906067576416903
+itemset_prevalence,"[""calories:middle"",""day:weekend""]",0.15098468271334792,0.15034476071130207,35,35,-0.0006399220020458507
+itemset_prevalence,"[""calories:middle"",""steps:lower""]",0.14442013129102846,0.14394660894660893,35,35,-0.0004735223444195247
+itemset_prevalence,"[""calories:middle"",""steps:middle""]",0.15098468271334792,0.15561507936507937,35,35,0.004630396651731455
+itemset_prevalence,"[""calories:middle"",""steps:upper""]",0.13566739606126915,0.12440028643036162,35,35,-0.011267109630907532
+itemset_prevalence,"[""calories:middle"",""steps:zero""]",0.08315098468271334,0.09351190476190477,35,35,0.010360920079191427
+itemset_prevalence,"[""calories:middle"",""very_active:lower""]",0.15536105032822758,0.15750416354739663,35,35,0.002143113219169046
+itemset_prevalence,"[""calories:middle"",""very_active:upper""]",0.087527352297593,0.08163638262322473,35,35,-0.0058909696743682655
+itemset_prevalence,"[""calories:middle"",""very_active:zero""]",0.2713347921225383,0.2783333333333333,35,35,0.006998541210795017
+itemset_prevalence,"[""calories:upper"",""coverage:complete""]",0.12910284463894967,0.13093434343434343,35,35,0.0018314987953937656
+itemset_prevalence,"[""calories:upper"",""coverage:incomplete""]",0.12253829321663019,0.11409090909090909,35,35,-0.008447384125721102
+itemset_prevalence,"[""calories:upper"",""day:weekday""]",0.16630196936542668,0.16216269841269842,35,35,-0.004139270952728258
+itemset_prevalence,"[""calories:upper"",""day:weekend""]",0.08533916849015317,0.08286255411255412,35,35,-0.0024766143775990512
+itemset_prevalence,"[""calories:upper"",""steps:middle""]",0.10940919037199125,0.09203643578643579,35,35,-0.017372754585555455
+itemset_prevalence,"[""calories:upper"",""steps:upper""]",0.12253829321663019,0.1344390331890332,35,35,0.011900739972402999
+itemset_prevalence,"[""calories:upper"",""very_active:lower""]",0.07221006564551423,0.06896825396825397,35,35,-0.003241811677260259
+itemset_prevalence,"[""calories:upper"",""very_active:upper""]",0.1137855579868709,0.12897366522366524,35,35,0.01518810723679434
+itemset_prevalence,"[""calories:upper"",""very_active:zero""]",0.06564551422319474,0.04708333333333333,35,35,-0.01856218088986141
+itemset_prevalence,"[""coverage:complete"",""day:weekday""]",0.34573304157549234,0.3489302802460697,35,35,0.0031972386705773626
+itemset_prevalence,"[""coverage:complete"",""day:weekend""]",0.16411378555798686,0.1661383572567783,35,35,0.002024571698791444
+itemset_prevalence,"[""coverage:complete"",""steps:lower""]",0.1400437636761488,0.1282748538011696,35,35,-0.011768909874979194
+itemset_prevalence,"[""coverage:complete"",""steps:middle""]",0.13347921225382933,0.1291186299081036,35,35,-0.0043605823457257276
+itemset_prevalence,"[""coverage:complete"",""steps:upper""]",0.11597374179431072,0.12202039188881295,35,35,0.006046650094502226
+itemset_prevalence,"[""coverage:complete"",""steps:zero""]",0.12035010940919037,0.13565476190476192,35,35,0.015304652495571544
+itemset_prevalence,"[""coverage:complete"",""very_active:lower""]",0.10065645514223195,0.1060547201336675,35,35,0.005398264991435545
+itemset_prevalence,"[""coverage:complete"",""very_active:upper""]",0.09409190371991247,0.1028307511202248,35,35,0.008738847400312333
+itemset_prevalence,"[""coverage:complete"",""very_active:zero""]",0.3150984682713348,0.30618316624895575,35,35,-0.008915302022379057
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday""]",0.33260393873085337,0.3271773589818703,35,35,-0.005426579748983085
+itemset_prevalence,"[""coverage:incomplete"",""day:weekend""]",0.1575492341356674,0.1577540035152817,35,35,0.00020476937961430575
+itemset_prevalence,"[""coverage:incomplete"",""steps:lower""]",0.1575492341356674,0.16502829042302725,35,35,0.007479056287359842
+itemset_prevalence,"[""coverage:incomplete"",""steps:middle""]",0.1575492341356674,0.1488945035749547,35,35,-0.008654730560712698
+itemset_prevalence,"[""coverage:incomplete"",""steps:upper""]",0.16192560175054704,0.15473872722932874,35,35,-0.0071868745212183005
+itemset_prevalence,"[""coverage:incomplete"",""very_active:lower""]",0.1575492341356674,0.15207183272032898,35,35,-0.005477401415338423
+itemset_prevalence,"[""coverage:incomplete"",""very_active:upper""]",0.12035010940919037,0.12106413219195174,35,35,0.0007140227827613643
+itemset_prevalence,"[""coverage:incomplete"",""very_active:zero""]",0.212253829321663,0.2117953975848713,35,35,-0.0004584317367917201
+itemset_prevalence,"[""day:weekday"",""steps:lower""]",0.18818380743982493,0.18271312751575908,35,35,-0.005470679924065858
+itemset_prevalence,"[""day:weekday"",""steps:middle""]",0.2188183807439825,0.20793737590730071,35,35,-0.010881004836681779
+itemset_prevalence,"[""day:weekday"",""steps:upper""]",0.1838074398249453,0.1821436437413881,35,35,-0.0016637960835571841
+itemset_prevalence,"[""day:weekday"",""steps:zero""]",0.087527352297593,0.10331349206349207,35,35,0.01578613976589907
+itemset_prevalence,"[""day:weekday"",""very_active:lower""]",0.16849015317286653,0.16714851251505386,35,35,-0.0013416406578126705
+itemset_prevalence,"[""day:weekday"",""very_active:upper""]",0.15317286652078774,0.15881682018900062,35,35,0.005643953668212881
+itemset_prevalence,"[""day:weekday"",""very_active:zero""]",0.35667396061269147,0.3501423065238855,35,35,-0.0065316540888059604
+itemset_prevalence,"[""day:weekend"",""steps:lower""]",0.10940919037199125,0.11059001670843775,35,35,0.0011808263364465055
+itemset_prevalence,"[""day:weekend"",""steps:middle""]",0.07221006564551423,0.07007575757575757,35,35,-0.00213430806975666
+itemset_prevalence,"[""day:weekend"",""steps:upper""]",0.09409190371991247,0.09461547537675356,35,35,0.0005235716568410959
+itemset_prevalence,"[""day:weekend"",""very_active:lower""]",0.08971553610503283,0.09097804033894259,35,35,0.0012625042339097642
+itemset_prevalence,"[""day:weekend"",""very_active:upper""]",0.061269146608315096,0.0650780631231759,35,35,0.0038089165148608092
+itemset_prevalence,"[""day:weekend"",""very_active:zero""]",0.17067833698030635,0.16783625730994153,35,35,-0.0028420796703648166
+itemset_prevalence,"[""steps:lower"",""very_active:zero""]",0.24726477024070023,0.24125341763499658,35,35,-0.0060113526057036515
+itemset_prevalence,"[""steps:middle"",""very_active:lower""]",0.11816192560175055,0.12109126984126983,35,35,0.00292934423951928
+itemset_prevalence,"[""steps:middle"",""very_active:zero""]",0.13566739606126915,0.11661445279866331,35,35,-0.019052943262605843
+itemset_prevalence,"[""steps:upper"",""very_active:lower""]",0.09846827133479212,0.09377163145960139,35,35,-0.004696639875190728
+itemset_prevalence,"[""steps:upper"",""very_active:upper""]",0.16411378555798686,0.16908711171869065,35,35,0.004973326160703784
+itemset_prevalence,"[""steps:zero"",""very_active:zero""]",0.12910284463894967,0.14621031746031746,35,35,0.017107472821367792
+itemset_prevalence,"[""active_share:lower"",""calories:lower"",""day:weekday""]",0.07658643326039387,0.07331795397584871,35,35,-0.003268479284545156
+itemset_prevalence,"[""active_share:lower"",""calories:lower"",""steps:lower""]",0.06564551422319474,0.059337168679273945,35,35,-0.006308345543920797
+itemset_prevalence,"[""active_share:lower"",""calories:middle"",""day:weekday""]",0.10940919037199125,0.11865079365079365,35,35,0.009241603278802399
+itemset_prevalence,"[""active_share:lower"",""calories:middle"",""day:weekend""]",0.05032822757111598,0.04876984126984127,35,35,-0.0015583863012747085
+itemset_prevalence,"[""active_share:lower"",""calories:middle"",""steps:lower""]",0.07439824945295405,0.07152777777777779,35,35,-0.0028704716751762616
+itemset_prevalence,"[""active_share:lower"",""calories:middle"",""steps:zero""]",0.08315098468271334,0.09351190476190477,35,35,0.010360920079191427
+itemset_prevalence,"[""active_share:lower"",""day:weekday"",""steps:lower""]",0.0962800875273523,0.08834197235513025,35,35,-0.007938115172222052
+itemset_prevalence,"[""active_share:lower"",""day:weekday"",""steps:zero""]",0.08533916849015317,0.09974206349206349,35,35,0.014402895001910318
+itemset_prevalence,"[""active_share:middle"",""calories:lower"",""day:weekday""]",0.05032822757111598,0.04862155388471178,35,35,-0.0017066736864041962
+itemset_prevalence,"[""active_share:middle"",""calories:lower"",""steps:lower""]",0.061269146608315096,0.06411027568922306,35,35,0.0028411290809079656
+itemset_prevalence,"[""active_share:middle"",""calories:middle"",""day:weekday""]",0.15536105032822758,0.15076260727576518,35,35,-0.004598443052462403
+itemset_prevalence,"[""active_share:middle"",""calories:middle"",""day:weekend""]",0.05032822757111598,0.05398809523809524,35,35,0.0036598676669792607
+itemset_prevalence,"[""active_share:middle"",""calories:middle"",""steps:lower""]",0.06564551422319474,0.06813311688311689,35,35,0.00248760265992215
+itemset_prevalence,"[""active_share:middle"",""calories:middle"",""steps:middle""]",0.10065645514223195,0.10037698412698412,35,35,-0.00027947101524783413
+itemset_prevalence,"[""active_share:middle"",""calories:upper"",""day:weekday""]",0.087527352297593,0.08338023088023087,35,35,-0.004147121417362121
+itemset_prevalence,"[""active_share:middle"",""calories:upper"",""steps:middle""]",0.05470459518599562,0.04763888888888889,35,35,-0.007065706297106733
+itemset_prevalence,"[""active_share:middle"",""day:weekday"",""steps:lower""]",0.0787746170678337,0.07867851446798815,35,35,-9.610259984554892e-05
+itemset_prevalence,"[""active_share:middle"",""day:weekday"",""steps:middle""]",0.1400437636761488,0.13209482038429407,35,35,-0.007948943291854721
+itemset_prevalence,"[""active_share:middle"",""day:weekday"",""steps:upper""]",0.07439824945295405,0.07199105718842562,35,35,-0.0024071922645284294
+itemset_prevalence,"[""active_share:middle"",""day:weekend"",""steps:lower""]",0.05908096280087528,0.0612218045112782,35,35,0.0021408417104029215
+itemset_prevalence,"[""active_share:upper"",""calories:middle"",""day:weekday""]",0.09846827133479212,0.0977157178660938,35,35,-0.0007525534686983193
+itemset_prevalence,"[""active_share:upper"",""calories:middle"",""day:weekend""]",0.05032822757111598,0.04758682420336556,35,35,-0.002741403367750417
+itemset_prevalence,"[""active_share:upper"",""calories:middle"",""steps:upper""]",0.0962800875273523,0.08815968492660221,35,35,-0.008120402600750087
+itemset_prevalence,"[""active_share:upper"",""calories:upper"",""day:weekday""]",0.06783369803063458,0.07431818181818181,35,35,0.006484483787547235
+itemset_prevalence,"[""active_share:upper"",""calories:upper"",""day:weekend""]",0.05032822757111598,0.05288961038961039,35,35,0.002561382818494412
+itemset_prevalence,"[""active_share:upper"",""calories:upper"",""steps:upper""]",0.07221006564551423,0.07906024531024532,35,35,0.0068501796647310875
+itemset_prevalence,"[""active_share:upper"",""day:weekday"",""steps:middle""]",0.06345733041575492,0.0674935580292723,35,35,0.004036227613517379
+itemset_prevalence,"[""active_share:upper"",""day:weekday"",""steps:upper""]",0.10940919037199125,0.11015258655296249,35,35,0.0007433961809712453
+itemset_prevalence,"[""active_share:upper"",""day:weekend"",""steps:upper""]",0.0700218818380744,0.06897210558864694,35,35,-0.0010497762494274532
+itemset_prevalence,"[""calories:lower"",""coverage:complete"",""day:weekday""]",0.06345733041575492,0.05716791979949875,35,35,-0.006289410616256173
+itemset_prevalence,"[""calories:lower"",""coverage:complete"",""steps:lower""]",0.05470459518599562,0.04724310776942356,35,35,-0.007461487416572064
+itemset_prevalence,"[""calories:lower"",""coverage:complete"",""very_active:zero""]",0.09190371991247265,0.08644110275689222,35,35,-0.0054626171555804265
+itemset_prevalence,"[""calories:lower"",""coverage:incomplete"",""day:weekday""]",0.08533916849015317,0.0896479022230902,35,35,0.004308733732937026
+itemset_prevalence,"[""calories:lower"",""coverage:incomplete"",""steps:lower""]",0.08096280087527352,0.08713507252980937,35,35,0.006172271654535849
+itemset_prevalence,"[""calories:lower"",""coverage:incomplete"",""very_active:zero""]",0.09846827133479212,0.10612079441026809,35,35,0.007652523075475967
+itemset_prevalence,"[""calories:lower"",""day:weekday"",""steps:lower""]",0.08533916849015317,0.08313340168603325,35,35,-0.0022057668041199213
+itemset_prevalence,"[""calories:lower"",""day:weekday"",""very_active:zero""]",0.12691466083150985,0.12488437001594896,35,35,-0.0020302908155608868
+itemset_prevalence,"[""calories:lower"",""day:weekend"",""steps:lower""]",0.05032822757111598,0.05124477861319966,35,35,0.0009165510420836853
+itemset_prevalence,"[""calories:lower"",""day:weekend"",""very_active:zero""]",0.06345733041575492,0.06767752715121136,35,35,0.004220196735456441
+itemset_prevalence,"[""calories:lower"",""steps:lower"",""very_active:zero""]",0.11816192560175055,0.11639230652388548,35,35,-0.0017696190778650756
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""day:weekday""]",0.19912472647702406,0.2073485797827903,35,35,0.008223853305766249
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""day:weekend""]",0.0787746170678337,0.08107142857142857,35,35,0.00229681150359487
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""steps:lower""]",0.07439824945295405,0.07192460317460318,35,35,-0.002473646278350866
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""steps:middle""]",0.08971553610503283,0.09228174603174603,35,35,0.002566209926713206
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""steps:zero""]",0.08315098468271334,0.09351190476190477,35,35,0.010360920079191427
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""very_active:lower""]",0.05689277899343545,0.061483918128654974,35,35,0.004591139135219524
+itemset_prevalence,"[""calories:middle"",""coverage:complete"",""very_active:zero""]",0.1925601750547046,0.1979563492063492,35,35,0.005396174151644589
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""day:weekday""]",0.16411378555798686,0.1597805390098623,35,35,-0.0043332465481245586
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""day:weekend""]",0.07221006564551423,0.0692733321398735,35,35,-0.0029367335056407345
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""steps:lower""]",0.0700218818380744,0.07202200577200578,35,35,0.002000123933931383
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""steps:middle""]",0.061269146608315096,0.06333333333333334,35,35,0.0020641867250182425
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""steps:upper""]",0.1050328227571116,0.09369853204439671,35,35,-0.011334290712714884
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""very_active:lower""]",0.09846827133479212,0.09602024541874166,35,35,-0.002448025916050464
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""very_active:upper""]",0.05908096280087528,0.05265664160401003,35,35,-0.00642432119686525
+itemset_prevalence,"[""calories:middle"",""coverage:incomplete"",""very_active:zero""]",0.0787746170678337,0.08037698412698413,35,35,0.001602367059150428
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""steps:lower""]",0.09409190371991247,0.0923394660894661,35,35,-0.0017524376304463712
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""steps:middle""]",0.11597374179431072,0.11799603174603175,35,35,0.002022289951721032
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""steps:upper""]",0.0962800875273523,0.08824203365556749,35,35,-0.008038053871784814
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""steps:zero""]",0.05689277899343545,0.0685515873015873,35,35,0.011658808308151844
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""very_active:lower""]",0.11159737417943107,0.11213702546409314,35,35,0.0005396512846620738
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""very_active:upper""]",0.06564551422319474,0.061222252058718216,35,35,-0.004423262164476527
+itemset_prevalence,"[""calories:middle"",""day:weekday"",""very_active:zero""]",0.18599562363238512,0.19376984126984126,35,35,0.007774217637456143
+itemset_prevalence,"[""calories:middle"",""day:weekend"",""steps:lower""]",0.05032822757111598,0.05160714285714285,35,35,0.0012789152860268743
+itemset_prevalence,"[""calories:middle"",""day:weekend"",""very_active:zero""]",0.08533916849015317,0.08456349206349206,35,35,-0.0007756764266611121
+itemset_prevalence,"[""calories:middle"",""steps:lower"",""very_active:zero""]",0.11816192560175055,0.11426587301587302,35,35,-0.003896052585877538
+itemset_prevalence,"[""calories:middle"",""steps:middle"",""very_active:lower""]",0.07221006564551423,0.07702380952380952,35,35,0.004813743878295293
+itemset_prevalence,"[""calories:middle"",""steps:middle"",""very_active:zero""]",0.0700218818380744,0.07055555555555555,35,35,0.0005336737174811562
+itemset_prevalence,"[""calories:middle"",""steps:upper"",""very_active:lower""]",0.061269146608315096,0.05635517364840673,35,35,-0.004913972959908364
+itemset_prevalence,"[""calories:middle"",""steps:upper"",""very_active:upper""]",0.07221006564551423,0.06518796992481203,35,35,-0.007022095720702198
+itemset_prevalence,"[""calories:middle"",""steps:zero"",""very_active:zero""]",0.08096280087527352,0.0906547619047619,35,35,0.009691961029488383
+itemset_prevalence,"[""calories:upper"",""coverage:complete"",""day:weekday""]",0.08315098468271334,0.08441378066378066,35,35,0.0012627959810673217
+itemset_prevalence,"[""calories:upper"",""coverage:complete"",""steps:upper""]",0.0787746170678337,0.0868073593073593,35,35,0.008032742239525603
+itemset_prevalence,"[""calories:upper"",""coverage:complete"",""very_active:upper""]",0.06564551422319474,0.0738510101010101,35,35,0.008205495877815355
+itemset_prevalence,"[""calories:upper"",""coverage:incomplete"",""day:weekday""]",0.08315098468271334,0.07774891774891775,35,35,-0.0054020669337955934
+itemset_prevalence,"[""calories:upper"",""coverage:incomplete"",""steps:middle""]",0.07221006564551423,0.06058802308802309,35,35,-0.011622042557491143
+itemset_prevalence,"[""calories:upper"",""day:weekday"",""steps:middle""]",0.08096280087527352,0.06910353535353535,35,35,-0.011859265521738174
+itemset_prevalence,"[""calories:upper"",""day:weekday"",""steps:upper""]",0.07439824945295405,0.08224747474747475,35,35,0.0078492252945207
+itemset_prevalence,"[""calories:upper"",""day:weekday"",""very_active:upper""]",0.0787746170678337,0.08819444444444444,35,35,0.009419827376610734
+itemset_prevalence,"[""calories:upper"",""steps:upper"",""very_active:upper""]",0.087527352297593,0.10001443001443001,35,35,0.01248707771683702
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""steps:lower""]",0.087527352297593,0.07867690058479532,35,35,-0.008850451712797677
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""steps:middle""]",0.10284463894967177,0.09882101086048455,35,35,-0.004023628089187228
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""steps:upper""]",0.07658643326039387,0.07835697197539303,35,35,0.0017705387149991592
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""steps:zero""]",0.0787746170678337,0.09307539682539683,35,35,0.014300779757563123
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""very_active:lower""]",0.061269146608315096,0.06435254803675855,35,35,0.003083401428443454
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""very_active:upper""]",0.06345733041575492,0.06640939469886838,35,35,0.0029520642831134536
+itemset_prevalence,"[""coverage:complete"",""day:weekday"",""very_active:zero""]",0.2210065645514223,0.21816833751044276,35,35,-0.002838227040979552
+itemset_prevalence,"[""coverage:complete"",""day:weekend"",""steps:lower""]",0.0525164113785558,0.04959795321637427,35,35,-0.002918458162181524
+itemset_prevalence,"[""coverage:complete"",""day:weekend"",""very_active:zero""]",0.09409190371991247,0.08801482873851295,35,35,-0.006077074981399519
+itemset_prevalence,"[""coverage:complete"",""steps:lower"",""very_active:zero""]",0.11816192560175055,0.10633876357560568,35,35,-0.011823162026144876
+itemset_prevalence,"[""coverage:complete"",""steps:middle"",""very_active:lower""]",0.05470459518599562,0.05952380952380953,35,35,0.004819214337813904
+itemset_prevalence,"[""coverage:complete"",""steps:middle"",""very_active:zero""]",0.07221006564551423,0.06314640768588137,35,35,-0.009063657959632862
+itemset_prevalence,"[""coverage:complete"",""steps:upper"",""very_active:upper""]",0.08096280087527352,0.08945773524720893,35,35,0.008494934371935409
+itemset_prevalence,"[""coverage:complete"",""steps:zero"",""very_active:zero""]",0.11816192560175055,0.13279761904761903,35,35,0.014635693445868472
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""steps:lower""]",0.10065645514223195,0.10403622693096377,35,35,0.0033797717887318196
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""steps:middle""]",0.11597374179431072,0.10911636504681617,35,35,-0.006857376747494551
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""steps:upper""]",0.10722100656455143,0.10378667176599507,35,35,-0.003434334798556357
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""very_active:lower""]",0.10722100656455143,0.10279596447829531,35,35,-0.004425042086256117
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""very_active:upper""]",0.08971553610503283,0.09240742549013226,35,35,0.0026918893850994274
+itemset_prevalence,"[""coverage:incomplete"",""day:weekday"",""very_active:zero""]",0.13566739606126915,0.13197396901344272,35,35,-0.0036934270478264364
+itemset_prevalence,"[""coverage:incomplete"",""day:weekend"",""steps:lower""]",0.05689277899343545,0.060992063492063486,35,35,0.004099284498628036
+itemset_prevalence,"[""coverage:incomplete"",""day:weekend"",""steps:upper""]",0.05470459518599562,0.05095205546333366,35,35,-0.003752539722661964
+itemset_prevalence,"[""coverage:incomplete"",""day:weekend"",""very_active:lower""]",0.05032822757111598,0.04927586824203366,35,35,-0.0010523593290823197
+itemset_prevalence,"[""coverage:incomplete"",""day:weekend"",""very_active:zero""]",0.07658643326039387,0.07982142857142856,35,35,0.0032349953110346885
+itemset_prevalence,"[""coverage:incomplete"",""steps:lower"",""very_active:zero""]",0.12910284463894967,0.1349146540593909,35,35,0.0058118094204412385
+itemset_prevalence,"[""coverage:incomplete"",""steps:middle"",""very_active:lower""]",0.06345733041575492,0.06156746031746031,35,35,-0.0018898700982946104
+itemset_prevalence,"[""coverage:incomplete"",""steps:middle"",""very_active:zero""]",0.06345733041575492,0.053468045112781956,35,35,-0.009989285302972967
+itemset_prevalence,"[""coverage:incomplete"",""steps:upper"",""very_active:lower""]",0.0700218818380744,0.06510935075784699,35,35,-0.004912531080227406
+itemset_prevalence,"[""coverage:incomplete"",""steps:upper"",""very_active:upper""]",0.08315098468271334,0.07962937647148173,35,35,-0.003521608211231611
+itemset_prevalence,"[""day:weekday"",""steps:lower"",""very_active:zero""]",0.1575492341356674,0.1503020809599757,35,35,-0.007247153175691717
+itemset_prevalence,"[""day:weekday"",""steps:middle"",""very_active:lower""]",0.08315098468271334,0.08454365079365078,35,35,0.0013926661109374405
+itemset_prevalence,"[""day:weekday"",""steps:middle"",""very_active:zero""]",0.10284463894967177,0.08828111946532999,35,35,-0.014563519484341786
+itemset_prevalence,"[""day:weekday"",""steps:upper"",""very_active:lower""]",0.06345733041575492,0.058662429884234396,35,35,-0.004794900531520527
+itemset_prevalence,"[""day:weekday"",""steps:upper"",""very_active:upper""]",0.11159737417943107,0.11523559982206599,35,35,0.0036382256426349263
+itemset_prevalence,"[""day:weekday"",""steps:zero"",""very_active:zero""]",0.087527352297593,0.10331349206349207,35,35,0.01578613976589907
+itemset_prevalence,"[""day:weekend"",""steps:lower"",""very_active:zero""]",0.08971553610503283,0.09095133667502088,35,35,0.001235800569988052
+itemset_prevalence,"[""day:weekend"",""steps:upper"",""very_active:upper""]",0.0525164113785558,0.05385151189662468,35,35,0.0013351005180688852
+rule_confidence,"('active_share:lower',) -> ('calories:lower',)",0.3925925925925926,0.5781410256410257,26,35,0.18554843304843305
+rule_confidence,"('active_share:lower',) -> ('calories:lower', 'day:weekday')",0.25925925925925924,0.38903846153846156,26,35,0.1297792022792023
+rule_confidence,"('active_share:lower',) -> ('calories:lower', 'steps:lower')",0.2222222222222222,0.3098717948717949,26,35,0.08764957264957268
+rule_confidence,"('active_share:lower',) -> ('calories:middle',)",0.5407407407407407,0.39301282051282055,26,35,-0.1477279202279202
+rule_confidence,"('active_share:lower',) -> ('calories:middle', 'day:weekday')",0.37037037037037035,0.2846794871794872,26,35,-0.08569088319088314
+rule_confidence,"('active_share:lower',) -> ('calories:middle', 'day:weekend')",0.17037037037037037,0.10833333333333334,26,35,-0.06203703703703703
+rule_confidence,"('active_share:lower',) -> ('calories:middle', 'steps:lower')",0.2518518518518518,0.23166666666666666,26,35,-0.020185185185185167
+rule_confidence,"('active_share:lower',) -> ('calories:middle', 'steps:zero')",0.2814814814814815,0.1575,26,35,-0.1239814814814815
+rule_confidence,"('active_share:lower',) -> ('day:weekday',)",0.6666666666666666,0.6897435897435897,26,35,0.023076923076923106
+rule_confidence,"('active_share:lower',) -> ('day:weekday', 'steps:lower')",0.32592592592592595,0.39211538461538464,26,35,0.06618945868945869
+rule_confidence,"('active_share:lower',) -> ('day:weekday', 'steps:zero')",0.28888888888888886,0.27455128205128204,26,35,-0.01433760683760682
+rule_confidence,"('active_share:lower',) -> ('day:weekend',)",0.3333333333333333,0.31025641025641026,26,35,-0.02307692307692305
+rule_confidence,"('active_share:lower',) -> ('steps:lower',)",0.48148148148148145,0.5447435897435897,26,35,0.06326210826210826
+rule_confidence,"('active_share:lower',) -> ('steps:zero',)",0.4444444444444444,0.42256410256410254,26,35,-0.02188034188034188
+rule_confidence,"('active_share:lower', 'calories:lower') -> ('day:weekday',)",0.660377358490566,0.644927536231884,23,35,-0.015449822258681967
+rule_confidence,"('active_share:lower', 'calories:lower') -> ('steps:lower',)",0.5660377358490566,0.5797101449275363,23,35,0.013672409078479664
+rule_confidence,"('active_share:lower', 'calories:middle') -> ('day:weekday',)",0.684931506849315,0.7494897959183674,14,35,0.06455828906905237
+rule_confidence,"('active_share:lower', 'calories:middle') -> ('day:weekend',)",0.3150684931506849,0.25051020408163266,14,35,-0.06455828906905225
+rule_confidence,"('active_share:lower', 'calories:middle') -> ('steps:lower',)",0.4657534246575342,0.6067176870748299,14,35,0.14096426241729565
+rule_confidence,"('active_share:lower', 'calories:middle') -> ('steps:zero',)",0.5205479452054794,0.3218537414965987,14,35,-0.19869420370888075
+rule_confidence,"('active_share:lower', 'day:weekday') -> ('calories:lower',)",0.3888888888888889,0.5188852813852814,22,35,0.12999639249639255
+rule_confidence,"('active_share:lower', 'day:weekday') -> ('calories:middle',)",0.5555555555555556,0.45270562770562767,22,35,-0.10284992784992791
+rule_confidence,"('active_share:lower', 'day:weekday') -> ('steps:lower',)",0.4888888888888889,0.5387445887445887,22,35,0.049855699855699875
+rule_confidence,"('active_share:lower', 'day:weekday') -> ('steps:zero',)",0.43333333333333335,0.4206709956709957,22,35,-0.012662337662337653
+rule_confidence,"('active_share:lower', 'day:weekend') -> ('calories:middle',)",0.5111111111111111,0.47916666666666663,16,35,-0.03194444444444444
+rule_confidence,"('active_share:lower', 'steps:lower') -> ('calories:lower',)",0.46153846153846156,0.5798245614035088,19,35,0.11828609986504723
+rule_confidence,"('active_share:lower', 'steps:lower') -> ('calories:middle',)",0.5230769230769231,0.4070175438596491,19,35,-0.116059379217274
+rule_confidence,"('active_share:lower', 'steps:lower') -> ('day:weekday',)",0.676923076923077,0.7141945773524722,19,35,0.0372715004293952
+rule_confidence,"('active_share:lower', 'steps:zero') -> ('calories:middle',)",0.6333333333333333,0.3988095238095238,14,35,-0.23452380952380952
+rule_confidence,"('active_share:lower', 'steps:zero') -> ('day:weekday',)",0.65,0.6819139194139193,14,35,0.0319139194139193
+rule_confidence,"('active_share:middle',) -> ('calories:lower',)",0.21081081081081082,0.1950791396103896,32,35,-0.01573167120042121
+rule_confidence,"('active_share:middle',) -> ('calories:lower', 'day:weekday')",0.12432432432432433,0.11109983766233766,32,35,-0.013224486661986667
+rule_confidence,"('active_share:middle',) -> ('calories:lower', 'steps:lower')",0.15135135135135136,0.13894074675324675,32,35,-0.012410604598104613
+rule_confidence,"('active_share:middle',) -> ('calories:middle',)",0.5081081081081081,0.5300510687229437,32,35,0.021942960614835583
+rule_confidence,"('active_share:middle',) -> ('calories:middle', 'day:weekday')",0.3837837837837838,0.4055871212121212,32,35,0.0218033374283374
+rule_confidence,"('active_share:middle',) -> ('calories:middle', 'day:weekend')",0.12432432432432433,0.12446394751082251,32,35,0.0001396231864981834
+rule_confidence,"('active_share:middle',) -> ('calories:middle', 'steps:lower')",0.16216216216216217,0.16547111742424242,32,35,0.0033089552620802487
+rule_confidence,"('active_share:middle',) -> ('calories:middle', 'steps:middle')",0.24864864864864866,0.2677049512987013,32,35,0.019056302650052648
+rule_confidence,"('active_share:middle',) -> ('calories:upper',)",0.2810810810810811,0.27486979166666664,32,35,-0.006211289414414456
+rule_confidence,"('active_share:middle',) -> ('calories:upper', 'day:weekday')",0.21621621621621623,0.21968005952380953,32,35,0.003463843307593306
+rule_confidence,"('active_share:middle',) -> ('calories:upper', 'steps:middle')",0.13513513513513514,0.15132068452380953,32,35,0.016185549388674392
+rule_confidence,"('active_share:middle',) -> ('day:weekday',)",0.7243243243243244,0.7363670183982683,32,35,0.012042694073943983
+rule_confidence,"('active_share:middle',) -> ('day:weekday', 'steps:lower')",0.1945945945945946,0.1948931277056277,32,35,0.0002985331110330891
+rule_confidence,"('active_share:middle',) -> ('day:weekday', 'steps:middle')",0.34594594594594597,0.37769040854978353,32,35,0.031744462603837564
+rule_confidence,"('active_share:middle',) -> ('day:weekday', 'steps:upper')",0.1837837837837838,0.16378348214285715,32,35,-0.020000301640926643
+rule_confidence,"('active_share:middle',) -> ('day:weekend',)",0.2756756756756757,0.2636329816017316,32,35,-0.012042694073944094
+rule_confidence,"('active_share:middle',) -> ('day:weekend', 'steps:lower')",0.14594594594594595,0.13881561147186147,32,35,-0.007130334474084482
+rule_confidence,"('active_share:middle',) -> ('steps:lower',)",0.34054054054054056,0.33370873917748917,32,35,-0.006831801363051393
+rule_confidence,"('active_share:middle',) -> ('steps:middle',)",0.42162162162162165,0.45998545725108225,32,35,0.03836383562946061
+rule_confidence,"('active_share:middle',) -> ('steps:upper',)",0.23783783783783785,0.20630580357142858,32,35,-0.03153203426640927
+rule_confidence,"('active_share:middle', 'calories:lower') -> ('day:weekday',)",0.5897435897435898,0.5093537414965986,14,35,-0.08038984824699114
+rule_confidence,"('active_share:middle', 'calories:lower') -> ('steps:lower',)",0.717948717948718,0.6913265306122449,14,35,-0.026622187336473035
+rule_confidence,"('active_share:middle', 'calories:middle') -> ('day:weekday',)",0.7553191489361702,0.7372670807453415,23,35,-0.01805206819082872
+rule_confidence,"('active_share:middle', 'calories:middle') -> ('day:weekend',)",0.24468085106382978,0.26273291925465836,23,35,0.01805206819082858
+rule_confidence,"('active_share:middle', 'calories:middle') -> ('steps:lower',)",0.3191489361702128,0.3331953071083506,23,35,0.01404637093813782
+rule_confidence,"('active_share:middle', 'calories:middle') -> ('steps:middle',)",0.48936170212765956,0.47115251897860594,23,35,-0.01820918314905362
+rule_confidence,"('active_share:middle', 'calories:upper') -> ('day:weekday',)",0.7692307692307693,0.7882783882783883,14,35,0.01904761904761898
+rule_confidence,"('active_share:middle', 'calories:upper') -> ('steps:middle',)",0.4807692307692308,0.5494505494505495,14,35,0.06868131868131871
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('calories:lower',)",0.17164179104477612,0.1507936507936508,31,35,-0.020848140251125302
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('calories:middle',)",0.5298507462686567,0.5381464413722479,31,35,0.008295695103591183
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('calories:upper',)",0.29850746268656714,0.31105990783410137,31,35,0.01255244514753423
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('steps:lower',)",0.26865671641791045,0.2631080389144905,31,35,-0.005548677503419919
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('steps:middle',)",0.47761194029850745,0.5159754224270353,31,35,0.03836348212852786
+rule_confidence,"('active_share:middle', 'day:weekday') -> ('steps:upper',)",0.2537313432835821,0.22091653865847413,31,35,-0.03281480462510797
+rule_confidence,"('active_share:middle', 'day:weekend') -> ('calories:middle',)",0.45098039215686275,0.4818840579710145,23,35,0.03090366581415177
+rule_confidence,"('active_share:middle', 'day:weekend') -> ('steps:lower',)",0.5294117647058824,0.5398550724637681,23,35,0.010443307757885711
+rule_confidence,"('active_share:middle', 'steps:lower') -> ('calories:lower',)",0.4444444444444444,0.525,20,35,0.0805555555555556
+rule_confidence,"('active_share:middle', 'steps:lower') -> ('calories:middle',)",0.47619047619047616,0.4083333333333333,20,35,-0.06785714285714284
+rule_confidence,"('active_share:middle', 'steps:lower') -> ('day:weekday',)",0.5714285714285714,0.5316666666666666,20,35,-0.039761904761904776
+rule_confidence,"('active_share:middle', 'steps:lower') -> ('day:weekend',)",0.42857142857142855,0.4683333333333334,20,35,0.03976190476190483
+rule_confidence,"('active_share:middle', 'steps:middle') -> ('calories:middle',)",0.5897435897435898,0.5192307692307693,26,35,-0.07051282051282048
+rule_confidence,"('active_share:middle', 'steps:middle') -> ('calories:upper',)",0.32051282051282054,0.3141025641025641,26,35,-0.006410256410256443
+rule_confidence,"('active_share:middle', 'steps:middle') -> ('day:weekday',)",0.8205128205128205,0.7962606837606838,26,35,-0.024252136752136666
+rule_confidence,"('active_share:middle', 'steps:upper') -> ('day:weekday',)",0.7727272727272727,0.7837962962962962,12,35,0.011069023569023506
+rule_confidence,"('active_share:upper',) -> ('calories:middle',)",0.49635036496350365,0.4539835164835165,26,35,-0.042366848479987174
+rule_confidence,"('active_share:upper',) -> ('calories:middle', 'day:weekday')",0.3284671532846715,0.27510683760683763,26,35,-0.05336031567783389
+rule_confidence,"('active_share:upper',) -> ('calories:middle', 'day:weekend')",0.1678832116788321,0.17887667887667888,26,35,0.010993467197846774
+rule_confidence,"('active_share:upper',) -> ('calories:middle', 'steps:upper')",0.32116788321167883,0.2087912087912088,26,35,-0.11237667442047003
+rule_confidence,"('active_share:upper',) -> ('calories:upper',)",0.39416058394160586,0.4373473748473748,26,35,0.043186790905768935
+rule_confidence,"('active_share:upper',) -> ('calories:upper', 'day:weekday')",0.22627737226277372,0.2538156288156288,26,35,0.027538256552855078
+rule_confidence,"('active_share:upper',) -> ('calories:upper', 'day:weekend')",0.1678832116788321,0.18353174603174602,26,35,0.015648534352913912
+rule_confidence,"('active_share:upper',) -> ('calories:upper', 'steps:upper')",0.24087591240875914,0.25679181929181927,26,35,0.015915906883060132
+rule_confidence,"('active_share:upper',) -> ('day:weekday',)",0.6277372262773723,0.6027930402930403,26,35,-0.024944185984332012
+rule_confidence,"('active_share:upper',) -> ('day:weekday', 'steps:middle')",0.2116788321167883,0.21161477411477408,26,35,-6.405800201422784e-05
+rule_confidence,"('active_share:upper',) -> ('day:weekday', 'steps:upper')",0.36496350364963503,0.3189102564102564,26,35,-0.04605324723937865
+rule_confidence,"('active_share:upper',) -> ('day:weekend',)",0.3722627737226277,0.39720695970695974,26,35,0.024944185984332012
+rule_confidence,"('active_share:upper',) -> ('day:weekend', 'steps:upper')",0.23357664233576642,0.17414529914529914,26,35,-0.05943134319046728
+rule_confidence,"('active_share:upper',) -> ('steps:middle',)",0.3357664233576642,0.4163614163614164,26,35,0.08059499300375217
+rule_confidence,"('active_share:upper',) -> ('steps:upper',)",0.5985401459854015,0.4930555555555556,26,35,-0.10548459042984593
+rule_confidence,"('active_share:upper', 'calories:middle') -> ('day:weekday',)",0.6617647058823529,0.6022970085470085,16,35,-0.059467697335344405
+rule_confidence,"('active_share:upper', 'calories:middle') -> ('day:weekend',)",0.3382352941176471,0.39770299145299143,16,35,0.05946769733534435
+rule_confidence,"('active_share:upper', 'calories:middle') -> ('steps:upper',)",0.6470588235294118,0.5208333333333334,16,35,-0.12622549019607843
+rule_confidence,"('active_share:upper', 'calories:upper') -> ('day:weekday',)",0.5740740740740741,0.5787545787545787,13,35,0.004680504680504627
+rule_confidence,"('active_share:upper', 'calories:upper') -> ('day:weekend',)",0.42592592592592593,0.42124542124542125,13,35,-0.004680504680504682
+rule_confidence,"('active_share:upper', 'calories:upper') -> ('steps:upper',)",0.6111111111111112,0.6034798534798534,13,35,-0.007631257631257715
+rule_confidence,"('active_share:upper', 'day:weekday') -> ('calories:middle',)",0.5232558139534884,0.4221532091097308,23,35,-0.1011026048437576
+rule_confidence,"('active_share:upper', 'day:weekday') -> ('calories:upper',)",0.36046511627906974,0.4524844720496894,23,35,0.09201935577061965
+rule_confidence,"('active_share:upper', 'day:weekday') -> ('steps:middle',)",0.3372093023255814,0.3175465838509317,23,35,-0.019662718474649676
+rule_confidence,"('active_share:upper', 'day:weekday') -> ('steps:upper',)",0.5813953488372093,0.5298654244306418,23,35,-0.05152992440656756
+rule_confidence,"('active_share:upper', 'day:weekend') -> ('calories:middle',)",0.45098039215686275,0.39682539682539686,21,35,-0.054154995331465894
+rule_confidence,"('active_share:upper', 'day:weekend') -> ('calories:upper',)",0.45098039215686275,0.4603174603174603,21,35,0.00933706816059754
+rule_confidence,"('active_share:upper', 'day:weekend') -> ('steps:upper',)",0.6274509803921569,0.4722222222222222,21,35,-0.15522875816993464
+rule_confidence,"('active_share:upper', 'steps:middle') -> ('day:weekday',)",0.6304347826086957,0.5539215686274509,17,35,-0.07651321398124478
+rule_confidence,"('active_share:upper', 'steps:upper') -> ('calories:middle',)",0.5365853658536586,0.38293650793650796,18,35,-0.1536488579171506
+rule_confidence,"('active_share:upper', 'steps:upper') -> ('calories:upper',)",0.4024390243902439,0.5707671957671958,18,35,0.16832817137695189
+rule_confidence,"('active_share:upper', 'steps:upper') -> ('day:weekday',)",0.6097560975609756,0.6523063356396689,18,35,0.04255023807869329
+rule_confidence,"('active_share:upper', 'steps:upper') -> ('day:weekend',)",0.3902439024390244,0.347693664360331,18,35,-0.0425502380786934
+rule_confidence,"('calories:lower',) -> ('active_share:lower',)",0.4953271028037383,0.5789642839882074,33,35,0.08363718118446911
+rule_confidence,"('calories:lower',) -> ('active_share:lower', 'day:weekday')",0.32710280373831774,0.3842008602774153,33,35,0.05709805653909755
+rule_confidence,"('calories:lower',) -> ('active_share:lower', 'steps:lower')",0.2803738317757009,0.3086825189696003,33,35,0.028308687193899396
+rule_confidence,"('calories:lower',) -> ('active_share:middle',)",0.3644859813084112,0.2878401237252912,33,35,-0.07664585758311998
+rule_confidence,"('calories:lower',) -> ('active_share:middle', 'day:weekday')",0.21495327102803738,0.1515924798221449,33,35,-0.06336079120589247
+rule_confidence,"('calories:lower',) -> ('active_share:middle', 'steps:lower')",0.2616822429906542,0.1857764245324054,33,35,-0.07590581845824879
+rule_confidence,"('calories:lower',) -> ('coverage:complete',)",0.4392523364485981,0.2354421407052986,33,35,-0.20381019574329953
+rule_confidence,"('calories:lower',) -> ('coverage:complete', 'day:weekday')",0.27102803738317754,0.13092326776537305,33,35,-0.1401047696178045
+rule_confidence,"('calories:lower',) -> ('coverage:complete', 'steps:lower')",0.2336448598130841,0.07754740386319334,33,35,-0.15609745594989077
+rule_confidence,"('calories:lower',) -> ('coverage:complete', 'very_active:zero')",0.3925233644859813,0.21306042884990253,33,35,-0.17946293563607876
+rule_confidence,"('calories:lower',) -> ('coverage:incomplete',)",0.5607476635514018,0.7645578592947014,33,35,0.20381019574329962
+rule_confidence,"('calories:lower',) -> ('coverage:incomplete', 'day:weekday')",0.3644859813084112,0.5212153432249126,33,35,0.1567293619165014
+rule_confidence,"('calories:lower',) -> ('coverage:incomplete', 'steps:lower')",0.34579439252336447,0.4896388123660851,33,35,0.14384441984272062
+rule_confidence,"('calories:lower',) -> ('coverage:incomplete', 'very_active:zero')",0.4205607476635514,0.5439885296344626,33,35,0.12342778197091125
+rule_confidence,"('calories:lower',) -> ('day:weekday',)",0.6355140186915887,0.6521386109902857,33,35,0.01662459229869695
+rule_confidence,"('calories:lower',) -> ('day:weekday', 'steps:lower')",0.3644859813084112,0.3863434987836902,33,35,0.021857517475278976
+rule_confidence,"('calories:lower',) -> ('day:weekday', 'very_active:zero')",0.5420560747663551,0.5049055144748925,33,35,-0.037150560291462575
+rule_confidence,"('calories:lower',) -> ('day:weekend',)",0.3644859813084112,0.34786138900971436,33,35,-0.01662459229869684
+rule_confidence,"('calories:lower',) -> ('day:weekend', 'steps:lower')",0.21495327102803738,0.18084271744558825,33,35,-0.03411055358244913
+rule_confidence,"('calories:lower',) -> ('day:weekend', 'very_active:zero')",0.27102803738317754,0.2521434440094727,33,35,-0.01888459337370485
+rule_confidence,"('calories:lower',) -> ('steps:lower',)",0.5794392523364486,0.5671862162292785,33,35,-0.012253036107170101
+rule_confidence,"('calories:lower',) -> ('steps:lower', 'very_active:zero')",0.5046728971962616,0.48878981199555366,33,35,-0.01588308520070797
+rule_confidence,"('calories:lower',) -> ('very_active:zero',)",0.8130841121495327,0.7570489584843652,33,35,-0.056035153665167536
+rule_confidence,"('calories:lower', 'coverage:complete') -> ('day:weekday',)",0.6170212765957447,0.6347222222222222,10,35,0.017700945626477504
+rule_confidence,"('calories:lower', 'coverage:complete') -> ('steps:lower',)",0.5319148936170213,0.35833333333333334,10,35,-0.17358156028368793
+rule_confidence,"('calories:lower', 'coverage:complete') -> ('very_active:zero',)",0.8936170212765957,0.8527777777777779,10,35,-0.040839243498817845
+rule_confidence,"('calories:lower', 'coverage:incomplete') -> ('day:weekday',)",0.65,0.7223232323232323,30,35,0.07232323232323223
+rule_confidence,"('calories:lower', 'coverage:incomplete') -> ('steps:lower',)",0.6166666666666667,0.6248989898989898,30,35,0.008232323232323147
+rule_confidence,"('calories:lower', 'coverage:incomplete') -> ('very_active:zero',)",0.75,0.7518181818181818,30,35,0.0018181818181818299
+rule_confidence,"('calories:lower', 'day:weekday') -> ('active_share:lower',)",0.5147058823529411,0.5355734009580163,26,35,0.020867518605075186
+rule_confidence,"('calories:lower', 'day:weekday') -> ('active_share:middle',)",0.3382352941176471,0.2716610312764159,26,35,-0.06657426284123119
+rule_confidence,"('calories:lower', 'day:weekday') -> ('coverage:complete',)",0.4264705882352941,0.22140039447731755,26,35,-0.20507019375797655
+rule_confidence,"('calories:lower', 'day:weekday') -> ('coverage:incomplete',)",0.5735294117647058,0.7785996055226825,26,35,0.20507019375797664
+rule_confidence,"('calories:lower', 'day:weekday') -> ('steps:lower',)",0.5735294117647058,0.6106649760495915,26,35,0.037135564284885625
+rule_confidence,"('calories:lower', 'day:weekday') -> ('very_active:zero',)",0.8529411764705882,0.7690194420963652,26,35,-0.08392173437422301
+rule_confidence,"('calories:lower', 'day:weekend') -> ('steps:lower',)",0.5897435897435898,0.5601851851851852,18,35,-0.029558404558404527
+rule_confidence,"('calories:lower', 'day:weekend') -> ('very_active:zero',)",0.7435897435897436,0.7268518518518519,18,35,-0.016737891737891752
+rule_confidence,"('calories:lower', 'steps:lower') -> ('active_share:lower',)",0.4838709677419355,0.5208764665286404,23,35,0.03700549878670489
+rule_confidence,"('calories:lower', 'steps:lower') -> ('active_share:middle',)",0.45161290322580644,0.37042788129744647,23,35,-0.08118502192835997
+rule_confidence,"('calories:lower', 'steps:lower') -> ('coverage:complete',)",0.4032258064516129,0.1956521739130435,23,35,-0.2075736325385694
+rule_confidence,"('calories:lower', 'steps:lower') -> ('coverage:incomplete',)",0.5967741935483871,0.8043478260869565,23,35,0.20757363253856942
+rule_confidence,"('calories:lower', 'steps:lower') -> ('day:weekday',)",0.6290322580645161,0.6770186335403726,23,35,0.04798637547585649
+rule_confidence,"('calories:lower', 'steps:lower') -> ('day:weekend',)",0.3709677419354839,0.32298136645962733,23,35,-0.047986375475856546
+rule_confidence,"('calories:lower', 'steps:lower') -> ('very_active:zero',)",0.8709677419354839,0.8669772256728778,23,35,-0.0039905162626060475
+rule_confidence,"('calories:lower', 'very_active:zero') -> ('coverage:complete',)",0.4827586206896552,0.27292423142096345,27,35,-0.20983438926869175
+rule_confidence,"('calories:lower', 'very_active:zero') -> ('coverage:incomplete',)",0.5172413793103449,0.7270757685790366,27,35,0.2098343892686917
+rule_confidence,"('calories:lower', 'very_active:zero') -> ('day:weekday',)",0.6666666666666666,0.6687363834422657,27,35,0.002069716775599084
+rule_confidence,"('calories:lower', 'very_active:zero') -> ('day:weekend',)",0.3333333333333333,0.3312636165577342,27,35,-0.0020697167755991397
+rule_confidence,"('calories:lower', 'very_active:zero') -> ('steps:lower',)",0.6206896551724138,0.6535100459937061,27,35,0.03282039082129229
+rule_confidence,"('calories:middle',) -> ('active_share:lower',)",0.31063829787234043,0.30644137224782386,30,35,-0.004196925624516568
+rule_confidence,"('calories:middle',) -> ('active_share:lower', 'day:weekday')",0.2127659574468085,0.2277124935995904,30,35,0.01494653615278188
+rule_confidence,"('calories:middle',) -> ('active_share:lower', 'day:weekend')",0.09787234042553192,0.07872887864823348,30,35,-0.019143461777298434
+rule_confidence,"('calories:middle',) -> ('active_share:lower', 'steps:lower')",0.14468085106382977,0.15218509984639017,30,35,0.0075042487825603965
+rule_confidence,"('calories:middle',) -> ('active_share:lower', 'steps:zero')",0.16170212765957448,0.14314516129032256,30,35,-0.018556966369251915
+rule_confidence,"('calories:middle',) -> ('active_share:middle',)",0.4,0.4191905421340905,30,35,0.019190542134090494
+rule_confidence,"('calories:middle',) -> ('active_share:middle', 'day:weekday')",0.3021276595744681,0.2979471558907043,30,35,-0.00418050368376377
+rule_confidence,"('calories:middle',) -> ('active_share:middle', 'day:weekend')",0.09787234042553192,0.12124338624338624,30,35,0.02337104581785432
+rule_confidence,"('calories:middle',) -> ('active_share:middle', 'steps:lower')",0.1276595744680851,0.16125661375661376,30,35,0.03359703928852867
+rule_confidence,"('calories:middle',) -> ('active_share:middle', 'steps:middle')",0.19574468085106383,0.17489821409176246,30,35,-0.02084646675930138
+rule_confidence,"('calories:middle',) -> ('active_share:upper',)",0.28936170212765955,0.2743680856180856,30,35,-0.014993616509573926
+rule_confidence,"('calories:middle',) -> ('active_share:upper', 'day:weekday')",0.19148936170212766,0.19975080475080473,30,35,0.00826144304867707
+rule_confidence,"('calories:middle',) -> ('active_share:upper', 'day:weekend')",0.09787234042553192,0.07461728086728087,30,35,-0.02325505955825105
+rule_confidence,"('calories:middle',) -> ('active_share:upper', 'steps:upper')",0.18723404255319148,0.17719155844155843,30,35,-0.010042484111633054
+rule_confidence,"('calories:middle',) -> ('coverage:complete',)",0.5404255319148936,0.5532738095238094,30,35,0.012848277608915826
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'day:weekday')",0.3872340425531915,0.4113306451612903,30,35,0.024096602608098816
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'day:weekend')",0.15319148936170213,0.1419431643625192,30,35,-0.011248324999182935
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'steps:lower')",0.14468085106382977,0.14494965011094044,30,35,0.0002687990471106627
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'steps:middle')",0.17446808510638298,0.17559566478921315,30,35,0.001127579682830171
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'steps:zero')",0.16170212765957448,0.14314516129032256,30,35,-0.018556966369251915
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'very_active:lower')",0.11063829787234042,0.1687879757637822,30,35,0.05814967789144179
+rule_confidence,"('calories:middle',) -> ('coverage:complete', 'very_active:zero')",0.37446808510638296,0.3201169141491722,30,35,-0.05435117095721076
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete',)",0.4595744680851064,0.44672619047619044,30,35,-0.012848277608915937
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'day:weekday')",0.3191489361702128,0.3140798090798091,30,35,-0.005069127090403691
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'day:weekend')",0.14042553191489363,0.13264638139638138,30,35,-0.007779150518512246
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'steps:lower')",0.13617021276595745,0.181984126984127,30,35,0.04581391421816955
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'steps:middle')",0.11914893617021277,0.0940981240981241,30,35,-0.025050812072088674
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'steps:upper')",0.20425531914893616,0.17064393939393938,30,35,-0.033611379754996784
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'very_active:lower')",0.19148936170212766,0.19917429792429792,30,35,0.007684936222170258
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'very_active:upper')",0.1148936170212766,0.08917887667887667,30,35,-0.025714740342399928
+rule_confidence,"('calories:middle',) -> ('coverage:incomplete', 'very_active:zero')",0.15319148936170213,0.15837301587301586,30,35,0.005181526511313733
+rule_confidence,"('calories:middle',) -> ('day:weekday',)",0.7063829787234043,0.7254104542410994,30,35,0.019027475517695125
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'steps:lower')",0.1829787234042553,0.2234924901860386,30,35,0.040513766781783284
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'steps:middle')",0.225531914893617,0.20475752145106982,30,35,-0.020774393442547195
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'steps:upper')",0.18723404255319148,0.1903478465978466,30,35,0.0031138040446551107
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'steps:zero')",0.11063829787234042,0.10681259600614439,30,35,-0.0038257018661960324
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'very_active:lower')",0.2170212765957447,0.2738265005603715,30,35,0.05680522396462681
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'very_active:upper')",0.1276595744680851,0.12401482925676473,30,35,-0.0036447452113203688
+rule_confidence,"('calories:middle',) -> ('day:weekday', 'very_active:zero')",0.3617021276595745,0.32756912442396313,30,35,-0.03413300323561136
+rule_confidence,"('calories:middle',) -> ('day:weekend',)",0.2936170212765957,0.2745895457589006,30,35,-0.019027475517695125
+rule_confidence,"('calories:middle',) -> ('day:weekend', 'steps:lower')",0.09787234042553192,0.10344128690902885,30,35,0.005568946483496928
+rule_confidence,"('calories:middle',) -> ('day:weekend', 'very_active:zero')",0.16595744680851063,0.15092080559822493,30,35,-0.015036641210285695
+rule_confidence,"('calories:middle',) -> ('steps:lower',)",0.28085106382978725,0.32693377709506743,30,35,0.046082713265280184
+rule_confidence,"('calories:middle',) -> ('steps:lower', 'very_active:zero')",0.2297872340425532,0.20819977811913296,30,35,-0.021587455923420235
+rule_confidence,"('calories:middle',) -> ('steps:middle',)",0.2936170212765957,0.26969378888733725,30,35,-0.023923232389258475
+rule_confidence,"('calories:middle',) -> ('steps:middle', 'very_active:lower')",0.14042553191489363,0.12917194215581312,30,35,-0.011253589759080501
+rule_confidence,"('calories:middle',) -> ('steps:middle', 'very_active:zero')",0.13617021276595745,0.12635133981908175,30,35,-0.009818872946875695
+rule_confidence,"('calories:middle',) -> ('steps:upper',)",0.26382978723404255,0.2602272727272727,30,35,-0.0036025145067698494
+rule_confidence,"('calories:middle',) -> ('steps:upper', 'very_active:lower')",0.11914893617021277,0.13533411033411033,30,35,0.01618517416389756
+rule_confidence,"('calories:middle',) -> ('steps:upper', 'very_active:upper')",0.14042553191489363,0.11933760683760683,30,35,-0.021087925077286795
+rule_confidence,"('calories:middle',) -> ('steps:zero',)",0.16170212765957448,0.14314516129032256,30,35,-0.018556966369251915
+rule_confidence,"('calories:middle',) -> ('steps:zero', 'very_active:zero')",0.1574468085106383,0.13838325652841782,30,35,-0.019063551982220484
+rule_confidence,"('calories:middle',) -> ('very_active:lower',)",0.3021276595744681,0.36796227368808015,30,35,0.06583461411361208
+rule_confidence,"('calories:middle',) -> ('very_active:upper',)",0.1702127659574468,0.15354779628973175,30,35,-0.01666496966771505
+rule_confidence,"('calories:middle',) -> ('very_active:zero',)",0.5276595744680851,0.4784899300221881,30,35,-0.049169644445897
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('day:weekday',)",0.7165354330708661,0.7327311382711102,23,35,0.01619570520024416
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('day:weekend',)",0.28346456692913385,0.26726886172888975,23,35,-0.016195705200244104
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('steps:lower',)",0.2677165354330709,0.3523842917251052,23,35,0.08466775629203432
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('steps:middle',)",0.3228346456692913,0.290614773258532,23,35,-0.0322198724107593
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('steps:zero',)",0.2992125984251969,0.19033426834969613,23,35,-0.10887833007550074
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('very_active:lower',)",0.2047244094488189,0.28067410227298023,23,35,0.07594969282416134
+rule_confidence,"('calories:middle', 'coverage:complete') -> ('very_active:zero',)",0.6929133858267716,0.5882649880896725,23,35,-0.10464839773709911
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('day:weekday',)",0.6944444444444444,0.6034864258548469,19,35,-0.09095801858959751
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('day:weekend',)",0.3055555555555556,0.3965135741451531,19,35,0.09095801858959751
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('steps:lower',)",0.2962962962962963,0.4405901116427432,19,35,0.14429381534644692
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('steps:middle',)",0.25925925925925924,0.23843700159489634,19,35,-0.02082225766436291
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('steps:upper',)",0.4444444444444444,0.32097288676236047,19,35,-0.12347155768208395
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('very_active:lower',)",0.4166666666666667,0.41271886008728115,19,35,-0.003947806579385538
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('very_active:upper',)",0.25,0.15278581068054753,19,35,-0.09721418931945247
+rule_confidence,"('calories:middle', 'coverage:incomplete') -> ('very_active:zero',)",0.3333333333333333,0.4344953292321713,19,35,0.10116199589883801
+rule_confidence,"('calories:middle', 'day:weekday') -> ('active_share:lower',)",0.30120481927710846,0.3101587301587302,30,35,0.00895391088162173
+rule_confidence,"('calories:middle', 'day:weekday') -> ('active_share:middle',)",0.42771084337349397,0.42692640692640693,30,35,-0.0007844364470870335
+rule_confidence,"('calories:middle', 'day:weekday') -> ('active_share:upper',)",0.2710843373493976,0.2629148629148629,30,35,-0.008169474434534696
+rule_confidence,"('calories:middle', 'day:weekday') -> ('coverage:complete',)",0.5481927710843374,0.5886147186147187,30,35,0.04042194753038131
+rule_confidence,"('calories:middle', 'day:weekday') -> ('coverage:incomplete',)",0.45180722891566266,0.4113852813852814,30,35,-0.04042194753038125
+rule_confidence,"('calories:middle', 'day:weekday') -> ('steps:lower',)",0.25903614457831325,0.3036507936507936,30,35,0.04461464907248036
+rule_confidence,"('calories:middle', 'day:weekday') -> ('steps:middle',)",0.3192771084337349,0.2817989417989418,30,35,-0.037478166634793086
+rule_confidence,"('calories:middle', 'day:weekday') -> ('steps:upper',)",0.26506024096385544,0.26455026455026454,30,35,-0.0005099764135909068
+rule_confidence,"('calories:middle', 'day:weekday') -> ('steps:zero',)",0.1566265060240964,0.15,30,35,-0.006626506024096396
+rule_confidence,"('calories:middle', 'day:weekday') -> ('very_active:lower',)",0.3072289156626506,0.3396993746993747,30,35,0.03247045903672413
+rule_confidence,"('calories:middle', 'day:weekday') -> ('very_active:upper',)",0.18072289156626506,0.2095863395863396,30,35,0.02886344802007454
+rule_confidence,"('calories:middle', 'day:weekday') -> ('very_active:zero',)",0.5120481927710844,0.45071428571428573,30,35,-0.06133390705679864
+rule_confidence,"('calories:middle', 'day:weekend') -> ('active_share:lower',)",0.3333333333333333,0.3066666666666667,25,35,-0.026666666666666616
+rule_confidence,"('calories:middle', 'day:weekend') -> ('active_share:middle',)",0.3333333333333333,0.4,25,35,0.06666666666666671
+rule_confidence,"('calories:middle', 'day:weekend') -> ('active_share:upper',)",0.3333333333333333,0.29333333333333333,25,35,-0.03999999999999998
+rule_confidence,"('calories:middle', 'day:weekend') -> ('coverage:complete',)",0.5217391304347826,0.5233333333333333,25,35,0.0015942028985507228
+rule_confidence,"('calories:middle', 'day:weekend') -> ('coverage:incomplete',)",0.4782608695652174,0.4766666666666666,25,35,-0.0015942028985507783
+rule_confidence,"('calories:middle', 'day:weekend') -> ('steps:lower',)",0.3333333333333333,0.3493333333333333,25,35,0.01599999999999996
+rule_confidence,"('calories:middle', 'day:weekend') -> ('very_active:zero',)",0.5652173913043478,0.5726666666666667,25,35,0.0074492753623188745
+rule_confidence,"('calories:middle', 'steps:lower') -> ('active_share:lower',)",0.5151515151515151,0.43839285714285714,16,35,-0.076758658008658
+rule_confidence,"('calories:middle', 'steps:lower') -> ('active_share:middle',)",0.45454545454545453,0.5329613095238095,16,35,0.07841585497835496
+rule_confidence,"('calories:middle', 'steps:lower') -> ('coverage:complete',)",0.5151515151515151,0.5077380952380952,16,35,-0.0074134199134199275
+rule_confidence,"('calories:middle', 'steps:lower') -> ('coverage:incomplete',)",0.48484848484848486,0.4922619047619048,16,35,0.0074134199134199275
+rule_confidence,"('calories:middle', 'steps:lower') -> ('day:weekday',)",0.6515151515151515,0.6260822510822511,16,35,-0.025432900432900363
+rule_confidence,"('calories:middle', 'steps:lower') -> ('day:weekend',)",0.3484848484848485,0.3739177489177489,16,35,0.025432900432900418
+rule_confidence,"('calories:middle', 'steps:lower') -> ('very_active:zero',)",0.8181818181818182,0.7130681818181818,16,35,-0.10511363636363646
+rule_confidence,"('calories:middle', 'steps:middle') -> ('active_share:middle',)",0.6666666666666666,0.7124338624338624,15,35,0.04576719576719579
+rule_confidence,"('calories:middle', 'steps:middle') -> ('coverage:complete',)",0.5942028985507246,0.6281481481481481,15,35,0.03394524959742351
+rule_confidence,"('calories:middle', 'steps:middle') -> ('coverage:incomplete',)",0.4057971014492754,0.3718518518518518,15,35,-0.033945249597423566
+rule_confidence,"('calories:middle', 'steps:middle') -> ('day:weekday',)",0.7681159420289855,0.7528042328042328,15,35,-0.015311709224752668
+rule_confidence,"('calories:middle', 'steps:middle') -> ('very_active:lower',)",0.4782608695652174,0.38999999999999996,15,35,-0.08826086956521745
+rule_confidence,"('calories:middle', 'steps:middle') -> ('very_active:zero',)",0.463768115942029,0.5404761904761906,15,35,0.07670807453416156
+rule_confidence,"('calories:middle', 'steps:upper') -> ('active_share:upper',)",0.7096774193548387,0.6131993006993007,13,35,-0.09647811865553801
+rule_confidence,"('calories:middle', 'steps:upper') -> ('coverage:incomplete',)",0.7741935483870968,0.6266025641025641,13,35,-0.14759098428453266
+rule_confidence,"('calories:middle', 'steps:upper') -> ('day:weekday',)",0.7096774193548387,0.7005446476600323,13,35,-0.009132771694806419
+rule_confidence,"('calories:middle', 'steps:upper') -> ('very_active:lower',)",0.45161290322580644,0.43235610543302855,13,35,-0.01925679779277789
+rule_confidence,"('calories:middle', 'steps:upper') -> ('very_active:upper',)",0.532258064516129,0.4907208176438945,13,35,-0.04153724687223448
+rule_confidence,"('calories:middle', 'steps:zero') -> ('active_share:lower',)",1.0,1.0,6,35,0.0
+rule_confidence,"('calories:middle', 'steps:zero') -> ('coverage:complete',)",1.0,1.0,6,35,0.0
+rule_confidence,"('calories:middle', 'steps:zero') -> ('day:weekday',)",0.6842105263157895,0.7611721611721611,6,35,0.07696163485637164
+rule_confidence,"('calories:middle', 'steps:zero') -> ('very_active:zero',)",0.9736842105263158,0.9761904761904762,6,35,0.0025062656641603454
+rule_confidence,"('calories:middle', 'very_active:lower') -> ('coverage:complete',)",0.36619718309859156,0.5303030303030303,22,35,0.16410584720443872
+rule_confidence,"('calories:middle', 'very_active:lower') -> ('coverage:incomplete',)",0.6338028169014085,0.4696969696969697,22,35,-0.16410584720443877
+rule_confidence,"('calories:middle', 'very_active:lower') -> ('day:weekday',)",0.7183098591549296,0.7334022038567493,22,35,0.015092344701819638
+rule_confidence,"('calories:middle', 'very_active:lower') -> ('steps:middle',)",0.4647887323943662,0.45385674931129477,22,35,-0.010931983083071417
+rule_confidence,"('calories:middle', 'very_active:lower') -> ('steps:upper',)",0.39436619718309857,0.3264462809917355,22,35,-0.06791991619136306
+rule_confidence,"('calories:middle', 'very_active:upper') -> ('coverage:incomplete',)",0.675,0.4230769230769231,13,35,-0.25192307692307697
+rule_confidence,"('calories:middle', 'very_active:upper') -> ('day:weekday',)",0.75,0.6446886446886447,13,35,-0.10531135531135527
+rule_confidence,"('calories:middle', 'very_active:upper') -> ('steps:upper',)",0.825,0.6282051282051282,13,35,-0.19679487179487176
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('coverage:complete',)",0.7096774193548387,0.6344671201814059,21,35,-0.0752102991734328
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('coverage:incomplete',)",0.2903225806451613,0.3655328798185941,21,35,0.0752102991734328
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('day:weekday',)",0.6854838709677419,0.6293650793650793,21,35,-0.05611879160266253
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('day:weekend',)",0.31451612903225806,0.37063492063492065,21,35,0.05611879160266259
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('steps:lower',)",0.43548387096774194,0.4153691106072059,21,35,-0.020114760360536055
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('steps:middle',)",0.25806451612903225,0.35149911816578483,21,35,0.09343460203675258
+rule_confidence,"('calories:middle', 'very_active:zero') -> ('steps:zero',)",0.29838709677419356,0.22360796170319977,21,35,-0.07477913507099379
+rule_confidence,"('calories:upper',) -> ('active_share:middle',)",0.45217391304347826,0.4539088362617774,17,35,0.0017349232182991559
+rule_confidence,"('calories:upper',) -> ('active_share:middle', 'day:weekday')",0.34782608695652173,0.3141149699973229,17,35,-0.03371111695919882
+rule_confidence,"('calories:upper',) -> ('active_share:middle', 'steps:middle')",0.21739130434782608,0.2947550815197874,17,35,0.07736377717196133
+rule_confidence,"('calories:upper',) -> ('active_share:upper',)",0.46956521739130436,0.5257291727879964,17,35,0.056163955396692
+rule_confidence,"('calories:upper',) -> ('active_share:upper', 'day:weekday')",0.26956521739130435,0.29591568562156795,17,35,0.026350468230263602
+rule_confidence,"('calories:upper',) -> ('active_share:upper', 'day:weekend')",0.2,0.22981348716642835,17,35,0.029813487166428343
+rule_confidence,"('calories:upper',) -> ('active_share:upper', 'steps:upper')",0.28695652173913044,0.31014165572989105,17,35,0.02318513399076061
+rule_confidence,"('calories:upper',) -> ('coverage:complete',)",0.5130434782608696,0.5243212669683258,17,35,0.011277788707456216
+rule_confidence,"('calories:upper',) -> ('coverage:complete', 'day:weekday')",0.33043478260869563,0.33573632250102836,17,35,0.0053015398923327295
+rule_confidence,"('calories:upper',) -> ('coverage:complete', 'steps:upper')",0.3130434782608696,0.24717194570135745,17,35,-0.06587153255951214
+rule_confidence,"('calories:upper',) -> ('coverage:complete', 'very_active:upper')",0.2608695652173913,0.21950843274372686,17,35,-0.041361132473664436
+rule_confidence,"('calories:upper',) -> ('coverage:incomplete',)",0.48695652173913045,0.47567873303167424,17,35,-0.011277788707456216
+rule_confidence,"('calories:upper',) -> ('coverage:incomplete', 'day:weekday')",0.33043478260869563,0.2856065503124327,17,35,-0.044828232296262926
+rule_confidence,"('calories:upper',) -> ('coverage:incomplete', 'steps:middle')",0.28695652173913044,0.2558177117000646,17,35,-0.031138810039065823
+rule_confidence,"('calories:upper',) -> ('day:weekday',)",0.6608695652173913,0.621342872813461,17,35,-0.03952669240393025
+rule_confidence,"('calories:upper',) -> ('day:weekday', 'steps:middle')",0.3217391304347826,0.27976190476190477,17,35,-0.041977225672877816
+rule_confidence,"('calories:upper',) -> ('day:weekday', 'steps:upper')",0.2956521739130435,0.29375542757895695,17,35,-0.001896746334086541
+rule_confidence,"('calories:upper',) -> ('day:weekday', 'very_active:upper')",0.3130434782608696,0.3118435486082545,17,35,-0.001199929652615117
+rule_confidence,"('calories:upper',) -> ('day:weekend',)",0.3391304347826087,0.37865712718653893,17,35,0.03952669240393025
+rule_confidence,"('calories:upper',) -> ('steps:middle',)",0.43478260869565216,0.4600032320620556,17,35,0.02522062336640346
+rule_confidence,"('calories:upper',) -> ('steps:upper',)",0.48695652173913045,0.4516986281692164,17,35,-0.035257893569914045
+rule_confidence,"('calories:upper',) -> ('steps:upper', 'very_active:upper')",0.34782608695652173,0.3144682115270351,17,35,-0.03335787542948665
+rule_confidence,"('calories:upper',) -> ('very_active:lower',)",0.28695652173913044,0.32629706894412774,17,35,0.0393405472049973
+rule_confidence,"('calories:upper',) -> ('very_active:upper',)",0.45217391304347826,0.4196718314365373,17,35,-0.03250208160694096
+rule_confidence,"('calories:upper',) -> ('very_active:zero',)",0.2608695652173913,0.2540310996193349,17,35,-0.006838465598056398
+rule_confidence,"('calories:upper', 'coverage:complete') -> ('day:weekday',)",0.6440677966101694,0.64129279811098,11,35,-0.002774998499189496
+rule_confidence,"('calories:upper', 'coverage:complete') -> ('steps:upper',)",0.6101694915254238,0.4220779220779221,11,35,-0.18809156944750166
+rule_confidence,"('calories:upper', 'coverage:complete') -> ('very_active:upper',)",0.5084745762711864,0.43087367178276276,11,35,-0.07760090448842366
+rule_confidence,"('calories:upper', 'coverage:incomplete') -> ('day:weekday',)",0.6785714285714286,0.5880952380952381,10,35,-0.09047619047619049
+rule_confidence,"('calories:upper', 'coverage:incomplete') -> ('steps:middle',)",0.5892857142857143,0.5380952380952382,10,35,-0.05119047619047612
+rule_confidence,"('calories:upper', 'day:weekday') -> ('active_share:middle',)",0.5263157894736842,0.4974696545284781,15,35,-0.028846134945206103
+rule_confidence,"('calories:upper', 'day:weekday') -> ('active_share:upper',)",0.40789473684210525,0.48292250233426703,15,35,0.07502776549216178
+rule_confidence,"('calories:upper', 'day:weekday') -> ('coverage:complete',)",0.5,0.5630718954248366,15,35,0.0630718954248366
+rule_confidence,"('calories:upper', 'day:weekday') -> ('coverage:incomplete',)",0.5,0.4369281045751634,15,35,-0.0630718954248366
+rule_confidence,"('calories:upper', 'day:weekday') -> ('steps:middle',)",0.4868421052631579,0.42240896358543417,15,35,-0.06443314167772374
+rule_confidence,"('calories:upper', 'day:weekday') -> ('steps:upper',)",0.4473684210526316,0.47641456582633057,15,35,0.02904614477369899
+rule_confidence,"('calories:upper', 'day:weekday') -> ('very_active:upper',)",0.47368421052631576,0.4737628384687208,15,35,7.862794240504067e-05
+rule_confidence,"('calories:upper', 'day:weekend') -> ('active_share:upper',)",0.5897435897435898,0.6468253968253969,14,35,0.0570818070818071
+rule_confidence,"('calories:upper', 'steps:middle') -> ('active_share:middle',)",0.5,0.6157894736842106,11,35,0.11578947368421055
+rule_confidence,"('calories:upper', 'steps:middle') -> ('coverage:incomplete',)",0.66,0.5933014354066986,11,35,-0.06669856459330148
+rule_confidence,"('calories:upper', 'steps:middle') -> ('day:weekday',)",0.74,0.6803827751196172,11,35,-0.05961722488038279
+rule_confidence,"('calories:upper', 'steps:upper') -> ('active_share:upper',)",0.5892857142857143,0.7190656565656566,12,35,0.12977994227994227
+rule_confidence,"('calories:upper', 'steps:upper') -> ('coverage:complete',)",0.6428571428571429,0.44097222222222227,12,35,-0.20188492063492064
+rule_confidence,"('calories:upper', 'steps:upper') -> ('day:weekday',)",0.6071428571428571,0.6377525252525252,12,35,0.030609668109668142
+rule_confidence,"('calories:upper', 'steps:upper') -> ('very_active:upper',)",0.7142857142857143,0.6306818181818182,12,35,-0.08360389610389607
+rule_confidence,"('calories:upper', 'very_active:upper') -> ('coverage:complete',)",0.5769230769230769,0.6,10,35,0.023076923076923106
+rule_confidence,"('calories:upper', 'very_active:upper') -> ('day:weekday',)",0.6923076923076923,0.7294444444444445,10,35,0.03713675213675216
+rule_confidence,"('calories:upper', 'very_active:upper') -> ('steps:upper',)",0.7692307692307693,0.6873015873015873,10,35,-0.08192918192918197
+rule_confidence,"('coverage:complete',) -> ('calories:lower',)",0.2017167381974249,0.22421923314780456,28,35,0.022502494950379676
+rule_confidence,"('coverage:complete',) -> ('calories:lower', 'day:weekday')",0.12446351931330472,0.12952226345083487,28,35,0.005058744137530144
+rule_confidence,"('coverage:complete',) -> ('calories:lower', 'steps:lower')",0.1072961373390558,0.07400535971964543,28,35,-0.033290777619410364
+rule_confidence,"('coverage:complete',) -> ('calories:lower', 'very_active:zero')",0.18025751072961374,0.2048289012574727,28,35,0.02457139052785895
+rule_confidence,"('coverage:complete',) -> ('calories:middle',)",0.5450643776824035,0.5587829828901257,28,35,0.013718605207722279
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'day:weekday')",0.3905579399141631,0.40476585306654433,28,35,0.014207913152381235
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'day:weekend')",0.15450643776824036,0.15401712982358143,28,35,-0.0004893079446589288
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'steps:lower')",0.1459227467811159,0.1915985480213591,28,35,0.0456758012402432
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'steps:middle')",0.1759656652360515,0.16574463363057834,28,35,-0.010221031605473163
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'steps:zero')",0.1630901287553648,0.13522922609904178,28,35,-0.027860902656323017
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'very_active:lower')",0.11158798283261803,0.12495178912229603,28,35,0.013363806289677996
+rule_confidence,"('coverage:complete',) -> ('calories:middle', 'very_active:zero')",0.3776824034334764,0.3639497343414394,28,35,-0.01373266909203702
+rule_confidence,"('coverage:complete',) -> ('calories:upper',)",0.2532188841201717,0.21699778396206967,28,35,-0.03622110015810201
+rule_confidence,"('coverage:complete',) -> ('calories:upper', 'day:weekday')",0.1630901287553648,0.13733572974644404,28,35,-0.025754399008920764
+rule_confidence,"('coverage:complete',) -> ('calories:upper', 'steps:upper')",0.15450643776824036,0.13026309008451867,28,35,-0.02424334768372169
+rule_confidence,"('coverage:complete',) -> ('calories:upper', 'very_active:upper')",0.12875536480686695,0.11232542259327974,28,35,-0.016429942213587206
+rule_confidence,"('coverage:complete',) -> ('day:weekday',)",0.6781115879828327,0.6716238462638232,28,35,-0.006487741719009454
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'steps:lower')",0.17167381974248927,0.1753045181904629,28,35,0.003630698447973618
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'steps:middle')",0.2017167381974249,0.18229405643000113,28,35,-0.01942268176742376
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'steps:upper')",0.15021459227467812,0.14476976396619254,28,35,-0.005444828308485583
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'steps:zero')",0.15450643776824036,0.16925550767716666,28,35,0.014749069908926299
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'very_active:lower')",0.12017167381974249,0.11893602749017496,28,35,-0.001235646329567533
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'very_active:upper')",0.12446351931330472,0.13207160063438866,28,35,0.00760808132108394
+rule_confidence,"('coverage:complete',) -> ('day:weekday', 'very_active:zero')",0.4334763948497854,0.4206162181392596,28,35,-0.012860176710525806
+rule_confidence,"('coverage:complete',) -> ('day:weekend',)",0.3218884120171674,0.32837615373617673,28,35,0.006487741719009343
+rule_confidence,"('coverage:complete',) -> ('day:weekend', 'steps:lower')",0.10300429184549356,0.10606611290655069,28,35,0.003061821061057124
+rule_confidence,"('coverage:complete',) -> ('day:weekend', 'very_active:zero')",0.18454935622317598,0.18862443560024203,28,35,0.004075079377066054
+rule_confidence,"('coverage:complete',) -> ('steps:lower',)",0.27467811158798283,0.2813706310970136,28,35,0.00669251950903077
+rule_confidence,"('coverage:complete',) -> ('steps:lower', 'very_active:zero')",0.2317596566523605,0.22662458189531923,28,35,-0.00513507475704128
+rule_confidence,"('coverage:complete',) -> ('steps:middle',)",0.26180257510729615,0.23882557055080095,28,35,-0.022977004556495206
+rule_confidence,"('coverage:complete',) -> ('steps:middle', 'very_active:lower')",0.1072961373390558,0.10093716127702303,28,35,-0.00635897606203277
+rule_confidence,"('coverage:complete',) -> ('steps:middle', 'very_active:zero')",0.14163090128755365,0.10995062125534474,28,35,-0.03168028003220891
+rule_confidence,"('coverage:complete',) -> ('steps:upper',)",0.22746781115879827,0.2093704906204906,28,35,-0.018097320538307676
+rule_confidence,"('coverage:complete',) -> ('steps:upper', 'very_active:upper')",0.15879828326180256,0.1436044114615543,28,35,-0.015193871800248254
+rule_confidence,"('coverage:complete',) -> ('steps:zero',)",0.23605150214592274,0.2704333077316948,28,35,0.034381805585772085
+rule_confidence,"('coverage:complete',) -> ('steps:zero', 'very_active:zero')",0.2317596566523605,0.2664650537634409,28,35,0.034705397111080366
+rule_confidence,"('coverage:complete',) -> ('very_active:lower',)",0.19742489270386265,0.2085524642408283,28,35,0.011127571536965641
+rule_confidence,"('coverage:complete',) -> ('very_active:upper',)",0.18454935622317598,0.18220688201967003,28,35,-0.0023424742035059454
+rule_confidence,"('coverage:complete',) -> ('very_active:zero',)",0.6180257510729614,0.6092406537395016,28,35,-0.00878509733345978
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('calories:lower',)",0.18354430379746836,0.19620811287477954,27,35,0.012663809077311183
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('calories:middle',)",0.5759493670886076,0.589714606381273,27,35,0.013765239292665488
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('calories:upper',)",0.24050632911392406,0.2140772807439474,27,35,-0.026429048369976643
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('steps:lower',)",0.25316455696202533,0.26620169953503287,27,35,0.013037142573007532
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('steps:middle',)",0.2974683544303797,0.2877505210838544,27,35,-0.009717833346525317
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('steps:upper',)",0.22151898734177214,0.21147987814654481,27,35,-0.010039109195227325
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('steps:zero',)",0.22784810126582278,0.2345679012345679,27,35,0.00671979996874511
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('very_active:lower',)",0.17721518987341772,0.17542889209555876,27,35,-0.001786297777858964
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('very_active:upper',)",0.18354430379746836,0.20848164181497514,27,35,0.024937338017506777
+rule_confidence,"('coverage:complete', 'day:weekday') -> ('very_active:zero',)",0.6392405063291139,0.6160894660894661,27,35,-0.023151040239647758
+rule_confidence,"('coverage:complete', 'day:weekend') -> ('calories:middle',)",0.48,0.5466666666666666,25,35,0.06666666666666665
+rule_confidence,"('coverage:complete', 'day:weekend') -> ('steps:lower',)",0.32,0.3373333333333333,25,35,0.01733333333333331
+rule_confidence,"('coverage:complete', 'day:weekend') -> ('very_active:zero',)",0.5733333333333334,0.568,25,35,-0.005333333333333412
+rule_confidence,"('coverage:complete', 'steps:lower') -> ('calories:lower',)",0.390625,0.3055555555555556,18,35,-0.08506944444444442
+rule_confidence,"('coverage:complete', 'steps:lower') -> ('calories:middle',)",0.53125,0.5777777777777778,18,35,0.046527777777777835
+rule_confidence,"('coverage:complete', 'steps:lower') -> ('day:weekday',)",0.625,0.6078403078403078,18,35,-0.017159692159692153
+rule_confidence,"('coverage:complete', 'steps:lower') -> ('day:weekend',)",0.375,0.39215969215969215,18,35,0.017159692159692153
+rule_confidence,"('coverage:complete', 'steps:lower') -> ('very_active:zero',)",0.84375,0.7981240981240981,18,35,-0.045625901875901875
+rule_confidence,"('coverage:complete', 'steps:middle') -> ('calories:middle',)",0.6721311475409836,0.6031746031746033,18,35,-0.06895654436638032
+rule_confidence,"('coverage:complete', 'steps:middle') -> ('day:weekday',)",0.7704918032786885,0.7580687830687831,18,35,-0.012423020209905378
+rule_confidence,"('coverage:complete', 'steps:middle') -> ('very_active:lower',)",0.4098360655737705,0.40242504409171076,18,35,-0.007411021482059743
+rule_confidence,"('coverage:complete', 'steps:middle') -> ('very_active:zero',)",0.5409836065573771,0.4785273368606702,18,35,-0.06245626969670687
+rule_confidence,"('coverage:complete', 'steps:upper') -> ('calories:upper',)",0.6792452830188679,0.4649350649350649,11,35,-0.21431021808380296
+rule_confidence,"('coverage:complete', 'steps:upper') -> ('day:weekday',)",0.660377358490566,0.6727863046044864,11,35,0.012408946113920405
+rule_confidence,"('coverage:complete', 'steps:upper') -> ('very_active:upper',)",0.6981132075471698,0.5626918536009445,11,35,-0.13542135394622523
+rule_confidence,"('coverage:complete', 'steps:zero') -> ('calories:middle',)",0.6909090909090909,0.4487179487179487,13,35,-0.24219114219114224
+rule_confidence,"('coverage:complete', 'steps:zero') -> ('day:weekday',)",0.6545454545454545,0.6743871513102283,13,35,0.019841696764773764
+rule_confidence,"('coverage:complete', 'steps:zero') -> ('very_active:zero',)",0.9818181818181818,0.989010989010989,13,35,0.007192807192807238
+rule_confidence,"('coverage:complete', 'very_active:lower') -> ('calories:middle',)",0.5652173913043478,0.5625,20,35,-0.0027173913043477826
+rule_confidence,"('coverage:complete', 'very_active:lower') -> ('day:weekday',)",0.6086956521739131,0.58,20,35,-0.028695652173913122
+rule_confidence,"('coverage:complete', 'very_active:lower') -> ('steps:middle',)",0.5434782608695652,0.5416666666666667,20,35,-0.0018115942028984477
+rule_confidence,"('coverage:complete', 'very_active:upper') -> ('calories:upper',)",0.6976744186046512,0.44642857142857145,14,35,-0.25124584717607973
+rule_confidence,"('coverage:complete', 'very_active:upper') -> ('day:weekday',)",0.6744186046511628,0.6450396825396825,14,35,-0.0293789221114803
+rule_confidence,"('coverage:complete', 'very_active:upper') -> ('steps:upper',)",0.8604651162790697,0.5714285714285714,14,35,-0.28903654485049834
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('calories:lower',)",0.2916666666666667,0.2995169082125604,23,35,0.0078502415458937
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('calories:middle',)",0.6111111111111112,0.6021394064872326,23,35,-0.00897170462387853
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('day:weekday',)",0.7013888888888888,0.6849120082815735,23,35,-0.016476880607315336
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('day:weekend',)",0.2986111111111111,0.3150879917184265,23,35,0.01647688060731539
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('steps:lower',)",0.375,0.37290085116172067,23,35,-0.00209914883827933
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('steps:middle',)",0.22916666666666666,0.22219346675868418,23,35,-0.00697319990798248
+rule_confidence,"('coverage:complete', 'very_active:zero') -> ('steps:zero',)",0.375,0.39584771106510236,23,35,0.02084771106510236
+rule_confidence,"('coverage:incomplete',) -> ('calories:lower',)",0.26785714285714285,0.5405509173366316,35,35,0.2726937744794888
+rule_confidence,"('coverage:incomplete',) -> ('calories:lower', 'day:weekday')",0.17410714285714285,0.37197948876520304,35,35,0.1978723459080602
+rule_confidence,"('coverage:incomplete',) -> ('calories:lower', 'steps:lower')",0.16517857142857142,0.31993867243867247,35,35,0.15476010101010104
+rule_confidence,"('coverage:incomplete',) -> ('calories:lower', 'very_active:zero')",0.20089285714285715,0.42353174603174604,35,35,0.2226388888888889
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle',)",0.48214285714285715,0.30908833230261806,35,35,-0.1730545248402391
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'day:weekday')",0.33482142857142855,0.21029375386518243,35,35,-0.12452767470624612
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'day:weekend')",0.14732142857142858,0.09879457843743558,35,35,-0.048526850133992994
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'steps:lower')",0.14285714285714285,0.11970057720057721,35,35,-0.02315656565656564
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'steps:middle')",0.125,0.08432900432900434,35,35,-0.04067099567099566
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'steps:upper')",0.21428571428571427,0.10505875077303649,35,35,-0.10922696351267779
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'very_active:lower')",0.20089285714285715,0.11579468150896723,35,35,-0.08509817563388992
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'very_active:upper')",0.12053571428571429,0.05761904761904762,35,35,-0.06291666666666668
+rule_confidence,"('coverage:incomplete',) -> ('calories:middle', 'very_active:zero')",0.16071428571428573,0.13567460317460317,35,35,-0.025039682539682556
+rule_confidence,"('coverage:incomplete',) -> ('calories:upper',)",0.25,0.15036075036075036,35,35,-0.09963924963924964
+rule_confidence,"('coverage:incomplete',) -> ('calories:upper', 'day:weekday')",0.16964285714285715,0.1033951762523191,35,35,-0.06624768089053805
+rule_confidence,"('coverage:incomplete',) -> ('calories:upper', 'steps:middle')",0.14732142857142858,0.07516285301999588,35,35,-0.0721585755514327
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday',)",0.6785714285714286,0.6856684188827046,35,35,0.007096990311275975
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'steps:lower')",0.20535714285714285,0.30965728715728713,35,35,0.10430014430014428
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'steps:middle')",0.23660714285714285,0.21118274582560295,35,35,-0.025424397031539897
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'steps:upper')",0.21875,0.12292362399505256,35,35,-0.09582637600494744
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'very_active:lower')",0.21875,0.11922232529375386,35,35,-0.09952767470624614
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'very_active:upper')",0.18303571428571427,0.13544836116264686,35,35,-0.047587353123067416
+rule_confidence,"('coverage:incomplete',) -> ('day:weekday', 'very_active:zero')",0.2767857142857143,0.43099773242630385,35,35,0.15421201814058955
+rule_confidence,"('coverage:incomplete',) -> ('day:weekend',)",0.32142857142857145,0.3143315811172954,35,35,-0.00709699031127603
+rule_confidence,"('coverage:incomplete',) -> ('day:weekend', 'steps:lower')",0.11607142857142858,0.13674603174603175,35,35,0.02067460317460318
+rule_confidence,"('coverage:incomplete',) -> ('day:weekend', 'steps:upper')",0.11160714285714286,0.06437847866419295,35,35,-0.04722866419294991
+rule_confidence,"('coverage:incomplete',) -> ('day:weekend', 'very_active:lower')",0.10267857142857142,0.11738301381158522,35,35,0.0147044423830138
+rule_confidence,"('coverage:incomplete',) -> ('day:weekend', 'very_active:zero')",0.15625,0.16295351473922903,35,35,0.006703514739229033
+rule_confidence,"('coverage:incomplete',) -> ('steps:lower',)",0.32142857142857145,0.4464033189033189,35,35,0.12497474747474746
+rule_confidence,"('coverage:incomplete',) -> ('steps:lower', 'very_active:zero')",0.26339285714285715,0.38682539682539685,35,35,0.1234325396825397
+rule_confidence,"('coverage:incomplete',) -> ('steps:middle',)",0.32142857142857145,0.2672469593898166,35,35,-0.05418161203875488
+rule_confidence,"('coverage:incomplete',) -> ('steps:middle', 'very_active:lower')",0.12946428571428573,0.08020768913626057,35,35,-0.049256596578025155
+rule_confidence,"('coverage:incomplete',) -> ('steps:middle', 'very_active:zero')",0.12946428571428573,0.12270408163265305,35,35,-0.006760204081632679
+rule_confidence,"('coverage:incomplete',) -> ('steps:upper',)",0.33035714285714285,0.18730210265924552,35,35,-0.14305504019789733
+rule_confidence,"('coverage:incomplete',) -> ('steps:upper', 'very_active:lower')",0.14285714285714285,0.07582405689548548,35,35,-0.06703308596165737
+rule_confidence,"('coverage:incomplete',) -> ('steps:upper', 'very_active:upper')",0.16964285714285715,0.09753246753246753,35,35,-0.07211038961038962
+rule_confidence,"('coverage:incomplete',) -> ('very_active:lower',)",0.32142857142857145,0.2366053391053391,35,35,-0.08482323232323236
+rule_confidence,"('coverage:incomplete',) -> ('very_active:upper',)",0.24553571428571427,0.16944341372912802,35,35,-0.07609230055658625
+rule_confidence,"('coverage:incomplete',) -> ('very_active:zero',)",0.4330357142857143,0.5939512471655329,35,35,0.16091553287981863
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('calories:lower',)",0.2565789473684211,0.49782618814876883,31,35,0.24124724078034776
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('calories:middle',)",0.4934210526315789,0.3241435088209282,31,35,-0.16927754381065074
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('calories:upper',)",0.25,0.178030303030303,31,35,-0.07196969696969699
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('steps:lower',)",0.3026315789473684,0.4237362100265326,31,35,0.1211046310791642
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('steps:middle',)",0.34868421052631576,0.2996520504585021,31,35,-0.04903216006781369
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('steps:upper',)",0.3223684210526316,0.20916305916305916,31,35,-0.11320536188957242
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('very_active:lower',)",0.3223684210526316,0.18840245775729644,31,35,-0.13396596329533514
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('very_active:upper',)",0.26973684210526316,0.21866359447004607,31,35,-0.05107324763521709
+rule_confidence,"('coverage:incomplete', 'day:weekday') -> ('very_active:zero',)",0.40789473684210525,0.5929339477726574,31,35,0.18503921093055214
+rule_confidence,"('coverage:incomplete', 'day:weekend') -> ('calories:middle',)",0.4583333333333333,0.4215277777777778,24,35,-0.036805555555555536
+rule_confidence,"('coverage:incomplete', 'day:weekend') -> ('steps:lower',)",0.3611111111111111,0.38819444444444445,24,35,0.027083333333333348
+rule_confidence,"('coverage:incomplete', 'day:weekend') -> ('steps:upper',)",0.3472222222222222,0.28125,24,35,-0.06597222222222221
+rule_confidence,"('coverage:incomplete', 'day:weekend') -> ('very_active:lower',)",0.3194444444444444,0.36041666666666666,24,35,0.04097222222222224
+rule_confidence,"('coverage:incomplete', 'day:weekend') -> ('very_active:zero',)",0.4861111111111111,0.5006944444444444,24,35,0.014583333333333337
+rule_confidence,"('coverage:incomplete', 'steps:lower') -> ('calories:lower',)",0.5138888888888888,0.6501157407407407,24,35,0.1362268518518519
+rule_confidence,"('coverage:incomplete', 'steps:lower') -> ('calories:middle',)",0.4444444444444444,0.31724537037037037,24,35,-0.12719907407407405
+rule_confidence,"('coverage:incomplete', 'steps:lower') -> ('day:weekday',)",0.6388888888888888,0.6552083333333333,24,35,0.016319444444444442
+rule_confidence,"('coverage:incomplete', 'steps:lower') -> ('day:weekend',)",0.3611111111111111,0.34479166666666666,24,35,-0.016319444444444442
+rule_confidence,"('coverage:incomplete', 'steps:lower') -> ('very_active:zero',)",0.8194444444444444,0.8440972222222222,24,35,0.024652777777777746
+rule_confidence,"('coverage:incomplete', 'steps:middle') -> ('calories:middle',)",0.3888888888888889,0.3393939393939394,22,35,-0.04949494949494948
+rule_confidence,"('coverage:incomplete', 'steps:middle') -> ('calories:upper',)",0.4583333333333333,0.32727272727272727,22,35,-0.13106060606060604
+rule_confidence,"('coverage:incomplete', 'steps:middle') -> ('day:weekday',)",0.7361111111111112,0.6702020202020201,22,35,-0.06590909090909103
+rule_confidence,"('coverage:incomplete', 'steps:middle') -> ('very_active:lower',)",0.4027777777777778,0.30757575757575756,22,35,-0.09520202020202023
+rule_confidence,"('coverage:incomplete', 'steps:middle') -> ('very_active:zero',)",0.4027777777777778,0.44090909090909086,22,35,0.03813131313131307
+rule_confidence,"('coverage:incomplete', 'steps:upper') -> ('calories:middle',)",0.6486486486486487,0.4413265306122449,14,35,-0.20732211803640377
+rule_confidence,"('coverage:incomplete', 'steps:upper') -> ('day:weekday',)",0.6621621621621622,0.713643499357785,14,35,0.05148133719562287
+rule_confidence,"('coverage:incomplete', 'steps:upper') -> ('day:weekend',)",0.33783783783783783,0.2863565006422149,14,35,-0.05148133719562292
+rule_confidence,"('coverage:incomplete', 'steps:upper') -> ('very_active:lower',)",0.43243243243243246,0.4346367917796489,14,35,0.002204359347216467
+rule_confidence,"('coverage:incomplete', 'steps:upper') -> ('very_active:upper',)",0.5135135135135135,0.4879822558393987,14,35,-0.025531257674114793
+rule_confidence,"('coverage:incomplete', 'very_active:lower') -> ('calories:middle',)",0.625,0.5394736842105263,19,35,-0.08552631578947367
+rule_confidence,"('coverage:incomplete', 'very_active:lower') -> ('day:weekday',)",0.6805555555555556,0.5224481658692185,19,35,-0.15810738968633709
+rule_confidence,"('coverage:incomplete', 'very_active:lower') -> ('day:weekend',)",0.3194444444444444,0.47755183413078156,19,35,0.15810738968633714
+rule_confidence,"('coverage:incomplete', 'very_active:lower') -> ('steps:middle',)",0.4027777777777778,0.3794657097288676,19,35,-0.023312068048910173
+rule_confidence,"('coverage:incomplete', 'very_active:lower') -> ('steps:upper',)",0.4444444444444444,0.36439393939393944,19,35,-0.08005050505050498
+rule_confidence,"('coverage:incomplete', 'very_active:upper') -> ('calories:middle',)",0.4909090909090909,0.40082644628099173,11,35,-0.09008264462809917
+rule_confidence,"('coverage:incomplete', 'very_active:upper') -> ('day:weekday',)",0.7454545454545455,0.6950413223140496,11,35,-0.0504132231404959
+rule_confidence,"('coverage:incomplete', 'very_active:upper') -> ('steps:upper',)",0.6909090909090909,0.703030303030303,11,35,0.012121212121212088
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('calories:lower',)",0.4639175257731959,0.6618777056277055,28,35,0.19796017985450964
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('calories:middle',)",0.3711340206185567,0.25706168831168835,28,35,-0.11407233230686836
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('day:weekday',)",0.6391752577319587,0.6727002164502165,28,35,0.03352495871825778
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('day:weekend',)",0.36082474226804123,0.32729978354978356,28,35,-0.03352495871825767
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('steps:lower',)",0.6082474226804123,0.6656655844155844,28,35,0.05741816173517211
+rule_confidence,"('coverage:incomplete', 'very_active:zero') -> ('steps:middle',)",0.29896907216494845,0.21231060606060606,28,35,-0.08665846610434239
+rule_confidence,"('day:weekday',) -> ('active_share:lower',)",0.2903225806451613,0.28692379049521904,35,35,-0.0033987901499422657
+rule_confidence,"('day:weekday',) -> ('active_share:lower', 'calories:lower')",0.11290322580645161,0.10824413681556538,35,35,-0.004659088990886226
+rule_confidence,"('day:weekday',) -> ('active_share:lower', 'calories:middle')",0.16129032258064516,0.1721861471861472,35,35,0.010895824605502036
+rule_confidence,"('day:weekday',) -> ('active_share:lower', 'steps:lower')",0.14193548387096774,0.12942295799438655,35,35,-0.012512525876581193
+rule_confidence,"('day:weekday',) -> ('active_share:lower', 'steps:zero')",0.12580645161290321,0.14523809523809522,35,35,0.019431643625192008
+rule_confidence,"('day:weekday',) -> ('active_share:middle',)",0.432258064516129,0.4237036772751059,35,35,-0.008554387241023143
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'calories:lower')",0.07419354838709677,0.07252747252747252,35,35,-0.0016660758596242498
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'calories:middle')",0.22903225806451613,0.22498572855715712,35,35,-0.004046529507359009
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'calories:upper')",0.12903225806451613,0.1261904761904762,35,35,-0.002841781874039939
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'steps:lower')",0.11612903225806452,0.11742899957185671,35,35,0.0012999673137921858
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'steps:middle')",0.2064516129032258,0.19757742257742258,35,35,-0.008874190325803222
+rule_confidence,"('day:weekday',) -> ('active_share:middle', 'steps:upper')",0.10967741935483871,0.10869725512582656,35,35,-0.0009801642290121482
+rule_confidence,"('day:weekday',) -> ('active_share:upper',)",0.27741935483870966,0.2893725322296751,35,35,0.011953177390965408
+rule_confidence,"('day:weekday',) -> ('active_share:upper', 'calories:middle')",0.14516129032258066,0.1412154512154512,35,35,-0.003945839107129451
+rule_confidence,"('day:weekday',) -> ('active_share:upper', 'calories:upper')",0.1,0.11145640074211502,35,35,0.011456400742115014
+rule_confidence,"('day:weekday',) -> ('active_share:upper', 'steps:middle')",0.0935483870967742,0.09990929705215419,35,35,0.006360909955379995
+rule_confidence,"('day:weekday',) -> ('active_share:upper', 'steps:upper')",0.16129032258064516,0.16135562849848564,35,35,6.530591784048578e-05
+rule_confidence,"('day:weekday',) -> ('calories:lower',)",0.21935483870967742,0.21747228961514675,35,35,-0.0018825490945306722
+rule_confidence,"('day:weekday',) -> ('calories:lower', 'coverage:complete')",0.0935483870967742,0.08474025974025974,35,35,-0.008808127356514456
+rule_confidence,"('day:weekday',) -> ('calories:lower', 'coverage:incomplete')",0.12580645161290321,0.13273202987488703,35,35,0.006925578261983811
+rule_confidence,"('day:weekday',) -> ('calories:lower', 'steps:lower')",0.12580645161290321,0.1236144807573379,35,35,-0.0021919708555653145
+rule_confidence,"('day:weekday',) -> ('calories:lower', 'very_active:zero')",0.1870967741935484,0.18470933828076685,35,35,-0.002387435912781538
+rule_confidence,"('day:weekday',) -> ('calories:middle',)",0.535483870967742,0.5383873269587556,35,35,0.0029034559910136037
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'coverage:complete')",0.29354838709677417,0.30832500832500837,35,35,0.014776621228234199
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'coverage:incomplete')",0.24193548387096775,0.2300623186337472,35,35,-0.01187316523722054
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'steps:lower')",0.13870967741935483,0.1351422387136673,35,35,-0.0035674387056875423
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'steps:middle')",0.17096774193548386,0.17665945165945166,35,35,0.005691709723967792
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'steps:upper')",0.14193548387096774,0.12701853701853702,35,35,-0.014916946852430724
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'steps:zero')",0.08387096774193549,0.09956709956709957,35,35,0.015696131825164078
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'very_active:lower')",0.16451612903225807,0.16301270158413014,35,35,-0.0015034274481279253
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'very_active:upper')",0.0967741935483871,0.09030969030969031,35,35,-0.006464503238696781
+rule_confidence,"('day:weekday',) -> ('calories:middle', 'very_active:zero')",0.27419354838709675,0.285064935064935,35,35,0.010871386677838268
+rule_confidence,"('day:weekday',) -> ('calories:upper',)",0.24516129032258063,0.24414038342609773,35,35,-0.0010209068964829038
+rule_confidence,"('day:weekday',) -> ('calories:upper', 'coverage:complete')",0.12258064516129032,0.1290352504638219,35,35,0.006454605302531571
+rule_confidence,"('day:weekday',) -> ('calories:upper', 'coverage:incomplete')",0.12258064516129032,0.11510513296227583,35,35,-0.007475512199014489
+rule_confidence,"('day:weekday',) -> ('calories:upper', 'steps:middle')",0.11935483870967742,0.1022108843537415,35,35,-0.017143954355935923
+rule_confidence,"('day:weekday',) -> ('calories:upper', 'steps:upper')",0.10967741935483871,0.12572665429808286,35,35,0.016049234943244145
+rule_confidence,"('day:weekday',) -> ('calories:upper', 'very_active:upper')",0.11612903225806452,0.13429189857761287,35,35,0.018162866319548346
+rule_confidence,"('day:weekday',) -> ('coverage:complete',)",0.5096774193548387,0.52210051852909,35,35,0.012423099174251329
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'steps:lower')",0.12903225806451613,0.11563436563436565,35,35,-0.01339789243015048
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'steps:middle')",0.15161290322580645,0.15223110223110223,35,35,0.0006181990052957775
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'steps:upper')",0.11290322580645161,0.11873721516578659,35,35,0.005833989359334976
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'steps:zero')",0.11612903225806452,0.13549783549783548,35,35,0.019368803239770957
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'very_active:lower')",0.09032258064516129,0.09988344988344988,35,35,0.009560869238288597
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'very_active:upper')",0.0935483870967742,0.1005304219589934,35,35,0.006982034862219197
+rule_confidence,"('day:weekday',) -> ('coverage:complete', 'very_active:zero')",0.3258064516129032,0.3216866466866467,35,35,-0.004119804926256521
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete',)",0.49032258064516127,0.47789948147091,35,35,-0.012423099174251273
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'steps:lower')",0.14838709677419354,0.15456329384900813,35,35,0.006176197074814593
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'steps:middle')",0.17096774193548386,0.1575183546612118,35,35,-0.013449387274272057
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'steps:upper')",0.15806451612903225,0.1513156684585256,35,35,-0.0067488476705066525
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'very_active:lower')",0.15806451612903225,0.14533870891013748,35,35,-0.012725807218894769
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'very_active:upper')",0.13225806451612904,0.138152799581371,35,35,0.005894735065241963
+rule_confidence,"('day:weekday',) -> ('coverage:incomplete', 'very_active:zero')",0.2,0.19440797297940154,35,35,-0.005592027020598467
+rule_confidence,"('day:weekday',) -> ('steps:lower',)",0.27741935483870966,0.27019765948337376,35,35,-0.0072216953553359
+rule_confidence,"('day:weekday',) -> ('steps:lower', 'very_active:zero')",0.23225806451612904,0.22090647447790304,35,35,-0.011351590038226
+rule_confidence,"('day:weekday',) -> ('steps:middle',)",0.3225806451612903,0.30974945689231403,35,35,-0.012831188268976279
+rule_confidence,"('day:weekday',) -> ('steps:middle', 'very_active:lower')",0.12258064516129032,0.12449494949494948,35,35,0.0019143043336591614
+rule_confidence,"('day:weekday',) -> ('steps:middle', 'very_active:zero')",0.15161290322580645,0.13245920745920747,35,35,-0.019153695766598977
+rule_confidence,"('day:weekday',) -> ('steps:upper',)",0.2709677419354839,0.2700528836243122,35,35,-0.0009148583111717179
+rule_confidence,"('day:weekday',) -> ('steps:upper', 'very_active:lower')",0.0935483870967742,0.08446941946941948,35,35,-0.009078967627354717
+rule_confidence,"('day:weekday',) -> ('steps:upper', 'very_active:upper')",0.16451612903225807,0.172854526425955,35,35,0.008338397393696934
+rule_confidence,"('day:weekday',) -> ('steps:zero',)",0.12903225806451613,0.15,35,35,0.02096774193548387
+rule_confidence,"('day:weekday',) -> ('steps:zero', 'very_active:zero')",0.12903225806451613,0.15,35,35,0.02096774193548387
+rule_confidence,"('day:weekday',) -> ('very_active:lower',)",0.24838709677419354,0.24522215879358736,35,35,-0.003164937980606186
+rule_confidence,"('day:weekday',) -> ('very_active:upper',)",0.22580645161290322,0.2386832215403644,35,35,0.012876769927461174
+rule_confidence,"('day:weekday',) -> ('very_active:zero',)",0.5258064516129032,0.5160946196660483,35,35,-0.009711831946854876
+rule_confidence,"('day:weekday', 'steps:lower') -> ('active_share:lower',)",0.5116279069767442,0.46657848324514994,27,35,-0.04504942373159426
+rule_confidence,"('day:weekday', 'steps:lower') -> ('active_share:middle',)",0.4186046511627907,0.3861552028218695,27,35,-0.03244944834092123
+rule_confidence,"('day:weekday', 'steps:lower') -> ('calories:lower',)",0.45348837209302323,0.5414462081128748,27,35,0.08795783601985158
+rule_confidence,"('day:weekday', 'steps:lower') -> ('calories:middle',)",0.5,0.4171075837742504,27,35,-0.08289241622574961
+rule_confidence,"('day:weekday', 'steps:lower') -> ('coverage:complete',)",0.46511627906976744,0.4317460317460317,27,35,-0.033370247323735724
+rule_confidence,"('day:weekday', 'steps:lower') -> ('coverage:incomplete',)",0.5348837209302325,0.5682539682539682,27,35,0.033370247323735724
+rule_confidence,"('day:weekday', 'steps:lower') -> ('very_active:zero',)",0.8372093023255814,0.7918871252204585,27,35,-0.045322177105122985
+rule_confidence,"('day:weekday', 'steps:middle') -> ('active_share:middle',)",0.64,0.6631083202511775,28,35,0.023108320251177483
+rule_confidence,"('day:weekday', 'steps:middle') -> ('active_share:upper',)",0.29,0.27553636839351126,28,35,-0.014463631606488725
+rule_confidence,"('day:weekday', 'steps:middle') -> ('calories:middle',)",0.53,0.4869047619047619,28,35,-0.04309523809523813
+rule_confidence,"('day:weekday', 'steps:middle') -> ('calories:upper',)",0.37,0.2928571428571428,28,35,-0.07714285714285718
+rule_confidence,"('day:weekday', 'steps:middle') -> ('coverage:complete',)",0.47,0.47005494505494505,28,35,5.4945054945076954e-05
+rule_confidence,"('day:weekday', 'steps:middle') -> ('coverage:incomplete',)",0.53,0.529945054945055,28,35,-5.4945054945076954e-05
+rule_confidence,"('day:weekday', 'steps:middle') -> ('very_active:lower',)",0.38,0.31904107796964937,28,35,-0.06095892203035064
+rule_confidence,"('day:weekday', 'steps:middle') -> ('very_active:zero',)",0.47,0.44014259549973833,28,35,-0.02985740450026164
+rule_confidence,"('day:weekday', 'steps:upper') -> ('active_share:middle',)",0.40476190476190477,0.38244047619047616,20,35,-0.022321428571428603
+rule_confidence,"('day:weekday', 'steps:upper') -> ('active_share:upper',)",0.5952380952380952,0.6175595238095238,20,35,0.022321428571428603
+rule_confidence,"('day:weekday', 'steps:upper') -> ('calories:middle',)",0.5238095238095238,0.41904761904761906,20,35,-0.10476190476190478
+rule_confidence,"('day:weekday', 'steps:upper') -> ('calories:upper',)",0.40476190476190477,0.4892857142857143,20,35,0.08452380952380956
+rule_confidence,"('day:weekday', 'steps:upper') -> ('coverage:complete',)",0.4166666666666667,0.42738095238095236,20,35,0.010714285714285676
+rule_confidence,"('day:weekday', 'steps:upper') -> ('coverage:incomplete',)",0.5833333333333334,0.5726190476190476,20,35,-0.010714285714285787
+rule_confidence,"('day:weekday', 'steps:upper') -> ('very_active:lower',)",0.34523809523809523,0.3728174603174603,20,35,0.027579365079365092
+rule_confidence,"('day:weekday', 'steps:upper') -> ('very_active:upper',)",0.6071428571428571,0.5146825396825397,20,35,-0.09246031746031735
+rule_confidence,"('day:weekday', 'steps:zero') -> ('active_share:lower',)",0.975,0.9833333333333334,12,35,0.008333333333333415
+rule_confidence,"('day:weekday', 'steps:zero') -> ('calories:middle',)",0.65,0.4694444444444445,12,35,-0.18055555555555552
+rule_confidence,"('day:weekday', 'steps:zero') -> ('coverage:complete',)",0.9,0.8472222222222222,12,35,-0.05277777777777781
+rule_confidence,"('day:weekday', 'steps:zero') -> ('very_active:zero',)",1.0,1.0,12,35,0.0
+rule_confidence,"('day:weekday', 'very_active:lower') -> ('calories:middle',)",0.6623376623376623,0.6551282051282052,26,35,-0.007209457209457093
+rule_confidence,"('day:weekday', 'very_active:lower') -> ('coverage:complete',)",0.36363636363636365,0.5474358974358974,26,35,0.18379953379953373
+rule_confidence,"('day:weekday', 'very_active:lower') -> ('coverage:incomplete',)",0.6363636363636364,0.4525641025641025,26,35,-0.18379953379953384
+rule_confidence,"('day:weekday', 'very_active:lower') -> ('steps:middle',)",0.4935064935064935,0.5215811965811966,26,35,0.02807470307470311
+rule_confidence,"('day:weekday', 'very_active:lower') -> ('steps:upper',)",0.37662337662337664,0.3040598290598291,26,35,-0.07256354756354755
+rule_confidence,"('day:weekday', 'very_active:upper') -> ('calories:middle',)",0.42857142857142855,0.44294217687074827,14,35,0.014370748299319724
+rule_confidence,"('day:weekday', 'very_active:upper') -> ('calories:upper',)",0.5142857142857142,0.5141156462585034,14,35,-0.0001700680272108679
+rule_confidence,"('day:weekday', 'very_active:upper') -> ('coverage:complete',)",0.4142857142857143,0.5283163265306122,14,35,0.11403061224489791
+rule_confidence,"('day:weekday', 'very_active:upper') -> ('coverage:incomplete',)",0.5857142857142857,0.4716836734693878,14,35,-0.11403061224489797
+rule_confidence,"('day:weekday', 'very_active:upper') -> ('steps:upper',)",0.7285714285714285,0.6433673469387756,14,35,-0.08520408163265292
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('calories:lower',)",0.3558282208588957,0.4182700053705693,28,35,0.06244178451167359
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('calories:middle',)",0.5214723926380368,0.47265261367704975,28,35,-0.04881977896098705
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('coverage:complete',)",0.6196319018404908,0.5358754027926961,28,35,-0.0837564990477947
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('coverage:incomplete',)",0.3803680981595092,0.464124597207304,28,35,0.08375649904779475
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('steps:lower',)",0.44171779141104295,0.4964576620121733,28,35,0.054739870601130336
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('steps:middle',)",0.2883435582822086,0.24046947726459006,28,35,-0.04787408101761853
+rule_confidence,"('day:weekday', 'very_active:zero') -> ('steps:zero',)",0.24539877300613497,0.24104905119942716,28,35,-0.0043497218067078125
+rule_confidence,"('day:weekend',) -> ('active_share:lower',)",0.30612244897959184,0.29714285714285715,35,35,-0.00897959183673469
+rule_confidence,"('day:weekend',) -> ('active_share:lower', 'calories:middle')",0.1564625850340136,0.1595238095238095,35,35,0.0030612244897958996
+rule_confidence,"('day:weekend',) -> ('active_share:middle',)",0.3469387755102041,0.34714285714285714,35,35,0.00020408163265306367
+rule_confidence,"('day:weekend',) -> ('active_share:middle', 'calories:middle')",0.1564625850340136,0.16714285714285712,35,35,0.010680272108843508
+rule_confidence,"('day:weekend',) -> ('active_share:middle', 'steps:lower')",0.1836734693877551,0.18666666666666668,35,35,0.0029931972789115635
+rule_confidence,"('day:weekend',) -> ('active_share:upper',)",0.3469387755102041,0.3557142857142857,35,35,0.008775510204081627
+rule_confidence,"('day:weekend',) -> ('active_share:upper', 'calories:middle')",0.1564625850340136,0.15714285714285714,35,35,0.0006802721088435271
+rule_confidence,"('day:weekend',) -> ('active_share:upper', 'calories:upper')",0.1564625850340136,0.16285714285714287,35,35,0.006394557823129254
+rule_confidence,"('day:weekend',) -> ('active_share:upper', 'steps:upper')",0.21768707482993196,0.21666666666666665,35,35,-0.0010204081632653184
+rule_confidence,"('day:weekend',) -> ('calories:lower',)",0.2653061224489796,0.26904761904761904,35,35,0.0037414965986394266
+rule_confidence,"('day:weekend',) -> ('calories:lower', 'steps:lower')",0.1564625850340136,0.15238095238095237,35,35,-0.004081632653061246
+rule_confidence,"('day:weekend',) -> ('calories:lower', 'very_active:zero')",0.19727891156462585,0.20238095238095238,35,35,0.005102040816326536
+rule_confidence,"('day:weekend',) -> ('calories:middle',)",0.46938775510204084,0.4838095238095238,35,35,0.014421768707482963
+rule_confidence,"('day:weekend',) -> ('calories:middle', 'coverage:complete')",0.24489795918367346,0.2571428571428571,35,35,0.012244897959183654
+rule_confidence,"('day:weekend',) -> ('calories:middle', 'coverage:incomplete')",0.22448979591836735,0.22666666666666668,35,35,0.0021768707482993366
+rule_confidence,"('day:weekend',) -> ('calories:middle', 'steps:lower')",0.1564625850340136,0.16428571428571428,35,35,0.007823129251700672
+rule_confidence,"('day:weekend',) -> ('calories:middle', 'very_active:zero')",0.2653061224489796,0.27619047619047615,35,35,0.010884353741496544
+rule_confidence,"('day:weekend',) -> ('calories:upper',)",0.2653061224489796,0.24714285714285716,35,35,-0.018163265306122445
+rule_confidence,"('day:weekend',) -> ('coverage:complete',)",0.5102040816326531,0.5095238095238095,35,35,-0.0006802721088435826
+rule_confidence,"('day:weekend',) -> ('coverage:complete', 'steps:lower')",0.16326530612244897,0.1619047619047619,35,35,-0.0013605442176870541
+rule_confidence,"('day:weekend',) -> ('coverage:complete', 'very_active:zero')",0.2925170068027211,0.28714285714285714,35,35,-0.005374149659863936
+rule_confidence,"('day:weekend',) -> ('coverage:incomplete',)",0.4897959183673469,0.4904761904761905,35,35,0.0006802721088435826
+rule_confidence,"('day:weekend',) -> ('coverage:incomplete', 'steps:lower')",0.17687074829931973,0.1819047619047619,35,35,0.0050340136054421725
+rule_confidence,"('day:weekend',) -> ('coverage:incomplete', 'steps:upper')",0.17006802721088435,0.16428571428571428,35,35,-0.005782312925170063
+rule_confidence,"('day:weekend',) -> ('coverage:incomplete', 'very_active:lower')",0.1564625850340136,0.1580952380952381,35,35,0.0016326530612244816
+rule_confidence,"('day:weekend',) -> ('coverage:incomplete', 'very_active:zero')",0.23809523809523808,0.2442857142857143,35,35,0.0061904761904762184
+rule_confidence,"('day:weekend',) -> ('steps:lower',)",0.3401360544217687,0.3438095238095238,35,35,0.0036734693877550906
+rule_confidence,"('day:weekend',) -> ('steps:lower', 'very_active:zero')",0.2789115646258503,0.2857142857142857,35,35,0.006802721088435382
+rule_confidence,"('day:weekend',) -> ('steps:middle',)",0.22448979591836735,0.21476190476190476,35,35,-0.009727891156462581
+rule_confidence,"('day:weekend',) -> ('steps:upper',)",0.2925170068027211,0.28857142857142853,35,35,-0.003945578231292546
+rule_confidence,"('day:weekend',) -> ('steps:upper', 'very_active:upper')",0.16326530612244897,0.1595238095238095,35,35,-0.0037414965986394544
+rule_confidence,"('day:weekend',) -> ('very_active:lower',)",0.2789115646258503,0.27809523809523806,35,35,-0.0008163265306122547
+rule_confidence,"('day:weekend',) -> ('very_active:upper',)",0.19047619047619047,0.1904761904761905,35,35,2.7755575615628914e-17
+rule_confidence,"('day:weekend',) -> ('very_active:zero',)",0.5306122448979592,0.5314285714285715,35,35,0.0008163265306122547
+rule_confidence,"('day:weekend', 'steps:lower') -> ('active_share:middle',)",0.54,0.5833333333333334,22,35,0.043333333333333335
+rule_confidence,"('day:weekend', 'steps:lower') -> ('calories:lower',)",0.46,0.4848484848484848,22,35,0.024848484848484786
+rule_confidence,"('day:weekend', 'steps:lower') -> ('calories:middle',)",0.46,0.42424242424242425,22,35,-0.035757575757575766
+rule_confidence,"('day:weekend', 'steps:lower') -> ('coverage:complete',)",0.48,0.4772727272727273,22,35,-0.0027272727272726893
+rule_confidence,"('day:weekend', 'steps:lower') -> ('coverage:incomplete',)",0.52,0.5227272727272727,22,35,0.0027272727272726893
+rule_confidence,"('day:weekend', 'steps:lower') -> ('very_active:zero',)",0.82,0.7992424242424242,22,35,-0.020757575757575752
+rule_confidence,"('day:weekend', 'steps:upper') -> ('active_share:upper',)",0.7441860465116279,0.6845238095238095,14,35,-0.05966223698781836
+rule_confidence,"('day:weekend', 'steps:upper') -> ('coverage:incomplete',)",0.5813953488372093,0.5357142857142857,14,35,-0.04568106312292364
+rule_confidence,"('day:weekend', 'steps:upper') -> ('very_active:upper',)",0.5581395348837209,0.5297619047619048,14,35,-0.028377630121816155
+rule_confidence,"('day:weekend', 'very_active:lower') -> ('coverage:incomplete',)",0.5609756097560976,0.5347222222222222,24,35,-0.026253387533875405
+rule_confidence,"('day:weekend', 'very_active:upper') -> ('steps:upper',)",0.8571428571428571,0.8076923076923077,13,35,-0.049450549450549386
+rule_confidence,"('day:weekend', 'very_active:zero') -> ('calories:lower',)",0.3717948717948718,0.4051724137931034,29,35,0.03337754199823162
+rule_confidence,"('day:weekend', 'very_active:zero') -> ('calories:middle',)",0.5,0.493431855500821,29,35,-0.006568144499178974
+rule_confidence,"('day:weekend', 'very_active:zero') -> ('coverage:complete',)",0.5512820512820513,0.5311986863711001,29,35,-0.020083364910951196
+rule_confidence,"('day:weekend', 'very_active:zero') -> ('coverage:incomplete',)",0.44871794871794873,0.4688013136288998,29,35,0.020083364910951085
+rule_confidence,"('day:weekend', 'very_active:zero') -> ('steps:lower',)",0.5256410256410257,0.5041050903119868,29,35,-0.021535935329038858
+rule_confidence,"('steps:lower',) -> ('active_share:lower',)",0.47794117647058826,0.4328843995510662,27,35,-0.045056776919522035
+rule_confidence,"('steps:lower',) -> ('active_share:lower', 'calories:lower')",0.22058823529411764,0.23699428143872586,27,35,0.016406046144608222
+rule_confidence,"('steps:lower',) -> ('active_share:lower', 'calories:middle')",0.25,0.19218641440863665,27,35,-0.05781358559136335
+rule_confidence,"('steps:lower',) -> ('active_share:lower', 'day:weekday')",0.3235294117647059,0.3005504783282561,27,35,-0.0229789334364498
+rule_confidence,"('steps:lower',) -> ('active_share:middle',)",0.4632352941176471,0.47349420127197905,27,35,0.010258907154331975
+rule_confidence,"('steps:lower',) -> ('active_share:middle', 'calories:lower')",0.20588235294117646,0.23838918283362728,27,35,0.03250682989245082
+rule_confidence,"('steps:lower',) -> ('active_share:middle', 'calories:middle')",0.22058823529411764,0.20238896905563572,27,35,-0.01819926623848192
+rule_confidence,"('steps:lower',) -> ('active_share:middle', 'day:weekday')",0.2647058823529412,0.270918176473732,27,35,0.006212294120790829
+rule_confidence,"('steps:lower',) -> ('active_share:middle', 'day:weekend')",0.19852941176470587,0.20257602479824702,27,35,0.0040466130335411465
+rule_confidence,"('steps:lower',) -> ('calories:lower',)",0.45588235294117646,0.5247661803217359,27,35,0.06888382738055948
+rule_confidence,"('steps:lower',) -> ('calories:lower', 'coverage:complete')",0.18382352941176472,0.145679012345679,27,35,-0.03814451706608571
+rule_confidence,"('steps:lower',) -> ('calories:lower', 'coverage:incomplete')",0.27205882352941174,0.37908716797605685,27,35,0.10702834444664511
+rule_confidence,"('steps:lower',) -> ('calories:lower', 'day:weekday')",0.2867647058823529,0.34839933728822614,27,35,0.06163463140587322
+rule_confidence,"('steps:lower',) -> ('calories:lower', 'day:weekend')",0.16911764705882354,0.1763668430335097,27,35,0.007249195974686151
+rule_confidence,"('steps:lower',) -> ('calories:lower', 'very_active:zero')",0.39705882352941174,0.46083319972208864,27,35,0.0637743761926769
+rule_confidence,"('steps:lower',) -> ('calories:middle',)",0.4852941176470588,0.4079498690609802,27,35,-0.07734424858607863
+rule_confidence,"('steps:lower',) -> ('calories:middle', 'coverage:complete')",0.25,0.21008497675164342,27,35,-0.03991502324835658
+rule_confidence,"('steps:lower',) -> ('calories:middle', 'coverage:incomplete')",0.23529411764705882,0.19786489230933674,27,35,-0.03742922533772208
+rule_confidence,"('steps:lower',) -> ('calories:middle', 'day:weekday')",0.3161764705882353,0.2568141734808402,27,35,-0.0593622971073951
+rule_confidence,"('steps:lower',) -> ('calories:middle', 'day:weekend')",0.16911764705882354,0.15113569558014,27,35,-0.017981951478683533
+rule_confidence,"('steps:lower',) -> ('calories:middle', 'very_active:zero')",0.39705882352941174,0.30939019827908715,27,35,-0.0876686252503246
+rule_confidence,"('steps:lower',) -> ('coverage:complete',)",0.47058823529411764,0.3977392977392977,27,35,-0.07284893755481991
+rule_confidence,"('steps:lower',) -> ('coverage:complete', 'day:weekday')",0.29411764705882354,0.23630484741595853,27,35,-0.05781279964286501
+rule_confidence,"('steps:lower',) -> ('coverage:complete', 'day:weekend')",0.17647058823529413,0.1614344503233392,27,35,-0.015036137911954933
+rule_confidence,"('steps:lower',) -> ('coverage:complete', 'very_active:zero')",0.39705882352941174,0.3208433541766875,27,35,-0.07621546935272422
+rule_confidence,"('steps:lower',) -> ('coverage:incomplete',)",0.5294117647058824,0.6022607022607022,27,35,0.0728489375548198
+rule_confidence,"('steps:lower',) -> ('coverage:incomplete', 'day:weekday')",0.3382352941176471,0.40100742878520657,27,35,0.06277213466755949
+rule_confidence,"('steps:lower',) -> ('coverage:incomplete', 'day:weekend')",0.19117647058823528,0.2012532734754957,27,35,0.010076802887260428
+rule_confidence,"('steps:lower',) -> ('coverage:incomplete', 'very_active:zero')",0.4338235294117647,0.49691090802201915,27,35,0.06308737861025443
+rule_confidence,"('steps:lower',) -> ('day:weekday',)",0.6323529411764706,0.6373122762011652,27,35,0.004959335024694589
+rule_confidence,"('steps:lower',) -> ('day:weekday', 'very_active:zero')",0.5294117647058824,0.5293169793169793,27,35,-9.478538890306254e-05
+rule_confidence,"('steps:lower',) -> ('day:weekend',)",0.36764705882352944,0.3626877237988349,27,35,-0.004959335024694533
+rule_confidence,"('steps:lower',) -> ('day:weekend', 'very_active:zero')",0.3014705882352941,0.2884372828817273,27,35,-0.013033305353566782
+rule_confidence,"('steps:lower',) -> ('very_active:zero',)",0.8308823529411765,0.8177542621987066,27,35,-0.0131280907424699
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('calories:lower',)",0.4778761061946903,0.5468281718281719,26,35,0.06895206563348161
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('calories:middle',)",0.4778761061946903,0.3922743922743923,26,35,-0.08560171392029797
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('coverage:complete',)",0.4778761061946903,0.3939269064269064,26,35,-0.08394919976778387
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('coverage:incomplete',)",0.5221238938053098,0.6060730935730936,26,35,0.08394919976778381
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('day:weekday',)",0.6371681415929203,0.6320429570429571,26,35,-0.0051251845499632465
+rule_confidence,"('steps:lower', 'very_active:zero') -> ('day:weekend',)",0.36283185840707965,0.36795704295704296,26,35,0.005125184549963302
+rule_confidence,"('steps:middle',) -> ('active_share:middle',)",0.5864661654135338,0.6236730715678084,30,35,0.03720690615427458
+rule_confidence,"('steps:middle',) -> ('active_share:middle', 'calories:middle')",0.3458646616541353,0.32149470899470894,30,35,-0.024369952659426375
+rule_confidence,"('steps:middle',) -> ('active_share:middle', 'calories:upper')",0.18796992481203006,0.19801169590643275,30,35,0.010041771094402685
+rule_confidence,"('steps:middle',) -> ('active_share:middle', 'day:weekday')",0.48120300751879697,0.49516429963798386,30,35,0.013961292119186897
+rule_confidence,"('steps:middle',) -> ('active_share:upper',)",0.3458646616541353,0.3362684489000278,30,35,-0.009596212754107492
+rule_confidence,"('steps:middle',) -> ('active_share:upper', 'day:weekday')",0.21804511278195488,0.20360623781676412,30,35,-0.014438874965190751
+rule_confidence,"('steps:middle',) -> ('calories:middle',)",0.518796992481203,0.4583333333333333,30,35,-0.06046365914786972
+rule_confidence,"('steps:middle',) -> ('calories:middle', 'coverage:complete')",0.3082706766917293,0.287962962962963,30,35,-0.02030771372876633
+rule_confidence,"('steps:middle',) -> ('calories:middle', 'coverage:incomplete')",0.21052631578947367,0.17037037037037037,30,35,-0.040155945419103306
+rule_confidence,"('steps:middle',) -> ('calories:middle', 'day:weekday')",0.39849624060150374,0.3539021164021164,30,35,-0.04459412419938735
+rule_confidence,"('steps:middle',) -> ('calories:middle', 'very_active:lower')",0.24812030075187969,0.18194444444444444,30,35,-0.06617585630743525
+rule_confidence,"('steps:middle',) -> ('calories:middle', 'very_active:zero')",0.24060150375939848,0.24940476190476188,30,35,0.008803258145363396
+rule_confidence,"('steps:middle',) -> ('calories:upper',)",0.37593984962406013,0.33888888888888885,30,35,-0.03705096073517128
+rule_confidence,"('steps:middle',) -> ('calories:upper', 'coverage:incomplete')",0.24812030075187969,0.18976608187134503,30,35,-0.05835421888053466
+rule_confidence,"('steps:middle',) -> ('calories:upper', 'day:weekday')",0.2781954887218045,0.22169590643274853,30,35,-0.056499582289055966
+rule_confidence,"('steps:middle',) -> ('coverage:complete',)",0.45864661654135336,0.4634746588693957,30,35,0.004828042328042348
+rule_confidence,"('steps:middle',) -> ('coverage:complete', 'day:weekday')",0.3533834586466165,0.3607247284878864,30,35,0.007341269841269871
+rule_confidence,"('steps:middle',) -> ('coverage:complete', 'very_active:lower')",0.18796992481203006,0.20813840155945418,30,35,0.020168476747424113
+rule_confidence,"('steps:middle',) -> ('coverage:complete', 'very_active:zero')",0.24812030075187969,0.22835213032581453,30,35,-0.019768170426065157
+rule_confidence,"('steps:middle',) -> ('coverage:incomplete',)",0.5413533834586466,0.5365253411306042,30,35,-0.004828042328042348
+rule_confidence,"('steps:middle',) -> ('coverage:incomplete', 'day:weekday')",0.39849624060150374,0.37459551656920076,30,35,-0.023900724032302978
+rule_confidence,"('steps:middle',) -> ('coverage:incomplete', 'very_active:lower')",0.21804511278195488,0.15452241715399612,30,35,-0.06352269562795876
+rule_confidence,"('steps:middle',) -> ('coverage:incomplete', 'very_active:zero')",0.21804511278195488,0.21644736842105264,30,35,-0.0015977443609022368
+rule_confidence,"('steps:middle',) -> ('day:weekday',)",0.7518796992481203,0.7353202450570872,30,35,-0.016559454191033107
+rule_confidence,"('steps:middle',) -> ('day:weekday', 'very_active:lower')",0.2857142857142857,0.24018379281537175,30,35,-0.04553049289891395
+rule_confidence,"('steps:middle',) -> ('day:weekday', 'very_active:zero')",0.3533834586466165,0.3192634363686995,30,35,-0.034120022277916995
+rule_confidence,"('steps:middle',) -> ('day:weekend',)",0.24812030075187969,0.26467975494291285,30,35,0.016559454191033163
+rule_confidence,"('steps:middle',) -> ('very_active:lower',)",0.40601503759398494,0.36266081871345024,30,35,-0.0433542188805347
+rule_confidence,"('steps:middle',) -> ('very_active:zero',)",0.46616541353383456,0.4447994987468672,30,35,-0.021365914786967366
+rule_confidence,"('steps:middle', 'very_active:lower') -> ('calories:middle',)",0.6111111111111112,0.5394736842105263,19,35,-0.07163742690058483
+rule_confidence,"('steps:middle', 'very_active:lower') -> ('coverage:complete',)",0.46296296296296297,0.5561403508771929,19,35,0.09317738791422997
+rule_confidence,"('steps:middle', 'very_active:lower') -> ('coverage:incomplete',)",0.5370370370370371,0.443859649122807,19,35,-0.09317738791423008
+rule_confidence,"('steps:middle', 'very_active:lower') -> ('day:weekday',)",0.7037037037037037,0.6742690058479532,19,35,-0.02943469785575048
+rule_confidence,"('steps:middle', 'very_active:zero') -> ('calories:middle',)",0.5161290322580645,0.5972222222222222,18,35,0.08109318996415771
+rule_confidence,"('steps:middle', 'very_active:zero') -> ('coverage:complete',)",0.532258064516129,0.5583333333333333,18,35,0.026075268817204345
+rule_confidence,"('steps:middle', 'very_active:zero') -> ('coverage:incomplete',)",0.46774193548387094,0.44166666666666665,18,35,-0.02607526881720429
+rule_confidence,"('steps:middle', 'very_active:zero') -> ('day:weekday',)",0.7580645161290323,0.7304232804232804,18,35,-0.027641235705751832
+rule_confidence,"('steps:upper',) -> ('active_share:middle',)",0.3464566929133858,0.3451101928374656,22,35,-0.0013465000759202428
+rule_confidence,"('steps:upper',) -> ('active_share:middle', 'day:weekday')",0.2677165354330709,0.24754361799816343,22,35,-0.020172917434907456
+rule_confidence,"('steps:upper',) -> ('active_share:upper',)",0.6456692913385826,0.6397382920110193,22,35,-0.005930999327563358
+rule_confidence,"('steps:upper',) -> ('active_share:upper', 'calories:middle')",0.3464566929133858,0.2772727272727273,22,35,-0.06918396564065854
+rule_confidence,"('steps:upper',) -> ('active_share:upper', 'calories:upper')",0.25984251968503935,0.3245867768595041,22,35,0.06474425717446475
+rule_confidence,"('steps:upper',) -> ('active_share:upper', 'day:weekday')",0.3937007874015748,0.43771279225824683,22,35,0.044012004856672005
+rule_confidence,"('steps:upper',) -> ('active_share:upper', 'day:weekend')",0.25196850393700787,0.20202549975277248,22,35,-0.04994300418423539
+rule_confidence,"('steps:upper',) -> ('calories:middle',)",0.4881889763779528,0.44370982552800736,22,35,-0.044479150849945415
+rule_confidence,"('steps:upper',) -> ('calories:middle', 'coverage:incomplete')",0.3779527559055118,0.2642332415059688,22,35,-0.11371951439954303
+rule_confidence,"('steps:upper',) -> ('calories:middle', 'day:weekday')",0.3464566929133858,0.3267394221939676,22,35,-0.0197172707194182
+rule_confidence,"('steps:upper',) -> ('calories:middle', 'very_active:lower')",0.2204724409448819,0.18824256551529278,22,35,-0.032229875429589105
+rule_confidence,"('steps:upper',) -> ('calories:middle', 'very_active:upper')",0.25984251968503935,0.24031574486119942,22,35,-0.019526774823839937
+rule_confidence,"('steps:upper',) -> ('calories:upper',)",0.4409448818897638,0.46790633608815424,22,35,0.026961454198390467
+rule_confidence,"('steps:upper',) -> ('calories:upper', 'coverage:complete')",0.28346456692913385,0.20550964187327825,22,35,-0.0779549250558556
+rule_confidence,"('steps:upper',) -> ('calories:upper', 'day:weekday')",0.2677165354330709,0.2878099173553719,22,35,0.020093381922301035
+rule_confidence,"('steps:upper',) -> ('calories:upper', 'very_active:upper')",0.31496062992125984,0.2847107438016529,22,35,-0.03024988611960694
+rule_confidence,"('steps:upper',) -> ('coverage:complete',)",0.41732283464566927,0.4329660238751148,22,35,0.01564318922944552
+rule_confidence,"('steps:upper',) -> ('coverage:complete', 'day:weekday')",0.2755905511811024,0.28165748393021117,22,35,0.0060669327491088
+rule_confidence,"('steps:upper',) -> ('coverage:complete', 'very_active:upper')",0.29133858267716534,0.2542240587695133,22,35,-0.03711452390765202
+rule_confidence,"('steps:upper',) -> ('coverage:incomplete',)",0.5826771653543307,0.5670339761248852,22,35,-0.01564318922944552
+rule_confidence,"('steps:upper',) -> ('coverage:incomplete', 'day:weekday')",0.3858267716535433,0.40359892632619904,22,35,0.01777215467265575
+rule_confidence,"('steps:upper',) -> ('coverage:incomplete', 'day:weekend')",0.1968503937007874,0.16343504979868617,22,35,-0.03341534390210124
+rule_confidence,"('steps:upper',) -> ('coverage:incomplete', 'very_active:lower')",0.25196850393700787,0.2368881118881119,22,35,-0.015080392048895969
+rule_confidence,"('steps:upper',) -> ('coverage:incomplete', 'very_active:upper')",0.2992125984251969,0.2809034399943491,22,35,-0.018309158430847794
+rule_confidence,"('steps:upper',) -> ('day:weekday',)",0.6614173228346457,0.6852564102564103,22,35,0.02383908742176455
+rule_confidence,"('steps:upper',) -> ('day:weekday', 'very_active:lower')",0.2283464566929134,0.24757187257187258,22,35,0.01922541587895918
+rule_confidence,"('steps:upper',) -> ('day:weekday', 'very_active:upper')",0.4015748031496063,0.36950271950271946,22,35,-0.03207208364688685
+rule_confidence,"('steps:upper',) -> ('day:weekend',)",0.33858267716535434,0.31474358974358974,22,35,-0.023839087421764604
+rule_confidence,"('steps:upper',) -> ('day:weekend', 'very_active:upper')",0.1889763779527559,0.1656247792611429,22,35,-0.02335159869161299
+rule_confidence,"('steps:upper',) -> ('very_active:lower',)",0.3543307086614173,0.35502401638765274,22,35,0.000693307726235437
+rule_confidence,"('steps:upper',) -> ('very_active:upper',)",0.5905511811023622,0.5351274987638625,22,35,-0.0554236823384997
+rule_confidence,"('steps:upper', 'very_active:lower') -> ('calories:middle',)",0.6222222222222222,0.46785714285714286,14,35,-0.15436507936507937
+rule_confidence,"('steps:upper', 'very_active:lower') -> ('coverage:incomplete',)",0.7111111111111111,0.5964285714285714,14,35,-0.11468253968253972
+rule_confidence,"('steps:upper', 'very_active:lower') -> ('day:weekday',)",0.6444444444444445,0.6261904761904763,14,35,-0.01825396825396819
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('calories:middle',)",0.44,0.4416208791208791,16,35,0.001620879120879104
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('calories:upper',)",0.5333333333333333,0.49107142857142855,16,35,-0.04226190476190478
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('coverage:complete',)",0.49333333333333335,0.42032967032967034,16,35,-0.07300366300366301
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('coverage:incomplete',)",0.5066666666666667,0.5796703296703297,16,35,0.07300366300366301
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('day:weekday',)",0.68,0.6073355463980464,16,35,-0.07266445360195362
+rule_confidence,"('steps:upper', 'very_active:upper') -> ('day:weekend',)",0.32,0.3926644536019536,16,35,0.07266445360195362
+rule_confidence,"('steps:zero',) -> ('active_share:lower',)",0.9836065573770492,0.9880952380952381,14,35,0.004488680718188975
+rule_confidence,"('steps:zero',) -> ('active_share:lower', 'calories:middle')",0.6229508196721312,0.3869047619047619,14,35,-0.23604605776736926
+rule_confidence,"('steps:zero',) -> ('active_share:lower', 'day:weekday')",0.639344262295082,0.6723901098901098,14,35,0.03304584759502782
+rule_confidence,"('steps:zero',) -> ('calories:middle',)",0.6229508196721312,0.3869047619047619,14,35,-0.23604605776736926
+rule_confidence,"('steps:zero',) -> ('calories:middle', 'coverage:complete')",0.6229508196721312,0.3869047619047619,14,35,-0.23604605776736926
+rule_confidence,"('steps:zero',) -> ('calories:middle', 'day:weekday')",0.4262295081967213,0.29441391941391937,14,35,-0.13181558878280192
+rule_confidence,"('steps:zero',) -> ('calories:middle', 'very_active:zero')",0.6065573770491803,0.3779761904761905,14,35,-0.22858118657298981
+rule_confidence,"('steps:zero',) -> ('coverage:complete',)",0.9016393442622951,0.8511904761904762,14,35,-0.05044886807181892
+rule_confidence,"('steps:zero',) -> ('coverage:complete', 'day:weekday')",0.5901639344262295,0.5563186813186813,14,35,-0.03384525310754816
+rule_confidence,"('steps:zero',) -> ('coverage:complete', 'very_active:zero')",0.8852459016393442,0.8422619047619048,14,35,-0.04298399687743948
+rule_confidence,"('steps:zero',) -> ('day:weekday',)",0.6557377049180327,0.6842948717948717,14,35,0.028557166876838957
+rule_confidence,"('steps:zero',) -> ('day:weekday', 'very_active:zero')",0.6557377049180327,0.6842948717948717,14,35,0.028557166876838957
+rule_confidence,"('steps:zero',) -> ('very_active:zero',)",0.9672131147540983,0.9821428571428571,14,35,0.014929742388758771
+rule_confidence,"('steps:zero', 'very_active:zero') -> ('calories:middle',)",0.6271186440677966,0.39583333333333337,14,35,-0.23128531073446323
+rule_confidence,"('steps:zero', 'very_active:zero') -> ('coverage:complete',)",0.9152542372881356,0.8601190476190476,14,35,-0.055135189669088036
+rule_confidence,"('steps:zero', 'very_active:zero') -> ('day:weekday',)",0.6779661016949152,0.6991758241758241,14,35,0.02120972248090891
+rule_confidence,"('very_active:lower',) -> ('calories:middle',)",0.6016949152542372,0.5741379310344827,29,35,-0.0275569842197545
+rule_confidence,"('very_active:lower',) -> ('calories:middle', 'coverage:complete')",0.22033898305084745,0.2971264367816092,29,35,0.07678745373076176
+rule_confidence,"('very_active:lower',) -> ('calories:middle', 'coverage:incomplete')",0.3813559322033898,0.2770114942528736,29,35,-0.10434443795051623
+rule_confidence,"('very_active:lower',) -> ('calories:middle', 'day:weekday')",0.4322033898305085,0.404649947753396,29,35,-0.027553442077112467
+rule_confidence,"('very_active:lower',) -> ('calories:middle', 'steps:middle')",0.2796610169491525,0.28970741901776387,29,35,0.010046402068611349
+rule_confidence,"('very_active:lower',) -> ('calories:middle', 'steps:upper')",0.23728813559322035,0.17753396029258098,29,35,-0.05975417530063937
+rule_confidence,"('very_active:lower',) -> ('calories:upper',)",0.2796610169491525,0.2839080459770115,29,35,0.004247029027859006
+rule_confidence,"('very_active:lower',) -> ('coverage:complete',)",0.3898305084745763,0.5163793103448275,29,35,0.12654880187025125
+rule_confidence,"('very_active:lower',) -> ('coverage:complete', 'day:weekday')",0.23728813559322035,0.32126436781609197,29,35,0.08397623222287162
+rule_confidence,"('very_active:lower',) -> ('coverage:complete', 'steps:middle')",0.211864406779661,0.2798850574712644,29,35,0.0680206506916034
+rule_confidence,"('very_active:lower',) -> ('coverage:incomplete',)",0.6101694915254238,0.4836206896551724,29,35,-0.12654880187025136
+rule_confidence,"('very_active:lower',) -> ('coverage:incomplete', 'day:weekday')",0.4152542372881356,0.2971786833855799,29,35,-0.1180755539025557
+rule_confidence,"('very_active:lower',) -> ('coverage:incomplete', 'day:weekend')",0.19491525423728814,0.18644200626959248,29,35,-0.008473247967695663
+rule_confidence,"('very_active:lower',) -> ('coverage:incomplete', 'steps:middle')",0.2457627118644068,0.19890282131661444,29,35,-0.046859890547792354
+rule_confidence,"('very_active:lower',) -> ('coverage:incomplete', 'steps:upper')",0.2711864406779661,0.17063740856844303,29,35,-0.10054903210952307
+rule_confidence,"('very_active:lower',) -> ('day:weekday',)",0.652542372881356,0.6184430512016719,29,35,-0.0340993216796841
+rule_confidence,"('very_active:lower',) -> ('day:weekday', 'steps:middle')",0.3220338983050847,0.32079414838035525,29,35,-0.0012397499247294719
+rule_confidence,"('very_active:lower',) -> ('day:weekday', 'steps:upper')",0.2457627118644068,0.18500522466039707,29,35,-0.060757487204009725
+rule_confidence,"('very_active:lower',) -> ('day:weekend',)",0.3474576271186441,0.3815569487983281,29,35,0.03409932167968399
+rule_confidence,"('very_active:lower',) -> ('steps:middle',)",0.4576271186440678,0.47878787878787876,29,35,0.021160760143810964
+rule_confidence,"('very_active:lower',) -> ('steps:upper',)",0.3813559322033898,0.3123040752351097,29,35,-0.06905185696828009
+rule_confidence,"('very_active:upper',) -> ('calories:middle',)",0.40816326530612246,0.5046260683760684,20,35,0.09646280306994592
+rule_confidence,"('very_active:upper',) -> ('calories:middle', 'coverage:incomplete')",0.2755102040816326,0.20846153846153848,20,35,-0.06704866562009415
+rule_confidence,"('very_active:upper',) -> ('calories:middle', 'day:weekday')",0.30612244897959184,0.27674145299145303,20,35,-0.029380995988138814
+rule_confidence,"('very_active:upper',) -> ('calories:middle', 'steps:upper')",0.336734693877551,0.32004273504273506,20,35,-0.016691958834815945
+rule_confidence,"('very_active:upper',) -> ('calories:upper',)",0.5306122448979592,0.4184722222222222,20,35,-0.11214002267573703
+rule_confidence,"('very_active:upper',) -> ('calories:upper', 'coverage:complete')",0.30612244897959184,0.2659722222222222,20,35,-0.04015022675736962
+rule_confidence,"('very_active:upper',) -> ('calories:upper', 'day:weekday')",0.3673469387755102,0.29444444444444445,20,35,-0.07290249433106577
+rule_confidence,"('very_active:upper',) -> ('calories:upper', 'steps:upper')",0.40816326530612246,0.28347222222222224,20,35,-0.12469104308390022
+rule_confidence,"('very_active:upper',) -> ('coverage:complete',)",0.4387755102040816,0.5621367521367521,20,35,0.12336124193267045
+rule_confidence,"('very_active:upper',) -> ('coverage:complete', 'day:weekday')",0.29591836734693877,0.31435897435897436,20,35,0.018440607012035592
+rule_confidence,"('very_active:upper',) -> ('coverage:complete', 'steps:upper')",0.37755102040816324,0.32713675213675214,20,35,-0.0504142682714111
+rule_confidence,"('very_active:upper',) -> ('coverage:incomplete',)",0.5612244897959183,0.43786324786324793,20,35,-0.1233612419326704
+rule_confidence,"('very_active:upper',) -> ('coverage:incomplete', 'day:weekday')",0.41836734693877553,0.2798824786324786,20,35,-0.13848486830629692
+rule_confidence,"('very_active:upper',) -> ('coverage:incomplete', 'steps:upper')",0.3877551020408163,0.330224358974359,20,35,-0.057530743066457335
+rule_confidence,"('very_active:upper',) -> ('day:weekday',)",0.7142857142857143,0.5942414529914529,20,35,-0.12004426129426138
+rule_confidence,"('very_active:upper',) -> ('day:weekday', 'steps:upper')",0.5204081632653061,0.3616025641025641,20,35,-0.15880559916274206
+rule_confidence,"('very_active:upper',) -> ('day:weekend',)",0.2857142857142857,0.4057585470085471,20,35,0.12004426129426138
+rule_confidence,"('very_active:upper',) -> ('day:weekend', 'steps:upper')",0.24489795918367346,0.295758547008547,20,35,0.050860587824873515
+rule_confidence,"('very_active:upper',) -> ('steps:upper',)",0.7653061224489796,0.6573611111111111,20,35,-0.10794501133786849
+rule_confidence,"('very_active:zero',) -> ('calories:lower',)",0.36099585062240663,0.443912582737311,32,35,0.08291673211490436
+rule_confidence,"('very_active:zero',) -> ('calories:lower', 'coverage:complete')",0.17427385892116182,0.1492552892369069,32,35,-0.02501856968425492
+rule_confidence,"('very_active:zero',) -> ('calories:lower', 'coverage:incomplete')",0.18672199170124482,0.2946572935004041,32,35,0.10793530179915928
+rule_confidence,"('very_active:zero',) -> ('calories:lower', 'day:weekday')",0.24066390041493776,0.2768085725726391,32,35,0.03614467215770131
+rule_confidence,"('very_active:zero',) -> ('calories:lower', 'day:weekend')",0.12033195020746888,0.16710401016467194,32,35,0.04677205995720306
+rule_confidence,"('very_active:zero',) -> ('calories:lower', 'steps:lower')",0.22406639004149378,0.29822248851780503,32,35,0.07415609847631124
+rule_confidence,"('very_active:zero',) -> ('calories:middle',)",0.5145228215767634,0.46137500784239915,32,35,-0.05314781373436428
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'coverage:complete')",0.3651452282157676,0.307846810496267,32,35,-0.057298417719500616
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'coverage:incomplete')",0.14937759336099585,0.15352819734613213,32,35,0.004150603985136281
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'day:weekday')",0.35269709543568467,0.28493401601417906,32,35,-0.06776307942150561
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'day:weekend')",0.16182572614107885,0.1764409918282201,32,35,0.014615265687141249
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'steps:lower')",0.22406639004149378,0.1888709494008407,32,35,-0.03519544064065308
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'steps:middle')",0.13278008298755187,0.15048024891774892,32,35,0.017700165930197048
+rule_confidence,"('very_active:zero',) -> ('calories:middle', 'steps:zero')",0.15352697095435686,0.11811755952380952,32,35,-0.035409411430547336
+rule_confidence,"('very_active:zero',) -> ('calories:upper',)",0.12448132780082988,0.09471240942028986,32,35,-0.02976891838054002
+rule_confidence,"('very_active:zero',) -> ('coverage:complete',)",0.5975103734439834,0.49859084196919873,32,35,-0.09891953147478466
+rule_confidence,"('very_active:zero',) -> ('coverage:complete', 'day:weekday')",0.4190871369294606,0.32152463216841415,32,35,-0.09756250476104644
+rule_confidence,"('very_active:zero',) -> ('coverage:complete', 'day:weekend')",0.17842323651452283,0.1770662098007846,32,35,-0.0013570267137382186
+rule_confidence,"('very_active:zero',) -> ('coverage:complete', 'steps:lower')",0.22406639004149378,0.1618483139303152,32,35,-0.06221807611117858
+rule_confidence,"('very_active:zero',) -> ('coverage:complete', 'steps:middle')",0.13692946058091288,0.12551823842185095,32,35,-0.011411222159061929
+rule_confidence,"('very_active:zero',) -> ('coverage:complete', 'steps:zero')",0.22406639004149378,0.20618912337662337,32,35,-0.01787726666487041
+rule_confidence,"('very_active:zero',) -> ('coverage:incomplete',)",0.4024896265560166,0.5014091580308012,32,35,0.0989195314747846
+rule_confidence,"('very_active:zero',) -> ('coverage:incomplete', 'day:weekday')",0.2572614107883817,0.3053868228780313,32,35,0.0481254120896496
+rule_confidence,"('very_active:zero',) -> ('coverage:incomplete', 'day:weekend')",0.14522821576763487,0.19602233515276993,32,35,0.05079411938513506
+rule_confidence,"('very_active:zero',) -> ('coverage:incomplete', 'steps:lower')",0.24481327800829875,0.357910431959345,32,35,0.11309715395104628
+rule_confidence,"('very_active:zero',) -> ('coverage:incomplete', 'steps:middle')",0.12033195020746888,0.10366512217535236,32,35,-0.016666828032116526
+rule_confidence,"('very_active:zero',) -> ('day:weekday',)",0.6763485477178424,0.6269114550464454,32,35,-0.049437092671396954
+rule_confidence,"('very_active:zero',) -> ('day:weekday', 'steps:lower')",0.2987551867219917,0.3136120377828338,32,35,0.014856851060842113
+rule_confidence,"('very_active:zero',) -> ('day:weekday', 'steps:middle')",0.1950207468879668,0.15491966384709352,32,35,-0.04010108304087329
+rule_confidence,"('very_active:zero',) -> ('day:weekday', 'steps:zero')",0.16597510373443983,0.14454703282828282,32,35,-0.021428070906157004
+rule_confidence,"('very_active:zero',) -> ('day:weekend',)",0.3236514522821577,0.37308854495355454,32,35,0.04943709267139684
+rule_confidence,"('very_active:zero',) -> ('day:weekend', 'steps:lower')",0.17012448132780084,0.2061467081068264,32,35,0.03602222677902556
+rule_confidence,"('very_active:zero',) -> ('steps:lower',)",0.46887966804979253,0.5197587458896602,32,35,0.05087907783986767
+rule_confidence,"('very_active:zero',) -> ('steps:middle',)",0.2572614107883817,0.22918336059720332,32,35,-0.0280780501911784
+rule_confidence,"('very_active:zero',) -> ('steps:zero',)",0.24481327800829875,0.22749594155844155,32,35,-0.017317336449857196
