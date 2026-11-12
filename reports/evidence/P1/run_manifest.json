@@ -1,6 +1,8 @@
 {
   "command": "python src/data_audit.py",
+  "created_at_utc": "2026-11-12T12:08:35.101590+00:00",
   "python": "3.13.11",
+  "source_commit": "bb192d0f7c72e9bcd3dd038cb5cc976f7a4e7a46",
   "input_files": [
     "data/raw/dailyActivity_merged.csv",
     "data/raw/heartrate_seconds_merged.csv",
@@ -110,6 +112,19 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {
+        "zero_step_rows": 61,
+        "zero_step_participants": 14,
+        "zero_step_positive_calories_rows": 56,
+        "zero_step_positive_active_minutes_rows": 3,
+        "distance_diff_threshold": 0.01,
+        "total_vs_tracker_distance_mismatch_rows": 16,
+        "total_vs_component_sum_mismatch_rows": 104,
+        "participant_4020332650_component_mismatch_rows": 29,
+        "participant_4020332650_component_mismatches_over_one": 11,
+        "participant_4020332650_max_component_abs_diff": 7.41,
+        "participant_4020332650_max_component_abs_diff_date": "3/20/2016"
+      },
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -153,6 +168,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -196,6 +212,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -244,6 +261,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -287,6 +305,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -330,6 +349,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -373,6 +393,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -416,6 +437,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -465,6 +487,7 @@
       "duplicate_key_rows": 525,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -508,6 +531,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
@@ -576,6 +600,7 @@
       "duplicate_key_rows": 0,
       "missing_key_rows": 0,
       "malformed_rows": 0,
+      "quality_flags": {},
       "checks": {
         "header_present": true,
         "key_fields_present": true,
