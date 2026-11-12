@@ -1,0 +1,412 @@
+{
+  "analysis": "FitInsight Phase 5: association rules and anomaly screening",
+  "anomaly_summary": {
+    "candidate_days_by_method": {
+      "global_iqr_any_field": 36,
+      "knn_pooled_k10_top_5pct": 23,
+      "knn_pooled_k5_top_5pct": 23,
+      "knn_stratified_k10_top_5pct": 24,
+      "knn_stratified_k5_top_5pct": 24,
+      "phase1_absolute_distance_gt_0_01": 104,
+      "phase2_distance_flag": 65,
+      "phase3_daily_candidates": 140,
+      "within_person_robust": 48,
+      "zero_steps_with_positive_calories_or_activity": 56
+    },
+    "distance_screens": {
+      "intersection_days": 65,
+      "not_interchangeable": true,
+      "phase1_candidate_days": 104,
+      "phase1_definition": "|component_distance_sum - total_distance| > 0.01 (plain absolute-difference screen)",
+      "phase1_only_days": 39,
+      "phase2_candidate_days": 65,
+      "phase2_definition": "committed Phase 2 distance_discrepancy flag using the existing NumPy-isclose-equivalent tolerance",
+      "phase2_only_days": 0
+    },
+    "input_rows": 457,
+    "participants": 35,
+    "phase3_daily_candidates": 140,
+    "phase3_sleep_episode_candidates": 111,
+    "review_cases": 7
+  },
+  "association_summary": {
+    "eligible_rules": 89,
+    "itemsets": 215,
+    "participants": 35,
+    "rules_examined": 860,
+    "thresholds": {
+      "confidence_sensitivity": [
+        0.5,
+        0.6,
+        0.7
+      ],
+      "distinct_participant_sensitivity": [
+        3,
+        5,
+        10
+      ],
+      "lift_sensitivity": [
+        1.0,
+        1.1,
+        1.25
+      ],
+      "maximum_itemset_size": 3,
+      "minimum_confidence": 0.6,
+      "minimum_distinct_participants": 5,
+      "minimum_lift": 1.1,
+      "minimum_support": 0.05,
+      "minimum_support_transactions": 23,
+      "support_sensitivity": [
+        0.03,
+        0.05,
+        0.08
+      ]
+    },
+    "transactions": 457
+  },
+  "baseline_main_ancestor": "8172c55865d7b77d3bf193f541220d4e741ce91d",
+  "branch": "phase-5-association-anomalies",
+  "external_analysis_services_used": [],
+  "figure_validation": {
+    "figure_count": 8,
+    "figures": [
+      {
+        "axis_label": "Participant-day transactions containing item (count)",
+        "description": "Counts of participant-day transactions containing each one of the prespecified categorical items.",
+        "file": "reports/generated/associations/figures/01_transaction_item_prevalence.svg",
+        "interpretation": "Items occur at different frequencies; counts define the marginal support used by Apriori.",
+        "legend": "Transactions containing item",
+        "limitation": "These are recorded categories in a small historical sample, not behavioral or health labels.",
+        "parameters": "Prespecified step/activity bins; calories split at full-cohort Q1/Q3; weekday/weekend; Phase 2 completeness",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "n=457 participant-days; participants=35; one item per family per day; zero-step records retained",
+        "title": "Participant-day transaction item prevalence",
+        "units": "transaction counts"
+      },
+      {
+        "description": "Each point is a directed rule generated from a frequent itemset; green points satisfy every declared rule threshold.",
+        "file": "reports/generated/associations/figures/02_rule_support_confidence.svg",
+        "interpretation": "Eligibility additionally requires lift and distinct-participant support; a high confidence alone is insufficient.",
+        "legend": "Eligible / not eligible under all prespecified thresholds",
+        "limitation": "Rules are descriptive co-occurrences, not causal statements; repeated days from one person are not independent.",
+        "parameters": "Apriori maximum itemset size 3; support 5%; confidence 60%; lift 1.10; minimum 5 distinct participants",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "n=457 participant-days; 860 rules from itemsets of size 2-3; min support 5%, confidence 60%, lift 1.10, at least 5 participants",
+        "title": "Association-rule support and confidence",
+        "units": "support and confidence as proportions",
+        "x_label": "Joint support (share of participant-day transactions)",
+        "y_label": "Confidence (share of antecedent transactions)"
+      },
+      {
+        "axis_label": "Rules meeting every threshold (count)",
+        "description": "Grouped bars compare the count of rules meeting all thresholds for the full cohort and complete-day subset.",
+        "file": "reports/generated/associations/figures/03_rule_threshold_sensitivity.svg",
+        "interpretation": "This prespecified grid shows how rule counts respond to support threshold changes and complete-day filtering.",
+        "legend": "All participant-days  Complete days only",
+        "limitation": "Changing the threshold changes the candidate set; counts are not a measure of truth or predictive value.",
+        "parameters": "Minimum support 3%, 5%, 8%; confidence 60%; lift 1.10; 5 participants",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "All-days n=457; complete-day n=233; confidence 60%, lift 1.10, minimum 5 participants",
+        "title": "Eligible association rules across fixed support thresholds",
+        "units": "qualifying rule counts"
+      },
+      {
+        "axis_label": "Flagged participant-days (count)",
+        "description": "Counts of low- and high-tail participant-day values beyond the linear-interpolated 1.5 times interquartile-range fences.",
+        "file": "reports/generated/anomalies/figures/04_global_iqr_flags.svg",
+        "interpretation": "The screen identifies distribution-tail records for review; different fields flag different rows.",
+        "legend": "Below lower fence  Above upper fence",
+        "limitation": "IQR fences do not establish errors, unusual physiology, or invalid wearables.",
+        "parameters": "Per-field linear Q1/Q3; 1.5\u00d7IQR fences",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "n=457 participant-days; participants=35; linear-interpolated quartiles; values retained",
+        "title": "Global 1.5\u00d7IQR candidate flags by field",
+        "units": "participant-day flag counts"
+      },
+      {
+        "axis_label": "Candidate participant-days (count)",
+        "description": "Unique participant-day counts from the existing Phase 3 screen, new Phase 5 screens, and distinct distance definitions.",
+        "file": "reports/generated/anomalies/figures/05_detector_candidate_counts.svg",
+        "interpretation": "Counts vary by method; overlapping methods can flag the same record and must not be added together.",
+        "legend": "Candidate participant-days",
+        "limitation": "Candidate counts are screening output, not counts of confirmed data errors.",
+        "parameters": "Within-person |score| > 3.5; kNN top 5% with k=5/10; global 1.5\u00d7IQR; existing P3 flags retained",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "n=457 participant-days; counts are per method; P1 strict absolute and Phase 2 distance flags remain separate",
+        "title": "Candidate participant-days by screening method",
+        "units": "unique participant-day counts per detector"
+      },
+      {
+        "axis_label": "Mean neighbor distance (standardized Euclidean units)",
+        "description": "Median and 95th-percentile mean-neighbor distance scores for pooled and completeness-stratified participant-day cohorts.",
+        "file": "reports/generated/anomalies/figures/06_knn_distance_quantiles.svg",
+        "interpretation": "Within-cohort percentiles show the upper score tail under pooled and coverage-stratified comparisons.",
+        "legend": "Median score  95th percentile",
+        "limitation": "Each cohort is standardized separately; scores across cohorts are not directly interchangeable.",
+        "parameters": "Features: steps/hour, calories/hour, active share; population-SD standardization; k=5/10; top 5% by cohort",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "Rates standardized within each cohort; top 5% candidates; n=457 overall participant-days; k=5 and 10",
+        "title": "kNN score distribution summaries by coverage cohort",
+        "units": "mean standardized Euclidean neighbor distance"
+      },
+      {
+        "axis_label": "Flagged participant-days (count)",
+        "description": "Unique participant-days with an extreme within-person daily steps or active-share modified robust score.",
+        "file": "reports/generated/anomalies/figures/07_within_person_candidates.svg",
+        "interpretation": "Within-person comparisons identify values unusual relative to each participant's own observed records.",
+        "legend": "Flagged participant-days",
+        "limitation": "Short and uneven observation histories limit each person's reference distribution; a flag is not an error diagnosis.",
+        "parameters": "Modified MAD score threshold 3.5; at least 5 observed days; IQR fallback when MAD is zero and IQR positive",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "n=457 participant-days; minimum 5 days per participant; absolute robust score threshold 3.5",
+        "title": "Within-person robust candidate counts",
+        "units": "unique participant-day counts"
+      },
+      {
+        "axis_label": "Candidate participant-days (count)",
+        "description": "Primary full-period candidate counts are compared with a sensitivity that excludes the last observed date.",
+        "file": "reports/generated/anomalies/figures/08_boundary_date_sensitivity.svg",
+        "interpretation": "The all-date screen remains primary; the comparison shows the effect of omitting only the observed boundary date.",
+        "legend": "Primary, all dates  Excluding final date",
+        "limitation": "Phase 3 flags are reused then filtered rather than rerun; all other displayed screens are recalculated for sensitivity.",
+        "parameters": "Primary retains April 12, 2016; sensitivity excludes that date; IQR, within-person, kNN and distance screens recalculated",
+        "sample": "457 participant-days; 35 participants",
+        "subtitle": "Primary n=457; final date=2016-04-12; primary includes all records; selected screens are recomputed",
+        "title": "Last-date sensitivity for anomaly candidate counts",
+        "units": "candidate participant-day counts"
+      }
+    ],
+    "metadata_has_sample_units_parameters_legend_interpretation_and_limitations": true,
+    "participant_identifiers_in_figures": false,
+    "svg_xml_parse_passed": true
+  },
+  "generated_files": [
+    {
+      "bytes": 21716,
+      "path": "reports/evidence/P5/anomaly_metrics.json",
+      "sha256": "bd71ec31b6af573f6d44bf09dd056b34095759b528b6bd304974264b141aa8ee"
+    },
+    {
+      "bytes": 49264,
+      "path": "reports/evidence/P5/association_metrics.json",
+      "sha256": "7b8070bf81b6b6e6b08d07d79592538e404dc6d1184165b64900063989b8c56d"
+    },
+    {
+      "bytes": 8008,
+      "path": "reports/evidence/P5/figures_index.json",
+      "sha256": "16c7337916dff05a163d3f6c605d4a2b8ae3a8d7a029e7fdbaec20d974269a5d"
+    },
+    {
+      "bytes": 206,
+      "path": "reports/evidence/P5/test_results.json",
+      "sha256": "541b5676dd3d545375161a0530878335185a90913495f3f3414a11e2f751c33d"
+    },
+    {
+      "bytes": 104782,
+      "path": "reports/generated/anomalies/candidate_registry.csv",
+      "sha256": "35419ed48eb0d6d33213e7c84460d5ba44a88a0978eac966cbb1b85db6916afb"
+    },
+    {
+      "bytes": 1841,
+      "path": "reports/generated/anomalies/date_boundary_sensitivity.csv",
+      "sha256": "532ffca18041298e71013bc1976831d111879c32620f518d2e769c5a6453b0ae"
+    },
+    {
+      "bytes": 488,
+      "path": "reports/generated/anomalies/detector_counts.csv",
+      "sha256": "0c5a25e176a3d40813cec7f003d66a93ee8335fe7d05e170b6961b001cffcfef"
+    },
+    {
+      "bytes": 3856,
+      "path": "reports/generated/anomalies/detector_overlaps.csv",
+      "sha256": "6b1726f6d9e7046d1b8b47551c7c6b3ff94df978348f4cd3d6801d7f168ea64e"
+    },
+    {
+      "bytes": 4229,
+      "path": "reports/generated/anomalies/figures/04_global_iqr_flags.svg",
+      "sha256": "77bea466088dc80539b36a9d9c7d8cb9ca54de051f0071464f3dc9bbba341c9d"
+    },
+    {
+      "bytes": 4327,
+      "path": "reports/generated/anomalies/figures/05_detector_candidate_counts.svg",
+      "sha256": "aa60f2987aefd483e489dd74f1fdb52133ecca612017ce3ca475bc6eb594cce6"
+    },
+    {
+      "bytes": 4069,
+      "path": "reports/generated/anomalies/figures/06_knn_distance_quantiles.svg",
+      "sha256": "648f3748091a2fed99d79fd116f2c61087e4f6ec97b57416f25cbb2ae912705f"
+    },
+    {
+      "bytes": 2672,
+      "path": "reports/generated/anomalies/figures/07_within_person_candidates.svg",
+      "sha256": "1a839fe7dd59f23cfe6e757d71f0470e43cd29d4ac2d79938eb17702e557778f"
+    },
+    {
+      "bytes": 5234,
+      "path": "reports/generated/anomalies/figures/08_boundary_date_sensitivity.svg",
+      "sha256": "957b955f67791022ef4a738ede9be8e97668937374ee283ade2fa7b693fa0bb2"
+    },
+    {
+      "bytes": 4649,
+      "path": "reports/generated/anomalies/global_iqr_flags.csv",
+      "sha256": "9073b8694eee845db2ffd2278247e11d0b5c8f5b0eec0f5c8eb1dd956cc1535d"
+    },
+    {
+      "bytes": 671,
+      "path": "reports/generated/anomalies/global_iqr_metrics.csv",
+      "sha256": "1562e495af523e2f1eca08a7d88ecba7cd00250c977ea5f1d10cbcc59b73e2c7"
+    },
+    {
+      "bytes": 213642,
+      "path": "reports/generated/anomalies/knn_scores.csv",
+      "sha256": "ea8449de3f1acb721f679fad8e008a40412182988ebf6d066373fcba85aadde9"
+    },
+    {
+      "bytes": 1369,
+      "path": "reports/generated/anomalies/knn_summary.csv",
+      "sha256": "0486f8e8c1117ccb6dd02742e9ab02e76d56f35d272556abfe5f8f77b84b49cb"
+    },
+    {
+      "bytes": 17192,
+      "path": "reports/generated/anomalies/phase3_daily_candidate_flags.csv",
+      "sha256": "3c61d4eb7578393da9de397b785f5601ddd72804ed4bfaccef1d7dcd50594ef5"
+    },
+    {
+      "bytes": 378,
+      "path": "reports/generated/anomalies/phase3_sleep_candidate_summary.csv",
+      "sha256": "fe7e37cfe118a2cf50d80c93f72f49184db5cc29fdbb6cae07802687e209318e"
+    },
+    {
+      "bytes": 20684,
+      "path": "reports/generated/anomalies/phase3_sleep_candidates.csv",
+      "sha256": "2acc41a2032f368876dc638b79c04943531bbbc7246906af65a4fca4885e31b4"
+    },
+    {
+      "bytes": 3994,
+      "path": "reports/generated/anomalies/review_cases.csv",
+      "sha256": "fab04988d19e449e63d49f49a483513a6c186699e94967f4904f8e33df182093"
+    },
+    {
+      "bytes": 119474,
+      "path": "reports/generated/anomalies/within_person_scores.csv",
+      "sha256": "9fe431e8658eb597ffcd456fcb1e15566f8b409a7251f77b3e158d02b51888bb"
+    },
+    {
+      "bytes": 240777,
+      "path": "reports/generated/associations/association_rules.csv",
+      "sha256": "efa2e217e1512592e64d4ba81bc9fcf746be56d1a554e7937e185af37a394fdb"
+    },
+    {
+      "bytes": 183910,
+      "path": "reports/generated/associations/complete_day_rules.csv",
+      "sha256": "420aaae8cbb7b7ad9406adf62d449e692d29f1faa921d466d6e4d397862945dd"
+    },
+    {
+      "bytes": 5555,
+      "path": "reports/generated/associations/figures/01_transaction_item_prevalence.svg",
+      "sha256": "fa54f7b1ddcda7fbefdb80055c01881ff851304ee6940b266f327a34d8e06bfa"
+    },
+    {
+      "bytes": 69787,
+      "path": "reports/generated/associations/figures/02_rule_support_confidence.svg",
+      "sha256": "47096d9288d03aa7e258942aec9620c8dad68dac54356aa996540f63baa81cf4"
+    },
+    {
+      "bytes": 3246,
+      "path": "reports/generated/associations/figures/03_rule_threshold_sensitivity.svg",
+      "sha256": "71cc4a964d2c63e697bd87eabef8c43071da2089b89381490f1963bd27590302"
+    },
+    {
+      "bytes": 18883,
+      "path": "reports/generated/associations/frequent_itemsets.csv",
+      "sha256": "2cd493f3fa0e83ae8fb6570b1e09db5f56872a2b024eee81f296973d459a7c2e"
+    },
+    {
+      "bytes": 953,
+      "path": "reports/generated/associations/item_dictionary.csv",
+      "sha256": "1d03ceb9e46d812681e51bc65d015934f1cfd8c75ec4ef1699471d81fb4d5dc9"
+    },
+    {
+      "bytes": 150382,
+      "path": "reports/generated/associations/participant_balanced_sensitivity.csv",
+      "sha256": "15da394c106fbc39edbfb6a17f034f80c446a738625e1674ed32aa299b94b123"
+    },
+    {
+      "bytes": 2563,
+      "path": "reports/generated/associations/threshold_sensitivity.csv",
+      "sha256": "78f5376c1c87b984e15cd8174042e47ac76714ae56e1c8b728c055cd4ce7d2d4"
+    },
+    {
+      "bytes": 156126,
+      "path": "reports/generated/associations/transaction_items.csv",
+      "sha256": "77f3ae8b74c97ff7f2adf027d177ad20f3a940679537e5b7a7bfaa8cf139023c"
+    },
+    {
+      "bytes": 72726,
+      "path": "reports/generated/associations/transactions.csv",
+      "sha256": "d263cdb4c59d0aa3c7a2c1fae92535a0228aa213cd6d5b21c49dfb0cc4398094"
+    }
+  ],
+  "git_head_at_generation": "8172c55865d7b77d3bf193f541220d4e741ce91d",
+  "inputs": [
+    {
+      "bytes": 69070,
+      "path": "data/processed/daily_activity_clean.csv",
+      "sha256": "6d1ad35a4e8dd138e9cadabf242baff7cf6190b40724c1c09eff28c46e5122d1"
+    },
+    {
+      "bytes": 46564,
+      "path": "reports/generated/eda/tables/anomaly_candidates.csv",
+      "sha256": "81e30a94b769f43897e4568d84010ad2e37e11eb66eefbb837d7c37bbc1cacfd"
+    },
+    {
+      "bytes": 1650,
+      "path": "reports/evidence/P3/outlier_screen_metrics.json",
+      "sha256": "ff176b731415335c3b50fa7029425a580427885cccc4d047a26dfae2afa8980e"
+    }
+  ],
+  "package_installs": 0,
+  "paid_resources_used": false,
+  "phase": "P5",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.13.11",
+    "third_party_packages_used": []
+  },
+  "source_files": [
+    {
+      "path": "src/phase5_common.py",
+      "sha256": "bd18dba2d315b6a60b3b00f9fd80fee8c2951092d7b2afd6820b699c81f3b295"
+    },
+    {
+      "path": "src/association_rules.py",
+      "sha256": "d963665083a2917f86f84f97ca35dc83a4d3d119a44b68422f0e788ae1811a4e"
+    },
+    {
+      "path": "src/anomaly_detection.py",
+      "sha256": "e61ac01579c7361bd0bf703b22ba0feb4649a4e9891861ff78e1f377c6beb100"
+    },
+    {
+      "path": "src/p5_figures.py",
+      "sha256": "18febba9a684f3102afe44f014dff8a53168d867543f10d4ba266b2eccca3963"
+    },
+    {
+      "path": "src/phase5_analysis.py",
+      "sha256": "fafc59f7110a6cb230e46476dbfe56168d2f7eb4fc33f10ae8572f7062e576b1"
+    }
+  ],
+  "status": "PASS",
+  "test_suite": {
+    "command": "python -m unittest discover -s tests -v",
+    "errors": 0,
+    "evidence": "reports/evidence/P5/test_results.json",
+    "exit_code": 0,
+    "failures": 0,
+    "passed": 89,
+    "skipped": 0,
+    "status": "PASS",
+    "stdout_summary": "OK",
+    "tests_run": 89
+  },
+  "working_tree_clean_at_generation": false
+}

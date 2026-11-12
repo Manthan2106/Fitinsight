@@ -232,3 +232,114 @@
 - Artifacts: `reports/evidence/P4/figures_index.json`,
   `reports/evidence/P4/run_manifest.json`, and
   `reports/generated/activity_clustering/figures/`.
+
+## C-012 — Some association pairs would repeat their own definitions
+
+- Phase/task: P5 transaction construction and Apriori
+- Observable constraint: Active-minute share uses total active minutes over
+  recorded minutes; very-active minutes are part of the numerator, and the
+  Phase 2 coverage category is determined from recorded minutes.
+- Root cause: Directly combining these categories can reflect a shared
+  numerator or denominator rather than an independent co-occurrence.
+- Investigation: Defined six mutually exclusive item families, reviewed their
+  calculation dependencies, and tested family and subset pruning on synthetic
+  transactions.
+- Resolution: Mine no same-family category pairs; exclude active-share with
+  very-active minutes and active-share with coverage status. Limit itemsets to
+  three items.
+- Verification: The complete 457-day transaction map has six distinct
+  families per day; synthetic tests confirm incompatible pairs and
+  unsupported-subset candidates are pruned.
+- Remaining limitation: Other categories can still be correlated because they
+  describe the same recorded day.
+- Presentation takeaway: Read mined associations as co-occurrence patterns,
+  not independent behavioral mechanisms.
+- Artifacts: `src/association_rules.py`,
+  `reports/evidence/P5/association_metrics.json`,
+  `tests/test_phase5_associations.py`.
+
+## C-013 — Unequal participant-day counts can change pooled confidence
+
+- Phase/task: P5 participant-balanced association sensitivity
+- Observable symptom: An eligible pooled rule's confidence is 86.0%, while the
+  equal-participant mean confidence is 57.1%.
+- Root cause: Daily pooling weights people according to their number of
+  antecedent observations and conditional rule occurrences.
+- Investigation: Calculated each participant's conditional confidence among
+  people with at least one antecedent day; also computed equal-participant
+  prevalence for frequent itemsets.
+- Resolution: Export pooled and participant-balanced values together, and
+  compare rules across support, confidence, lift, participant-count, and
+  complete-day sensitivities.
+- Verification: The cited rule has 14 participants with antecedent days; the
+  all-days baseline has 89 threshold-qualified rules, compared with 108 in the
+  complete-day subset.
+- Remaining limitation: Participant-level summaries are still based on a
+  small historical sample and do not establish future predictive performance.
+- Presentation takeaway: Do not treat pooled day-level confidence as
+  equal-person confidence.
+- Artifacts: `reports/generated/associations/participant_balanced_sensitivity.csv`,
+  `reports/generated/associations/threshold_sensitivity.csv`.
+
+## C-014 — Historical distance flags count different tolerance rules
+
+- Phase/task: P5 reuse of Phase 1/2 data-quality flags
+- Observable symptom: The strict absolute-difference screen marks 104 days;
+  the Phase 2 `distance_discrepancy` flag marks 65.
+- Root cause: Phase 1 applies a plain absolute threshold, while the committed
+  Phase 2 flag reproduces the existing NumPy-isclose-equivalent rule.
+- Investigation: Recomputed the strict component-sum comparison from the
+  processed fields and separately counted the stored Phase 2 flag.
+- Resolution: Preserve both flags and their definitions in separate columns
+  and detector sets.
+- Verification: All 65 Phase 2 days occur in the strict 104; 39 are strict-only.
+- Remaining limitation: Neither comparison establishes which distance field
+  is correct.
+- Presentation takeaway: Keep the two counts separate when discussing
+  distance inconsistencies.
+- Artifacts: `reports/evidence/P5/anomaly_metrics.json`,
+  `reports/generated/anomalies/candidate_registry.csv`.
+
+## C-015 — Different anomaly screens flag overlapping records
+
+- Phase/task: P5 anomaly comparison and case review
+- Observable symptom: Ten daily candidate sets have different sizes and
+  substantial intersections; their counts cannot be summed.
+- Root cause: Global tails, within-person deviations, multivariate neighbor
+  distances, and existing quality flags answer different screening questions.
+- Investigation: Calculated pairwise participant-day intersections and
+  Jaccard values; retained the 140 Phase 3 daily candidates and 111 separate
+  sleep-episode candidates.
+- Resolution: Publish per-method counts, overlap tables, and a 457-row
+  candidate registry; selected seven review examples without deleting rows
+  or assigning causes.
+- Verification: The union of daily flags contains 217 unique participant-days;
+  every source day and all 61 zero-step rows remain in the registry.
+- Remaining limitation: No candidate screen confirms an error, a device-wear
+  failure, or a medical condition.
+- Presentation takeaway: Treat flags as prompts for record review, not a
+  verdict about the source.
+- Artifacts: `reports/generated/anomalies/detector_counts.csv`,
+  `reports/generated/anomalies/detector_overlaps.csv`,
+  `reports/generated/anomalies/candidate_registry.csv`.
+
+## C-016 — The last observed date affects candidate counts
+
+- Phase/task: P5 date-boundary sensitivity
+- Observable symptom: April 12, 2016 contributes 24 of the 457 participant-day
+  rows; only three are complete, and median recorded time is 426 minutes.
+- Root cause: The observation window ends mid-period; the boundary date is
+  not a complete panel across participants.
+- Investigation: Retained all dates for primary results, then excluded only
+  April 12 and recalculated Phase 5 screens; Phase 3 flags were filtered rather
+  than re-estimated.
+- Resolution: Report the exclusion as sensitivity only and preserve the final
+  date in the transaction and anomaly outputs.
+- Verification: The sensitivity cohort has 433 days; Phase 3 candidates
+  change from 140 to 127 and global IQR candidates from 36 to 21.
+- Remaining limitation: The sensitivity cannot explain the difference or
+  validate whether a missing value is device non-wear.
+- Presentation takeaway: Keep the boundary date in the primary analysis and
+  show its effect explicitly.
+- Artifacts: `reports/generated/anomalies/date_boundary_sensitivity.csv`,
+  `reports/evidence/P5/anomaly_metrics.json`.

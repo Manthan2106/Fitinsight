@@ -1,0 +1,11 @@
+method,candidate_days,grain
+global_iqr_any_field,36,participant-day
+knn_pooled_k10_top_5pct,23,participant-day
+knn_pooled_k5_top_5pct,23,participant-day
+knn_stratified_k10_top_5pct,24,participant-day
+knn_stratified_k5_top_5pct,24,participant-day
+phase1_absolute_distance_gt_0_01,104,participant-day
+phase2_distance_flag,65,participant-day
+phase3_daily_candidates,140,participant-day
+within_person_robust,48,participant-day
+zero_steps_with_positive_calories_or_activity,56,participant-day

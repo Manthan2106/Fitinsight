@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="733" viewBox="0 0 1100 733" role="img" aria-labelledby="title desc">
+<title id="title">Participant-day transaction item prevalence</title>
+<desc id="desc">Counts of participant-day transactions containing each one of the prespecified categorical items.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34" y="42" font-family="sans-serif" font-size="24" font-weight="700">Participant-day transaction item prevalence</text>
+<text x="34" y="70" font-family="sans-serif" font-size="13" fill="#334155">n=457 participant-days; participants=35; one item per family per day; zero-step records retained</text>
+<rect x="235" y="91" width="13" height="13" fill="#2563eb"/>
+<text x="254" y="102" font-family="sans-serif" font-size="12">Transactions containing item</text>
+<line x1="235.00" y1="155" x2="235.00" y2="619" stroke="#e2e8f0"/>
+<text x="235.00" y="638" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">0</text>
+<line x1="440.00" y1="155" x2="440.00" y2="619" stroke="#e2e8f0"/>
+<text x="440.00" y="638" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">77.5</text>
+<line x1="645.00" y1="155" x2="645.00" y2="619" stroke="#e2e8f0"/>
+<text x="645.00" y="638" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">155</text>
+<line x1="850.00" y1="155" x2="850.00" y2="619" stroke="#e2e8f0"/>
+<text x="850.00" y="638" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">232</text>
+<line x1="1055.00" y1="155" x2="1055.00" y2="619" stroke="#e2e8f0"/>
+<text x="1055.00" y="638" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">310</text>
+<text x="223" y="177.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">active_share:lower</text>
+<rect x="235" y="162.00" width="357.10" height="10.00" fill="#2563eb"/>
+<text x="223" y="204.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">active_share:middle</text>
+<rect x="235" y="189.00" width="489.35" height="10.00" fill="#2563eb"/>
+<text x="223" y="231.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">active_share:upper</text>
+<rect x="235" y="216.00" width="362.39" height="10.00" fill="#2563eb"/>
+<text x="223" y="258.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">calories:lower</text>
+<rect x="235" y="243.00" width="283.03" height="10.00" fill="#2563eb"/>
+<text x="223" y="285.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">calories:middle</text>
+<rect x="235" y="270.00" width="621.61" height="10.00" fill="#2563eb"/>
+<text x="223" y="312.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">calories:upper</text>
+<rect x="235" y="297.00" width="304.19" height="10.00" fill="#2563eb"/>
+<text x="223" y="339.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">coverage:complete</text>
+<rect x="235" y="324.00" width="616.32" height="10.00" fill="#2563eb"/>
+<text x="223" y="366.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">coverage:incomplete</text>
+<rect x="235" y="351.00" width="592.52" height="10.00" fill="#2563eb"/>
+<text x="223" y="393.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">day:weekday</text>
+<rect x="235" y="378.00" width="820.00" height="10.00" fill="#2563eb"/>
+<text x="223" y="420.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">day:weekend</text>
+<rect x="235" y="405.00" width="388.84" height="10.00" fill="#2563eb"/>
+<text x="223" y="447.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">steps:lower</text>
+<rect x="235" y="432.00" width="359.74" height="10.00" fill="#2563eb"/>
+<text x="223" y="474.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">steps:middle</text>
+<rect x="235" y="459.00" width="351.81" height="10.00" fill="#2563eb"/>
+<text x="223" y="501.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">steps:upper</text>
+<rect x="235" y="486.00" width="335.94" height="10.00" fill="#2563eb"/>
+<text x="223" y="528.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">steps:zero</text>
+<rect x="235" y="513.00" width="161.35" height="10.00" fill="#2563eb"/>
+<text x="223" y="555.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">very_active:lower</text>
+<rect x="235" y="540.00" width="312.13" height="10.00" fill="#2563eb"/>
+<text x="223" y="582.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">very_active:upper</text>
+<rect x="235" y="567.00" width="259.23" height="10.00" fill="#2563eb"/>
+<text x="223" y="609.50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#334155">very_active:zero</text>
+<rect x="235" y="594.00" width="637.48" height="10.00" fill="#2563eb"/>
+<text x="645.0" y="664" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#334155">Participant-day transactions containing item (count)</text>
+<text x="34" y="689" font-family="sans-serif" font-size="12" fill="#334155">Interpretation: Items occur at different frequencies; counts define the marginal support used by Apriori.</text>
+<text x="34" y="707" font-family="sans-serif" font-size="12" fill="#334155">Limitation: These are recorded categories in a small historical sample, not behavioral or health labels.</text>
+</svg>

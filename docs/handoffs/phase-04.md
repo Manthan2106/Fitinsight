@@ -4,10 +4,12 @@
 
 - Phase 4 implementation is on `phase-4-validated-clustering`, created from
   verified `main` at `77abf8354db99cb48e84ff931e335e2ec2f4c73a`.
-- [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) is open against
-  `main` for review and remains unmerged.
+- [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) is merged into
+  `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`; reviewed head
+  `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history.
 - Historical `phase-4-activity-clustering` remains separate and unchanged.
-- Phases 5–7 have not started.
+- Phase 5 has started on `phase-5-association-anomalies`, based on the verified
+  merge. Phase 6 dashboard work has not started.
 
 ## Implemented and validated
 
@@ -60,5 +62,5 @@ The full suite expects the documented Phase 2 and Phase 3 generated outputs.
 
 ## Next action
 
-Review PR #4. Do not merge it, alter the historical branch, or start Phase 5 or
-dashboard work until separately authorized.
+Continue Phase 5 on its new branch. Do not alter the historical Phase 4 branch,
+merge the Phase 5 pull request automatically, or start dashboard work.

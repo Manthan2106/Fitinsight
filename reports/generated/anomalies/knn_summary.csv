@@ -1,0 +1,7 @@
+scope,requested_k,effective_k,cohort_size,top_fraction,top_candidate_count,score_median,score_p90,score_p95,score_max,cutoff_score,feature_names
+pooled,5,5,457,0.05,23,0.20903397285397002,0.4643041514948335,0.6164520473538321,3.4833873139679463,0.6201749417354987,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"
+pooled,10,10,457,0.05,23,0.27058388067875516,0.6278040585375273,0.8094161730077437,3.85355623312699,0.8288072774725347,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"
+complete_days,5,5,233,0.05,12,0.24300351083655883,0.5541844106715234,0.8072734120962981,2.461995863601159,0.8500397283948244,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"
+complete_days,10,10,233,0.05,12,0.32744952966184054,0.8173618884674166,1.1098550840446333,2.885285139630569,1.1193362964178775,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"
+incomplete_days,5,5,224,0.05,12,0.30582706497407985,0.6027058828159023,1.045568946259694,4.14212554757972,1.0622700481321914,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"
+incomplete_days,10,10,224,0.05,12,0.38449972755741235,0.7245889991793384,1.1537183954136074,4.372289885112143,1.1664850343163051,"[""steps_per_recorded_hour"",""calories_per_recorded_hour"",""active_share""]"

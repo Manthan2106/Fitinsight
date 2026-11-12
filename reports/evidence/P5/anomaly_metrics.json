@@ -1,0 +1,691 @@
+{
+  "analysis": "Phase 5 exploratory anomaly screening",
+  "complete_days": 233,
+  "date_boundary_sensitivity": {
+    "boundary_date": "2016-04-12",
+    "candidate_counts": [
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -15,
+        "excluding_last_date_candidate_days": 21,
+        "method": "global_iqr_any_field",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 36,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -1,
+        "excluding_last_date_candidate_days": 22,
+        "method": "knn_pooled_k10_top_5pct",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 23,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -1,
+        "excluding_last_date_candidate_days": 22,
+        "method": "knn_pooled_k5_top_5pct",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 23,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -1,
+        "excluding_last_date_candidate_days": 23,
+        "method": "knn_stratified_k10_top_5pct",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 24,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -1,
+        "excluding_last_date_candidate_days": 23,
+        "method": "knn_stratified_k5_top_5pct",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 24,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -3,
+        "excluding_last_date_candidate_days": 101,
+        "method": "phase1_absolute_distance_gt_0_01",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 104,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -1,
+        "excluding_last_date_candidate_days": 64,
+        "method": "phase2_distance_flag",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 65,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -13,
+        "excluding_last_date_candidate_days": 127,
+        "method": "phase3_daily_candidates",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 140,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": false
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -6,
+        "excluding_last_date_candidate_days": 42,
+        "method": "within_person_robust",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 48,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      },
+      {
+        "boundary_date": "2016-04-12",
+        "change_after_excluding_last_date": -2,
+        "excluding_last_date_candidate_days": 54,
+        "method": "zero_steps_with_positive_calories_or_activity",
+        "note": "Phase 3 candidate flags are reused from their original run and filtered only; other screens are recalculated.",
+        "primary_candidate_days": 56,
+        "primary_includes_boundary": true,
+        "sensitivity_recomputed": true
+      }
+    ],
+    "global_iqr_fences_excluding_boundary": {
+      "active_share": {
+        "flagged_rows": 3,
+        "high_flags": 3,
+        "iqr": 0.18561447366312517,
+        "low_flags": 0,
+        "lower_fence": -0.19864028972966047,
+        "missing": 0,
+        "observed": 433,
+        "q1": 0.07978142076502732,
+        "q3": 0.2653958944281525,
+        "upper_fence": 0.5438176049228403
+      },
+      "calories": {
+        "flagged_rows": 11,
+        "high_flags": 8,
+        "iqr": 895.0,
+        "low_flags": 3,
+        "lower_fence": 464.5,
+        "missing": 0,
+        "observed": 433,
+        "q1": 1807.0,
+        "q3": 2702.0,
+        "upper_fence": 4044.5
+      },
+      "sedentary_minutes": {
+        "flagged_rows": 0,
+        "high_flags": 0,
+        "iqr": 548.0,
+        "low_flags": 0,
+        "lower_fence": -77.0,
+        "missing": 0,
+        "observed": 433,
+        "q1": 745.0,
+        "q3": 1293.0,
+        "upper_fence": 2115.0
+      },
+      "total_active_minutes": {
+        "flagged_rows": 3,
+        "high_flags": 3,
+        "iqr": 211.0,
+        "low_flags": 0,
+        "lower_fence": -221.5,
+        "missing": 0,
+        "observed": 433,
+        "q1": 95.0,
+        "q3": 306.0,
+        "upper_fence": 622.5
+      },
+      "total_distance": {
+        "flagged_rows": 7,
+        "high_flags": 7,
+        "iqr": 5.7000002861023,
+        "low_flags": 0,
+        "lower_fence": -6.990000486373909,
+        "missing": 0,
+        "observed": 433,
+        "q1": 1.55999994277954,
+        "q3": 7.26000022888184,
+        "upper_fence": 15.810000658035289
+      },
+      "total_recorded_minutes": {
+        "flagged_rows": 3,
+        "high_flags": 0,
+        "iqr": 442.0,
+        "low_flags": 3,
+        "lower_fence": 335.0,
+        "missing": 0,
+        "observed": 433,
+        "q1": 998.0,
+        "q3": 1440.0,
+        "upper_fence": 2103.0
+      },
+      "total_steps": {
+        "flagged_rows": 5,
+        "high_flags": 5,
+        "iqr": 8094.0,
+        "low_flags": 0,
+        "lower_fence": -9907.0,
+        "missing": 0,
+        "observed": 433,
+        "q1": 2234.0,
+        "q3": 10328.0,
+        "upper_fence": 22469.0
+      }
+    },
+    "global_iqr_refit": true,
+    "knn_excluding_boundary": [
+      {
+        "cohort_size": 433,
+        "cutoff_score": 0.6453256035222946,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "pooled",
+        "score_max": 3.5999603306384222,
+        "score_median": 0.22138548844900702,
+        "score_p90": 0.47880935297357474,
+        "score_p95": 0.6394316171523902,
+        "top_candidate_count": 22,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 433,
+        "cutoff_score": 0.8480698139737066,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "pooled",
+        "score_max": 3.9537827074388048,
+        "score_median": 0.2844967839315782,
+        "score_p90": 0.6221226104582356,
+        "score_p95": 0.8271015254949985,
+        "top_candidate_count": 22,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 230,
+        "cutoff_score": 0.9949905411948613,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "complete_days",
+        "score_max": 2.5110709762571877,
+        "score_median": 0.2445768255491942,
+        "score_p90": 0.6192080585235403,
+        "score_p95": 0.9456983801405051,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 230,
+        "cutoff_score": 1.2374274151131057,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "complete_days",
+        "score_max": 2.9329596830772613,
+        "score_median": 0.327177180036278,
+        "score_p90": 0.7906089776849247,
+        "score_p95": 1.1957595656882167,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 203,
+        "cutoff_score": 0.7248867012464368,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "incomplete_days",
+        "score_max": 4.502701415554183,
+        "score_median": 0.34386270013979303,
+        "score_p90": 0.640274474588792,
+        "score_p95": 0.7243046276106637,
+        "top_candidate_count": 11,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 203,
+        "cutoff_score": 0.9345005266444865,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "incomplete_days",
+        "score_max": 4.729650076737683,
+        "score_median": 0.43742247776663146,
+        "score_p90": 0.760840806223791,
+        "score_p95": 0.9317962826529543,
+        "top_candidate_count": 11,
+        "top_fraction": 0.05
+      }
+    ],
+    "knn_refit": true,
+    "phase3_flags_reused_not_refit": true,
+    "primary_retains_boundary": true,
+    "primary_rows": 457,
+    "sensitivity_rows": 433,
+    "within_person_excluding_boundary": {
+      "groups_by_status": {
+        "IQR_fallback_zero_MAD": 5,
+        "zero_MAD_and_IQR": 3
+      },
+      "iqr_fallback_groups": 5,
+      "metrics": {
+        "active_share": {
+          "flagged_rows": 29,
+          "participants": 35,
+          "scored_rows": 425
+        },
+        "total_steps": {
+          "flagged_rows": 32,
+          "participants": 35,
+          "scored_rows": 415
+        }
+      },
+      "minimum_days": 5,
+      "threshold_absolute_modified_z": 3.5,
+      "unscalable_groups": 3,
+      "zero_mad_groups": 8
+    },
+    "within_person_refit": true
+  },
+  "detector_counts": [
+    {
+      "candidate_days": 36,
+      "grain": "participant-day",
+      "method": "global_iqr_any_field"
+    },
+    {
+      "candidate_days": 23,
+      "grain": "participant-day",
+      "method": "knn_pooled_k10_top_5pct"
+    },
+    {
+      "candidate_days": 23,
+      "grain": "participant-day",
+      "method": "knn_pooled_k5_top_5pct"
+    },
+    {
+      "candidate_days": 24,
+      "grain": "participant-day",
+      "method": "knn_stratified_k10_top_5pct"
+    },
+    {
+      "candidate_days": 24,
+      "grain": "participant-day",
+      "method": "knn_stratified_k5_top_5pct"
+    },
+    {
+      "candidate_days": 104,
+      "grain": "participant-day",
+      "method": "phase1_absolute_distance_gt_0_01"
+    },
+    {
+      "candidate_days": 65,
+      "grain": "participant-day",
+      "method": "phase2_distance_flag"
+    },
+    {
+      "candidate_days": 140,
+      "grain": "participant-day",
+      "method": "phase3_daily_candidates"
+    },
+    {
+      "candidate_days": 48,
+      "grain": "participant-day",
+      "method": "within_person_robust"
+    },
+    {
+      "candidate_days": 56,
+      "grain": "participant-day",
+      "method": "zero_steps_with_positive_calories_or_activity"
+    }
+  ],
+  "distance_screens": {
+    "intersection_days": 65,
+    "not_interchangeable": true,
+    "phase1_candidate_days": 104,
+    "phase1_definition": "|component_distance_sum - total_distance| > 0.01 (plain absolute-difference screen)",
+    "phase1_only_days": 39,
+    "phase2_candidate_days": 65,
+    "phase2_definition": "committed Phase 2 distance_discrepancy flag using the existing NumPy-isclose-equivalent tolerance",
+    "phase2_only_days": 0
+  },
+  "generated_outputs": [
+    "global_iqr_metrics.csv",
+    "global_iqr_flags.csv",
+    "within_person_scores.csv",
+    "knn_scores.csv",
+    "knn_summary.csv",
+    "phase3_daily_candidate_flags.csv",
+    "phase3_sleep_candidates.csv",
+    "phase3_sleep_candidate_summary.csv",
+    "candidate_registry.csv",
+    "detector_counts.csv",
+    "detector_overlaps.csv",
+    "date_boundary_sensitivity.csv",
+    "review_cases.csv"
+  ],
+  "global_iqr": {
+    "candidate_days_any_field": 36,
+    "fences": {
+      "active_share": {
+        "flagged_rows": 3,
+        "high_flags": 3,
+        "iqr": 0.1875,
+        "low_flags": 0,
+        "lower_fence": -0.2048611111111111,
+        "missing": 0,
+        "observed": 457,
+        "q1": 0.0763888888888889,
+        "q3": 0.2638888888888889,
+        "upper_fence": 0.5451388888888888
+      },
+      "calories": {
+        "flagged_rows": 22,
+        "high_flags": 12,
+        "iqr": 891.0,
+        "low_flags": 10,
+        "lower_fence": 439.5,
+        "missing": 0,
+        "observed": 457,
+        "q1": 1776.0,
+        "q3": 2667.0,
+        "upper_fence": 4003.5
+      },
+      "sedentary_minutes": {
+        "flagged_rows": 0,
+        "high_flags": 0,
+        "iqr": 557.0,
+        "low_flags": 0,
+        "lower_fence": -107.5,
+        "missing": 0,
+        "observed": 457,
+        "q1": 728.0,
+        "q3": 1285.0,
+        "upper_fence": 2120.5
+      },
+      "total_active_minutes": {
+        "flagged_rows": 2,
+        "high_flags": 2,
+        "iqr": 227.0,
+        "low_flags": 0,
+        "lower_fence": -266.5,
+        "missing": 0,
+        "observed": 457,
+        "q1": 74.0,
+        "q3": 301.0,
+        "upper_fence": 641.5
+      },
+      "total_distance": {
+        "flagged_rows": 7,
+        "high_flags": 7,
+        "iqr": 5.7499998807907104,
+        "low_flags": 0,
+        "lower_fence": -7.214999854564666,
+        "missing": 0,
+        "observed": 457,
+        "q1": 1.4099999666214,
+        "q3": 7.15999984741211,
+        "upper_fence": 15.784999668598175
+      },
+      "total_recorded_minutes": {
+        "flagged_rows": 10,
+        "high_flags": 0,
+        "iqr": 455.0,
+        "low_flags": 10,
+        "lower_fence": 302.5,
+        "missing": 0,
+        "observed": 457,
+        "q1": 985.0,
+        "q3": 1440.0,
+        "upper_fence": 2122.5
+      },
+      "total_steps": {
+        "flagged_rows": 5,
+        "high_flags": 5,
+        "iqr": 8210.0,
+        "low_flags": 0,
+        "lower_fence": -10327.0,
+        "missing": 0,
+        "observed": 457,
+        "q1": 1988.0,
+        "q3": 10198.0,
+        "upper_fence": 22513.0
+      }
+    },
+    "flag_rows": 49,
+    "multiplier": 1.5,
+    "quantile_convention": "linear interpolation, matching Phase 3"
+  },
+  "grain": "participant-day unless explicitly labelled sleep episode",
+  "incomplete_days": 224,
+  "input_rows": 457,
+  "knn": {
+    "candidate_rule": "top 5 percent by score within each cohort; ceil(n*0.05), deterministic tie order",
+    "cohorts": [
+      {
+        "cohort_size": 457,
+        "cutoff_score": 0.6201749417354987,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "pooled",
+        "score_max": 3.4833873139679463,
+        "score_median": 0.20903397285397002,
+        "score_p90": 0.4643041514948335,
+        "score_p95": 0.6164520473538321,
+        "top_candidate_count": 23,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 457,
+        "cutoff_score": 0.8288072774725347,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "pooled",
+        "score_max": 3.85355623312699,
+        "score_median": 0.27058388067875516,
+        "score_p90": 0.6278040585375273,
+        "score_p95": 0.8094161730077437,
+        "top_candidate_count": 23,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 233,
+        "cutoff_score": 0.8500397283948244,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "complete_days",
+        "score_max": 2.461995863601159,
+        "score_median": 0.24300351083655883,
+        "score_p90": 0.5541844106715234,
+        "score_p95": 0.8072734120962981,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 233,
+        "cutoff_score": 1.1193362964178775,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "complete_days",
+        "score_max": 2.885285139630569,
+        "score_median": 0.32744952966184054,
+        "score_p90": 0.8173618884674166,
+        "score_p95": 1.1098550840446333,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 224,
+        "cutoff_score": 1.0622700481321914,
+        "effective_k": 5,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 5,
+        "scope": "incomplete_days",
+        "score_max": 4.14212554757972,
+        "score_median": 0.30582706497407985,
+        "score_p90": 0.6027058828159023,
+        "score_p95": 1.045568946259694,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      },
+      {
+        "cohort_size": 224,
+        "cutoff_score": 1.1664850343163051,
+        "effective_k": 10,
+        "feature_names": [
+          "steps_per_recorded_hour",
+          "calories_per_recorded_hour",
+          "active_share"
+        ],
+        "requested_k": 10,
+        "scope": "incomplete_days",
+        "score_max": 4.372289885112143,
+        "score_median": 0.38449972755741235,
+        "score_p90": 0.7245889991793384,
+        "score_p95": 1.1537183954136074,
+        "top_candidate_count": 12,
+        "top_fraction": 0.05
+      }
+    ],
+    "features": {
+      "active_share": "total_active_minutes / total_recorded_minutes",
+      "calories_per_recorded_hour": "calories * 60 / total_recorded_minutes",
+      "steps_per_recorded_hour": "total_steps * 60 / total_recorded_minutes"
+    },
+    "k_values": [
+      5,
+      10
+    ],
+    "scoring": "mean Euclidean distance to k nearest other participant-days",
+    "standardization": "within each pooled or completeness-defined cohort using population SD"
+  },
+  "limitations": [
+    "Historical wearable records; population representativeness and units are not established.",
+    "Extreme or unusual values are candidate screens, not diagnoses, errors, or health findings.",
+    "Incomplete-day status measures recorded minutes and is not device-wear verification.",
+    "Pooled kNN ranks may reflect coverage; complete/incomplete stratified scores are separate exploratory comparisons.",
+    "The small sample does not support population-level or causal conclusions.",
+    "Sleep episodes remain a separate observation grain from participant-days."
+  ],
+  "overlap_comparison_count": 45,
+  "participants": 35,
+  "phase3_reuse": {
+    "daily_candidate_rows": 140,
+    "daily_flag_counts": {
+      "calories_above_1_5_iqr_fence": 12,
+      "calories_below_1_5_iqr_fence": 10,
+      "phase2_numpy_isclose_distance_flag": 65,
+      "total_active_minutes_above_1_5_iqr_fence": 2,
+      "total_distance_above_1_5_iqr_fence": 7,
+      "total_recorded_minutes_below_1_5_iqr_fence": 10,
+      "total_steps_above_1_5_iqr_fence": 5,
+      "zero_steps_positive_active_minutes": 3,
+      "zero_steps_positive_calories": 56
+    },
+    "sleep_episode_candidate_rows": 111,
+    "sleep_flag_counts": {
+      "afternoon_start_candidate": 29,
+      "elapsed_span_over_12_hours": 6,
+      "multiple_overnight_logs_same_waking_date": 78
+    },
+    "source_candidate_sha256": null,
+    "source_metrics_sha256": null
+  },
+  "review_case_count": 7,
+  "review_interpretation": "Examples are retained observations for focused review; none is confirmed erroneous and no cause is inferred.",
+  "within_person": {
+    "groups_by_status": {
+      "IQR_fallback_zero_MAD": 5,
+      "zero_MAD_and_IQR": 3
+    },
+    "iqr_fallback_groups": 5,
+    "mad_zero_policy": "Use IQR/1.34898 as a finite fallback when MAD is zero but IQR is positive; otherwise do not scale or flag.",
+    "metrics": {
+      "active_share": {
+        "flagged_rows": 31,
+        "participants": 35,
+        "scored_rows": 449
+      },
+      "total_steps": {
+        "flagged_rows": 37,
+        "participants": 35,
+        "scored_rows": 439
+      }
+    },
+    "minimum_days": 5,
+    "score_threshold": 3.5,
+    "threshold_absolute_modified_z": 3.5,
+    "unscalable_groups": 3,
+    "zero_mad_groups": 8
+  },
+  "zero_step_days_retained": 61
+}

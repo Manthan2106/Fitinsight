@@ -1,0 +1,1990 @@
+{
+  "analysis": "Phase 5 participant-day Apriori association rules",
+  "apriori": {
+    "candidate_counts_by_size": {
+      "1": 17,
+      "2": 104,
+      "3": 164
+    },
+    "dependency_related_candidates_pruned": 100,
+    "family_incompatible_candidates_pruned": 135,
+    "frequent_itemsets_by_size": {
+      "1": 17,
+      "2": 82,
+      "3": 116
+    },
+    "max_itemset_size": 3,
+    "min_support": 0.05,
+    "minimum_support_count": 23,
+    "subset_pruned_candidates": 84,
+    "transaction_count": 457
+  },
+  "calorie_cutpoints_full_cohort": {
+    "calories_q1": 1776.0,
+    "calories_q3": 2667.0
+  },
+  "category_definitions": [
+    {
+      "definition": "total_steps = 0",
+      "family": "steps",
+      "item": "steps:zero"
+    },
+    {
+      "definition": "0 < total_steps < 5000",
+      "family": "steps",
+      "item": "steps:lower"
+    },
+    {
+      "definition": "5000 <= total_steps < 10000",
+      "family": "steps",
+      "item": "steps:middle"
+    },
+    {
+      "definition": "total_steps >= 10000",
+      "family": "steps",
+      "item": "steps:upper"
+    },
+    {
+      "definition": "total_active_minutes / total_recorded_minutes < 0.10",
+      "family": "active_share",
+      "item": "active_share:lower"
+    },
+    {
+      "definition": "0.10 <= active share < 0.25",
+      "family": "active_share",
+      "item": "active_share:middle"
+    },
+    {
+      "definition": "active share >= 0.25",
+      "family": "active_share",
+      "item": "active_share:upper"
+    },
+    {
+      "definition": "very_active_minutes = 0",
+      "family": "very_active_minutes",
+      "item": "very_active:zero"
+    },
+    {
+      "definition": "1 <= very_active_minutes < 30",
+      "family": "very_active_minutes",
+      "item": "very_active:lower"
+    },
+    {
+      "definition": "very_active_minutes >= 30",
+      "family": "very_active_minutes",
+      "item": "very_active:upper"
+    },
+    {
+      "definition": "calories < Q1 (1776)",
+      "family": "calories",
+      "item": "calories:lower"
+    },
+    {
+      "definition": "Q1 (1776) <= calories < Q3 (2667)",
+      "family": "calories",
+      "item": "calories:middle"
+    },
+    {
+      "definition": "calories >= Q3 (2667)",
+      "family": "calories",
+      "item": "calories:upper"
+    },
+    {
+      "definition": "Monday through Friday",
+      "family": "day_type",
+      "item": "day:weekday"
+    },
+    {
+      "definition": "Saturday or Sunday",
+      "family": "day_type",
+      "item": "day:weekend"
+    },
+    {
+      "definition": "Phase 2 is_complete_day is True (1440 recorded minutes)",
+      "family": "coverage",
+      "item": "coverage:complete"
+    },
+    {
+      "definition": "Phase 2 is_complete_day is False",
+      "family": "coverage",
+      "item": "coverage:incomplete"
+    }
+  ],
+  "complete_day_participants": 28,
+  "complete_days": 233,
+  "eligible_rule_count": 89,
+  "eligible_rules": [
+    {
+      "antecedent": [
+        "active_share:lower",
+        "steps:zero"
+      ],
+      "confidence": 0.6333333333333333,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.015638092593213276,
+      "lift": 1.2316312056737588,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "active_share:middle",
+        "calories:lower"
+      ],
+      "confidence": 0.717948717948718,
+      "consequent": [
+        "steps:lower"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.035872807626562725,
+      "lift": 2.412518853695324,
+      "support": 0.061269146608315096
+    },
+    {
+      "antecedent": [
+        "active_share:middle",
+        "calories:middle"
+      ],
+      "confidence": 0.7553191489361702,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.01583440667659411,
+      "lift": 1.1134866163349348,
+      "support": 0.15536105032822758
+    },
+    {
+      "antecedent": [
+        "active_share:middle",
+        "calories:upper"
+      ],
+      "confidence": 0.7692307692307693,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.010342400490306394,
+      "lift": 1.1339950372208438,
+      "support": 0.087527352297593
+    },
+    {
+      "antecedent": [
+        "active_share:middle",
+        "steps:middle"
+      ],
+      "confidence": 0.8205128205128205,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 23,
+      "leverage": 0.02426633596521889,
+      "lift": 1.2095947063688999,
+      "support": 0.1400437636761488
+    },
+    {
+      "antecedent": [
+        "active_share:middle",
+        "steps:upper"
+      ],
+      "confidence": 0.7727272727272727,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.009087905616019229,
+      "lift": 1.139149560117302,
+      "support": 0.07439824945295405
+    },
+    {
+      "antecedent": [
+        "active_share:upper",
+        "calories:middle"
+      ],
+      "confidence": 0.6470588235294118,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 10,
+      "leverage": 0.05492963815962729,
+      "lift": 2.328392774432608,
+      "support": 0.0962800875273523
+    },
+    {
+      "antecedent": [
+        "active_share:upper",
+        "calories:upper"
+      ],
+      "confidence": 0.6111111111111112,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.039372944088791426,
+      "lift": 2.199037620297463,
+      "support": 0.07221006564551423
+    },
+    {
+      "antecedent": [
+        "active_share:upper",
+        "day:weekend"
+      ],
+      "confidence": 0.6274509803921569,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.03900904481228064,
+      "lift": 2.2578354176316195,
+      "support": 0.0700218818380744
+    },
+    {
+      "antecedent": [
+        "calories:lower"
+      ],
+      "confidence": 0.8130841121495327,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 27,
+      "leverage": 0.06690000909748192,
+      "lift": 1.541823399387288,
+      "support": 0.19037199124726478
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "coverage:complete"
+      ],
+      "confidence": 0.8936170212765957,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.03766836326724092,
+      "lift": 1.6945351814249137,
+      "support": 0.09190371991247265
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "coverage:incomplete"
+      ],
+      "confidence": 0.6166666666666667,
+      "consequent": [
+        "steps:lower"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.04189151013411604,
+      "lift": 2.0721813725490197,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "coverage:incomplete"
+      ],
+      "confidence": 0.75,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 24,
+      "leverage": 0.029231645830240988,
+      "lift": 1.4221991701244812,
+      "support": 0.09846827133479212
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "day:weekday"
+      ],
+      "confidence": 0.8529411764705882,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.048446485259685215,
+      "lift": 1.6174029777886256,
+      "support": 0.12691466083150985
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "day:weekend"
+      ],
+      "confidence": 0.7435897435897436,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 15,
+      "leverage": 0.01845352383779668,
+      "lift": 1.4100436216618788,
+      "support": 0.06345733041575492
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "steps:lower"
+      ],
+      "confidence": 0.8709677419354839,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.046617412580381046,
+      "lift": 1.6515861330477848,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "calories:lower",
+        "very_active:zero"
+      ],
+      "confidence": 0.6206896551724138,
+      "consequent": [
+        "steps:lower"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.06150855402707219,
+      "lift": 2.0856997971602436,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "coverage:complete"
+      ],
+      "confidence": 0.6929133858267716,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 18,
+      "leverage": 0.046009317736738026,
+      "lift": 1.3139477897213054,
+      "support": 0.1925601750547046
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:lower"
+      ],
+      "confidence": 0.8181818181818182,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 14,
+      "leverage": 0.0420016375467443,
+      "lift": 1.5514900037721615,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:middle"
+      ],
+      "confidence": 0.6666666666666666,
+      "consequent": [
+        "active_share:middle"
+      ],
+      "distinct_participants": 15,
+      "leverage": 0.03953574113354626,
+      "lift": 1.6468468468468467,
+      "support": 0.10065645514223195
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:middle"
+      ],
+      "confidence": 0.7681159420289855,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 14,
+      "leverage": 0.013555248050026572,
+      "lift": 1.1323515661524077,
+      "support": 0.11597374179431072
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:upper"
+      ],
+      "confidence": 0.7096774193548387,
+      "consequent": [
+        "active_share:upper"
+      ],
+      "distinct_participants": 10,
+      "leverage": 0.055609555228897434,
+      "lift": 2.3673181068989875,
+      "support": 0.0962800875273523
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:upper"
+      ],
+      "confidence": 0.7741935483870968,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.0385350181231416,
+      "lift": 1.5794930875576036,
+      "support": 0.1050328227571116
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:zero"
+      ],
+      "confidence": 1.0,
+      "consequent": [
+        "active_share:lower"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.05858778351823566,
+      "lift": 3.3851851851851853,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:zero"
+      ],
+      "confidence": 1.0,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.04075671896920742,
+      "lift": 1.96137339055794,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "steps:zero"
+      ],
+      "confidence": 0.9736842105263158,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.03711293805572447,
+      "lift": 1.8463638348984495,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "very_active:lower"
+      ],
+      "confidence": 0.6338028169014085,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.022317559576536153,
+      "lift": 1.2930709255533201,
+      "support": 0.09846827133479212
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "very_active:upper"
+      ],
+      "confidence": 0.675,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.016179153359604313,
+      "lift": 1.377120535714286,
+      "support": 0.05908096280087528
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "very_active:upper"
+      ],
+      "confidence": 0.75,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.00627247437143582,
+      "lift": 1.1056451612903226,
+      "support": 0.06564551422319474
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "very_active:upper"
+      ],
+      "confidence": 0.825,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.047886271899793637,
+      "lift": 2.9687007874015743,
+      "support": 0.07221006564551423
+    },
+    {
+      "antecedent": [
+        "calories:middle",
+        "very_active:zero"
+      ],
+      "confidence": 0.7096774193548387,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 18,
+      "leverage": 0.054220992200106316,
+      "lift": 1.391942406202409,
+      "support": 0.1925601750547046
+    },
+    {
+      "antecedent": [
+        "calories:upper",
+        "coverage:complete"
+      ],
+      "confidence": 0.6101694915254238,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.042897021292895826,
+      "lift": 2.1956492726544776,
+      "support": 0.0787746170678337
+    },
+    {
+      "antecedent": [
+        "calories:upper",
+        "steps:middle"
+      ],
+      "confidence": 0.66,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 8,
+      "leverage": 0.01858280384392552,
+      "lift": 1.3465178571428573,
+      "support": 0.07221006564551423
+    },
+    {
+      "antecedent": [
+        "calories:upper",
+        "steps:upper"
+      ],
+      "confidence": 0.6428571428571429,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.016298857068982868,
+      "lift": 1.2608828939301044,
+      "support": 0.0787746170678337
+    },
+    {
+      "antecedent": [
+        "calories:upper",
+        "steps:upper"
+      ],
+      "confidence": 0.7142857142857143,
+      "consequent": [
+        "very_active:upper"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.06124999401481453,
+      "lift": 3.3309037900874636,
+      "support": 0.087527352297593
+    },
+    {
+      "antecedent": [
+        "calories:upper",
+        "very_active:upper"
+      ],
+      "confidence": 0.7692307692307693,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.055906420428156224,
+      "lift": 2.7680193821926107,
+      "support": 0.087527352297593
+    },
+    {
+      "antecedent": [
+        "coverage:complete"
+      ],
+      "confidence": 0.6180257510729614,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 23,
+      "leverage": 0.04622957256199456,
+      "lift": 1.1719409470553666,
+      "support": 0.3150984682713348
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "day:weekday"
+      ],
+      "confidence": 0.6392405063291139,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.03868345072277099,
+      "lift": 1.2121697568149585,
+      "support": 0.2210065645514223
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:lower"
+      ],
+      "confidence": 0.84375,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 16,
+      "leverage": 0.04430952506356267,
+      "lift": 1.5999740663900415,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:middle"
+      ],
+      "confidence": 0.6721311475409836,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.021077429147374413,
+      "lift": 1.3070805720265084,
+      "support": 0.08971553610503283
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:middle"
+      ],
+      "confidence": 0.7704918032786885,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 16,
+      "leverage": 0.012300753175739407,
+      "lift": 1.1358540454785828,
+      "support": 0.10284463894967177
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:upper"
+      ],
+      "confidence": 0.6792452830188679,
+      "consequent": [
+        "calories:upper"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.049590852721344135,
+      "lift": 2.699261689909762,
+      "support": 0.0787746170678337
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:upper"
+      ],
+      "confidence": 0.6981132075471698,
+      "consequent": [
+        "very_active:upper"
+      ],
+      "distinct_participants": 8,
+      "leverage": 0.05609315821478676,
+      "lift": 3.255487100500577,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:zero"
+      ],
+      "confidence": 0.6909090909090909,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.021264166934004944,
+      "lift": 1.3435976789168278,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "steps:zero"
+      ],
+      "confidence": 0.9818181818181818,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.05469501888924534,
+      "lift": 1.8617880045265935,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "very_active:upper"
+      ],
+      "confidence": 0.6976744186046512,
+      "consequent": [
+        "calories:upper"
+      ],
+      "distinct_participants": 7,
+      "leverage": 0.0419681205081183,
+      "lift": 2.772497472194136,
+      "support": 0.06564551422319474
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "very_active:upper"
+      ],
+      "confidence": 0.8604651162790697,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 8,
+      "leverage": 0.05481472259862388,
+      "lift": 3.0963193554294084,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "coverage:complete",
+        "very_active:zero"
+      ],
+      "confidence": 0.6111111111111112,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 18,
+      "leverage": 0.03052923403990443,
+      "lift": 1.1884160756501183,
+      "support": 0.1925601750547046
+    },
+    {
+      "antecedent": [
+        "coverage:incomplete",
+        "steps:lower"
+      ],
+      "confidence": 0.8194444444444444,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 22,
+      "leverage": 0.0460188940334883,
+      "lift": 1.5538842784693405,
+      "support": 0.12910284463894967
+    },
+    {
+      "antecedent": [
+        "coverage:incomplete",
+        "steps:upper"
+      ],
+      "confidence": 0.6486486486486487,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 9,
+      "leverage": 0.021766922513394835,
+      "lift": 1.2614146060954572,
+      "support": 0.1050328227571116
+    },
+    {
+      "antecedent": [
+        "coverage:incomplete",
+        "very_active:lower"
+      ],
+      "confidence": 0.625,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.017452800827392034,
+      "lift": 1.2154255319148937,
+      "support": 0.09846827133479212
+    },
+    {
+      "antecedent": [
+        "coverage:incomplete",
+        "very_active:upper"
+      ],
+      "confidence": 0.6909090909090909,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 10,
+      "leverage": 0.049705768282347525,
+      "lift": 2.486184681460272,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "coverage:incomplete",
+        "very_active:zero"
+      ],
+      "confidence": 0.6082474226804123,
+      "consequent": [
+        "steps:lower"
+      ],
+      "distinct_participants": 22,
+      "leverage": 0.0659375912740784,
+      "lift": 2.0438902365069738,
+      "support": 0.12910284463894967
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:lower"
+      ],
+      "confidence": 0.8372093023255814,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 23,
+      "leverage": 0.058310070912477446,
+      "lift": 1.5875711666505838,
+      "support": 0.1575492341356674
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:middle"
+      ],
+      "confidence": 0.64,
+      "consequent": [
+        "active_share:middle"
+      ],
+      "distinct_participants": 23,
+      "leverage": 0.05146301873602459,
+      "lift": 1.5809729729729731,
+      "support": 0.1400437636761488
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:upper"
+      ],
+      "confidence": 0.6071428571428571,
+      "consequent": [
+        "very_active:upper"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.07218133675526336,
+      "lift": 2.831268221574344,
+      "support": 0.11159737417943107
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:zero"
+      ],
+      "confidence": 0.975,
+      "consequent": [
+        "active_share:lower"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.059483167264387196,
+      "lift": 3.300555555555556,
+      "support": 0.08533916849015317
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:zero"
+      ],
+      "confidence": 0.65,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.011884184267102069,
+      "lift": 1.2640425531914894,
+      "support": 0.05689277899343545
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:zero"
+      ],
+      "confidence": 0.9,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.03414907421151168,
+      "lift": 1.7652360515021461,
+      "support": 0.0787746170678337
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "steps:zero"
+      ],
+      "confidence": 1.0,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.04136960196122557,
+      "lift": 1.896265560165975,
+      "support": 0.087527352297593
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "very_active:lower"
+      ],
+      "confidence": 0.6623376623376623,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 20,
+      "leverage": 0.0249558293312393,
+      "lift": 1.2880353688864328,
+      "support": 0.11159737417943107
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "very_active:lower"
+      ],
+      "confidence": 0.6363636363636364,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.024635023390104815,
+      "lift": 1.2982954545454546,
+      "support": 0.10722100656455143
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "very_active:upper"
+      ],
+      "confidence": 0.7285714285714285,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.06903073512442003,
+      "lift": 2.621709786276715,
+      "support": 0.11159737417943107
+    },
+    {
+      "antecedent": [
+        "day:weekday",
+        "very_active:zero"
+      ],
+      "confidence": 0.6196319018404908,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 21,
+      "leverage": 0.03915747741191006,
+      "lift": 1.215329524210748,
+      "support": 0.2210065645514223
+    },
+    {
+      "antecedent": [
+        "day:weekend",
+        "steps:lower"
+      ],
+      "confidence": 0.82,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 20,
+      "leverage": 0.032018348184573546,
+      "lift": 1.5549377593360993,
+      "support": 0.08971553610503283
+    },
+    {
+      "antecedent": [
+        "day:weekend",
+        "steps:upper"
+      ],
+      "confidence": 0.7441860465116279,
+      "consequent": [
+        "active_share:upper"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.041814899760113766,
+      "lift": 2.482430826684773,
+      "support": 0.0700218818380744
+    },
+    {
+      "antecedent": [
+        "day:weekend",
+        "very_active:upper"
+      ],
+      "confidence": 0.8571428571428571,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.03548975575655138,
+      "lift": 3.084364454443194,
+      "support": 0.0525164113785558
+    },
+    {
+      "antecedent": [
+        "steps:lower"
+      ],
+      "confidence": 0.8308823529411765,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 26,
+      "leverage": 0.09032841909705097,
+      "lift": 1.5755735904320234,
+      "support": 0.24726477024070023
+    },
+    {
+      "antecedent": [
+        "steps:middle"
+      ],
+      "confidence": 0.7518796992481203,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 28,
+      "leverage": 0.02140302323688409,
+      "lift": 1.1084162017948096,
+      "support": 0.2188183807439825
+    },
+    {
+      "antecedent": [
+        "steps:middle",
+        "very_active:lower"
+      ],
+      "confidence": 0.6111111111111112,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 11,
+      "leverage": 0.011448462764964161,
+      "lift": 1.1884160756501183,
+      "support": 0.07221006564551423
+    },
+    {
+      "antecedent": [
+        "steps:middle",
+        "very_active:zero"
+      ],
+      "confidence": 0.7580645161290323,
+      "consequent": [
+        "day:weekday"
+      ],
+      "distinct_participants": 16,
+      "leverage": 0.010816427179445434,
+      "lift": 1.1175338189386057,
+      "support": 0.10284463894967177
+    },
+    {
+      "antecedent": [
+        "steps:upper"
+      ],
+      "confidence": 0.6456692913385826,
+      "consequent": [
+        "active_share:upper"
+      ],
+      "distinct_participants": 18,
+      "leverage": 0.09612207863097261,
+      "lift": 2.1538019426403814,
+      "support": 0.17943107221006566
+    },
+    {
+      "antecedent": [
+        "steps:upper",
+        "very_active:lower"
+      ],
+      "confidence": 0.6222222222222222,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 8,
+      "leverage": 0.010634477541190047,
+      "lift": 1.2100236406619385,
+      "support": 0.061269146608315096
+    },
+    {
+      "antecedent": [
+        "steps:upper",
+        "very_active:lower"
+      ],
+      "confidence": 0.7111111111111111,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 10,
+      "leverage": 0.02175734621664456,
+      "lift": 1.450793650793651,
+      "support": 0.0700218818380744
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.9836065573770492,
+      "consequent": [
+        "active_share:lower"
+      ],
+      "distinct_participants": 14,
+      "leverage": 0.09186062657709636,
+      "lift": 3.329690346083789,
+      "support": 0.13129102844638948
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.6229508196721312,
+      "consequent": [
+        "active_share:lower",
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.06182935996820668,
+      "lift": 3.8998428026049856,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.639344262295082,
+      "consequent": [
+        "active_share:lower",
+        "day:weekday"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.05905223391062442,
+      "lift": 3.2464480874316943,
+      "support": 0.08533916849015317
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.6229508196721312,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.014512877725054926,
+      "lift": 1.2114405301709104,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.6229508196721312,
+      "consequent": [
+        "calories:middle",
+        "coverage:complete"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.04605719922048943,
+      "lift": 2.2416419259068023,
+      "support": 0.08315098468271334
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.6065573770491803,
+      "consequent": [
+        "calories:middle",
+        "very_active:zero"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.04474524656570057,
+      "lift": 2.235457429931253,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.9016393442622951,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.05229615655329928,
+      "lift": 1.7684514177161754,
+      "support": 0.12035010940919037
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.8852459016393442,
+      "consequent": [
+        "coverage:complete",
+        "very_active:zero"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.07610283027450454,
+      "lift": 2.8094262295081966,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.6557377049180327,
+      "consequent": [
+        "day:weekday",
+        "very_active:zero"
+      ],
+      "distinct_participants": 12,
+      "leverage": 0.039918793003557586,
+      "lift": 1.838479332193503,
+      "support": 0.087527352297593
+    },
+    {
+      "antecedent": [
+        "steps:zero"
+      ],
+      "confidence": 0.9672131147540983,
+      "consequent": [
+        "very_active:zero"
+      ],
+      "distinct_participants": 14,
+      "leverage": 0.05871227537598933,
+      "lift": 1.8340929188490578,
+      "support": 0.12910284463894967
+    },
+    {
+      "antecedent": [
+        "steps:zero",
+        "very_active:zero"
+      ],
+      "confidence": 0.6271186440677966,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 6,
+      "leverage": 0.014575123653931793,
+      "lift": 1.2195456184637576,
+      "support": 0.08096280087527352
+    },
+    {
+      "antecedent": [
+        "steps:zero",
+        "very_active:zero"
+      ],
+      "confidence": 0.9152542372881356,
+      "consequent": [
+        "coverage:complete"
+      ],
+      "distinct_participants": 13,
+      "leverage": 0.05233924988867557,
+      "lift": 1.795155306612352,
+      "support": 0.11816192560175055
+    },
+    {
+      "antecedent": [
+        "very_active:lower"
+      ],
+      "confidence": 0.6016949152542372,
+      "consequent": [
+        "calories:middle"
+      ],
+      "distinct_participants": 22,
+      "leverage": 0.022585695885544127,
+      "lift": 1.170104579877389,
+      "support": 0.15536105032822758
+    },
+    {
+      "antecedent": [
+        "very_active:lower"
+      ],
+      "confidence": 0.6101694915254238,
+      "consequent": [
+        "coverage:incomplete"
+      ],
+      "distinct_participants": 19,
+      "leverage": 0.03098889628391807,
+      "lift": 1.2448547215496368,
+      "support": 0.1575492341356674
+    },
+    {
+      "antecedent": [
+        "very_active:upper"
+      ],
+      "confidence": 0.7653061224489796,
+      "consequent": [
+        "steps:upper"
+      ],
+      "distinct_participants": 16,
+      "leverage": 0.1045204908809714,
+      "lift": 2.7538968343242805,
+      "support": 0.16411378555798686
+    }
+  ],
+  "excluded_family_pairs": [
+    [
+      "active_share",
+      "coverage"
+    ],
+    [
+      "active_share",
+      "very_active_minutes"
+    ]
+  ],
+  "excluded_pair_reason": "Do not mine active-share with very-active minutes, because very-active minutes are part of its numerator; do not mine active-share with coverage status, because coverage is defined from its denominator.",
+  "frequent_itemset_count": 215,
+  "generated_outputs": [
+    "transactions.csv",
+    "transaction_items.csv",
+    "item_dictionary.csv",
+    "frequent_itemsets.csv",
+    "association_rules.csv",
+    "participant_balanced_sensitivity.csv",
+    "threshold_sensitivity.csv",
+    "complete_day_rules.csv"
+  ],
+  "grain": "one participant-day transaction",
+  "item_families": [
+    "active_share",
+    "calories",
+    "coverage",
+    "day_type",
+    "steps",
+    "very_active_minutes"
+  ],
+  "participant_balanced_sensitivity_rows": 1075,
+  "participants": 35,
+  "rule_absence_note": null,
+  "rules_examined": 860,
+  "support_sensitivity": [
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 97,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 89,
+        "3": 163
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 14,
+      "participants": 35,
+      "rules_examined": 1156,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.03,
+      "support_threshold": 0.03,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.05,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 69,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 78,
+        "3": 58
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 37,
+      "participants": 35,
+      "rules_examined": 504,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.08,
+      "support_threshold": 0.08,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 114,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 76,
+        "3": 125
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 7,
+      "participants": 28,
+      "rules_examined": 902,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.03,
+      "support_threshold": 0.03,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 108,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.05,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 92,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 54,
+        "3": 60
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 19,
+      "participants": 28,
+      "rules_examined": 468,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.08,
+      "support_threshold": 0.08,
+      "transactions": 233
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 97,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 89,
+        "3": 163
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 14,
+      "participants": 35,
+      "rules_examined": 1156,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.03,
+      "support_threshold": 0.03,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.05,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 69,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 78,
+        "3": 58
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 37,
+      "participants": 35,
+      "rules_examined": 504,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.08,
+      "support_threshold": 0.08,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.5,
+      "eligible_rules": 140,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.5,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.6,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.7,
+      "eligible_rules": 46,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.7,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 109,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.0,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.0,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.1,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 68,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.25,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.25,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 3,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 3,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 89,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 5,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 62,
+      "frequent_itemsets_by_size": {
+        "1": 17,
+        "2": 82,
+        "3": 116
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 10,
+      "minimum_support_transactions": 23,
+      "participants": 35,
+      "rules_examined": 860,
+      "scope": "all_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 10,
+      "support_threshold": 0.05,
+      "transactions": 457
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 114,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 76,
+        "3": 125
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 7,
+      "participants": 28,
+      "rules_examined": 902,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.03,
+      "support_threshold": 0.03,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 108,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.05,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 92,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 54,
+        "3": 60
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 19,
+      "participants": 28,
+      "rules_examined": 468,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_support",
+      "sensitivity_value": 0.08,
+      "support_threshold": 0.08,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.5,
+      "eligible_rules": 139,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.5,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 108,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.6,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.7,
+      "eligible_rules": 58,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_confidence",
+      "sensitivity_value": 0.7,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 178,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.0,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.0,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 108,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.1,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 83,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.25,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_lift",
+      "sensitivity_value": 1.25,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 110,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 3,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 3,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 108,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 5,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 5,
+      "support_threshold": 0.05,
+      "transactions": 233
+    },
+    {
+      "confidence_threshold": 0.6,
+      "eligible_rules": 43,
+      "frequent_itemsets_by_size": {
+        "1": 16,
+        "2": 72,
+        "3": 91
+      },
+      "lift_threshold": 1.1,
+      "minimum_distinct_participants": 10,
+      "minimum_support_transactions": 12,
+      "participants": 28,
+      "rules_examined": 690,
+      "scope": "complete_days",
+      "sensitivity_dimension": "minimum_participants",
+      "sensitivity_value": 10,
+      "support_threshold": 0.05,
+      "transactions": 233
+    }
+  ],
+  "thresholds": {
+    "confidence_sensitivity": [
+      0.5,
+      0.6,
+      0.7
+    ],
+    "distinct_participant_sensitivity": [
+      3,
+      5,
+      10
+    ],
+    "lift_sensitivity": [
+      1.0,
+      1.1,
+      1.25
+    ],
+    "maximum_itemset_size": 3,
+    "minimum_confidence": 0.6,
+    "minimum_distinct_participants": 5,
+    "minimum_lift": 1.1,
+    "minimum_support": 0.05,
+    "minimum_support_transactions": 23,
+    "support_sensitivity": [
+      0.03,
+      0.05,
+      0.08
+    ]
+  },
+  "transactions": 457
+}

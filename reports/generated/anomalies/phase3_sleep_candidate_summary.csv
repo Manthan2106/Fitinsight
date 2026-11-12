@@ -1,0 +1,4 @@
+record_type,candidate_rows,flag,flag_rows,grain
+sleep_episode,111,afternoon_start_candidate,29,participant-log episode; not merged with participant-days
+sleep_episode,111,elapsed_span_over_12_hours,6,participant-log episode; not merged with participant-days
+sleep_episode,111,multiple_overnight_logs_same_waking_date,78,participant-log episode; not merged with participant-days

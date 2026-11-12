@@ -13,8 +13,11 @@ no paid model, API, add-on, deployment, or compute.
 ## Verified repository state
 
 - Remote: `https://github.com/Manthan2106/Fitinsight.git`
-- `main`: `77abf8354db99cb48e84ff931e335e2ec2f4c73a`
-- `phase-4-validated-clustering` starts from that verified main commit.
+- `main`: `8172c55865d7b77d3bf193f541220d4e741ce91d`
+- `phase-4-validated-clustering` was created from the previous verified main
+  commit `77abf8354db99cb48e84ff931e335e2ec2f4c73a`; PR #4 is now merged.
+- `phase-5-association-anomalies` starts from the latest verified `main`
+  commit `8172c55865d7b77d3bf193f541220d4e741ce91d`.
 - The historical `phase-4-activity-clustering` remains unchanged at
   `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`; it has one branch-only code
   commit and main has 17 commits not on that branch.
@@ -36,18 +39,18 @@ no paid model, API, add-on, deployment, or compute.
 
 ## Current phase
 
-P1 and P2 are DONE. PR #1 was merged into `main` at
+P1–P4 are DONE. PR #1 was merged into `main` at
 `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`; commit `9357d85` is in its
 history. PR #2 was merged into `main` at
 `2e233a1de22a7f808bdea3939b75d80e0848a483`; Phase 2 head
 `ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 is DONE:
 [PR #3](https://github.com/Manthan2106/Fitinsight/pull/3) merged at
-`77abf8354db99cb48e84ff931e335e2ec2f4c73a`. P4 is IN_REVIEW in
-[PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) on
-`phase-4-validated-clustering`. The live PR head verified before this
-documentation-only correction was
-`ac88632231528a1b21b8535596715bc803ea8211`; pushing this correction advances
-the PR head.
+`77abf8354db99cb48e84ff931e335e2ec2f4c73a`. PR #4 merged into `main` at
+`8172c55865d7b77d3bf193f541220d4e741ce91d`; its reviewed head
+`440f93b9a12d019a6db26005e269bc7161641cad` is in main's history. The separate
+historical `phase-4-activity-clustering` branch remains at
+`cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. P5 is IN_PROGRESS on
+`phase-5-association-anomalies`, created from that verified `main` commit.
 
 ## Phase 2 findings so far
 
@@ -164,15 +167,53 @@ the PR head.
   including Phase 2 generated-reference checks and Phase 3 analysis tests.
 - Generated tables, figures, and machine-readable proofs are under
   `reports/generated/activity_clustering/` and `reports/evidence/P4/`.
-- GitHub PR #4 is open against `main` for review and remains unmerged. Keep
-  Phase 5 and the dashboard unstarted.
+- PR #4 merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`;
+  its head `440f93b9a12d019a6db26005e269bc7161641cad` is an ancestor of main.
+- Phase 5 is underway on a clean branch from that merge. Keep the historical
+  Phase 4 branch unchanged; do not merge the Phase 5 pull request automatically
+  or start the Phase 6 dashboard.
+
+## Phase 5 implementation and findings
+
+- Phase 5 branch: `phase-5-association-anomalies`, created from verified
+  `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d` after confirming PR #4
+  merged and its head `440f93b9a12d019a6db26005e269bc7161641cad` is in main's
+  history. Historical `phase-4-activity-clustering` remains unchanged at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
+- Input: all 457 participant-days from 35 people; 233 complete, 224
+  incomplete, and 61 zero-step days. The transaction pipeline keeps every row
+  and stores participant/date-to-transaction mappings.
+- Apriori: six non-overlapping item families; maximum itemset size three;
+  5% support (23/457), 60% confidence, lift 1.10, and at least five distinct
+  participants. Structural same-family, active-share/very-active, and
+  active-share/coverage combinations are excluded. Baseline result: 215
+  frequent itemsets, 860 directed rules, 89 eligible rules. Support,
+  confidence, lift, participant-count, equal-participant, and complete-day
+  sensitivities are recorded.
+- Anomaly screens: reuse 140 Phase 3 daily candidates and keep 111 sleep
+  candidates separate; add global 1.5×IQR fences, within-person robust scores,
+  and pooled/complete/incomplete kNN rankings. The candidate union is 217
+  unique participant-days; no rows are removed.
+- Distance definitions remain distinct: Phase 1's strict absolute screen
+  flags 104 days; Phase 2 flags 65 (all within the 104), leaving 39
+  strict-only. April 12 remains in the primary analysis; the sensitivity
+  cohort has 433 days.
+- Outputs: 21 CSV tables, eight SVG figures, proof lines, metrics, and
+  source/input hashes under `reports/generated/associations/`,
+  `reports/generated/anomalies/`, and `reports/evidence/P5/`.
+- Full regression suite: 89 tests pass with zero failures, errors, or skips.
+  Python standard library only; zero package installs or paid analysis
+  services. Run `python src/phase5_analysis.py` followed by
+  `python src/phase5_validation.py`.
+- Current state: P5 is IN_PROGRESS until its review PR is opened. Do not merge
+  the P5 PR automatically or start Phase 6.
 
 ## Next three tasks
 
-1. Review [Phase 4 PR #4](https://github.com/Manthan2106/Fitinsight/pull/4);
-   keep it unmerged until explicitly approved.
-2. Keep `phase-4-activity-clustering` unchanged as historical work.
-3. Do not merge Phase 4 or start Phase 5/dashboard work in this phase.
+1. Finish the P5 findings, handoff, and final repository checks.
+2. Push `phase-5-association-anomalies` and open its review PR against `main`.
+3. Leave the P5 PR unmerged; keep the historical Phase 4 branch unchanged and
+   do not start the dashboard.
 
 ## Last verified commands
 
@@ -190,9 +231,15 @@ the PR head.
   packages.
 - Final full-suite regression run — 59 PASS, zero failures/errors/skips; Phase 2
   and Phase 3 generated integration artifacts were present.
+- `python src/phase5_analysis.py` — PASS; 457 transactions, 89 eligible
+  association rules, 217 unique daily candidates, 21 CSV tables, and eight
+  validated SVGs. No packages or paid analysis services used.
+- `python -m unittest discover -s tests -v` — 89 PASS, zero failures, errors,
+  or skips; synthetic Apriori, MAD/IQR, kNN, distance-definition, and generated
+  artifact checks included.
 - GitHub confirms [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4)
-  targets `main`, is open and unmerged; its branch is
-  `phase-4-validated-clustering`.
+  merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`; its head
+  `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history.
 - GitHub now confirms PR #2 is merged at `2e233a1`; main includes its head.
 - `git fetch origin main && git merge --ff-only origin/main` advanced the
   workspace from `a6170a2` to `2e233a1`; the P3 branch is based there.

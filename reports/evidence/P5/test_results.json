@@ -1,0 +1,11 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "passed": 89,
+  "skipped": 0,
+  "status": "PASS",
+  "stdout_summary": "OK",
+  "tests_run": 89
+}
