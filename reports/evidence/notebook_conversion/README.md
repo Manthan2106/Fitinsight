@@ -95,6 +95,7 @@ preserved.
   code. No packages were installed for the correction, and no paid API,
   hosted compute, deployment, or Phase 7 work was used.
 
-The current branch is prepared for a review-only pull request against `main`;
-it must not be merged automatically. The PR number, remote head, and open/
-unmerged verification are recorded in the branch's final update.
+The review-only [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is
+open against `main` and remains unmerged. Its latest remote head and base were
+verified after the final documentation update; do not merge automatically or
+start Phase 7.

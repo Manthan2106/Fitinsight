@@ -82,8 +82,11 @@
     "analysis_runtime": "Existing local Python and notebook packages; standard-library analysis."
   },
   "pull_request": {
-    "status": "to be opened for review",
+    "number": 7,
+    "url": "https://github.com/Manthan2106/Fitinsight/pull/7",
+    "status": "open",
     "base": "main",
+    "merged": false,
     "automatic_merge": false
   }
 }

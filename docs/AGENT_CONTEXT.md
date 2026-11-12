@@ -131,7 +131,8 @@ historical `phase-4-activity-clustering` branch remains at
   results, and the historical Phase 4 branch remain unchanged. `src/.gitkeep`
   was removed; `app/.gitkeep` remains.
 - No paid services, hosted compute, deployment, or package installation was
-  used. The review PR is not yet open; do not merge this branch or begin Phase
+  used. [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is open
+  against `main` and remains unmerged; do not merge this branch or begin Phase
   7.
 - Full results and the precise verification caveat are recorded in
   `reports/evidence/notebook_conversion/final_corrections_report.md` and

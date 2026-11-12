@@ -54,6 +54,7 @@ remains.
 
 ## Review status
 
-This branch is prepared for a review-only pull request against `main`. Do not
-merge it automatically, and do not start Phase 7. The PR number, final remote
-head, base, and open/unmerged state will be recorded after GitHub verification.
+The review-only [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is
+open against `main` and remains unmerged. Its latest remote head and base were
+verified after the final documentation update. Do not merge automatically or
+start Phase 7.

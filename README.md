@@ -12,8 +12,8 @@ medical classifier, or a source of health recommendations.
   independently runnable, completes all Phase 3–5 inline SVG outputs, and
   improves the eight-panel interactive Phase 6 evidence browser.
 - [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is merged. The
-  current notebook corrections are a separate review-only change; they must
-  not be merged automatically.
+  current notebook corrections are in [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7),
+  open against `main` for review; it must not be merged automatically.
 - The original audit, preprocessing, and EDA notebooks are preserved under
   `notebooks/archive/`; their source content and execution history remain
   historical.
