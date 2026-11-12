@@ -343,3 +343,30 @@
   show its effect explicitly.
 - Artifacts: `reports/generated/anomalies/date_boundary_sensitivity.csv`,
   `reports/evidence/P5/anomaly_metrics.json`.
+
+## C-017 — Notebook conversions can hide expensive intermediate materialization
+
+- Phase/task: Notebook conversion and clean-kernel validation
+- Observable symptom: An initial Phase 2 notebook preview attempted to
+  materialize a 1.4-million-row CSV merely to display two sample rows, causing
+  the kernel to exit under the available memory limit.
+- Root cause: A convenience list conversion read the entire file before
+  slicing the first two records.
+- Investigation: Executed each notebook in an isolated fresh kernel, traced
+  the failed preview to the sample-display code, then replaced it with a
+  two-row streaming read. A later Phase 6 smoke test also found a date-filter
+  field mismatch that hid all date choices.
+- Resolution: Keep high-volume output reads streaming, generate notebook
+  figures from in-memory computed analysis results, and bind the time filter
+  to the verified `activity_date` column.
+- Verification: The six notebooks execute without cell errors; Phase 2
+  reproduces all six processed references, and the Phase 6 date selector
+  exposes its stored date choices.
+- Remaining limitation: Clean-kernel success cannot validate measurement
+  semantics or device wear; interactive widget behavior still depends on a
+  Jupyter frontend with widget support.
+- Presentation takeaway: Notebook output previews must be designed for data
+  scale, and displayed results should be tied to the exact computed inputs.
+- Artifacts: `notebooks/phases/02_Data_Preprocessing.ipynb`,
+  `notebooks/phases/06_Interactive_Dashboard.ipynb`,
+  `reports/evidence/notebook_conversion/`.

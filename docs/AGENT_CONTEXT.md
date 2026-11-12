@@ -1,6 +1,6 @@
 # FitInsight agent context
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## Goal and constraints
 
@@ -39,7 +39,7 @@ no paid model, API, add-on, deployment, or compute.
 
 ## Current phase
 
-P1–P4 are DONE. PR #1 was merged into `main` at
+P1–P5 are DONE. PR #1 was merged into `main` at
 `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`; commit `9357d85` is in its
 history. PR #2 was merged into `main` at
 `2e233a1de22a7f808bdea3939b75d80e0848a483`; Phase 2 head
@@ -49,10 +49,35 @@ history. PR #2 was merged into `main` at
 `8172c55865d7b77d3bf193f541220d4e741ce91d`; its reviewed head
 `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history. The separate
 historical `phase-4-activity-clustering` branch remains at
-`cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. P5 is IN_REVIEW in
-[PR #5](https://github.com/Manthan2106/Fitinsight/pull/5), on
-`phase-5-association-anomalies`, created from that verified `main` commit.
-The PR remains unmerged.
+`cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. PR #5 was merged at
+`a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`; P5 is complete.
+
+## Notebook conversion (2026-11-13)
+
+- The `phase-notebook-conversion` branch was created from verified `main`
+  `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
+- [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is open against
+  `main` and intentionally unmerged pending review.
+- It adds six notebooks under `notebooks/phases/`: independent Phase 1–5
+  reproductions and the interactive Phase 6 notebook. The three original
+  notebooks remain preserved unchanged.
+- Phase 1 validates all 11 raw-file hashes and row counts (7,206,142 rows);
+  Phase 2 regenerates and compares all six processed references; Phase 3
+  matches 13 analysis CSVs and nine SVG figures; Phase 4 matches nine CSVs
+  and 12 SVG figures; Phase 5 matches eight association and 13 anomaly CSVs.
+  Phase 5's notebook also generates three representative SVGs from computed
+  notebook results; it does not reproduce all eight historical Phase 5
+  figures.
+- Phase 6 provides six interactive panels over stored evidence. A fresh
+  kernel exposed 23 date options, and widget smoke checks exercised activity,
+  cluster, rule, candidate, and sleep/time observers. No model is refit by a
+  filter.
+- All notebook kernels completed without cell errors. Full repository test
+  and diff checks are recorded in
+  `reports/evidence/notebook_conversion/README.md`.
+- Phase 6's separate web dashboard remains paused pending notebook review.
+  The historical Phase 4 branch and the local Phase 6 planning WIP remain
+  unchanged.
 
 ## Phase 2 findings so far
 
@@ -171,9 +196,10 @@ The PR remains unmerged.
   `reports/generated/activity_clustering/` and `reports/evidence/P4/`.
 - PR #4 merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`;
   its head `440f93b9a12d019a6db26005e269bc7161641cad` is an ancestor of main.
-- Phase 5 is IN_REVIEW in [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5)
-  against `main`. Keep the historical Phase 4 branch unchanged; do not merge
-  the Phase 5 pull request or start the Phase 6 dashboard.
+- At the time this Phase 4 handoff was written, Phase 5 was under review in
+  [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5). PR #5 later merged
+  at `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`. Keep the historical Phase 4
+  branch unchanged; the Phase 6 web dashboard is paused pending notebook review.
 
 ## Phase 5 implementation and findings
 
@@ -207,16 +233,18 @@ The PR remains unmerged.
   Python standard library only; zero package installs or paid analysis
   services. Run `python src/phase5_analysis.py` followed by
   `python src/phase5_validation.py`.
-- Current state: P5 is IN_REVIEW; PR #5 was opened against `main` at the
-  implementation commit `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`. The PR
-  remains open and unmerged; its live link shows the latest branch head. Do not
-  start Phase 6.
+- Historical review state: PR #5 was opened against `main` at the
+  implementation commit `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`; it was
+  subsequently merged at `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
 
-## Next three tasks
+## Historical next tasks at the Phase 5 handoff
 
 1. Review PR #5 and address any requested revisions.
 2. Keep the P5 PR open and unmerged until review is complete.
 3. Keep the historical Phase 4 branch unchanged and do not start the dashboard.
+
+These were the next steps at that handoff and are superseded by the merge and
+the notebook-conversion work recorded above.
 
 ## Last verified commands
 
@@ -240,10 +268,9 @@ The PR remains unmerged.
 - `python -m unittest discover -s tests -v` — 89 PASS, zero failures, errors,
   or skips; synthetic Apriori, MAD/IQR, kNN, distance-definition, and generated
   artifact checks included.
-- GitHub confirms [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5)
-  opened against `main`, unmerged, at implementation commit
-  `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`; the PR link shows the live branch
-  head.
+- GitHub confirmed PR #5 was opened against `main` at implementation commit
+  `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`; it later merged at
+  `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
 - GitHub confirms [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4)
   merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`; its head
   `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history.

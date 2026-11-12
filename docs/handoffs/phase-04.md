@@ -1,6 +1,11 @@
 # Phase 4 handoff — validated clustering and PCA
 
-## Current state
+## Status at Phase 4 handoff (historical)
+
+This status snapshot predates the Phase 5 merge and the notebook-conversion
+work. PR #5 later merged into `main` at
+`a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`. Phase 6 began as an interactive
+Jupyter notebook; separate web-dashboard work is paused pending notebook review.
 
 - Phase 4 implementation is on `phase-4-validated-clustering`, created from
   verified `main` at `77abf8354db99cb48e84ff931e335e2ec2f4c73a`.
@@ -8,9 +13,9 @@
   `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`; reviewed head
   `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history.
 - Historical `phase-4-activity-clustering` remains separate and unchanged.
-- Phase 5 is under review in [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5),
-  based on the verified merge. The PR remains unmerged; Phase 6 dashboard work
-  has not started.
+- At this handoff, Phase 5 was under review in
+  [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5), based on the
+  verified merge. That PR was subsequently merged.
 
 ## Implemented and validated
 
@@ -63,5 +68,6 @@ The full suite expects the documented Phase 2 and Phase 3 generated outputs.
 
 ## Next action
 
-Review PR #5. Do not alter the historical Phase 4 branch, merge the Phase 5
-pull request automatically, or start dashboard work.
+The historical next action was to review PR #5. The current conversion work
+keeps the historical Phase 4 branch unchanged and defers web-dashboard work
+until notebook review.

@@ -366,3 +366,27 @@
 - Files: `src/anomaly_detection.py`,
   `reports/generated/anomalies/date_boundary_sensitivity.csv`,
   `reports/evidence/P5/anomaly_metrics.json`.
+
+## D-021 — Make phase notebooks the primary reproducible research workflow
+
+- Date: 2026-11-13
+- Question: How should the validated Phase 1–5 work be made readable and
+  reproducible as notebooks, and what should Phase 6 deliver first?
+- Choices: Keep scripts as the only reproducible interface; or transfer
+  substantive implementations into separate, step-by-step Jupyter cells and
+  begin with an interactive notebook before a web application.
+- Selected: Preserve the original notebooks and scripts, add five independent
+  phase notebooks with visible transformation and proof cells, and make a
+  six-panel `ipywidgets` evidence browser the initial Phase 6 artifact.
+- Why: The research process, intermediate outputs, reasoning, and charts
+  should be inspectable without launching hidden scripts. A notebook review
+  should precede separate dashboard work.
+- Evidence: All six notebooks execute in fresh kernels; earlier phases compare
+  generated outputs to committed evidence, and Phase 6 filters stored results
+  without refitting models.
+- Trade-off: The notebook workflow uses a small pinned Jupyter runtime; the
+  analytical code in Phases 1–5 remains standard-library-only. Phase 5's
+  notebook regenerates three representative SVGs rather than reproducing all
+  eight historical figures.
+- Files: `notebooks/phases/`, `notebooks/requirements.txt`,
+  `reports/evidence/notebook_conversion/`.

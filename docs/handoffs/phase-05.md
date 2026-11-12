@@ -1,14 +1,20 @@
 # Phase 5 handoff: association rules and anomaly screening
 
-## Review state
+## Review state captured before merge (historical)
 
-- Status: IN_REVIEW.
+This handoff records the state when PR #5 was opened. PR #5 was later merged
+into `main` at `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`; Phase 6's initial
+artifact is now an interactive Jupyter notebook, while separate web-dashboard
+work is paused pending notebook review.
+
+- Status when written: IN_REVIEW; later merged.
 - Pull request: [PR #5 — Phase 5: Apriori association rules and anomaly screening](https://github.com/Manthan2106/Fitinsight/pull/5).
 - Base: `main`; source branch: `phase-5-association-anomalies`.
 - PR #5 was opened at implementation commit
   `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`. The PR page is the authoritative
   live source for the latest branch head.
-- Do not merge this PR automatically. Phase 6 has not been started.
+- The instruction not to merge automatically applied before review was
+  complete; it was later merged through GitHub.
 
 ## Reproducible workflow
 

@@ -1,0 +1,79 @@
+{
+  "baseline_commit": "a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba",
+  "branch": "phase-notebook-conversion",
+  "python": "3.13.11",
+  "runtime_packages": {
+    "jupyterlab": "4.6.6",
+    "ipykernel": "7.4.0",
+    "nbclient": "0.11.0",
+    "ipywidgets": "8.1.9"
+  },
+  "analysis_packages": "Python standard library only",
+  "paid_services_or_hosted_compute": false,
+  "notebooks": [
+    {
+      "path": "notebooks/phases/01_Data_Audit.ipynb",
+      "code_cells": 9,
+      "fresh_kernel": "PASS",
+      "result": "11 raw files and 7206142 rows; SHA-256 and row-count parity PASS"
+    },
+    {
+      "path": "notebooks/phases/02_Data_Preprocessing.ipynb",
+      "code_cells": 37,
+      "fresh_kernel": "PASS",
+      "result": "Six processed outputs exactly match committed references"
+    },
+    {
+      "path": "notebooks/phases/03_Exploratory_Data_Analysis.ipynb",
+      "code_cells": 129,
+      "fresh_kernel": "PASS",
+      "result": "13 analysis CSVs and nine SVGs exactly match; 161 waking-date matches"
+    },
+    {
+      "path": "notebooks/phases/04_Clustering_and_PCA.ipynb",
+      "code_cells": 140,
+      "fresh_kernel": "PASS",
+      "result": "Nine analysis CSVs and 12 SVGs exactly match"
+    },
+    {
+      "path": "notebooks/phases/05_Association_and_Anomalies.ipynb",
+      "code_cells": 135,
+      "fresh_kernel": "PASS",
+      "result": "Eight association CSVs and 13 anomaly CSVs exactly match; three SVGs generated from notebook-computed results"
+    },
+    {
+      "path": "notebooks/phases/06_Interactive_Dashboard.ipynb",
+      "code_cells": 7,
+      "fresh_kernel": "PASS",
+      "widget_smoke": "PASS",
+      "panels": 6,
+      "date_filter_options": 23,
+      "result": "Activity, cluster, rule, candidate, and sleep/time observers exercised; dynamic SVG chart generated; no model refit"
+    }
+  ],
+  "repository_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 89,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "repository_checks": {
+    "git_diff_check": "PASS",
+    "notebook_syntax_and_cell_ids": "PASS",
+    "notebook_error_outputs": "NONE",
+    "script_launch_patterns": "NONE"
+  },
+  "preservation": {
+    "original_notebooks": "preserved",
+    "raw_data": "unchanged",
+    "processed_references": "unchanged",
+    "historical_phase_4_branch": "unchanged",
+    "separate_phase_6_web_dashboard": "paused until notebook review"
+  },
+  "limitations": [
+    "Phase 5 notebook regenerates three representative SVG charts rather than all eight historical Phase 5 figures.",
+    "Notebook controls require a widget-enabled Jupyter frontend.",
+    "Reproducing historical results does not validate device wear or measurement semantics."
+  ]
+}
