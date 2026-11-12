@@ -33,7 +33,7 @@ no paid model, API, add-on, deployment, or compute.
 
 ## Current phase
 
-P1 foundation/audit is in review. The streaming audit and four unit tests run
+P1 foundation/audit is in review. The streaming audit and seven unit tests run
 successfully. The branch `phase-1-foundation` is pushed; PR #1 is open against
 `main` and has not been merged.
 
@@ -44,15 +44,19 @@ successfully. The branch `phase-1-foundation` is pushed; PR #1 is open against
    processed exports before proposing transformation changes.
 3. Start P2 only after checking reproducibility requirements and memory cost.
 
-## Last verified command
+## Last verified commands
 
-`python -m unittest discover -s tests -v && python src/data_audit.py`
+- `python -m unittest discover -s tests -v` — 7 tests passed on the current
+  local changes.
+- `git diff --check` — PASS.
+- `python src/data_audit.py` — latest full scan PASS at the source revision
+  recorded in `reports/evidence/P1/run_manifest.json`. The audit code is
+  unchanged in this review follow-up, so the large raw scan was not repeated.
 
-Result: 4 unit tests passed; the streaming audit returned PASS for 11 files,
-7,206,142 rows, complete composite keys and parseable dates. Only sleep had
-duplicate keys (525). The daily-distance and zero-step flags are recorded in
-the run manifest. Environment: Python 3.13.11; approximately 436 MiB memory
-was available at the initial check. No packages were installed.
+The full scan covered 11 files and 7,206,142 rows, with complete composite
+keys and parseable dates; sleep had 525 duplicate keys. Daily-distance and
+zero-step flags are in the manifest. Environment: Python 3.13.11; about 436
+MiB memory was available at the initial check. No packages were installed.
 
 ## Free-tier status
 

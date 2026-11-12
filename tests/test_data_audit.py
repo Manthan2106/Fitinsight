@@ -6,6 +6,42 @@ from pathlib import Path
 from src.data_audit import audit_file, parse_datetime, value_kind
 
 
+DAILY_COLUMNS = [
+    "Id", "ActivityDate", "TotalSteps", "TotalDistance", "TrackerDistance",
+    "LoggedActivitiesDistance", "VeryActiveDistance", "ModeratelyActiveDistance",
+    "LightActiveDistance", "SedentaryActiveDistance", "VeryActiveMinutes",
+    "FairlyActiveMinutes", "LightlyActiveMinutes", "SedentaryMinutes", "Calories",
+]
+
+
+def daily_row(
+    participant="4020332650",
+    date="3/20/2016",
+    steps="10",
+    total_distance="1",
+    tracker_distance="1",
+    light_distance="1",
+    very_active_minutes="0",
+    lightly_active_minutes="10",
+    calories="10",
+):
+    return [
+        participant, date, steps, total_distance, tracker_distance, "0",
+        "0", "0", light_distance, "0", very_active_minutes, "0",
+        lightly_active_minutes, "100", calories,
+    ]
+
+
+def audit_daily_rows(rows):
+    with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory) / "dailyActivity_merged.csv"
+        with path.open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.writer(stream, lineterminator="\n")
+            writer.writerow(DAILY_COLUMNS)
+            writer.writerows(rows)
+        return audit_file(path)
+
+
 class DataAuditTests(unittest.TestCase):
     def test_parses_observed_date_and_timestamp_formats(self):
         self.assertEqual(
@@ -27,25 +63,25 @@ class DataAuditTests(unittest.TestCase):
         self.assertEqual(value_kind("id-12"), "string")
 
     def test_daily_key_and_quality_flags(self):
-        columns = [
-            "Id", "ActivityDate", "TotalSteps", "TotalDistance", "TrackerDistance",
-            "LoggedActivitiesDistance", "VeryActiveDistance", "ModeratelyActiveDistance",
-            "LightActiveDistance", "SedentaryActiveDistance", "VeryActiveMinutes",
-            "FairlyActiveMinutes", "LightlyActiveMinutes", "SedentaryMinutes", "Calories",
-        ]
         rows = [
-            ["4020332650", "3/20/2016", "0", "4", "4", "0", "0", "0", "0", "0", "1", "0", "0", "100", "10"],
-            ["4020332650", "3/20/2016", "100", "2", "2", "0", "0", "0", "2", "0", "0", "0", "10", "100", "100"],
+            daily_row(
+                steps="0",
+                total_distance="4",
+                tracker_distance="4",
+                light_distance="0",
+                very_active_minutes="1",
+            ),
+            daily_row(
+                date="3/21/2016",
+                steps="100",
+                total_distance="2",
+                tracker_distance="2",
+                light_distance="2",
+                calories="100",
+            ),
         ]
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "dailyActivity_merged.csv"
-            with path.open("w", encoding="utf-8", newline="") as stream:
-                writer = csv.writer(stream, lineterminator="\n")
-                writer.writerow(columns)
-                writer.writerows(rows)
-            result = audit_file(path)
+        result = audit_daily_rows(rows)
 
-        self.assertEqual(result["duplicate_key_rows"], 1)
         self.assertEqual(result["quality_flags"]["zero_step_rows"], 1)
         self.assertEqual(result["quality_flags"]["zero_step_positive_calories_rows"], 1)
         self.assertEqual(
@@ -59,6 +95,30 @@ class DataAuditTests(unittest.TestCase):
             result["quality_flags"]["participant_4020332650_max_component_abs_diff"],
             4.0,
         )
+
+    def test_malformed_short_and_extra_rows_are_reported(self):
+        row = daily_row(participant="1")
+        result = audit_daily_rows([row[:-1], row + ["unexpected"]])
+
+        self.assertEqual(result["malformed_rows"], 2)
+        self.assertFalse(result["checks"]["row_width"])
+        self.assertEqual(result["schema"][-1]["null_count"], 1)
+
+    def test_missing_composite_key_field_is_reported(self):
+        result = audit_daily_rows([daily_row(participant="")])
+
+        self.assertEqual(result["missing_key_rows"], 1)
+        self.assertFalse(result["checks"]["keys_complete"])
+
+    def test_duplicate_composite_key_is_counted_without_dropping_rows(self):
+        rows = [
+            daily_row(participant="1", total_distance="1", light_distance="1"),
+            daily_row(participant="1", total_distance="2", light_distance="2"),
+        ]
+        result = audit_daily_rows(rows)
+
+        self.assertEqual(result["rows"], 2)
+        self.assertEqual(result["duplicate_key_rows"], 1)
 
 
 if __name__ == "__main__":

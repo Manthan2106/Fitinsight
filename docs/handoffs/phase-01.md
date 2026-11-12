@@ -1,10 +1,10 @@
 # Phase 1 handoff
 
-Status: IN_PROGRESS
+Status: REVIEW
 
 ## Completed locally
 
-- Added a standard-library streaming audit and three unit tests.
+- Added a standard-library streaming audit and seven unit tests.
 - Audited all 11 raw CSVs: 7,206,142 rows and 271,592,676 bytes.
 - Audit checks passed for headers, row widths, composite-key completeness, and
   date parsing. Sleep contains 525 repeated `(Id, date, logId)` keys.
@@ -17,10 +17,10 @@ Status: IN_PROGRESS
 
 ## Pending acceptance items
 
-- PR #1 is open on `phase-1-foundation` for repository review.
-- The original push was verified at commit `5735907`; `main` remains at its
-  original SHA. PR #1 is open for review; do not merge without the repository
-  owner's decision.
+- PR #1 is open and mergeable, based on `main`; it remains unmerged.
+- `main` remains at `201268635a04a7fee03a00cb7030e8106f6d13ec`; the latest PR
+  head is available directly from the GitHub PR page rather than copied here.
+- The repository owner must approve integration; do not merge automatically.
 
 ## Risks and limits
 
@@ -32,4 +32,5 @@ Status: IN_PROGRESS
 
 ## Next action
 
-Review PR #1; proceed to P2 after Phase 1 is integrated.
+Merge PR #1 after owner review. Start P2 only after verifying the integrated
+`main` head.

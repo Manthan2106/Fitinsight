@@ -65,8 +65,11 @@ they do not establish which field is correct.
 
 ## Method note
 
-The audit uses Python's standard library, streams one CSV at a time, and uses
-16-byte hashes to track composite keys. Type labels are lexical (`integer`,
-`number`, `boolean`, `string`, `datetime`, `mixed`, or `empty`), not a
-replacement for an authoritative data specification. There are no package
+The audit uses Python's standard library, streams one CSV at a time, and stores
+16-byte BLAKE2b digests of composite keys. A digest collision is theoretically
+possible and could make distinct keys look like a duplicate; at these dataset
+sizes the risk is extremely small but nonzero. The audit is a memory-conscious
+key screen, not a mathematical proof of uniqueness. Type labels are lexical
+(`integer`, `number`, `boolean`, `string`, `datetime`, `mixed`, or `empty`), not
+a replacement for an authoritative data specification. There are no package
 installations or external services in this audit.
