@@ -10,8 +10,9 @@ medical classifier, or a source of health recommendations.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.
 - The Phase 1 streaming audit uses only the Python standard library.
-- Phases 1–4 are merged into `main`; Phase 5 association and anomaly analysis
-  is underway on `phase-5-association-anomalies`. See `docs/AGENT_CONTEXT.md`.
+- Phases 1–4 are merged into `main`; Phase 5 is under review in
+  [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5) and remains
+  unmerged.
 - Phase 4 produced nine analysis tables, 12 SVG figures, and machine-readable
   validation evidence; its small-sample cluster findings remain exploratory.
 
@@ -88,7 +89,8 @@ python src/phase5_validation.py
 Phase 5 uses Python's standard library only. It builds one categorical
 transaction per participant-day, mines bounded Apriori rules, and compares
 global IQR, within-participant robust, and coverage-stratified k-nearest-
-neighbor screens. Outputs, proof JSON, and eight SVG figures are written under
+neighbor screens. Outputs, proof JSON, 21 analysis CSV tables, and eight SVG
+figures are written under
 `reports/generated/associations/`, `reports/generated/anomalies/`, and
 `reports/evidence/P5/`. Existing candidate rows are retained; these screens do
 not confirm errors or make health claims. See

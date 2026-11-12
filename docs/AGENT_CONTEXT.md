@@ -49,8 +49,10 @@ history. PR #2 was merged into `main` at
 `8172c55865d7b77d3bf193f541220d4e741ce91d`; its reviewed head
 `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history. The separate
 historical `phase-4-activity-clustering` branch remains at
-`cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. P5 is IN_PROGRESS on
+`cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. P5 is IN_REVIEW in
+[PR #5](https://github.com/Manthan2106/Fitinsight/pull/5), on
 `phase-5-association-anomalies`, created from that verified `main` commit.
+The PR remains unmerged.
 
 ## Phase 2 findings so far
 
@@ -169,9 +171,9 @@ historical `phase-4-activity-clustering` branch remains at
   `reports/generated/activity_clustering/` and `reports/evidence/P4/`.
 - PR #4 merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`;
   its head `440f93b9a12d019a6db26005e269bc7161641cad` is an ancestor of main.
-- Phase 5 is underway on a clean branch from that merge. Keep the historical
-  Phase 4 branch unchanged; do not merge the Phase 5 pull request automatically
-  or start the Phase 6 dashboard.
+- Phase 5 is IN_REVIEW in [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5)
+  against `main`. Keep the historical Phase 4 branch unchanged; do not merge
+  the Phase 5 pull request or start the Phase 6 dashboard.
 
 ## Phase 5 implementation and findings
 
@@ -205,15 +207,16 @@ historical `phase-4-activity-clustering` branch remains at
   Python standard library only; zero package installs or paid analysis
   services. Run `python src/phase5_analysis.py` followed by
   `python src/phase5_validation.py`.
-- Current state: P5 is IN_PROGRESS until its review PR is opened. Do not merge
-  the P5 PR automatically or start Phase 6.
+- Current state: P5 is IN_REVIEW; PR #5 was opened against `main` at the
+  implementation commit `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`. The PR
+  remains open and unmerged; its live link shows the latest branch head. Do not
+  start Phase 6.
 
 ## Next three tasks
 
-1. Finish the P5 findings, handoff, and final repository checks.
-2. Push `phase-5-association-anomalies` and open its review PR against `main`.
-3. Leave the P5 PR unmerged; keep the historical Phase 4 branch unchanged and
-   do not start the dashboard.
+1. Review PR #5 and address any requested revisions.
+2. Keep the P5 PR open and unmerged until review is complete.
+3. Keep the historical Phase 4 branch unchanged and do not start the dashboard.
 
 ## Last verified commands
 
@@ -237,6 +240,10 @@ historical `phase-4-activity-clustering` branch remains at
 - `python -m unittest discover -s tests -v` — 89 PASS, zero failures, errors,
   or skips; synthetic Apriori, MAD/IQR, kNN, distance-definition, and generated
   artifact checks included.
+- GitHub confirms [PR #5](https://github.com/Manthan2106/Fitinsight/pull/5)
+  opened against `main`, unmerged, at implementation commit
+  `0a2bdc3aaff0f0154c3e939950a88d9f9cf5a3d2`; the PR link shows the live branch
+  head.
 - GitHub confirms [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4)
   merged into `main` at `8172c55865d7b77d3bf193f541220d4e741ce91d`; its head
   `440f93b9a12d019a6db26005e269bc7161641cad` is in main's history.
