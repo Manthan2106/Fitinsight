@@ -1,0 +1,92 @@
+{
+  "all_days": [
+    {
+      "cluster": 0,
+      "cohort": "all_days",
+      "eligible_observations": 235,
+      "mean_complete_day_proportion": 0.677255331957,
+      "mean_recorded_days": 13.823529411765,
+      "mean_recorded_minutes_per_day": 1267.026889834881,
+      "participants": 17,
+      "profile_mean_mean_active_share": 0.115078171212,
+      "profile_mean_mean_steps": 3100.43664000688,
+      "profile_mean_mean_vigorous_minutes": 2.928556071551,
+      "profile_mean_step_variability": 2437.424072107709,
+      "profile_median_mean_active_share": 0.104377580941,
+      "profile_median_mean_steps": 3094.916666666667,
+      "profile_median_mean_vigorous_minutes": 1.25,
+      "profile_median_step_variability": 2707.020685629174
+    },
+    {
+      "cluster": 1,
+      "cohort": "all_days",
+      "eligible_observations": 199,
+      "mean_complete_day_proportion": 0.293019005848,
+      "mean_recorded_days": 12.4375,
+      "mean_recorded_minutes_per_day": 1097.021377306904,
+      "participants": 16,
+      "profile_mean_mean_active_share": 0.252233549429,
+      "profile_mean_mean_steps": 8991.533692897015,
+      "profile_mean_mean_vigorous_minutes": 26.048311593377,
+      "profile_mean_step_variability": 4054.906448733716,
+      "profile_median_mean_active_share": 0.260371239938,
+      "profile_median_mean_steps": 8481.465909090908,
+      "profile_median_mean_vigorous_minutes": 21.736111111111,
+      "profile_median_step_variability": 3930.041462866257
+    },
+    {
+      "cluster": 2,
+      "cohort": "all_days",
+      "eligible_observations": 23,
+      "mean_complete_day_proportion": 0.912878787879,
+      "mean_recorded_days": 11.5,
+      "mean_recorded_minutes_per_day": 1367.041666666667,
+      "participants": 2,
+      "profile_mean_mean_active_share": 0.202221057556,
+      "profile_mean_mean_steps": 16130.723484848484,
+      "profile_mean_mean_vigorous_minutes": 75.825757575758,
+      "profile_mean_step_variability": 7195.408300198557,
+      "profile_median_mean_active_share": 0.202221057556,
+      "profile_median_mean_steps": 16130.723484848484,
+      "profile_median_mean_vigorous_minutes": 75.825757575758,
+      "profile_median_step_variability": 7195.408300198557
+    }
+  ],
+  "complete_days": [
+    {
+      "cluster": 0,
+      "cohort": "complete_days",
+      "eligible_observations": 175,
+      "mean_complete_day_proportion": 1.0,
+      "mean_recorded_days": 9.722222222222,
+      "mean_recorded_minutes_per_day": 1440.0,
+      "participants": 18,
+      "profile_mean_mean_active_share": 0.101692658498,
+      "profile_mean_mean_steps": 3536.965154295127,
+      "profile_mean_mean_vigorous_minutes": 4.111387169183,
+      "profile_mean_step_variability": 2864.840763674018,
+      "profile_median_mean_active_share": 0.10234375,
+      "profile_median_mean_steps": 3521.714285714286,
+      "profile_median_mean_vigorous_minutes": 2.145161290323,
+      "profile_median_step_variability": 3165.316501831723
+    },
+    {
+      "cluster": 1,
+      "cohort": "complete_days",
+      "eligible_observations": 52,
+      "mean_complete_day_proportion": 1.0,
+      "mean_recorded_days": 8.666666666667,
+      "mean_recorded_minutes_per_day": 1440.0,
+      "participants": 6,
+      "profile_mean_mean_active_share": 0.220177510889,
+      "profile_mean_mean_steps": 13596.735245310245,
+      "profile_mean_mean_vigorous_minutes": 48.275589225589,
+      "profile_mean_step_variability": 3810.920368967581,
+      "profile_median_mean_active_share": 0.225277076319,
+      "profile_median_mean_steps": 12460.188311688311,
+      "profile_median_mean_vigorous_minutes": 38.5,
+      "profile_median_step_variability": 4116.683378579232
+    }
+  ],
+  "interpretation": "Neutral recorded-activity profiles; cluster IDs are ordered by mean recorded steps."
+}

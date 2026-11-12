@@ -10,7 +10,10 @@ medical classifier, or a source of health recommendations.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.
 - The Phase 1 streaming audit uses only the Python standard library.
-- Current verified repository phase and next steps: `docs/AGENT_CONTEXT.md`.
+- Phases 1–3 are merged into `main`; Phase 4 clustering/PCA is under review
+  from `phase-4-validated-clustering`. See `docs/AGENT_CONTEXT.md`.
+- Phase 4 produces nine analysis tables, 12 SVG figures, and machine-readable
+  validation evidence; its small-sample cluster findings remain exploratory.
 
 ## Run the raw-data audit
 
@@ -51,9 +54,25 @@ research artifacts:
 - `notebooks/Data_preprocessing.ipynb` — six processed exports.
 - `notebooks/EDA_analysis.ipynb` — descriptive activity analysis.
 
-Their package environment is not yet pinned on `main`; reproducible
-preprocessing is a later phase. Do not treat an executed notebook output as a
-substitute for rerunning the workflow.
+Their original package environment is not pinned; notebook outputs remain
+historical. Current reproducible preprocessing, EDA, and clustering commands
+run from the processed CSVs rather than notebook state.
+
+## Phase 4 clustering and PCA
+
+From the repository root, run:
+
+```bash
+python src/activity_clustering.py
+python -m unittest discover -s tests -v
+```
+
+This standard-library-only workflow validates the participant cohort, computes
+K-Means, DBSCAN, PCA, sensitivity results, evidence JSON, CSV tables, and SVG
+figures under `reports/`. The historical implementation on
+`phase-4-activity-clustering` is retained as a separate reference branch. See
+`docs/CLUSTERING_FINDINGS.md` for the results and caveats and
+`docs/handoffs/phase-04.md` for the review handoff.
 
 ## Data and scientific limits
 

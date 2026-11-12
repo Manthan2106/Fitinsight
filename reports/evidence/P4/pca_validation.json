@@ -1,0 +1,150 @@
+{
+  "checks": {
+    "all_days": {
+      "all_loading_norms_are_one": true,
+      "coordinate_shape_matches": true,
+      "eigen_residual_below_1e_9": true,
+      "orthogonality_below_1e_10": true,
+      "variance_ratios_sum_to_one": true
+    },
+    "complete_days": {
+      "all_loading_norms_are_one": true,
+      "coordinate_shape_matches": true,
+      "eigen_residual_below_1e_9": true,
+      "orthogonality_below_1e_10": true,
+      "variance_ratios_sum_to_one": true
+    }
+  },
+  "method": "Center standardized features; sample covariance (n-1); symmetric Jacobi eigensolver; components sorted by eigenvalue.",
+  "results": {
+    "all_days": {
+      "cumulative_variance": [
+        0.670522297595,
+        0.857153926489,
+        0.969385358842,
+        1.0
+      ],
+      "eigen_residual": 0.0,
+      "eigenvalues_sample_covariance": [
+        2.760974166566,
+        0.7684831778,
+        0.462129427334,
+        0.126060287123
+      ],
+      "explained_variance": [
+        0.670522297595,
+        0.186631628894,
+        0.112231432353,
+        0.030614641158
+      ],
+      "feature_names": [
+        "mean_steps",
+        "mean_active_share",
+        "mean_vigorous_minutes",
+        "step_variability"
+      ],
+      "first_two_cumulative": 0.857153926489,
+      "jacobi_rotations": 22,
+      "loading_norms": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "loadings": [
+        [
+          0.583832047957,
+          0.444241243057,
+          0.510183787216,
+          0.448890143586
+        ],
+        [
+          0.090058855689,
+          0.740779909101,
+          -0.185612466023,
+          -0.639282833526
+        ],
+        [
+          0.003726712412,
+          -0.302821296714,
+          0.7624822357,
+          -0.571757128608
+        ],
+        [
+          0.80685541078,
+          -0.402733294497,
+          -0.351967833704,
+          -0.250816434143
+        ]
+      ],
+      "max_coordinate_abs": 4.094715227017,
+      "orthogonality_error": 0.0,
+      "participants": 35
+    },
+    "complete_days": {
+      "cumulative_variance": [
+        0.677336775483,
+        0.889164533677,
+        0.98756200871,
+        1.0
+      ],
+      "eigen_residual": 0.0,
+      "eigenvalues_sample_covariance": [
+        2.827144802016,
+        0.884150642895,
+        0.410702504488,
+        0.051915094079
+      ],
+      "explained_variance": [
+        0.677336775483,
+        0.211827758194,
+        0.098397475034,
+        0.01243799129
+      ],
+      "feature_names": [
+        "mean_steps",
+        "mean_active_share",
+        "mean_vigorous_minutes",
+        "step_variability"
+      ],
+      "first_two_cumulative": 0.889164533677,
+      "jacobi_rotations": 19,
+      "loading_norms": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "loadings": [
+        [
+          0.592524355507,
+          0.496759485385,
+          0.547400611297,
+          0.320152264653
+        ],
+        [
+          -0.125584405677,
+          -0.409621302132,
+          -0.020660011806,
+          0.903333886115
+        ],
+        [
+          -0.106843880069,
+          0.682405806508,
+          -0.666993562404,
+          0.279331860423
+        ],
+        [
+          0.788497197505,
+          -0.346067504634,
+          -0.505020120763,
+          -0.058856855058
+        ]
+      ],
+      "max_coordinate_abs": 4.310274992194,
+      "orthogonality_error": 0.0,
+      "participants": 24
+    }
+  },
+  "sign_convention": "For display, each eigenvector's largest-magnitude loading is made nonnegative; signs do not affect the PCA solution."
+}

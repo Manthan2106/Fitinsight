@@ -1,6 +1,7 @@
 # Phase 3 handoff
 
-Status: IN_REVIEW — PR #3 is open and unmerged
+Status: DONE — PR #3 merged into `main` at
+`77abf8354db99cb48e84ff931e335e2ec2f4c73a`
 
 Review PR: [Phase 3: reproducible exploratory and sleep-activity analysis](https://github.com/Manthan2106/Fitinsight/pull/3)
 
@@ -53,8 +54,9 @@ Review PR: [Phase 3: reproducible exploratory and sleep-activity analysis](https
 
 ## Analytical review follow-up — time accounting
 
-- PR #3 remains open and unmerged; the review addition continues on the same
-  `phase-3-exploratory-analysis` branch.
+- The time-accounting review addition was completed on
+  `phase-3-exploratory-analysis`, then PR #3 was merged into `main` at
+  `77abf8354db99cb48e84ff931e335e2ec2f4c73a`.
 - For each unique matched date, the four activity-minute fields were summed
   and checked against the Phase 2 stored total before adding recorded sleep-log
   rows. No processed reference or Phase 2 completeness flag was changed.
@@ -98,8 +100,8 @@ Review PR: [Phase 3: reproducible exploratory and sleep-activity analysis](https
 - Do not modify raw files, processed references, original notebooks, or the
   separate Phase 4 branch.
 
-## Next actions
+## Historical next actions
 
-1. Review the updated PR #3; this conversation did not merge it.
-2. Keep Phase 4 clustering on its separate branch and use explicit coverage
-   sensitivity if sleep-derived features are considered.
+1. At handoff time, review the updated PR #3; it was subsequently merged.
+2. Keep Phase 4 clustering on a fresh branch from the merged Phase 3 `main`,
+   and retain explicit coverage sensitivity if sleep-derived features are considered.

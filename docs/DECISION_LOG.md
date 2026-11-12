@@ -174,3 +174,106 @@
 - Files: `src/eda_analysis.py`, `src/eda_figures.py`,
   `reports/evidence/P3/time_accounting_metrics.json`,
   `docs/EDA_FINDINGS.md`.
+
+## D-012 — Cluster participant summaries rather than participant-days
+
+- Date: 2026-11-12
+- Question: Which observation grain answers whether the dataset contains
+  differing participant-level recorded-activity profiles?
+- Choices: Treat each of 457 daily rows as an independent clustering sample;
+  or aggregate repeated days to one feature row per participant.
+- Selected: Cluster one row per participant after requiring at least three
+  positive-duration activity days.
+- Why: Participant-day clustering would let participants with more recorded
+  days dominate the distance geometry and would not answer the participant
+  profile question.
+- Evidence: 35 eligible participants; the complete-day-only cohort has 24.
+  `reports/evidence/P4/cohort_validation.json`.
+- Trade-off: Aggregation hides within-person daily variation; the sample
+  standard deviation is retained as one feature and coverage is reported.
+- Files: `src/activity_clustering.py`, `reports/generated/activity_clustering/`.
+
+## D-013 — Keep four prespecified activity features and standardize by cohort
+
+- Date: 2026-11-12
+- Question: Which recorded measures should define Euclidean distance?
+- Choices: Include steps, distance, all activity-minute fields, and
+  participant-level summaries; or use the four historically specified features.
+- Selected: Mean steps, the equal-weight mean of daily active-minute fractions,
+  mean very-active minutes, and sample SD of daily steps; z-score each cohort
+  independently using population SD.
+- Why: Phase 3 found steps and distance highly correlated; sedentary share
+  duplicates the active-share denominator. The 4-feature correlation matrix is
+  reported before fitting. The maximum off-diagonal absolute correlation is
+  0.753.
+- Evidence: Feature formulas, ranges, IQR flags, correlations, and scaler
+  parameters are in `reports/evidence/P4/feature_validation.json`.
+- Trade-off: Correlated features still contribute related information; a
+  separate scaler means cohort scores are not on a shared coordinate system.
+- Files: `src/activity_clustering.py`,
+  `reports/generated/activity_clustering/tables/participant_features.csv`.
+
+## D-014 — Select K with a singleton guard and report its sensitivity
+
+- Date: 2026-11-12
+- Question: How many K-Means groups are supportable for 35 participants?
+- Choices: Choose K from one metric alone; or compare K=2–6, multiple quality
+  measures, minimum cluster size, and cohort sensitivities.
+- Selected: Use seed 42 and 20 starts; select the highest silhouette among
+  candidates with at least two members per cluster. Treat this as exploratory.
+- Why: All-days K=3 has the highest eligible silhouette (0.427 versus 0.409
+  for K=2), but its highest-step cluster contains only two participants.
+- Evidence: `reports/evidence/P4/kmeans_evaluation.json` and
+  `reports/evidence/P4/stability_metrics.json`; 5 seed reruns select K=3 with
+  ARI 1.000. Excluding the two highest-step participants changes the selected
+  solution to K=2, with ARI 1.000 on the 33 shared participants. Complete-day
+  K=2 has ARI 0.537 on 24 shared participants.
+- Trade-off: A reproducible scoring rule cannot establish true behavioral
+  categories; the two-person group is especially sensitive to cohort choice.
+- Files: `src/clustering_math.py`,
+  `reports/generated/activity_clustering/tables/kmeans_scores.csv`.
+
+## D-015 — Use validated standard-library DBSCAN and PCA for Phase 4
+
+- Date: 2026-11-12
+- Question: Can the historical DBSCAN and PCA analyses be reproduced without
+  assuming a package install is free?
+- Choices: Install the historical requirements; use a minimal verified-free
+  scientific stack; or implement bounded methods and validate them locally.
+- Selected: Use deterministic Euclidean DBSCAN, a symmetric Jacobi PCA
+  eigensolver, and standard-library SVG generation; install no packages.
+- Why: Scientific packages were absent and zero-cost installation was not
+  verified. The cohort has only 35 rows, and independent synthetic checks are
+  practical.
+- Evidence: DBSCAN at `eps=1.0`, `min_samples=3` returns 3 clusters / 8 noise
+  points; first-two-PC variance is 85.7% all-days and 88.9% complete-days.
+  Synthetic math tests, eigen residuals, orthogonality, and historical
+  reference results are recorded under `reports/evidence/P4/`.
+- Trade-off: The local K-Means initialization and numerical conventions are
+  not claimed to be bit-for-bit scikit-learn behavior; this difference is
+  documented and compared with historical reference outcomes.
+- Files: `src/clustering_math.py`, `src/activity_clustering.py`,
+  `tests/test_activity_clustering.py`.
+
+## D-016 — Keep Phase 4 chart scales and variance stories separate
+
+- Date: 2026-11-12
+- Question: How can the model comparisons and PCA outputs remain readable
+  without suggesting that unrelated metrics share a scale?
+- Choices: Combine multiple diagnostics in a compact multi-panel graphic; or
+  use one chart per K-Means metric and separate explained from cumulative PCA
+  variance.
+- Selected: Generate 12 deterministic SVG figures, with separate zero-based
+  columns for inertia, silhouette, Davies–Bouldin, and Calinski–Harabasz;
+  separate PCA variance charts; and labeled heatmaps for signed profiles and
+  loadings.
+- Why: The measures have different ranges and directions; combining them can
+  obscure the meaning of their axes. Each plot is also checked for parseable
+  SVG markup, accessible title/description, sample context, limitations, and
+  absence of participant IDs.
+- Evidence: `reports/evidence/P4/figures_index.json`,
+  `reports/evidence/P4/run_manifest.json`, and the 59-test full regression run.
+- Trade-off: More separate figures are produced, but each has a clearer scale
+  and direct interpretation.
+- Files: `src/activity_clustering.py`,
+  `reports/generated/activity_clustering/figures/`.

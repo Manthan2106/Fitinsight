@@ -1,0 +1,133 @@
+{
+  "baseline_cohort": {
+    "cluster_sizes": {
+      "0": 17,
+      "1": 16,
+      "2": 2
+    },
+    "participants": 35,
+    "selected_k": 3
+  },
+  "comparison_method": "ARI computed on intersection of participant IDs; each cohort is independently featured, scaled, and selected.",
+  "comparisons": [
+    {
+      "ari_vs_all_days": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "cohort": "all_days",
+      "eligible_observations": 457,
+      "participants": 35,
+      "selected_k": 3,
+      "selection": "Baseline: positive-duration days; at least 3.",
+      "shared_participants": 35
+    },
+    {
+      "ari_vs_all_days": 0.537008361722,
+      "cluster_sizes": {
+        "0": 18,
+        "1": 6
+      },
+      "cohort": "complete_days",
+      "eligible_observations": 227,
+      "participants": 24,
+      "selected_k": 2,
+      "selection": "Complete days only; at least 3 per participant.",
+      "shared_participants": 24
+    },
+    {
+      "ari_vs_all_days": 1.0,
+      "cluster_sizes": {
+        "0": 13,
+        "1": 15,
+        "2": 2
+      },
+      "cohort": "minimum_10_days",
+      "eligible_observations": 415,
+      "participants": 30,
+      "selected_k": 3,
+      "selection": "At least 10 positive-duration days per participant.",
+      "shared_participants": 30
+    },
+    {
+      "ari_vs_all_days": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16
+      },
+      "cohort": "excluding_top_2_mean_steps",
+      "eligible_observations": 434,
+      "participants": 33,
+      "selected_k": 2,
+      "selection": "Sensitivity only: exclude the two highest all-days mean-step participants.",
+      "shared_participants": 33
+    }
+  ],
+  "complete_days_ari_is_not_accuracy": true,
+  "random_seed_runs": [
+    {
+      "ari_vs_seed_42_baseline": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "n_init": 20,
+      "seed": 1,
+      "selected_k": 3,
+      "shared_participants": 35
+    },
+    {
+      "ari_vs_seed_42_baseline": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "n_init": 20,
+      "seed": 7,
+      "selected_k": 3,
+      "shared_participants": 35
+    },
+    {
+      "ari_vs_seed_42_baseline": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "n_init": 20,
+      "seed": 19,
+      "selected_k": 3,
+      "shared_participants": 35
+    },
+    {
+      "ari_vs_seed_42_baseline": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "n_init": 20,
+      "seed": 42,
+      "selected_k": 3,
+      "shared_participants": 35
+    },
+    {
+      "ari_vs_seed_42_baseline": 1.0,
+      "cluster_sizes": {
+        "0": 17,
+        "1": 16,
+        "2": 2
+      },
+      "n_init": 20,
+      "seed": 123,
+      "selected_k": 3,
+      "shared_participants": 35
+    }
+  ],
+  "selected_k_consistency_across_seeds": true,
+  "top_two_excluded_count": 2
+}

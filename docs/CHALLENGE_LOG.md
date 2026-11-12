@@ -124,3 +124,111 @@
   the sum is a diagnostic clue—not evidence of full coverage or non-wear.
 - Artifacts: `reports/evidence/P3/time_accounting_metrics.json`;
   `reports/generated/eda/tables/time_accounting*.csv`.
+
+## C-007 — Integrate historical clustering without losing merged Phase 1–3 work
+
+- Phase/task: P4 safe branch integration
+- Observable constraint: The existing
+  `phase-4-activity-clustering` branch is based on the original project commit
+  `201268635a04a7fee03a00cb7030e8106f6d13ec`. Verified current `main` has 17
+  commits not on that branch; its single clustering commit is not in `main`.
+- Root cause: The old work predates the Phase 1–3 merge chain.
+- Attempted fix: Do not merge or reset the historical branch.
+- Implemented solution: Create `phase-4-validated-clustering` from the verified
+  Phase 3 merge `77abf8354db99cb48e84ff931e335e2ec2f4c73a`; inspect the
+  historical source and carry forward its feature, candidate-K, DBSCAN, PCA,
+  and complete-day analysis design, without importing its dependency file.
+- Verification: The new branch starts at the current `main` commit. The
+  historical branch remains at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
+- Remaining limitation: Historical and current analysis code use different
+  numerical implementations; comparisons are evidence, not a claim of
+  bit-for-bit code reuse.
+- Presentation takeaway: Reuse the prior research questions while keeping the
+  merged audit, preprocessing, and EDA history intact.
+- Artifacts: `reports/evidence/P4/run_manifest.json`.
+
+## C-008 — Scientific Python packages are unavailable at verified zero cost
+
+- Phase/task: P4 reproducible algorithms
+- Observable constraint: NumPy, SciPy, scikit-learn, pandas, Matplotlib, and
+  Seaborn are not installed; no package-install cost was verified.
+- Root cause: The historical Phase 4 script imports these packages and its
+  `requirements.txt` includes a broader analysis environment.
+- Implemented solution: Install nothing. Use small standard-library
+  implementations of K-Means, DBSCAN, partition metrics, PCA, CSV output, and
+  SVG figures.
+- Verification: Synthetic expected-output tests cover clustering, noise,
+  metrics, PCA variance and orthogonality. Recomputed all-days and complete-day
+  K-Means sizes, ARI, DBSCAN reference settings, and PCA variance agree with
+  the documented historical values within the reported precision.
+- Remaining limitation: Initialization, tie handling, and numerical details
+  differ from scikit-learn; this is disclosed rather than presented as an
+  exact library replacement.
+- Presentation takeaway: The analysis remains reproducible locally without
+  assuming a paid or unverified dependency.
+- Artifacts: `src/clustering_math.py`, `tests/test_activity_clustering.py`,
+  and `reports/evidence/P4/`.
+
+## C-009 — A two-person group is too small for a strong behavioral claim
+
+- Phase/task: P4 K-Means interpretation and stability
+- Observable symptom: The all-days silhouette rule selects K=3 with cluster
+  sizes 17, 16, and 2; the two-person group has the highest mean recorded steps.
+- Root cause: The sample has only 35 participants, and recorded-day coverage
+  differs by person.
+- Investigation: Refit complete-day and >=10-day cohorts; rerun five seeds;
+  exclude the two highest mean-step participants as an explicitly labeled
+  sensitivity.
+- Resolution: Five 20-start reruns select K=3 with ARI 1.000. The complete-day
+  K=2 partition has ARI 0.537 on 24 shared participants. Excluding the two
+  highest-step participants yields K=2 for the remaining 33, with ARI 1.000
+  on those shared participants; the two-member group disappears.
+- Remaining limitation: ARI is partition agreement, not prediction accuracy;
+  clusters do not support lifestyle, health, or fitness labels.
+- Presentation takeaway: Report the two-person group as a sensitive
+  exploratory pattern, not a confirmed subgroup.
+- Artifacts: `reports/evidence/P4/stability_metrics.json`;
+  `reports/generated/activity_clustering/tables/cohort_sensitivity.csv`.
+
+## C-010 — Small-sample DBSCAN depends on the radius and noise threshold
+
+- Phase/task: P4 density-based sensitivity
+- Observable symptom: Some parameter settings produce multiple small groups;
+  nearby settings produce one group or classify many people as noise.
+- Root cause: Density connectivity is sensitive to eps and min_samples in a
+  four-dimensional sample of 35 participants.
+- Implemented solution: Evaluate the full 5-by-3 historical parameter grid;
+  keep noise labeled `-1` and calculate quality scores only on assigned points
+  when at least two clusters are mathematically valid.
+- Verification: `eps=1.0`, `min_samples=3` reproduces 3 groups and 8 noise
+  points. Across the grid, many settings produce one group or substantial
+  noise.
+- Remaining limitation: Scores exclude noise and therefore describe a smaller
+  population; a favorable score is not evidence the density model is superior.
+- Presentation takeaway: DBSCAN is a parameter-sensitive comparison, not a
+  forced match to K-Means.
+- Artifacts: `reports/evidence/P4/dbscan_evaluation.json`;
+  `reports/generated/activity_clustering/tables/dbscan_scores.csv`.
+
+## C-011 — Mixed chart scales can hide model trade-offs
+
+- Phase/task: P4 model diagnostics and PCA figures
+- Observable symptom: K-Means scores have different units and preferred
+  directions; combining them in one small graphic makes comparisons easy to
+  misread. Explained and cumulative PCA variance are also distinct quantities.
+- Root cause: The candidate scores use unrelated scales, and a combined chart
+  can visually imply a shared axis or direct magnitude comparison.
+- Implemented solution: Publish one zero-based column chart for each K-Means
+  metric, separate PCA explained and cumulative variance, and use explicit
+  diverging or sequential keys for feature/profile heatmaps.
+- Verification: The pipeline regenerates exactly 12 indexed SVGs, parses each
+  as XML, checks its title, sample and limitation text, and rejects
+  participant-ID labels. The full 59-test suite passes.
+- Remaining limitation: Static vector charts do not make the underlying
+  sample or exploratory results more representative.
+- Presentation takeaway: Read each metric using its own scale and direction;
+  do not treat a single score as definitive model validation.
+- Artifacts: `reports/evidence/P4/figures_index.json`,
+  `reports/evidence/P4/run_manifest.json`, and
+  `reports/generated/activity_clustering/figures/`.

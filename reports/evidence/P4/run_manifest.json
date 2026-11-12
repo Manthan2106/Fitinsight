@@ -1,0 +1,96 @@
+{
+  "all_days": {
+    "cluster_sizes": {
+      "0": 17,
+      "1": 16,
+      "2": 2
+    },
+    "participants": 35,
+    "selected_k": 3
+  },
+  "available_scientific_libraries_at_start": {
+    "matplotlib": false,
+    "numpy": false,
+    "pandas": false,
+    "scikit_learn": false,
+    "scipy": false,
+    "seaborn": false
+  },
+  "baseline_commit": "77abf8354db99cb48e84ff931e335e2ec2f4c73a",
+  "complete_days": {
+    "cluster_sizes": {
+      "0": 18,
+      "1": 6
+    },
+    "participants": 24,
+    "selected_k": 2
+  },
+  "dbscan": {
+    "eps": [
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "metric": "Euclidean",
+    "min_samples": [
+      3,
+      4,
+      5
+    ]
+  },
+  "dependency_policy": "Python standard library only; no package install or external API.",
+  "evidence_files": [
+    "reports/evidence/P4/cluster_profiles.json",
+    "reports/evidence/P4/cohort_validation.json",
+    "reports/evidence/P4/dbscan_evaluation.json",
+    "reports/evidence/P4/feature_validation.json",
+    "reports/evidence/P4/figures_index.json",
+    "reports/evidence/P4/kmeans_evaluation.json",
+    "reports/evidence/P4/pca_validation.json",
+    "reports/evidence/P4/proof_blocks.json",
+    "reports/evidence/P4/stability_metrics.json",
+    "reports/evidence/P4/test_results.json"
+  ],
+  "figure_count": 12,
+  "generated_at_utc": "2026-11-12T16:21:04+00:00",
+  "git_head_at_run": "77abf8354db99cb48e84ff931e335e2ec2f4c73a",
+  "input_file": "data/processed/daily_activity_clean.csv",
+  "input_sha256": "6d1ad35a4e8dd138e9cadabf242baff7cf6190b40724c1c09eff28c46e5122d1",
+  "kmeans": {
+    "implementation": "local deterministic K-Means++-style initialization and Lloyd updates",
+    "max_iter": 300,
+    "n_init": 20,
+    "seed": 42
+  },
+  "pca": {
+    "implementation": "sample covariance and symmetric Jacobi eigensolver"
+  },
+  "phase": "P4",
+  "python_version": "3.13.11",
+  "runtime_seconds": 1.002213676,
+  "scientific_limitations": [
+    "Participant count is small and daily coverage is unequal.",
+    "Recorded device fields and units are not independently validated.",
+    "Clusters are exploratory and do not support clinical or health labels.",
+    "PCA variance is not evidence of cluster validity.",
+    "Custom standard-library algorithms may differ from scikit-learn numerical conventions."
+  ],
+  "source_file": "src/activity_clustering.py",
+  "source_sha256": {
+    "src/activity_clustering.py": "d5efa1789fc0266cd03136f3e6c97d8ca7c0399046cfb1835f4943f70d33002e",
+    "src/clustering_math.py": "19df3f62f0277d7072272bafdbe99be92ce6c23e9a3a6b531bfe537e77897725"
+  },
+  "status": "PASS",
+  "table_count": 9,
+  "validation": {
+    "cohort_checks": "PASS",
+    "dbscan_grid_checks": "PASS",
+    "feature_checks": "PASS",
+    "generated_tables_and_figures": "PASS",
+    "kmeans_selection_checks": "PASS",
+    "pca_math_checks": "PASS",
+    "scaling_checks": "PASS"
+  }
+}

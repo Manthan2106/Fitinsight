@@ -82,3 +82,41 @@
 - Reproducibility: `python src/eda_analysis.py`; only Python's standard library
   and local files are used.
 - Evidence: P3-EXPLORATORY-ANALYSIS.
+
+## P4 — Test whether recorded activity supports participant profiles
+
+- Problem: The dataset has 35 participants with unequal and incomplete daily
+  coverage; repeated days must not let better-recorded participants dominate
+  the participant comparison.
+- Feature choice: Aggregate to one participant row using mean steps, mean
+  daily active share, mean very-active minutes, and sample SD of daily steps.
+  Exclude distance because Phase 3 shows it closely tracks steps; exclude
+  sedentary share because it is complementary to active share under the same
+  recorded-minute denominator.
+- Algorithm choice: Standardize each cohort; compare K-Means candidates
+  K=2–6 using inertia, silhouette, Davies–Bouldin, Calinski–Harabasz, and
+  cluster size. Evaluate DBSCAN as a parameter sensitivity and use PCA to
+  summarize feature variance.
+- Experiment: With 35 all-days participants, K=3 has sizes 17/16/2 and
+  silhouette 0.427, slightly above K=2's 0.409. The complete-day cohort has
+  24 participants and selects K=2 (18/6); its shared-participant ARI is 0.537.
+  Five 20-start seed reruns reproduce all-days K=3 with ARI 1.000.
+- Challenge: The K=3 two-person high-step group disappears when those two
+  participants are excluded; the other 33 assignments retain ARI 1.000. The
+  stronger silhouette therefore does not establish a stable real subgroup.
+  DBSCAN at eps=1.0 / min_samples=3 finds 3 groups and 8 noise points, while
+  many nearby settings collapse to one group or substantial noise.
+- Evidence: First-two-PC variance is 85.7% for all-days and 88.9% for
+  complete-days. Synthetic tests validate the custom standard-library
+  clustering and Jacobi PCA calculations; historical reference counts are
+  reproduced without installing packages.
+- Interpretation and limitation: The grouping is an exploratory description
+  of recorded participant summaries, not a health or fitness classification.
+  The sample is small, coverage is uneven, DBSCAN can reject participants, and
+  PCA variance does not prove cluster validity.
+- Reproducibility: `python src/activity_clustering.py`; run the full test suite
+  after the Phase 2 and Phase 3 generated artifacts are available.
+- Outputs: Participant feature/assignment/profile tables, candidate metrics,
+  DBSCAN grid, PCA scores/loadings/variance, cohort sensitivity, 12 SVGs,
+  and task-specific JSON proofs under `reports/generated/activity_clustering/`
+  and `reports/evidence/P4/`.
