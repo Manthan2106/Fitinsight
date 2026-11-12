@@ -37,8 +37,10 @@ P1 is DONE. PR #1 was merged into `main` at
 `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`; commit `9357d85` is in its
 history. P2 is DONE. PR #2 was merged into `main` at
 `2e233a1de22a7f808bdea3939b75d80e0848a483`; Phase 2 head
-`ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 is
-IN_PROGRESS on `phase-3-exploratory-analysis`, based on that verified main.
+`ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 is in
+review as [PR #3](https://github.com/Manthan2106/Fitinsight/pull/3), opened
+from `phase-3-exploratory-analysis` against that verified main; it remains
+unmerged.
 
 ## Phase 2 findings so far
 
@@ -102,10 +104,9 @@ IN_PROGRESS on `phase-3-exploratory-analysis`, based on that verified main.
 
 ## Next three tasks
 
-1. Commit the validated findings, evidence, project logs, and generated tables
-   and figures.
-2. Push `phase-3-exploratory-analysis` and open a review PR without merging.
-3. Keep the separate Phase 4 clustering branch untouched while awaiting review.
+1. Review PR #3; do not merge it automatically.
+2. Keep the separate Phase 4 clustering branch untouched while awaiting review.
+3. After review, base future Phase 4 integration on the accepted main branch.
 
 ## Last verified commands
 
@@ -132,6 +133,9 @@ IN_PROGRESS on `phase-3-exploratory-analysis`, based on that verified main.
   regressions, Phase 3 edge cases, join cardinality, and SVG parsing.
 - Run manifest records pipeline commit `0438560f60723fdc0229f350cc4583b36dc15138`,
   clean analysis source files, and no raw/reference/notebook modifications.
+- GitHub confirms PR #3 is open against `main`, with the Phase 3 branch as
+  head; it has not been merged. The separate Phase 4 branch remains at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
 - Python 3.13.11; 355 MiB memory and 800 MiB temporary storage were available
   before P2; no packages were installed.
 
