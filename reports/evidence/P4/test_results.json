@@ -1,0 +1,11 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "errors": [],
+  "failures": [],
+  "p2_generated_prerequisites": "present before suite run",
+  "p3_generated_prerequisites": "present before suite run",
+  "source_commit": "2d1e9d57a3f754949567026cc12520ca6940582b",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 59
+}

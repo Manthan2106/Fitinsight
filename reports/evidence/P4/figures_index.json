@@ -1,0 +1,78 @@
+{
+  "count": 12,
+  "figures": [
+    {
+      "file": "reports/generated/activity_clustering/figures/01_inertia_by_k.svg",
+      "limitation": "Lower inertia is expected as K increases; it does not identify a true cluster count.",
+      "participants": 35,
+      "title": "K-Means inertia by K"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/02_silhouette_by_k.svg",
+      "limitation": "Silhouette summarizes within-versus-nearest-cluster distances; it does not prove behavioral groups.",
+      "participants": 35,
+      "title": "K-Means silhouette by K"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/03_davies_bouldin_by_k.svg",
+      "limitation": "This separation score is descriptive for the selected standardized features and sample.",
+      "participants": 35,
+      "title": "Davies\u2013Bouldin score by K"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/04_calinski_harabasz_by_k.svg",
+      "limitation": "This dispersion score is descriptive; no single metric selects objectively true groups.",
+      "participants": 35,
+      "title": "Calinski\u2013Harabasz score by K"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/05_selected_cluster_sizes.svg",
+      "limitation": "Labels are arbitrary and group sizes are exploratory; the smallest group needs caution.",
+      "participants": 35,
+      "title": "Selected K-Means cluster sizes"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/06_cluster_feature_profiles.svg",
+      "limitation": "Profiles summarize recorded fields, not health or fitness; z-scores are relative to this cohort.",
+      "participants": 35,
+      "title": "Cluster feature profiles"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/07_pca_participant_projection.svg",
+      "limitation": "PC coordinates are dimensionless projections, not physical units; separation in two PCs is not validation.",
+      "participants": 35,
+      "title": "PCA projection of standardized participant features"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/08_pca_explained_variance.svg",
+      "limitation": "Explained variance describes dimensional compression, not evidence that a cluster solution is valid.",
+      "participants": 35,
+      "title": "PCA explained variance by component"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/09_pca_cumulative_variance.svg",
+      "limitation": "Cumulative variance describes dimensional compression, not evidence that a cluster solution is valid.",
+      "participants": 35,
+      "title": "PCA cumulative explained variance"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/10_pca_feature_loadings.svg",
+      "limitation": "Loading signs may flip together without changing the PCA solution; components are not causal effects.",
+      "participants": 35,
+      "title": "PCA feature loadings"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/11_dbscan_parameter_sensitivity.svg",
+      "limitation": "Noise points are excluded from cluster scores; density results depend on eps and min_samples.",
+      "participants": 35,
+      "title": "DBSCAN parameter sensitivity"
+    },
+    {
+      "file": "reports/generated/activity_clustering/figures/12_cohort_sensitivity.svg",
+      "limitation": "Cohorts are independently scaled and fitted; compare labels only for shared participants using ARI.",
+      "participants": 35,
+      "title": "Cohort and eligibility sensitivity"
+    }
+  ],
+  "format": "SVG, Python standard library only"
+}

@@ -1,0 +1,221 @@
+{
+  "all_days": {
+    "algorithm": "Standard-library K-Means++-style initialization, Lloyd updates, deterministic empty-cluster repair.",
+    "candidate_results": [
+      {
+        "calinski_harabasz": 31.491756531403,
+        "cluster_sizes": {
+          "0": 17,
+          "1": 18
+        },
+        "davies_bouldin": 0.908676145837,
+        "eligible_for_selection": true,
+        "inertia": 71.637062602728,
+        "iterations": 3,
+        "k": 2,
+        "minimum_cluster_size": 17,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.409414911633
+      },
+      {
+        "calinski_harabasz": 28.202855128182,
+        "cluster_sizes": {
+          "0": 17,
+          "1": 16,
+          "2": 2
+        },
+        "davies_bouldin": 0.792742712843,
+        "eligible_for_selection": true,
+        "inertia": 50.675459616903,
+        "iterations": 2,
+        "k": 3,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.427003515088
+      },
+      {
+        "calinski_harabasz": 28.342328065425,
+        "cluster_sizes": {
+          "0": 17,
+          "1": 10,
+          "2": 6,
+          "3": 2
+        },
+        "davies_bouldin": 0.852972594135,
+        "eligible_for_selection": true,
+        "inertia": 37.405091841897,
+        "iterations": 4,
+        "k": 4,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.396517271903
+      },
+      {
+        "calinski_harabasz": 29.71616039826,
+        "cluster_sizes": {
+          "0": 12,
+          "1": 5,
+          "2": 10,
+          "3": 6,
+          "4": 2
+        },
+        "davies_bouldin": 0.837698480194,
+        "eligible_for_selection": true,
+        "inertia": 28.21354994077,
+        "iterations": 3,
+        "k": 5,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.361473769744
+      },
+      {
+        "calinski_harabasz": 28.680966242879,
+        "cluster_sizes": {
+          "0": 1,
+          "1": 6,
+          "2": 10,
+          "3": 10,
+          "4": 6,
+          "5": 2
+        },
+        "davies_bouldin": 0.735632341928,
+        "eligible_for_selection": false,
+        "inertia": 23.549224064093,
+        "iterations": 3,
+        "k": 6,
+        "minimum_cluster_size": 1,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.371055720399
+      }
+    ],
+    "n_init": 20,
+    "participants": 35,
+    "seed": 42,
+    "selected_cluster_sizes": {
+      "0": 17,
+      "1": 16,
+      "2": 2
+    },
+    "selected_k": 3,
+    "selected_metrics": {
+      "calinski_harabasz": 28.202855128182,
+      "davies_bouldin": 0.792742712843,
+      "silhouette": 0.427003515088
+    },
+    "selection_rule": "Highest silhouette among K=2..6 candidates with no singleton cluster; smaller K breaks exact ties."
+  },
+  "complete_days": {
+    "algorithm": "Standard-library K-Means++-style initialization, Lloyd updates, deterministic empty-cluster repair.",
+    "candidate_results": [
+      {
+        "calinski_harabasz": 21.875691409044,
+        "cluster_sizes": {
+          "0": 18,
+          "1": 6
+        },
+        "davies_bouldin": 0.873669205073,
+        "eligible_for_selection": true,
+        "inertia": 48.135993580369,
+        "iterations": 5,
+        "k": 2,
+        "minimum_cluster_size": 6,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.467319382921
+      },
+      {
+        "calinski_harabasz": 21.70734384936,
+        "cluster_sizes": {
+          "0": 15,
+          "1": 7,
+          "2": 2
+        },
+        "davies_bouldin": 0.840261158352,
+        "eligible_for_selection": true,
+        "inertia": 31.297209875941,
+        "iterations": 5,
+        "k": 3,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.419842778172
+      },
+      {
+        "calinski_harabasz": 22.664172741044,
+        "cluster_sizes": {
+          "0": 4,
+          "1": 11,
+          "2": 7,
+          "3": 2
+        },
+        "davies_bouldin": 0.775528006101,
+        "eligible_for_selection": true,
+        "inertia": 21.820036961907,
+        "iterations": 7,
+        "k": 4,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.38768724755
+      },
+      {
+        "calinski_harabasz": 23.323840662432,
+        "cluster_sizes": {
+          "0": 4,
+          "1": 11,
+          "2": 4,
+          "3": 3,
+          "4": 2
+        },
+        "davies_bouldin": 0.840382678912,
+        "eligible_for_selection": true,
+        "inertia": 16.242879108814,
+        "iterations": 3,
+        "k": 5,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.392581693934
+      },
+      {
+        "calinski_harabasz": 22.501265354123,
+        "cluster_sizes": {
+          "0": 4,
+          "1": 6,
+          "2": 6,
+          "3": 4,
+          "4": 2,
+          "5": 2
+        },
+        "davies_bouldin": 0.819297292183,
+        "eligible_for_selection": true,
+        "inertia": 13.240737386144,
+        "iterations": 3,
+        "k": 6,
+        "minimum_cluster_size": 2,
+        "n_init": 20,
+        "seed": 42,
+        "silhouette": 0.313608269069
+      }
+    ],
+    "n_init": 20,
+    "participants": 24,
+    "seed": 42,
+    "selected_cluster_sizes": {
+      "0": 18,
+      "1": 6
+    },
+    "selected_k": 2,
+    "selected_metrics": {
+      "calinski_harabasz": 21.875691409044,
+      "davies_bouldin": 0.873669205073,
+      "silhouette": 0.467319382921
+    },
+    "selection_rule": "Highest silhouette among K=2..6 candidates with no singleton cluster; smaller K breaks exact ties."
+  }
+}

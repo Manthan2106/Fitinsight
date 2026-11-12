@@ -1,0 +1,258 @@
+{
+  "cohort": "all_days",
+  "historical_eps_1_min_samples_3": {
+    "assigned_participants": 27,
+    "calinski_harabasz": 23.356810062398,
+    "cluster_sizes": {
+      "0": 3,
+      "1": 16,
+      "2": 8
+    },
+    "clusters": 3,
+    "davies_bouldin": 0.742641272159,
+    "eps": 1.0,
+    "min_samples": 3,
+    "noise": 8,
+    "noise_percent": 22.857142857143,
+    "scored_participants": 27,
+    "silhouette": 0.446324886702
+  },
+  "parameter_grid": [
+    {
+      "assigned_participants": 23,
+      "calinski_harabasz": 31.007149485042,
+      "cluster_sizes": {
+        "0": 3,
+        "1": 9,
+        "2": 5,
+        "3": 3,
+        "4": 3
+      },
+      "clusters": 5,
+      "davies_bouldin": 0.618279453917,
+      "eps": 0.75,
+      "min_samples": 3,
+      "noise": 12,
+      "noise_percent": 34.285714285714,
+      "scored_participants": 23,
+      "silhouette": 0.491277517657
+    },
+    {
+      "assigned_participants": 27,
+      "calinski_harabasz": 23.356810062398,
+      "cluster_sizes": {
+        "0": 3,
+        "1": 16,
+        "2": 8
+      },
+      "clusters": 3,
+      "davies_bouldin": 0.742641272159,
+      "eps": 1.0,
+      "min_samples": 3,
+      "noise": 8,
+      "noise_percent": 22.857142857143,
+      "scored_participants": 27,
+      "silhouette": 0.446324886702
+    },
+    {
+      "assigned_participants": 30,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 30
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.25,
+      "min_samples": 3,
+      "noise": 5,
+      "noise_percent": 14.285714285714,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 32,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 32
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.5,
+      "min_samples": 3,
+      "noise": 3,
+      "noise_percent": 8.571428571429,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 33,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 33
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 2.0,
+      "min_samples": 3,
+      "noise": 2,
+      "noise_percent": 5.714285714286,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 14,
+      "calinski_harabasz": 21.876877916391,
+      "cluster_sizes": {
+        "0": 9,
+        "1": 5
+      },
+      "clusters": 2,
+      "davies_bouldin": 0.641147105381,
+      "eps": 0.75,
+      "min_samples": 4,
+      "noise": 21,
+      "noise_percent": 60.0,
+      "scored_participants": 14,
+      "silhouette": 0.507176680382
+    },
+    {
+      "assigned_participants": 24,
+      "calinski_harabasz": 28.02810724818,
+      "cluster_sizes": {
+        "0": 16,
+        "1": 8
+      },
+      "clusters": 2,
+      "davies_bouldin": 0.760850903721,
+      "eps": 1.0,
+      "min_samples": 4,
+      "noise": 11,
+      "noise_percent": 31.428571428571,
+      "scored_participants": 24,
+      "silhouette": 0.47891008671
+    },
+    {
+      "assigned_participants": 30,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 30
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.25,
+      "min_samples": 4,
+      "noise": 5,
+      "noise_percent": 14.285714285714,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 32,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 32
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.5,
+      "min_samples": 4,
+      "noise": 3,
+      "noise_percent": 8.571428571429,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 33,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 33
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 2.0,
+      "min_samples": 4,
+      "noise": 2,
+      "noise_percent": 5.714285714286,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 8,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 8
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 0.75,
+      "min_samples": 5,
+      "noise": 27,
+      "noise_percent": 77.142857142857,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 24,
+      "calinski_harabasz": 28.02810724818,
+      "cluster_sizes": {
+        "0": 16,
+        "1": 8
+      },
+      "clusters": 2,
+      "davies_bouldin": 0.760850903721,
+      "eps": 1.0,
+      "min_samples": 5,
+      "noise": 11,
+      "noise_percent": 31.428571428571,
+      "scored_participants": 24,
+      "silhouette": 0.47891008671
+    },
+    {
+      "assigned_participants": 30,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 30
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.25,
+      "min_samples": 5,
+      "noise": 5,
+      "noise_percent": 14.285714285714,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 32,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 32
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 1.5,
+      "min_samples": 5,
+      "noise": 3,
+      "noise_percent": 8.571428571429,
+      "scored_participants": 0,
+      "silhouette": null
+    },
+    {
+      "assigned_participants": 33,
+      "calinski_harabasz": null,
+      "cluster_sizes": {
+        "0": 33
+      },
+      "clusters": 1,
+      "davies_bouldin": null,
+      "eps": 2.0,
+      "min_samples": 5,
+      "noise": 2,
+      "noise_percent": 5.714285714286,
+      "scored_participants": 0,
+      "silhouette": null
+    }
+  ],
+  "participants": 35,
+  "scoring_rule": "Silhouette, Davies-Bouldin, and Calinski-Harabasz are computed on assigned points only when at least 2 clusters and fewer than all assigned points are present. Noise is excluded."
+}

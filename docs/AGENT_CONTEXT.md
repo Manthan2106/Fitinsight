@@ -13,12 +13,15 @@ no paid model, API, add-on, deployment, or compute.
 ## Verified repository state
 
 - Remote: `https://github.com/Manthan2106/Fitinsight.git`
-- `main`: `2e233a1de22a7f808bdea3939b75d80e0848a483`
-- `phase-4-activity-clustering`: `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`
-- The clustering branch remains separate; it adds `src/activity_clustering.py`,
-  `docs/phase-4-clustering.md`, and `requirements.txt`.
+- `main`: `77abf8354db99cb48e84ff931e335e2ec2f4c73a`
+- `phase-4-validated-clustering` starts from that verified main commit.
+- The historical `phase-4-activity-clustering` remains unchanged at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`; it has one branch-only code
+  commit and main has 17 commits not on that branch.
 - PR #1 merged at `a6170a2`; verified that `9357d85` is in `main` history.
 - PR #2 merged at `2e233a1`; its Phase 2 head was `ede8fa3`.
+- PR #3 merged at `77abf8354db99cb48e84ff931e335e2ec2f4c73a`; Phase 3 head
+  `6f1777d6bcacb8e4a380546c91ec2cd57f31fbbe` is its second parent.
 - `main` has 11 raw CSVs, six processed CSVs, three executed notebooks, a
   README, seven audit tests, and Phase 1 evidence under `reports/evidence/P1/`.
 - Raw audit: 11 files, 7,206,142 rows, 271,592,676 bytes. Daily activity has
@@ -33,15 +36,18 @@ no paid model, API, add-on, deployment, or compute.
 
 ## Current phase
 
-P1 is DONE. PR #1 was merged into `main` at
+P1 and P2 are DONE. PR #1 was merged into `main` at
 `a6170a2caf64d66b1a622bd50c0b1a69805d34b0`; commit `9357d85` is in its
-history. P2 is DONE. PR #2 was merged into `main` at
+history. PR #2 was merged into `main` at
 `2e233a1de22a7f808bdea3939b75d80e0848a483`; Phase 2 head
-`ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 passed its
-updated analytical review. [PR #3](https://github.com/Manthan2106/Fitinsight/pull/3)
-remains open against that verified main and unmerged; its reviewed analytical
-head before this documentation-only follow-up was
-`28f240f23339427cf1c18dd42a7643cb789a3480`.
+`ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history. P3 is DONE:
+[PR #3](https://github.com/Manthan2106/Fitinsight/pull/3) merged at
+`77abf8354db99cb48e84ff931e335e2ec2f4c73a`. P4 is IN_REVIEW in
+[PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) on
+`phase-4-validated-clustering`. The live PR head verified before this
+documentation-only correction was
+`ac88632231528a1b21b8535596715bc803ea8211`; pushing this correction advances
+the PR head.
 
 ## Phase 2 findings so far
 
@@ -120,11 +126,53 @@ head before this documentation-only follow-up was
 - The Phase 3 branch starts at `2e233a1de22a7f808bdea3939b75d80e0848a483`.
 - Analysis code is committed at `0438560f60723fdc0229f350cc4583b36dc15138`.
 
+## Phase 4 implementation and findings
+
+- The active branch starts at the verified Phase 3 merge
+  `77abf8354db99cb48e84ff931e335e2ec2f4c73a`. The original
+  `phase-4-activity-clustering` branch remains untouched.
+- The old analysis' four features, K=2–6 model comparison, DBSCAN grid, PCA,
+  and complete-day comparison were retained conceptually. Reimplemented with
+  tested standard-library algorithms because NumPy, scikit-learn, SciPy,
+  pandas, Matplotlib, and Seaborn are unavailable; no packages were installed.
+- Baseline input: 457 participant-days, 35 participants, 233 complete and
+  224 incomplete days, 61 zero-step days. The 61 zero-step days have positive
+  recorded duration and remain included. All 35 meet the at-least-3-day rule;
+  the complete-day cohort has 24 participants.
+- Four features: mean daily steps, mean of daily active-minute shares, mean
+  very-active minutes, and sample SD of daily steps. Maximum off-diagonal
+  absolute feature correlation is 0.753; distance and sedentary share are
+  excluded to avoid duplicating correlated measures.
+- K-Means baseline: seed 42, 20 starts, K=2–6; highest silhouette among
+  candidates without singleton clusters selects K=3 (17/16/2), silhouette
+  0.427, Davies–Bouldin 0.793, Calinski–Harabasz 28.203. The two-person
+  highest-step group disappears when those two participants are excluded;
+  the remaining 33 assignments retain ARI 1.000. Treat K=3 as exploratory.
+- Complete-day fit selects K=2 (18/6); ARI versus the all-days partition on
+  24 shared participants is 0.537. A 10-day threshold leaves 30 participants
+  and ARI 1.000. Five 20-start seed reruns select K=3 with ARI 1.000.
+- DBSCAN reproduces 3 clusters / 8 noise points at `eps=1.0`,
+  `min_samples=3`; the wider parameter grid is radius-sensitive and often
+  yields one group or substantial noise.
+- PCA's first two components explain 85.7% (all days) and 88.9% (complete
+  days). A symmetric Jacobi eigensolver passed eigen-residual, orthogonality,
+  unit-norm loading, coordinate-shape, and variance-sum checks.
+- The final run generated nine CSV tables and 12 SVGs; plots use individual
+  scales for each model metric, separate explained/cumulative PCA variance,
+  and omit participant IDs.
+- The full regression suite passed 59 tests, zero failures/errors/skips,
+  including Phase 2 generated-reference checks and Phase 3 analysis tests.
+- Generated tables, figures, and machine-readable proofs are under
+  `reports/generated/activity_clustering/` and `reports/evidence/P4/`.
+- GitHub PR #4 is open against `main` for review and remains unmerged. Keep
+  Phase 5 and the dashboard unstarted.
+
 ## Next three tasks
 
-1. Keep PR #3 open for integration review; do not merge it automatically.
-2. Keep the separate Phase 4 clustering branch untouched.
-3. Base future Phase 4 integration on the accepted main branch after PR #3 is integrated.
+1. Review [Phase 4 PR #4](https://github.com/Manthan2106/Fitinsight/pull/4);
+   keep it unmerged until explicitly approved.
+2. Keep `phase-4-activity-clustering` unchanged as historical work.
+3. Do not merge Phase 4 or start Phase 5/dashboard work in this phase.
 
 ## Last verified commands
 
@@ -137,6 +185,14 @@ head before this documentation-only follow-up was
 - `python src/preprocess.py` — PASS for all six generated exports; exact
   reference match, 525 sleep duplicates removed, and per-transform proof saved.
 - `python -m unittest discover -s tests -v` — 22 PASS, including integration.
+- Final Phase 4 pipeline run — PASS; 9 CSV tables, 12 SVGs, and staged
+  computational proof blocks generated with Python 3.13.11 and no third-party
+  packages.
+- Final full-suite regression run — 59 PASS, zero failures/errors/skips; Phase 2
+  and Phase 3 generated integration artifacts were present.
+- GitHub confirms [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4)
+  targets `main`, is open and unmerged; its branch is
+  `phase-4-validated-clustering`.
 - GitHub now confirms PR #2 is merged at `2e233a1`; main includes its head.
 - `git fetch origin main && git merge --ff-only origin/main` advanced the
   workspace from `a6170a2` to `2e233a1`; the P3 branch is based there.
@@ -148,26 +204,26 @@ head before this documentation-only follow-up was
 - Initial PR #3 run, before the time-accounting review follow-up:
   `python src/eda_analysis.py` — PASS; 457 daily rows, 198,034 sleep rows,
   eight SVGs, 10 analysis CSVs, and 10 unique evidence paths. The then-current
-  `python -m unittest discover -s tests -v` run passed 32 tests. These remain
-  historical baseline results.
+  `python -m unittest discover -s tests -v` run passed 32 tests. These are
+  historical baseline results; the later review follow-up passed 36 tests.
 - Final reviewed run: the Phase 3 pipeline passed with 13 analysis CSV tables,
   nine SVG figures, and 11 evidence JSON paths; all 36 tests passed, including
   time-accounting synthetic cases and chart-point checks against the CSV.
   `python src/preprocess.py` also matched all six generated outputs to their
-  committed references. PR #3 remains unmerged.
+  committed references. PR #3 was subsequently merged at `77abf8354`.
 - The initial run manifest recorded analysis commit
   `0438560f60723fdc0229f350cc4583b36dc15138`; the final reviewed run manifest
   records pipeline commit `a6ec4265deb8ef3778fe27e841cfb30916a96e6a`, clean
   analysis source files, and no raw/reference/notebook modifications.
 - At the reviewed analytical head `28f240f23339427cf1c18dd42a7643cb789a3480`,
-  GitHub confirmed PR #3 was open against `main` and unmerged. The separate
-  Phase 4 branch remains at `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
+  GitHub confirmed PR #3 was open; it was later merged at `77abf8354`. The
+  separate Phase 4 branch remains at `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
 - Python 3.13.11; 355 MiB memory and 800 MiB temporary storage were available
   before P2; no packages were installed.
 
 The prior full raw audit covered 11 files and 7,206,142 rows; its results and
-daily-distance/zero-step flags are in the P1 manifest. P2 runs will be logged
-in their own evidence records.
+daily-distance/zero-step flags are in the P1 manifest. P2 and P3 records remain
+historical; Phase 4 run evidence is in `reports/evidence/P4/`.
 
 ## Free-tier status
 

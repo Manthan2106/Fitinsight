@@ -1,0 +1,5 @@
+cohort,participants,eligible_observations,selected_k,cluster_sizes,ari_vs_all_days,shared_participants,selection
+all_days,35,457,3,"{""0"":17,""1"":16,""2"":2}",1,35,Baseline: positive-duration days; at least 3.
+complete_days,24,227,2,"{""0"":18,""1"":6}",0.537008361722,24,Complete days only; at least 3 per participant.
+minimum_10_days,30,415,3,"{""0"":13,""1"":15,""2"":2}",1,30,At least 10 positive-duration days per participant.
+excluding_top_2_mean_steps,33,434,2,"{""0"":17,""1"":16}",1,33,Sensitivity only: exclude the two highest all-days mean-step participants.
