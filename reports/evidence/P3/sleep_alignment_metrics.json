@@ -1,0 +1,20 @@
+{
+  "activity_grain": "participant-day",
+  "ambiguous_activity_dates": 17,
+  "complete_matched_activity_days": 0,
+  "daily_rows_preserved": 457,
+  "eligible_episodes_without_activity": 198,
+  "interpretation": "Only a unique eligible log is matched. Unmatched, ambiguous, or excluded sleep remains missing; it is never converted to zero.",
+  "match_status_counts": {
+    "ambiguous_multiple_sessions": 17,
+    "matched": 161,
+    "no_eligible_overnight_episode": 279
+  },
+  "matched_participants": 18,
+  "matched_rows": 161,
+  "row_multiplication": false,
+  "sleep_alignment_rule": "Use episode end calendar date as the waking-date candidate. Eligible logs must end before noon, start at/after 18:00 or before 06:00, span no more than 12 hours, have exact 60-second intervals, not overlap, and be the only candidate log for that participant-waking date.",
+  "sleep_grain": "participant-log episode",
+  "sleep_is_missing_not_zero": true,
+  "unmatched_activity_days": 296
+}

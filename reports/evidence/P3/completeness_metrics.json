@@ -1,0 +1,176 @@
+{
+  "all_days": 457,
+  "complete_day_counts": {
+    "complete": 233,
+    "incomplete": 224
+  },
+  "complete_rule": "total_recorded_minutes == 1440",
+  "groups": {
+    "complete": {
+      "metrics": {
+        "calories": {
+          "count": 233,
+          "iqr": 907.0,
+          "max": 4562.0,
+          "mean": 2206.3004291845496,
+          "median": 1978.0,
+          "min": 0.0,
+          "missing": 0,
+          "q1": 1777.0,
+          "q3": 2684.0,
+          "sample_stddev": 787.6786249796392,
+          "skewness_adjusted_fisher_pearson": 0.4608824355535297
+        },
+        "sedentary_minutes": {
+          "count": 233,
+          "iqr": 292.0,
+          "max": 1440.0,
+          "mean": 1269.1502145922748,
+          "median": 1277.0,
+          "min": 720.0,
+          "missing": 0,
+          "q1": 1148.0,
+          "q3": 1440.0,
+          "sample_stddev": 153.90018236317744,
+          "skewness_adjusted_fisher_pearson": -0.5191137997763874
+        },
+        "total_active_minutes": {
+          "count": 233,
+          "iqr": 292.0,
+          "max": 720.0,
+          "mean": 170.84978540772534,
+          "median": 163.0,
+          "min": 0.0,
+          "missing": 0,
+          "q1": 0.0,
+          "q3": 292.0,
+          "sample_stddev": 153.90018236317744,
+          "skewness_adjusted_fisher_pearson": 0.5191137997763852
+        },
+        "total_recorded_minutes": {
+          "count": 233,
+          "iqr": 0.0,
+          "max": 1440.0,
+          "mean": 1440.0,
+          "median": 1440.0,
+          "min": 1440.0,
+          "missing": 0,
+          "q1": 1440.0,
+          "q3": 1440.0,
+          "sample_stddev": 0.0,
+          "skewness_adjusted_fisher_pearson": null
+        },
+        "total_steps": {
+          "count": 233,
+          "iqr": 9340.0,
+          "max": 28497.0,
+          "mean": 5831.922746781116,
+          "median": 4706.0,
+          "min": 0.0,
+          "missing": 0,
+          "q1": 8.0,
+          "q3": 9348.0,
+          "sample_stddev": 6011.078418439316,
+          "skewness_adjusted_fisher_pearson": 1.2146093023325186
+        }
+      },
+      "participant_days": 233,
+      "participants": 28
+    },
+    "incomplete": {
+      "metrics": {
+        "calories": {
+          "count": 224,
+          "iqr": 939.0,
+          "max": 4430.0,
+          "mean": 2171.9285714285716,
+          "median": 2156.0,
+          "min": 50.0,
+          "missing": 0,
+          "q1": 1695.75,
+          "q3": 2634.75,
+          "sample_stddev": 844.8482519755316,
+          "skewness_adjusted_fisher_pearson": 0.056129840829177005
+        },
+        "sedentary_minutes": {
+          "count": 224,
+          "iqr": 203.5,
+          "max": 1368.0,
+          "mean": 710.4107142857143,
+          "median": 724.0,
+          "min": 32.0,
+          "missing": 0,
+          "q1": 608.0,
+          "q3": 811.5,
+          "sample_stddev": 218.4865001246238,
+          "skewness_adjusted_fisher_pearson": -0.4090230574406539
+        },
+        "total_active_minutes": {
+          "count": 224,
+          "iqr": 164.0,
+          "max": 630.0,
+          "mean": 229.83928571428572,
+          "median": 250.0,
+          "min": 0.0,
+          "missing": 0,
+          "q1": 144.75,
+          "q3": 308.75,
+          "sample_stddev": 117.63465167553237,
+          "skewness_adjusted_fisher_pearson": -0.11141596073151079
+        },
+        "total_recorded_minutes": {
+          "count": 224,
+          "iqr": 150.5,
+          "max": 1427.0,
+          "mean": 940.25,
+          "median": 980.5,
+          "min": 41.0,
+          "missing": 0,
+          "q1": 885.0,
+          "q3": 1035.5,
+          "sample_stddev": 253.25571543225465,
+          "skewness_adjusted_fisher_pearson": -1.2050808187368272
+        },
+        "total_steps": {
+          "count": 224,
+          "iqr": 7609.25,
+          "max": 19658.0,
+          "mean": 7289.915178571428,
+          "median": 7231.5,
+          "min": 0.0,
+          "missing": 0,
+          "q1": 3219.0,
+          "q3": 10828.25,
+          "sample_stddev": 4573.219501305709,
+          "skewness_adjusted_fisher_pearson": 0.20214073672878466
+        }
+      },
+      "participant_days": 224,
+      "participants": 35
+    }
+  },
+  "interpretation": "Complete-day filtering is an observation-selection sensitivity check; it does not establish that incomplete records are invalid.",
+  "observation_grain": "participant-day and participant",
+  "participant_step_mean_sensitivity": {
+    "count": 28,
+    "direction_counts": {
+      "all_day_mean_higher": 12,
+      "complete_day_mean_higher": 15,
+      "equal": 1,
+      "unavailable": 7
+    },
+    "eligible_participants": 28,
+    "iqr": 852.405559352928,
+    "max": 1455.4363636363632,
+    "mean": -690.1605446343918,
+    "median": 61.69182245845559,
+    "min": -7943.4,
+    "missing": 7,
+    "q1": -552.9155701754383,
+    "q3": 299.48998917748963,
+    "sample_stddev": 2328.2306411280238,
+    "skewness_adjusted_fisher_pearson": -2.3362300119451342
+  },
+  "participants": 35,
+  "participants_without_complete_days": 7
+}

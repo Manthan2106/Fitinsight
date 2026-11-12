@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-label="Recorded sleep-log sizes vary">
+<title>Recorded sleep-log sizes vary</title>
+<desc>Number of rows recorded within each participant-log group. n=556 logs; x-axis counts minute records, not validated sleep duration; 12 bins.</desc>
+<rect x="0" y="0" width="1120" height="720" fill="#FFFFFF"/>
+<text x="72" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D">Recorded sleep-log sizes vary</text>
+<text x="72" y="91" font-family="Arial, sans-serif" font-size="15" fill="#5E7184">Number of rows recorded within each participant-log group</text>
+<line x1="110.00" y1="555.00" x2="1030.00" y2="555.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="559.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">0</text>
+<line x1="110.00" y1="475.00" x2="1030.00" y2="475.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="479.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">40</text>
+<line x1="110.00" y1="395.00" x2="1030.00" y2="395.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="399.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">80</text>
+<line x1="110.00" y1="315.00" x2="1030.00" y2="315.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="319.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">120</text>
+<line x1="110.00" y1="235.00" x2="1030.00" y2="235.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="239.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">160</text>
+<line x1="110.00" y1="155.00" x2="1030.00" y2="155.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="98.00" y="159.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">200</text>
+<line x1="110.00" y1="155.00" x2="110.00" y2="555.00" stroke="#5E7184" stroke-width="1"/>
+<line x1="110.00" y1="555.00" x2="1030.00" y2="555.00" stroke="#5E7184" stroke-width="1"/>
+<rect x="113.00" y="477.00" width="70.67" height="78.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="148.33" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">0</text>
+<rect x="189.67" y="415.00" width="70.67" height="140.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<rect x="266.33" y="457.00" width="70.67" height="98.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="301.67" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">160</text>
+<rect x="343.00" y="441.00" width="70.67" height="114.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<rect x="419.67" y="407.00" width="70.67" height="148.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="455.00" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">320</text>
+<rect x="496.33" y="307.00" width="70.67" height="248.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<rect x="573.00" y="363.00" width="70.67" height="192.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="608.33" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">480</text>
+<rect x="649.67" y="489.00" width="70.67" height="66.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<rect x="726.33" y="539.00" width="70.67" height="16.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="761.67" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">640</text>
+<rect x="803.00" y="553.00" width="70.67" height="2.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<rect x="879.67" y="553.00" width="70.67" height="2.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="915.00" y="577.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">800</text>
+<rect x="956.33" y="547.00" width="70.67" height="8.00" rx="4.00" fill="#9267C6" stroke="none"/>
+<text x="570.00" y="605.00" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#5E7184">Recorded sleep-minute rows per log</text>
+<text x="35.00" y="355.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-90.0 35.00 355.00)">Participant-log episodes</text>
+<line x1="72.00" y1="662.00" x2="1048.00" y2="662.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="72.00" y="688.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#5E7184">n=556 logs; x-axis counts minute records, not validated sleep duration; 12 bins.</text>
+</svg>

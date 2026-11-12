@@ -36,3 +36,33 @@
   behavior; they do not independently establish device units or measurement
   validity.
 - Evidence: P2-REPRODUCIBLE-PREPROCESSING.
+
+## P3 — Describe activity while respecting coverage and sleep ambiguity
+
+- Method: Recomputed pooled and equal-participant summaries, complete-day
+  sensitivity, Pearson/Spearman associations, paired weekday/weekend
+  comparisons, sleep-log episodes, waking-date matches, and review candidates
+  from the Phase 2 processed files.
+- Revalidated results: Daily steps average 6,546.56 (median 5,986; 457 days,
+  35 participants). Incomplete days average more steps than complete days
+  (7,289.92 versus 5,831.92), while participant-level direction is mixed:
+  15 complete-day means are higher, 12 are lower, one is equal, and seven are
+  unavailable.
+- Paired result: Weekday/weekend pooled step means are similar (6,528.61 and
+  6,584.42); 17 participants have higher weekend means, 17 higher weekday
+  means, and one is equal. The average participant-level difference is 9.86
+  steps; this is descriptive, not a significance test.
+- Sleep result: 359 logs pass the explicit overnight eligibility screen, with
+  161 unique waking-date matches across 18 participants. Seventeen activity
+  dates have ambiguous multiple sessions. The join preserves all 457 daily
+  rows and leaves unmatched sleep blank; all 161 matched activity days are
+  incomplete, so no complete-day sleep comparison is available.
+- Outputs: Eight SVG figures, reproducible CSV analysis tables, compact
+  evidence JSON, and printed computational proof for each analysis stage.
+- Caveat: The categories `1/2/3` are not mapped to sleep stages; recorded
+  sleep-row count is not validated time asleep. The historical sample is not
+  established as representative, measurement units are not independently
+  verified, and no causal or health claims are made.
+- Reproducibility: `python src/eda_analysis.py`; only Python's standard library
+  and local files are used.
+- Evidence: P3-EXPLORATORY-ANALYSIS.

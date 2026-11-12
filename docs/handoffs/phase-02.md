@@ -1,6 +1,6 @@
 # Phase 2 handoff
 
-Status: IN_REVIEW
+Status: DONE
 
 ## Verified baseline
 
@@ -30,6 +30,8 @@ Status: IN_REVIEW
 - Run metrics and per-transformation proof are in `reports/evidence/P2/`.
 - Implementation commit: `c9c5f3e4eae89ab460ef360a9300d7705554c4d5`.
 - Review PR: https://github.com/Manthan2106/Fitinsight/pull/2
+- PR #2 merged into `main` at `2e233a1de22a7f808bdea3939b75d80e0848a483`;
+  Phase 2 head `ede8fa3e4e94453e8cf5a519653eac4b29b706da` is in its history.
 
 ## Scope
 
@@ -46,7 +48,8 @@ generated values with the references, and write outputs under
 
 ## Next action
 
-Review PR #2. Do not merge automatically; wait for an explicit user decision.
+Phase 3 begins from the verified merge commit. Keep the Phase 4 clustering
+branch separate.
 
 ## Limits
 

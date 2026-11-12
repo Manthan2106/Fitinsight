@@ -1,0 +1,252 @@
+record_type,id,date,log_id,start_timestamp,end_timestamp,total_steps,calories,total_distance,total_active_minutes,sedentary_minutes,total_recorded_minutes,flags,handling
+participant_day,1503960366,2016-03-31,,,,12256.0,1889.0,7.8600001335144,284.0,820.0,1104.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1503960366,2016-04-01,,,,12262.0,1868.0,7.86999988555908,268.0,866.0,1134.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1503960366,2016-04-02,,,,11248.0,1843.0,7.25,295.0,636.0,931.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1503960366,2016-04-04,,,,14557.0,2030.0,9.80000019073486,346.0,757.0,1103.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1503960366,2016-04-12,,,,224.0,50.0,0.140000000596046,9.0,32.0,41.0,calories_below_1_5_iqr_fence;total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,1624580081,2016-03-25,,,,1810.0,1373.0,1.17999994754791,121.0,1319.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1624580081,2016-04-08,,,,6344.0,1409.0,4.11999988555908,143.0,1297.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,1644430081,2016-04-02,,,,20237.0,4029.0,14.710000038147,522.0,918.0,1440.0,calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,1644430081,2016-04-10,,,,1329.0,489.0,0.970000028610229,35.0,207.0,242.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,1844505072,2016-04-04,,,,0.0,1347.0,0.0,0.0,669.0,669.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,1844505072,2016-04-05,,,,0.0,1347.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,1844505072,2016-04-12,,,,0.0,399.0,0.0,0.0,426.0,426.0,zero_steps_positive_calories;calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,1927972279,2016-04-12,,,,24.0,942.0,0.0199999995529652,3.0,161.0,164.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2026352035,2016-04-12,,,,1019.0,600.0,0.629999995231628,64.0,223.0,287.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2320127002,2016-04-01,,,,0.0,1324.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2320127002,2016-04-02,,,,0.0,1324.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2320127002,2016-04-03,,,,0.0,1324.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2320127002,2016-04-04,,,,0.0,1324.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2347167796,2016-04-05,,,,10114.0,2096.0,6.82000017166138,296.0,696.0,992.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,2347167796,2016-04-12,,,,0.0,399.0,0.0,0.0,425.0,425.0,zero_steps_positive_calories;calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2873212765,2016-04-09,,,,14103.0,2257.0,9.5600004196167,342.0,1098.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,2873212765,2016-04-12,,,,0.0,0.0,0.0,0.0,1440.0,1440.0,calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-03-29,,,,0.0,1920.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-03-30,,,,0.0,1920.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-03-31,,,,0.0,1920.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-04-01,,,,0.0,4562.0,0.0,660.0,780.0,1440.0,zero_steps_positive_calories;zero_steps_positive_active_minutes;calories_above_1_5_iqr_fence;total_active_minutes_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-04-02,,,,4126.0,2881.0,3.22000002861023,720.0,720.0,1440.0,total_active_minutes_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-04-03,,,,0.0,1920.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,2891001357,2016-04-04,,,,0.0,1920.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,3977333714,2016-04-10,,,,3573.0,1232.0,2.39000010490417,122.0,866.0,988.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,3977333714,2016-04-11,,,,3108.0,1223.0,2.14000010490417,131.0,894.0,1025.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,3977333714,2016-04-12,,,,759.0,182.0,0.569999992847443,17.0,187.0,204.0,calories_below_1_5_iqr_fence;total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-13,,,,3226.0,2480.0,2.30999994277954,136.0,771.0,907.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-14,,,,3023.0,2570.0,2.17000007629395,145.0,1005.0,1150.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-15,,,,5906.0,3016.0,4.23000001907349,225.0,874.0,1099.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-16,,,,12483.0,3830.0,8.98999977111816,348.0,599.0,947.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-17,,,,8940.0,3706.0,6.40999984741211,47.0,986.0,1033.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-18,,,,368.0,2024.0,0.259999990463257,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-19,,,,5702.0,2980.0,4.09000015258789,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-20,,,,10330.0,3728.0,7.40999984741211,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-21,,,,8778.0,3348.0,6.28999996185303,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-22,,,,6662.0,3162.0,4.78000020980835,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-23,,,,6309.0,3140.0,4.51999998092651,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-24,,,,1951.0,1980.0,1.4099999666214,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-25,,,,5563.0,3681.0,3.99000000953674,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-26,,,,4370.0,3444.0,3.13000011444092,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-27,,,,7144.0,3510.0,5.11999988555908,0.0,1440.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-28,,,,2106.0,4010.0,1.50999999046326,151.0,1289.0,1440.0,phase2_numpy_isclose_distance_flag;calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-29,,,,4152.0,2976.0,2.98000001907349,187.0,1253.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-30,,,,5400.0,3418.0,3.86999988555908,258.0,795.0,1053.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-03-31,,,,7428.0,3439.0,5.32999992370605,312.0,860.0,1172.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-01,,,,5351.0,3338.0,3.83999991416931,242.0,748.0,990.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-02,,,,4299.0,2892.0,3.09999990463257,180.0,752.0,932.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-03,,,,6107.0,3313.0,4.38000011444092,265.0,776.0,1041.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-05,,,,6880.0,2966.0,4.92999982833862,191.0,1249.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-06,,,,7476.0,3253.0,5.3600001335144,263.0,920.0,1183.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-07,,,,6581.0,3032.0,4.71999979019165,249.0,1191.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-08,,,,10480.0,4034.0,7.51000022888184,315.0,1125.0,1440.0,phase2_numpy_isclose_distance_flag;calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-09,,,,7734.0,3264.0,5.55000019073486,255.0,1185.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-10,,,,5129.0,2817.0,3.6800000667572,188.0,1178.0,1366.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4020332650,2016-04-11,,,,2993.0,2507.0,2.15000009536743,114.0,888.0,1002.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-12,,,,0.0,1777.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-13,,,,0.0,1777.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-15,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-17,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-19,,,,0.0,1777.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-22,,,,5561.0,2296.0,4.19000005722046,169.0,1271.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-23,,,,7239.0,2484.0,5.34000015258789,204.0,1236.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-25,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-26,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-27,,,,2275.0,2005.0,1.67999994754791,86.0,1354.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-30,,,,5419.0,2259.0,4.0,145.0,1295.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-03-31,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-04-01,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-04-02,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-04-03,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-04-04,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4057192912,2016-04-05,,,,0.0,1776.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4319703577,2016-03-30,,,,9043.0,2141.0,6.07000017166138,260.0,702.0,962.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4319703577,2016-04-09,,,,0.0,0.0,0.0,0.0,1440.0,1440.0,calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-03-29,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-03-30,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-03-31,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-04-01,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-04-02,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-04-03,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-04-04,,,,0.0,1878.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4388161847,2016-04-05,,,,0.0,1296.0,0.0,0.0,994.0,994.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,4445114986,2016-04-02,,,,5406.0,2317.0,3.63000011444092,273.0,672.0,945.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4445114986,2016-04-12,,,,278.0,745.0,0.189999997615814,20.0,253.0,273.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,4702921684,2016-04-08,,,,8184.0,2981.0,6.6399998664856,262.0,808.0,1070.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,4702921684,2016-04-12,,,,0.0,0.0,0.0,0.0,1440.0,1440.0,calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,5553957443,2016-04-12,,,,3436.0,633.0,2.24000000953674,68.0,61.0,129.0,phase2_numpy_isclose_distance_flag;total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,5577150313,2016-04-02,,,,14873.0,4430.0,11.1099996566772,391.0,663.0,1054.0,calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,6117666160,2016-04-03,,,,0.0,1496.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6117666160,2016-04-08,,,,8955.0,2482.0,6.76000022888184,422.0,1018.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,6117666160,2016-04-10,,,,0.0,0.0,0.0,0.0,1440.0,1440.0,calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-03,,,,0.0,2664.0,0.0,33.0,1407.0,1440.0,zero_steps_positive_calories;zero_steps_positive_active_minutes,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-04,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-05,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-06,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-07,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-08,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-09,,,,0.0,2060.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6290855005,2016-04-10,,,,0.0,735.0,0.0,20.0,494.0,514.0,zero_steps_positive_calories;zero_steps_positive_active_minutes,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-01,,,,0.0,1820.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-03,,,,0.0,1820.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-04,,,,0.0,1820.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-07,,,,0.0,1822.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-08,,,,0.0,1820.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6391747486,2016-04-09,,,,0.0,251.0,0.0,0.0,198.0,198.0,zero_steps_positive_calories;calories_below_1_5_iqr_fence;total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,6775888955,2016-04-04,,,,0.0,1841.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,6775888955,2016-04-05,,,,9348.0,4286.0,6.69999980926514,429.0,1011.0,1440.0,phase2_numpy_isclose_distance_flag;calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,6962181067,2016-04-12,,,,5893.0,917.0,3.90000009536743,100.0,146.0,246.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,7086361926,2016-04-01,,,,11463.0,2496.0,7.67000007629395,222.0,777.0,999.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,7086361926,2016-04-05,,,,7478.0,2439.0,4.98999977111816,190.0,1159.0,1349.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,7086361926,2016-04-08,,,,9634.0,2752.0,6.51999998092651,238.0,797.0,1035.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,7086361926,2016-04-11,,,,6242.0,2543.0,3.92000007629395,194.0,741.0,935.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,7086361926,2016-04-12,,,,430.0,625.0,0.259999990463257,14.0,75.0,89.0,total_recorded_minutes_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8053475328,2016-04-03,,,,25701.0,3697.0,20.1399993896484,298.0,1142.0,1440.0,total_steps_above_1_5_iqr_fence;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-01,,,,0.0,1429.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-02,,,,0.0,1429.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-03,,,,0.0,1429.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-04,,,,0.0,1429.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-05,,,,0.0,1429.0,0.0,0.0,1440.0,1440.0,zero_steps_positive_calories,"preserve; candidate for review, not an invalid-record label"
+participant_day,8253242879,2016-04-12,,,,0.0,0.0,0.0,0.0,1440.0,1440.0,calories_below_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8378563200,2016-04-04,,,,13935.0,4234.0,11.0500001907349,341.0,658.0,999.0,calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8378563200,2016-04-05,,,,12846.0,4128.0,10.1899995803833,317.0,686.0,1003.0,calories_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8583815059,2016-04-02,,,,3494.0,2517.0,2.73000001907349,166.0,1274.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-01,,,,18700.0,3527.0,15.8199996948242,317.0,1123.0,1440.0,phase2_numpy_isclose_distance_flag;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-02,,,,27572.0,4220.0,23.3899993896484,400.0,1040.0,1440.0,phase2_numpy_isclose_distance_flag;total_steps_above_1_5_iqr_fence;calories_above_1_5_iqr_fence;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-03,,,,15260.0,3864.0,8.1899995803833,382.0,1058.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-04,,,,20779.0,3662.0,18.4099998474121,302.0,1138.0,1440.0,phase2_numpy_isclose_distance_flag;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-05,,,,10695.0,2834.0,8.11999988555908,259.0,1181.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-06,,,,24136.0,4039.0,20.9099998474121,421.0,1019.0,1440.0,phase2_numpy_isclose_distance_flag;total_steps_above_1_5_iqr_fence;calories_above_1_5_iqr_fence;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-07,,,,10910.0,2947.0,8.42000007629395,255.0,1185.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-08,,,,23014.0,4196.0,20.3899993896484,458.0,982.0,1440.0,phase2_numpy_isclose_distance_flag;total_steps_above_1_5_iqr_fence;calories_above_1_5_iqr_fence;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-09,,,,16470.0,3841.0,8.06999969482422,388.0,1052.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-10,,,,28497.0,4526.0,27.5300006866455,385.0,1055.0,1440.0,phase2_numpy_isclose_distance_flag;total_steps_above_1_5_iqr_fence;calories_above_1_5_iqr_fence;total_distance_above_1_5_iqr_fence,"preserve; candidate for review, not an invalid-record label"
+participant_day,8877689391,2016-04-11,,,,10622.0,2820.0,8.0600004196167,250.0,1190.0,1440.0,phase2_numpy_isclose_distance_flag,"preserve; candidate for review, not an invalid-record label"
+sleep_episode,1503960366,2016-03-27,11232921147,2016-03-26 23:45:00,2016-03-27 00:46:00,,,,,,62,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1503960366,2016-03-27,11232921148,2016-03-27 01:15:00,2016-03-27 03:23:00,,,,,,129,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1503960366,2016-03-27,11232921149,2016-03-27 03:33:00,2016-03-27 09:02:00,,,,,,330,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1644430081,2016-03-28,11247034534,2016-03-27 15:45:00,2016-03-28 07:45:00,,,,,,961,elapsed_span_over_12_hours;afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,1644430081,2016-03-30,11263177587,2016-03-29 21:59:00,2016-03-30 13:59:00,,,,,,961,elapsed_span_over_12_hours,preserve; timing or recording pattern needs review
+sleep_episode,1844505072,2016-04-04,11307034191,2016-04-03 20:50:00,2016-04-04 12:50:00,,,,,,961,elapsed_span_over_12_hours,preserve; timing or recording pattern needs review
+sleep_episode,1844505072,2016-04-10,11355174555,2016-04-09 13:24:00,2016-04-10 05:24:00,,,,,,961,elapsed_span_over_12_hours;afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-14,11118737661,2016-03-13 23:40:00,2016-03-14 01:07:00,,,,,,88,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-14,11122236743,2016-03-14 05:58:00,2016-03-14 07:48:00,,,,,,111,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-18,11151587517,2016-03-17 23:54:00,2016-03-18 02:33:00,,,,,,160,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-18,11155342998,2016-03-18 04:04:00,2016-03-18 10:13:00,,,,,,370,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-20,11167173782,2016-03-19 23:28:00,2016-03-20 04:09:00,,,,,,282,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-20,11170033378,2016-03-20 05:48:00,2016-03-20 10:02:00,,,,,,255,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-24,11204042538,2016-03-23 22:33:00,2016-03-24 02:09:00,,,,,,217,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-03-24,11207053721,2016-03-24 03:20:00,2016-03-24 08:26:00,,,,,,307,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-04-10,11353175214,2016-04-09 23:13:00,2016-04-10 02:03:00,,,,,,171,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,1927972279,2016-04-10,11355585833,2016-04-10 03:24:00,2016-04-10 08:32:00,,,,,,309,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,2347167796,2016-03-16,11135190736,2016-03-15 21:23:00,2016-03-16 00:01:00,,,,,,159,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,2347167796,2016-03-16,11136931751,2016-03-16 00:16:00,2016-03-16 06:58:00,,,,,,403,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-03-13,11111413999,2016-03-12 22:52:30,2016-03-13 03:29:30,,,,,,278,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-03-13,11114617817,2016-03-13 03:39:00,2016-03-13 09:01:00,,,,,,323,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-01,11317762420,2016-04-01 00:55:30,2016-04-01 05:00:30,,,,,,246,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-01,11317762421,2016-04-01 05:10:00,2016-04-01 08:05:00,,,,,,176,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-02,11317762422,2016-04-01 23:32:00,2016-04-02 05:19:00,,,,,,348,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-02,11317762423,2016-04-02 05:33:00,2016-04-02 08:40:00,,,,,,188,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-11,11365660576,2016-04-10 22:46:00,2016-04-11 03:31:00,,,,,,286,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4020332650,2016-04-11,11367141823,2016-04-11 03:42:00,2016-04-11 07:27:00,,,,,,226,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4319703577,2016-03-29,11290016502,2016-03-29 15:26:30,2016-03-29 17:02:30,,,,,,97,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,4319703577,2016-04-06,11344563687,2016-04-05 22:50:00,2016-04-06 03:15:00,,,,,,266,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4319703577,2016-04-06,11344563688,2016-04-06 03:20:00,2016-04-06 07:38:00,,,,,,259,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-03-16,11136302344,2016-03-16 03:03:30,2016-03-16 04:32:30,,,,,,90,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-03-16,11138511255,2016-03-16 05:10:30,2016-03-16 07:45:30,,,,,,156,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-03-19,11164720152,2016-03-19 13:09:30,2016-03-19 15:44:30,,,,,,156,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-03-25,11213400025,2016-03-25 01:50:00,2016-03-25 03:31:00,,,,,,102,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-03-25,11215903083,2016-03-25 03:39:00,2016-03-25 07:40:00,,,,,,242,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-04-09,11348333718,2016-04-09 02:26:00,2016-04-09 05:49:00,,,,,,204,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4445114986,2016-04-09,11348333719,2016-04-09 05:59:00,2016-04-09 07:08:00,,,,,,70,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4702921684,2016-03-27,11233601029,2016-03-26 23:38:30,2016-03-27 00:55:30,,,,,,78,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4702921684,2016-03-27,11233601030,2016-03-27 01:06:30,2016-03-27 06:58:30,,,,,,353,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4702921684,2016-04-11,11365239635,2016-04-10 23:07:00,2016-04-11 01:44:00,,,,,,158,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,4702921684,2016-04-11,11365239636,2016-04-11 02:07:30,2016-04-11 05:55:30,,,,,,229,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-12,11120071687,2016-03-12 12:29:00,2016-03-12 13:47:00,,,,,,79,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-12,11120071688,2016-03-12 16:37:00,2016-03-12 18:10:00,,,,,,94,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-13,11120071690,2016-03-13 16:52:30,2016-03-13 18:06:30,,,,,,75,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-18,11156470371,2016-03-18 12:06:00,2016-03-18 14:00:00,,,,,,115,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-26,11234106090,2016-03-26 16:15:30,2016-03-26 17:51:30,,,,,,97,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-03-27,11260198135,2016-03-27 15:08:30,2016-03-27 16:08:30,,,,,,61,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-04-02,11288900298,2016-04-02 12:54:00,2016-04-02 16:20:00,,,,,,207,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-04-03,11295383457,2016-04-03 00:09:00,2016-04-03 12:39:00,,,,,,751,elapsed_span_over_12_hours,preserve; timing or recording pattern needs review
+sleep_episode,5553957443,2016-04-09,11357327131,2016-04-09 14:08:00,2016-04-09 16:25:00,,,,,,138,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-15,11133345748,2016-03-15 12:39:00,2016-03-15 13:49:00,,,,,,71,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-19,11189693975,2016-03-18 22:01:00,2016-03-19 00:11:00,,,,,,131,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-19,11189693976,2016-03-19 00:40:30,2016-03-19 05:38:30,,,,,,299,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-20,11189693978,2016-03-20 15:10:30,2016-03-20 17:22:30,,,,,,133,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-25,11242403376,2016-03-24 23:00:30,2016-03-25 02:58:30,,,,,,239,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-25,11242403377,2016-03-25 03:15:00,2016-03-25 05:20:00,,,,,,126,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-26,11242403378,2016-03-25 21:44:30,2016-03-26 00:45:30,,,,,,182,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-26,11242403379,2016-03-26 01:21:30,2016-03-26 06:52:30,,,,,,332,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-30,11281222433,2016-03-29 21:37:30,2016-03-30 04:03:30,,,,,,387,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-03-30,11281222434,2016-03-30 04:06:00,2016-03-30 05:37:00,,,,,,92,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-02,11307114407,2016-04-01 21:47:30,2016-04-02 00:02:30,,,,,,136,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-02,11307114408,2016-04-02 00:52:00,2016-04-02 06:02:00,,,,,,311,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-05,11342834137,2016-04-04 21:43:30,2016-04-05 03:44:30,,,,,,362,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-05,11342834138,2016-04-05 03:48:00,2016-04-05 05:58:00,,,,,,131,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-09,11351009044,2016-04-08 21:46:30,2016-04-09 01:56:30,,,,,,251,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,5577150313,2016-04-09,11351009045,2016-04-09 02:06:30,2016-04-09 06:32:30,,,,,,267,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-12,11103710844,2016-03-11 22:42:30,2016-03-12 04:39:30,,,,,,358,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-12,11132741332,2016-03-12 05:41:00,2016-03-12 10:11:00,,,,,,271,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-12,11132741333,2016-03-12 15:11:30,2016-03-12 17:07:30,,,,,,117,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-16,11147575488,2016-03-15 23:08:30,2016-03-16 03:39:30,,,,,,272,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-16,11147575489,2016-03-16 03:51:00,2016-03-16 05:07:00,,,,,,77,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-16,11147575490,2016-03-16 05:48:00,2016-03-16 08:05:00,,,,,,138,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-16,11147575491,2016-03-16 17:31:00,2016-03-16 19:02:00,,,,,,92,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-19,11162506709,2016-03-18 23:28:00,2016-03-19 02:19:00,,,,,,172,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-19,11162506710,2016-03-19 02:48:30,2016-03-19 04:59:30,,,,,,132,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-19,11162506711,2016-03-19 05:09:30,2016-03-19 09:47:30,,,,,,279,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-23,11201626721,2016-03-23 01:07:30,2016-03-23 03:23:30,,,,,,137,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-23,11201626722,2016-03-23 04:03:30,2016-03-23 08:00:30,,,,,,238,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-24,11210710486,2016-03-23 21:13:48,2016-03-24 11:48:48,,,,,,876,elapsed_span_over_12_hours,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-24,11210710662,2016-03-24 14:56:00,2016-03-24 15:55:00,,,,,,60,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-27,11243404165,2016-03-26 23:22:00,2016-03-27 04:56:00,,,,,,335,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-03-27,11243404166,2016-03-27 05:30:30,2016-03-27 09:07:30,,,,,,218,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-04-01,11276495954,2016-04-01 00:00:30,2016-04-01 04:17:30,,,,,,258,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-04-01,11280863319,2016-04-01 04:31:00,2016-04-01 08:27:00,,,,,,237,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-04-09,11352379598,2016-04-09 00:13:00,2016-04-09 03:57:00,,,,,,225,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6117666160,2016-04-09,11352379599,2016-04-09 04:22:00,2016-04-09 07:19:00,,,,,,178,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-03-18,11158023099,2016-03-18 14:59:00,2016-03-18 19:58:00,,,,,,300,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-03-28,11237399584,2016-03-28 00:40:00,2016-03-28 02:52:00,,,,,,133,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-03-28,11241250230,2016-03-28 03:19:00,2016-03-28 05:04:00,,,,,,106,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-03-28,11241250231,2016-03-28 05:48:30,2016-03-28 10:12:30,,,,,,265,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-04-07,11333135084,2016-04-06 23:49:00,2016-04-07 00:51:00,,,,,,63,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,6775888955,2016-04-07,11333135085,2016-04-07 01:54:00,2016-04-07 03:43:00,,,,,,110,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-03-14,11125339727,2016-03-14 14:07:30,2016-03-14 15:34:30,,,,,,88,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-03-24,11211182914,2016-03-24 13:23:00,2016-03-24 14:29:00,,,,,,67,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-03-26,11260808655,2016-03-26 14:14:30,2016-03-26 15:17:30,,,,,,64,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-03-30,11265555924,2016-03-30 12:46:00,2016-03-30 13:49:00,,,,,,64,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-04-03,11297367581,2016-04-03 13:00:30,2016-04-03 14:12:30,,,,,,73,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-04-05,11317105510,2016-04-05 12:57:00,2016-04-05 14:06:00,,,,,,70,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7007744171,2016-04-07,11336563519,2016-04-07 12:30:00,2016-04-07 13:35:00,,,,,,66,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,7086361926,2016-03-31,11267627992,2016-03-30 22:22:00,2016-03-31 03:38:00,,,,,,317,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,7086361926,2016-03-31,11271068586,2016-03-31 03:49:00,2016-03-31 10:28:00,,,,,,400,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-03-12,11109526348,2016-03-12 15:08:30,2016-03-12 16:51:30,,,,,,104,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-03-26,11224590479,2016-03-25 23:40:00,2016-03-26 00:50:00,,,,,,71,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-03-26,11224590480,2016-03-26 00:54:00,2016-03-26 09:09:00,,,,,,496,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-02,11283701739,2016-04-01 23:41:00,2016-04-02 04:01:00,,,,,,261,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-02,11285315824,2016-04-02 04:03:00,2016-04-02 07:17:00,,,,,,195,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-02,11289399204,2016-04-02 14:40:30,2016-04-02 15:58:30,,,,,,79,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-09,11351999722,2016-04-09 15:46:00,2016-04-09 18:43:00,,,,,,178,afternoon_start_candidate,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-10,11355560999,2016-04-09 22:26:00,2016-04-10 00:04:00,,,,,,99,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8378563200,2016-04-10,11355561000,2016-04-10 00:14:30,2016-04-10 08:24:30,,,,,,491,multiple_overnight_logs_same_waking_date,preserve; timing or recording pattern needs review
+sleep_episode,8792009665,2016-04-09,11357751881,2016-04-09 17:23:00,2016-04-09 18:42:00,,,,,,80,afternoon_start_candidate,preserve; timing or recording pattern needs review

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-label="Daily step averages need their coverage context">
+<title>Daily step averages need their coverage context</title>
+<desc>Mean recorded steps and distinct participants per calendar date. 457 participant-days across 32 dates; the daily cohort changes over time.</desc>
+<rect x="0" y="0" width="1120" height="720" fill="#FFFFFF"/>
+<text x="72" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D">Daily step averages need their coverage context</text>
+<text x="72" y="91" font-family="Arial, sans-serif" font-size="15" fill="#5E7184">Mean recorded steps and distinct participants per calendar date</text>
+<line x1="105.00" y1="400.00" x2="1025.00" y2="400.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="404.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">0</text>
+<line x1="105.00" y1="351.00" x2="1025.00" y2="351.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="355.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">2,000</text>
+<line x1="105.00" y1="302.00" x2="1025.00" y2="302.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="306.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">4,000</text>
+<line x1="105.00" y1="253.00" x2="1025.00" y2="253.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="257.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">6,000</text>
+<line x1="105.00" y1="204.00" x2="1025.00" y2="204.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="208.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">8,000</text>
+<line x1="105.00" y1="155.00" x2="1025.00" y2="155.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="93.00" y="159.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">10,000</text>
+<line x1="105.00" y1="155.00" x2="105.00" y2="400.00" stroke="#5E7184" stroke-width="1"/>
+<line x1="105.00" y1="400.00" x2="1025.00" y2="400.00" stroke="#5E7184" stroke-width="1"/>
+<path d="M 105.00 332.10 L 134.68 360.48 L 164.35 259.66 L 194.03 327.65 L 223.71 220.88 L 253.39 290.49 L 283.06 383.87 L 312.74 330.15 L 342.42 272.92 L 372.10 259.88 L 401.77 250.27 L 431.45 234.04 L 461.13 376.01 L 490.81 287.44 L 520.48 260.39 L 550.16 252.14 L 579.84 294.34 L 609.52 283.37 L 639.19 246.96 L 668.87 255.32 L 698.55 240.83 L 728.23 220.02 L 757.90 248.63 L 787.58 220.04 L 817.26 224.46 L 846.94 204.27 L 876.61 212.31 L 906.29 213.45 L 935.97 215.80 L 965.65 246.07 L 995.32 216.90 L 1025.00 356.84" fill="none" stroke="#1F74AD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1.00"/>
+<circle cx="105.00" cy="332.10" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="223.71" cy="220.88" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="342.42" cy="272.92" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="461.13" cy="376.01" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="579.84" cy="294.34" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="698.55" cy="240.83" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="817.26" cy="224.46" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<circle cx="935.97" cy="215.80" r="3.50" fill="#1F74AD" fill-opacity="1.00"/>
+<text x="105.00" y="139.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#17324D">Mean recorded steps</text>
+<line x1="105.00" y1="550.00" x2="1025.00" y2="550.00" stroke="#5E7184" stroke-width="1"/>
+<rect x="106.00" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="134.75" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="163.50" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="192.25" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="221.00" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="249.75" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="278.50" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="307.25" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="336.00" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="364.75" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="393.50" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="422.25" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="451.00" y="544.29" width="26.75" height="5.71" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="479.75" y="538.57" width="26.75" height="11.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="508.50" y="538.57" width="26.75" height="11.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="537.25" y="538.57" width="26.75" height="11.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="566.00" y="538.57" width="26.75" height="11.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="594.75" y="521.43" width="26.75" height="28.57" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="623.50" y="518.57" width="26.75" height="31.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="652.25" y="518.57" width="26.75" height="31.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="681.00" y="452.86" width="26.75" height="97.14" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="709.75" y="450.00" width="26.75" height="100.00" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="738.50" y="450.00" width="26.75" height="100.00" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="767.25" y="450.00" width="26.75" height="100.00" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="796.00" y="450.00" width="26.75" height="100.00" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="824.75" y="455.71" width="26.75" height="94.29" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="853.50" y="455.71" width="26.75" height="94.29" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="882.25" y="455.71" width="26.75" height="94.29" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="911.00" y="458.57" width="26.75" height="91.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="939.75" y="467.14" width="26.75" height="82.86" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="968.50" y="478.57" width="26.75" height="71.43" rx="1.00" fill="#44986D" stroke="none"/>
+<rect x="997.25" y="481.43" width="26.75" height="68.57" rx="1.00" fill="#44986D" stroke="none"/>
+<text x="105.00" y="436.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#17324D">Distinct participant coverage</text>
+<text x="105.00" y="575.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#5E7184">Mar 12</text>
+<text x="1025.00" y="575.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">Apr 12</text>
+<text x="565.00" y="575.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">2016 observation dates</text>
+<line x1="72.00" y1="662.00" x2="1048.00" y2="662.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="72.00" y="688.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#5E7184">457 participant-days across 32 dates; the daily cohort changes over time.</text>
+</svg>

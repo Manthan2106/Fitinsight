@@ -1,0 +1,64 @@
+{
+  "command": "python src/eda_analysis.py",
+  "dependencies": "Python standard library only",
+  "inputs": {
+    "daily_activity": {
+      "participants": 35,
+      "path": "data/processed/daily_activity_clean.csv",
+      "rows": 457
+    },
+    "minute_sleep": {
+      "participants": 23,
+      "path": "data/processed/minute_sleep_clean.csv",
+      "rows": 198034
+    }
+  },
+  "notebooks_modified": false,
+  "outputs": {
+    "evidence": [
+      "reports/evidence/P3/completeness_metrics.json",
+      "reports/evidence/P3/correlation_metrics.json",
+      "reports/evidence/P3/descriptive_metrics.json",
+      "reports/evidence/P3/figures_index.json",
+      "reports/evidence/P3/input_validation.json",
+      "reports/evidence/P3/outlier_screen_metrics.json",
+      "reports/evidence/P3/sleep_alignment_metrics.json",
+      "reports/evidence/P3/sleep_episode_metrics.json",
+      "reports/evidence/P3/weekday_weekend_metrics.json",
+      "reports/evidence/P3/run_manifest.json"
+    ],
+    "figures": [
+      "reports/generated/eda/figures/01_daily_steps_distribution.svg",
+      "reports/generated/eda/figures/02_steps_by_completeness.svg",
+      "reports/generated/eda/figures/03_daily_steps_and_coverage.svg",
+      "reports/generated/eda/figures/04_weekday_weekend_paired_steps.svg",
+      "reports/generated/eda/figures/05_activity_minute_composition.svg",
+      "reports/generated/eda/figures/06_activity_correlation_heatmap.svg",
+      "reports/generated/eda/figures/07_recorded_sleep_log_sizes.svg",
+      "reports/generated/eda/figures/08_sleep_records_vs_waking_steps.svg"
+    ],
+    "tables": [
+      "reports/generated/eda/tables/anomaly_candidates.csv",
+      "reports/generated/eda/tables/complete_day_sensitivity.csv",
+      "reports/generated/eda/tables/correlations.csv",
+      "reports/generated/eda/tables/descriptive_statistics.csv",
+      "reports/generated/eda/tables/participant_summary.csv",
+      "reports/generated/eda/tables/sleep_activity_correlations.csv",
+      "reports/generated/eda/tables/sleep_activity_waking_date.csv",
+      "reports/generated/eda/tables/sleep_episodes.csv",
+      "reports/generated/eda/tables/sleep_participant_coverage.csv",
+      "reports/generated/eda/tables/weekday_weekend_participant_differences.csv"
+    ]
+  },
+  "pipeline_commit": "0438560f60723fdc0229f350cc4583b36dc15138",
+  "python": "3.13.11",
+  "raw_and_reference_files_modified": false,
+  "source_code_sha256": {
+    "src/eda_analysis.py": "c79e8720a2b82c2f34ad0d4d8c36073c20844f0a72efb1b5d590b7f15d1c0603",
+    "src/eda_figures.py": "c7eed4e008fcefb8ac909113dc8112f4b7d9fdf20683c9bbba07a038ca305eac",
+    "src/sleep_analysis.py": "72aabd13ad081f0803011e5d7216ee93a2bd88e7589ecfa59b7427e7f68bbb13"
+  },
+  "source_data_commit": "2e233a1de22a7f808bdea3939b75d80e0848a483",
+  "source_working_tree_dirty": false,
+  "status": "PASS"
+}

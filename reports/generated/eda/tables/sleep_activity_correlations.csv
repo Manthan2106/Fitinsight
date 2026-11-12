@@ -1,0 +1,10 @@
+grain,x,y,n_pairs,participants,missing_pairs,pearson,spearman
+matched_waking_date_pooled,recorded_sleep_minutes,total_steps,161,18,0,-0.017585234465056377,-0.05430176870577573
+matched_waking_date_pooled,recorded_sleep_minutes,total_active_minutes,161,18,0,-0.020147912306849432,-0.041242939072519795
+matched_waking_date_pooled,recorded_sleep_minutes,calories,161,18,0,-0.21960001773861534,-0.23645669042773584
+matched_waking_date_participant_means,recorded_sleep_minutes,total_steps,18,18,0,0.17081113396836062,0.21775025799793601
+matched_waking_date_participant_means,recorded_sleep_minutes,total_active_minutes,18,18,0,0.17051810395699107,0.17647058823529413
+matched_waking_date_participant_means,recorded_sleep_minutes,calories,18,18,0,-0.23976694630828335,-0.08565531475748193
+matched_complete_activity_days,recorded_sleep_minutes,total_steps,0,0,0,,
+matched_complete_activity_days,recorded_sleep_minutes,total_active_minutes,0,0,0,,
+matched_complete_activity_days,recorded_sleep_minutes,calories,0,0,0,,

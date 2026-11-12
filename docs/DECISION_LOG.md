@@ -91,3 +91,63 @@
 - Trade-off: Downstream analyses need a deliberate feature choice and should
   disclose this uncertainty.
 - Files: `src/data_audit.py`, `docs/DATA_QUALITY.md`.
+
+## D-007 — Analyze Phase 3 with standard-library tools
+
+- Date: 2026-11-12
+- Question: How to reproduce expanded EDA and figures without installing
+  unavailable plotting or statistics packages?
+- Selected: Use standard-library calculations, a temporary SQLite index for
+  sleep records, and deterministic local SVG generation.
+- Why: Keeps the work reproducible on the verified zero-cost local toolchain
+  without downloads, paid services, or external compute.
+- Evidence: `python src/eda_analysis.py` validates the 457 daily rows and
+  198,034 processed sleep rows, writes analysis artifacts, and prints proof
+  blocks for each analysis stage.
+- Trade-off: Custom SVG charts require maintenance in this repository.
+- Files: `src/eda_analysis.py`, `src/sleep_analysis.py`, `src/eda_figures.py`.
+
+## D-008 — Keep sleep value categories neutral
+
+- Date: 2026-11-12
+- Question: Should stored values `1`, `2`, and `3` be interpreted as sleep
+  stages or physiological states?
+- Selected: Preserve the stored codes and report their counts only.
+- Why: No trustworthy category mapping is documented in the repository.
+- Evidence: 198,034 processed sleep rows have category counts of 183,038,
+  12,983, and 2,013 for codes `1`, `2`, and `3`.
+- Trade-off: The analysis does not label time asleep, sleep efficiency, or
+  sleep stages.
+- Files: `src/sleep_analysis.py`, `docs/EDA_FINDINGS.md`.
+
+## D-009 — Match only unique, quality-screened waking dates
+
+- Date: 2026-11-12
+- Question: How should participant-log sleep episodes align with daily activity?
+- Selected: Use episode end date as a waking-date candidate; require overnight
+  timing, at most 12 elapsed hours, exact minute intervals, no overlap, and one
+  candidate per participant-date.
+- Why: This avoids assigning ambiguous logs or multiplying participant-day
+  activity rows; unmatched sleep remains missing rather than zero.
+- Evidence: 359 eligible logs yield 161 unique matches across 18 participants;
+  17 activity dates have multiple candidate sessions, and all matched activity
+  days are incomplete by the 1,440-minute rule.
+- Trade-off: Strict eligibility excludes ambiguous dates; no complete-day
+  sleep/activity sensitivity can be computed in this sample.
+- Files: `src/sleep_analysis.py`, `src/eda_analysis.py`,
+  `reports/evidence/P3/sleep_alignment_metrics.json`.
+
+## D-010 — Keep anomaly screens as review candidates
+
+- Date: 2026-11-12
+- Question: Should IQR fences and observed data-quality flags remove rows?
+- Selected: Export candidate rows with explicit reasons and retain every source
+  observation.
+- Why: A fence or device-field discrepancy does not establish that a record is
+  invalid.
+- Evidence: 140 daily rows and 111 sleep episodes are marked for possible
+  review; source inputs remain unchanged.
+- Trade-off: Candidate counts are not counts of confirmed errors or clinical
+  anomalies.
+- Files: `src/eda_analysis.py`,
+  `reports/generated/eda/tables/anomaly_candidates.csv`.
