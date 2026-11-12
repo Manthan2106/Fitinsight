@@ -1,0 +1,590 @@
+{
+  "command": "python src/data_audit.py",
+  "python": "3.13.11",
+  "input_files": [
+    "data/raw/dailyActivity_merged.csv",
+    "data/raw/heartrate_seconds_merged.csv",
+    "data/raw/hourlyCalories_merged.csv",
+    "data/raw/hourlyIntensities_merged.csv",
+    "data/raw/hourlySteps_merged.csv",
+    "data/raw/minuteCaloriesNarrow_merged.csv",
+    "data/raw/minuteIntensitiesNarrow_merged.csv",
+    "data/raw/minuteMETsNarrow_merged.csv",
+    "data/raw/minuteSleep_merged.csv",
+    "data/raw/minuteStepsNarrow_merged.csv",
+    "data/raw/weightLogInfo_merged.csv"
+  ],
+  "results": [
+    {
+      "file": "data/raw/dailyActivity_merged.csv",
+      "bytes": 50802,
+      "sha256": "23ddd82c7a7049f0affe8e76dfd0ecb1070ef70337b555c12f553c183a4ae9fe",
+      "rows": 457,
+      "columns": 15,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityDate",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "TotalSteps",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "TotalDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "TrackerDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "LoggedActivitiesDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "VeryActiveDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "ModeratelyActiveDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "LightActiveDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "SedentaryActiveDistance",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "VeryActiveMinutes",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "FairlyActiveMinutes",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "LightlyActiveMinutes",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "SedentaryMinutes",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "Calories",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 35,
+      "date_column": "ActivityDate",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 00:00:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityDate"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/heartrate_seconds_merged.csv",
+      "bytes": 39914903,
+      "sha256": "4363a07c8497030030bebc6484b11776893bf87d6a27127215bedc4fba9c062d",
+      "rows": 1154681,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "Time",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "Value",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 14,
+      "date_column": "Time",
+      "date_min": "2016-03-29 00:00:05",
+      "date_max": "2016-04-12 11:03:15",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "Time"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/hourlyCalories_merged.csv",
+      "bytes": 848613,
+      "sha256": "e3ff873082ded281489f75c9272d4dfac4f80373ccbe78b96a61b2a6a05942b7",
+      "rows": 24084,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityHour",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "Calories",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityHour",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:00:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityHour"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/hourlyIntensities_merged.csv",
+      "bytes": 947633,
+      "sha256": "8f0a042dd7528f5e9b51a1f6b05973b8f509d437a429008908c085149d20f429",
+      "rows": 24084,
+      "columns": 4,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityHour",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "TotalIntensity",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "AverageIntensity",
+          "inferred_type": "number",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityHour",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:00:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityHour"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/hourlySteps_merged.csv",
+      "bytes": 841215,
+      "sha256": "2ae1552ec0ee7521cf002649097ba2abc9e9cc4c6e59e01c396723e98d4c6be0",
+      "rows": 24084,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityHour",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "StepTotal",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityHour",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:00:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityHour"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/minuteCaloriesNarrow_merged.csv",
+      "bytes": 71016908,
+      "sha256": "7fc7d01937cd68fefab851a2f95f6e2402f70a5751e4eba2bd77b9b306949ec9",
+      "rows": 1445040,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityMinute",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "Calories",
+          "inferred_type": "number",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityMinute",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:59:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityMinute"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/minuteIntensitiesNarrow_merged.csv",
+      "bytes": 49078528,
+      "sha256": "72b4f3bb6888432b84f12c0cedfe6ded9f29aa6e17a38b5132047def3628854e",
+      "rows": 1445040,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityMinute",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "Intensity",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityMinute",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:59:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityMinute"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/minuteMETsNarrow_merged.csv",
+      "bytes": 50525839,
+      "sha256": "2d1c4c5781d637d2ffc130da88a799c6663b6d017f4a4aecf0d9eb73d3bcd5c3",
+      "rows": 1445040,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityMinute",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "METs",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityMinute",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:59:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityMinute"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/minuteSleep_merged.csv",
+      "bytes": 9117765,
+      "sha256": "93d1d4d8a2dc48cc197ff77400f81b0459d8674b9d06ac5d1fef6a4b1f0a436e",
+      "rows": 198559,
+      "columns": 4,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "date",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "value",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "logId",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 23,
+      "date_column": "date",
+      "date_min": "2016-03-11 21:19:30",
+      "date_max": "2016-04-12 08:35:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "date",
+        "logId"
+      ],
+      "duplicate_key_rows": 525,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/minuteStepsNarrow_merged.csv",
+      "bytes": 49247102,
+      "sha256": "7c144bbebd6565fe4dd197d08c0d1cd2967e476e05e03fc9676abb641c7e84fa",
+      "rows": 1445040,
+      "columns": 3,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "ActivityMinute",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "Steps",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 34,
+      "date_column": "ActivityMinute",
+      "date_min": "2016-03-12 00:00:00",
+      "date_max": "2016-04-12 10:59:00",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "ActivityMinute"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    },
+    {
+      "file": "data/raw/weightLogInfo_merged.csv",
+      "bytes": 3368,
+      "sha256": "14e94cca34d0101df9a35fa839ad97a3b551cd6dfce88b30552ab6d2c0601247",
+      "rows": 33,
+      "columns": 8,
+      "schema": [
+        {
+          "column": "Id",
+          "inferred_type": "integer",
+          "null_count": 0
+        },
+        {
+          "column": "Date",
+          "inferred_type": "datetime",
+          "null_count": 0
+        },
+        {
+          "column": "WeightKg",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "WeightPounds",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "Fat",
+          "inferred_type": "integer",
+          "null_count": 31
+        },
+        {
+          "column": "BMI",
+          "inferred_type": "number",
+          "null_count": 0
+        },
+        {
+          "column": "IsManualReport",
+          "inferred_type": "boolean",
+          "null_count": 0
+        },
+        {
+          "column": "LogId",
+          "inferred_type": "integer",
+          "null_count": 0
+        }
+      ],
+      "participant_count": 11,
+      "date_column": "Date",
+      "date_min": "2016-03-30 23:59:59",
+      "date_max": "2016-04-12 23:59:59",
+      "invalid_date_rows": 0,
+      "key_fields": [
+        "Id",
+        "LogId"
+      ],
+      "duplicate_key_rows": 0,
+      "missing_key_rows": 0,
+      "malformed_rows": 0,
+      "checks": {
+        "header_present": true,
+        "key_fields_present": true,
+        "row_width": true,
+        "keys_complete": true,
+        "dates_parse": true
+      }
+    }
+  ],
+  "inventory": "reports/evidence/P1/dataset_audit.csv",
+  "column_inventory": "reports/evidence/P1/column_inventory.csv"
+}
