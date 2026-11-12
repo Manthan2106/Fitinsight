@@ -1,5 +1,7 @@
+import csv
 import json
 import unittest
+from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 from xml.etree import ElementTree
@@ -12,6 +14,7 @@ from src.eda_analysis import (
     make_sleep_activity_table,
     pearson,
     quantile,
+    time_accounting_analysis,
     weekday_weekend_analysis,
 )
 from src.sleep_analysis import (
@@ -22,6 +25,29 @@ from src.sleep_analysis import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def activity_day(participant, day, activity_minutes, complete=False):
+    return {
+        "id": participant,
+        "activity_date": datetime.strptime(day, "%Y-%m-%d").date(),
+        "very_active_minutes": 0.0,
+        "fairly_active_minutes": 0.0,
+        "lightly_active_minutes": float(activity_minutes) / 2,
+        "sedentary_minutes": float(activity_minutes) / 2,
+        "total_recorded_minutes": float(activity_minutes),
+        "is_complete_day": complete,
+    }
+
+
+def sleep_match(participant, day, sleep_minutes, status="matched"):
+    return {
+        "id": participant,
+        "activity_date": day,
+        "sleep_match_status": status,
+        "sleep_log_id": "log-" + day,
+        "recorded_sleep_minutes": sleep_minutes,
+    }
 
 
 def sleep_records(participant, log_id, start, offsets, values=None):
@@ -124,6 +150,77 @@ class StatisticsTests(unittest.TestCase):
             metrics["complete_day_only_sensitivity"]["total_steps"]["participants_with_both"],
             2,
         )
+
+    def test_time_accounting_exact_and_small_positive_negative_differences(self):
+        days = [
+            activity_day("01", "2016-04-01", 900, complete=False),
+            activity_day("02", "2016-04-02", 900, complete=False),
+            activity_day("03", "2016-04-03", 900, complete=False),
+        ]
+        matches = [
+            sleep_match("01", "2016-04-01", 540),
+            sleep_match("02", "2016-04-02", 555),
+            sleep_match("03", "2016-04-03", 525),
+        ]
+        rows, metrics, participants, dates = time_accounting_analysis(days, matches)
+        self.assertEqual([row["difference_from_1440_minutes"] for row in rows], [0, 15, -15])
+        self.assertEqual([row["combined_equals_1440"] for row in rows], [True, False, False])
+        self.assertTrue(all(row["within_15_minutes"] for row in rows))
+        self.assertTrue(all(row["within_30_minutes"] for row in rows))
+        self.assertTrue(all(row["within_60_minutes"] for row in rows))
+        self.assertTrue(all(row["phase2_is_complete_day"] is False for row in rows))
+        self.assertEqual(metrics["primary_summary"]["exact_1440_count"], 1)
+        self.assertEqual(len(participants), 3)
+        self.assertEqual(len(dates), 3)
+
+    def test_time_accounting_missing_and_ambiguous_sleep_is_never_imputed(self):
+        days = [
+            activity_day("01", "2016-04-01", 900),
+            activity_day("02", "2016-04-01", 900),
+        ]
+        matches = [
+            sleep_match("01", "2016-04-01", None, status="no_eligible_overnight_episode"),
+            # Even a malformed non-null value on an ambiguous row is not accepted.
+            sleep_match("02", "2016-04-01", 540, status="ambiguous_multiple_sessions"),
+        ]
+        rows, metrics, participants, dates = time_accounting_analysis(days, matches)
+        self.assertEqual(rows, [])
+        self.assertEqual(participants, [])
+        self.assertEqual(dates, [])
+        self.assertEqual(metrics["input_counts"]["unmatched_or_ambiguous_rows_not_accounted"], 2)
+        self.assertEqual(
+            metrics["input_counts"]["nonmatched_status_counts"],
+            {"no_eligible_overnight_episode": 1, "ambiguous_multiple_sessions": 1},
+        )
+
+    def test_time_accounting_boundary_date_sensitivity_preserves_primary_rows(self):
+        days = [
+            activity_day("01", "2016-04-11", 900),
+            activity_day("01", "2016-04-12", 100),
+        ]
+        matches = [
+            sleep_match("01", "2016-04-11", 540),
+            sleep_match("01", "2016-04-12", 500),
+        ]
+        rows, metrics, _, _ = time_accounting_analysis(days, matches)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(metrics["primary_summary"]["participant_days"], 2)
+        self.assertEqual(
+            metrics["boundary_sensitivity"]["exclude_2016_04_12"]["participant_days"], 1
+        )
+        self.assertEqual(
+            metrics["boundary_sensitivity"]["exclude_2016_04_11_and_2016_04_12"]
+            ["participant_days"],
+            0,
+        )
+        self.assertEqual(rows[1]["difference_from_1440_minutes"], -840)
+
+    def test_matched_status_without_sleep_duration_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "no recorded row count"):
+            time_accounting_analysis(
+                [activity_day("01", "2016-04-01", 900)],
+                [sleep_match("01", "2016-04-01", None)],
+            )
 
 
 class SleepEpisodeTests(unittest.TestCase):
@@ -234,8 +331,8 @@ class Phase3OutputTests(unittest.TestCase):
         index = json.loads(index_path.read_text(encoding="utf-8"))
         self.assertEqual(manifest["status"], "PASS")
         self.assertFalse(manifest["source_working_tree_dirty"])
-        self.assertEqual(len(index["figures"]), 8)
-        self.assertEqual(len(manifest["outputs"]["figures"]), 8)
+        self.assertEqual(len(index["figures"]), 9)
+        self.assertEqual(len(manifest["outputs"]["figures"]), 9)
         self.assertEqual(
             len(manifest["outputs"]["evidence"]),
             len(set(manifest["outputs"]["evidence"])),
@@ -251,6 +348,61 @@ class Phase3OutputTests(unittest.TestCase):
         self.assertFalse(alignment["row_multiplication"])
         self.assertEqual(alignment["daily_rows_preserved"], 457)
         self.assertEqual(alignment["complete_matched_activity_days"], 0)
+        time_metrics = json.loads((evidence / "time_accounting_metrics.json").read_text())
+        primary = time_metrics["primary_summary"]
+        self.assertEqual(primary["participant_days"], 161)
+        self.assertEqual(primary["exact_1440_count"], 45)
+        self.assertEqual(primary["within_thresholds"]["15"]["count"], 74)
+        self.assertEqual(primary["within_thresholds"]["30"]["count"], 91)
+        self.assertEqual(primary["within_thresholds"]["60"]["count"], 110)
+        self.assertEqual(
+            time_metrics["participant_mean_activity_vs_recorded_sleep_correlation"]["n_pairs"],
+            18,
+        )
+        self.assertEqual(
+            time_metrics["boundary_sensitivity"]["exclude_2016_04_12"]
+            ["participant_days"],
+            154,
+        )
+        self.assertEqual(
+            time_metrics["boundary_sensitivity"]
+            ["exclude_2016_04_11_and_2016_04_12"]["participant_days"],
+            143,
+        )
+        accounting_csv = ROOT / "reports/generated/eda/tables/time_accounting.csv"
+        with accounting_csv.open(newline="", encoding="utf-8") as stream:
+            accounting = list(csv.DictReader(stream))
+        self.assertEqual(len(accounting), 161)
+        participant_csv = ROOT / "reports/generated/eda/tables/time_accounting_by_participant.csv"
+        date_csv = ROOT / "reports/generated/eda/tables/time_accounting_by_date.csv"
+        with participant_csv.open(encoding="utf-8") as stream:
+            self.assertEqual(sum(1 for _ in stream) - 1, 18)
+        with date_csv.open(encoding="utf-8") as stream:
+            self.assertEqual(sum(1 for _ in stream) - 1, 23)
+        figure = ROOT / "reports/generated/eda/figures/09_time_accounting_by_date.svg"
+        tree = ElementTree.parse(figure)
+        namespace = {"svg": "http://www.w3.org/2000/svg"}
+        plotted = tree.findall(".//svg:circle", namespace)
+        self.assertEqual(len(plotted), len(accounting))
+        chart_counts = Counter(
+            (point.attrib["data-date"], point.attrib["data-combined-minutes"])
+            for point in plotted
+        )
+        table_counts = Counter(
+            (row["activity_date"], str(round(float(row["combined_recorded_minutes"]))))
+            for row in accounting
+        )
+        self.assertEqual(chart_counts, table_counts)
+        self.assertIn(
+            "Activity + recorded sleep minutes",
+            "".join(tree.getroot().itertext()),
+        )
+        reference_lines = [
+            item for item in tree.findall(".//svg:line", namespace)
+            if item.attrib.get("data-reference-minutes") == "1440"
+        ]
+        self.assertEqual(len(reference_lines), 1)
+        self.assertIn("2016-04-12", "".join(tree.getroot().itertext()))
 
 
 if __name__ == "__main__":

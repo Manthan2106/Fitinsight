@@ -93,3 +93,31 @@
   analysis code.
 - Presentation takeaway: The EDA figures can be regenerated locally without
   paid tools or external services.
+
+## C-006 — Determine whether activity and sleep rows complement each other
+
+- Phase/task: P3 analytical review
+- Observable symptom: Every one of the 161 unique sleep-matched waking dates is
+  incomplete under Phase 2, while an independent arithmetic check suggested
+  activity minutes plus recorded sleep rows may approach 1,440.
+- Root cause: Unverified. The repository does not define whether activity and
+  sleep fields cover the same or separate intervals, or whether their
+  timestamps overlap.
+- Investigation: Sum all four recorded activity-minute fields, verify that
+  total against the Phase 2 stored total, then add minute rows from only a
+  unique eligible sleep log. Preserve the original 1,440-minute completeness
+  flag and compare all dates with April 12 and April 11–12 sensitivity windows.
+- Evidence: 45/161 sums equal 1,440; 74/161 are within 15 minutes; 91/161
+  within 30; 110/161 within 60. April 12 has seven matched dates, each 607–833
+  combined minutes. Excluding April 12 gives n=154 and mean difference −25.96;
+  excluding April 11–12 gives n=143 and mean difference −21.72.
+- Resolution: Arithmetic supports a complementary-accounting possibility for
+  many rows, not verified 24-hour coverage. Sleep counts remain recorded-row
+  counts; ambiguous or unmatched sleep is not assigned a duration.
+- Remaining limitation: Measurement semantics, interval overlap, device wear,
+  and the meaning of missing activity minutes are unverified. Sensitivity
+  exclusions do not replace the all-date primary analysis.
+- Presentation takeaway: Many activity-plus-sleep totals approach a day, but
+  the sum is a diagnostic clue—not evidence of full coverage or non-wear.
+- Artifacts: `reports/evidence/P3/time_accounting_metrics.json`;
+  `reports/generated/eda/tables/time_accounting*.csv`.

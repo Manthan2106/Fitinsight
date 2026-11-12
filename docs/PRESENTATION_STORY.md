@@ -57,8 +57,24 @@
   dates have ambiguous multiple sessions. The join preserves all 457 daily
   rows and leaves unmatched sleep blank; all 161 matched activity days are
   incomplete, so no complete-day sleep comparison is available.
-- Outputs: Eight SVG figures, reproducible CSV analysis tables, compact
+- New analytical challenge: The four activity-minute fields plus recorded
+  sleep-row counts equal 1,440 on 45 of 161 matched dates and fall within
+  30 minutes on 91. The relationship varies by participant. April 12, 2016
+  has seven matched sums from 607 to 833 minutes, so excluding it is shown only
+  as a sensitivity check.
+- Interpretation: The arithmetic is compatible with complementary accounting
+  for many records, but does not prove complete 24-hour coverage: sleep rows
+  are not validated minutes asleep, interval overlap is unknown, and missing
+  activity minutes do not prove device non-wear. The original Phase 2
+  completeness definition remains unchanged.
+- Downstream impact: Keep coverage flags and missingness explicit in clustering
+  and participant comparisons; do not turn missing sleep into zero or treat
+  combined minutes as a validated coverage feature.
+- Outputs: Nine SVG figures, reproducible CSV analysis tables, compact
   evidence JSON, and printed computational proof for each analysis stage.
+- Reproducibility: Synthetic boundary, exact-match, positive/negative
+  difference, missing-sleep, and ambiguous-session cases pass. Tests compare
+  chart point data and labels to the computed time-accounting table.
 - Caveat: The categories `1/2/3` are not mapped to sleep stages; recorded
   sleep-row count is not validated time asleep. The historical sample is not
   established as representative, measurement units are not independently

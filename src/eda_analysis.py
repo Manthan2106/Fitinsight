@@ -665,6 +665,225 @@ def add_sleep_correlations(
     return updated
 
 
+def _accounting_summary(rows: list[dict[str, Any]], label: str) -> dict[str, Any]:
+    activity = [float(row["activity_minutes"]) for row in rows]
+    sleep = [float(row["recorded_sleep_minutes"]) for row in rows]
+    differences = [float(row["difference_from_1440_minutes"]) for row in rows]
+    exact = sum(row["combined_equals_1440"] for row in rows)
+    result = {
+        "scope": label,
+        "participant_days": len(rows),
+        "participants": len({row["id"] for row in rows}),
+        "dates": len({row["activity_date"] for row in rows}),
+        "activity_minutes": describe(activity),
+        "recorded_sleep_minutes": describe(sleep),
+        "combined_minutes": describe(row["combined_recorded_minutes"] for row in rows),
+        "difference_from_1440_minutes": describe(differences),
+        "absolute_difference_minutes": describe(abs(value) for value in differences),
+        "exact_1440_count": exact,
+        "exact_1440_percentage": 100 * exact / len(rows) if rows else None,
+        "within_thresholds": {
+            str(threshold): {
+                "count": sum(abs(value) <= threshold for value in differences),
+                "percentage": (
+                    100 * sum(abs(value) <= threshold for value in differences) / len(rows)
+                    if rows else None
+                ),
+            }
+            for threshold in (15, 30, 60)
+        },
+        "phase2_complete_flag_counts": dict(Counter(
+            "complete" if row["phase2_is_complete_day"] is True
+            else "incomplete" if row["phase2_is_complete_day"] is False
+            else "missing"
+            for row in rows
+        )),
+        "activity_vs_recorded_sleep_correlation": {
+            "n_pairs": len(rows),
+            "pearson": pearson(activity, sleep),
+            "spearman": pearson(average_ranks(activity), average_ranks(sleep)),
+        },
+    }
+    return result
+
+
+def _flatten_accounting_summary(summary: dict[str, Any]) -> dict[str, Any]:
+    flat = {
+        "participant_days": summary["participant_days"],
+        "participants": summary["participants"],
+        "dates": summary["dates"],
+        "mean_activity_minutes": summary["activity_minutes"]["mean"],
+        "mean_recorded_sleep_minutes": summary["recorded_sleep_minutes"]["mean"],
+        "mean_combined_minutes": summary["combined_minutes"]["mean"],
+        "mean_difference_minutes": summary["difference_from_1440_minutes"]["mean"],
+        "median_difference_minutes": summary["difference_from_1440_minutes"]["median"],
+        "minimum_difference_minutes": summary["difference_from_1440_minutes"]["min"],
+        "maximum_difference_minutes": summary["difference_from_1440_minutes"]["max"],
+        "mean_absolute_difference_minutes": summary["absolute_difference_minutes"]["mean"],
+        "exact_1440_count": summary["exact_1440_count"],
+        "exact_1440_percentage": summary["exact_1440_percentage"],
+        "correlation_n": summary["activity_vs_recorded_sleep_correlation"]["n_pairs"],
+        "pearson_activity_sleep": summary["activity_vs_recorded_sleep_correlation"]["pearson"],
+        "spearman_activity_sleep": summary["activity_vs_recorded_sleep_correlation"]["spearman"],
+        "phase2_complete_count": summary["phase2_complete_flag_counts"].get("complete", 0),
+        "phase2_incomplete_count": summary["phase2_complete_flag_counts"].get("incomplete", 0),
+    }
+    for threshold in (15, 30, 60):
+        item = summary["within_thresholds"][str(threshold)]
+        flat[f"within_{threshold}_count"] = item["count"]
+        flat[f"within_{threshold}_percentage"] = item["percentage"]
+    return flat
+
+
+def time_accounting_analysis(
+    daily_rows: list[dict[str, Any]],
+    sleep_activity_rows: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]:
+    """Compare four activity-minute fields plus uniquely matched sleep-row counts."""
+    daily_by_key = {
+        (row["id"], row["activity_date"].isoformat()): row
+        for row in daily_rows
+    }
+    accounting_rows = []
+    nonmatched_statuses = Counter()
+    for match in sleep_activity_rows:
+        if match["sleep_match_status"] != "matched":
+            nonmatched_statuses[match["sleep_match_status"]] += 1
+            # In particular, ambiguous dates are never assigned a guessed duration.
+            continue
+        key = (match["id"], match["activity_date"])
+        daily = daily_by_key.get(key)
+        if daily is None:
+            raise ValueError(f"Matched sleep date has no daily activity row: {key!r}")
+        sleep_minutes = match.get("recorded_sleep_minutes")
+        if sleep_minutes is None:
+            raise ValueError(f"Matched sleep date has no recorded row count: {key!r}")
+        activity_components = [
+            daily[field] for field in (
+                "very_active_minutes", "fairly_active_minutes",
+                "lightly_active_minutes", "sedentary_minutes",
+            )
+        ]
+        if any(value is None for value in activity_components):
+            raise ValueError(f"Matched activity date has missing minute components: {key!r}")
+        activity_minutes = sum(float(value) for value in activity_components)
+        phase2_total = daily["total_recorded_minutes"]
+        components_match_reference = (
+            phase2_total is not None
+            and math.isclose(activity_minutes, float(phase2_total), rel_tol=0, abs_tol=1e-9)
+        )
+        if not components_match_reference:
+            raise ValueError(
+                f"Four minute components disagree with the Phase 2 total for {key!r}"
+            )
+        recorded_sleep_minutes = float(sleep_minutes)
+        combined = activity_minutes + recorded_sleep_minutes
+        difference = combined - 1440
+        accounting_rows.append({
+            "id": match["id"],
+            "activity_date": match["activity_date"],
+            "sleep_log_id": match["sleep_log_id"],
+            "activity_minutes": activity_minutes,
+            "phase2_total_recorded_minutes": float(phase2_total),
+            "recorded_sleep_minutes": recorded_sleep_minutes,
+            "combined_recorded_minutes": combined,
+            "difference_from_1440_minutes": difference,
+            "combined_equals_1440": combined == 1440,
+            "within_15_minutes": abs(difference) <= 15,
+            "within_30_minutes": abs(difference) <= 30,
+            "within_60_minutes": abs(difference) <= 60,
+            "phase2_is_complete_day": daily["is_complete_day"],
+            "activity_components_match_phase2_total": components_match_reference,
+        })
+
+    by_participant = []
+    participant_groups_map = participant_groups(accounting_rows)
+    for participant_id, items in sorted(participant_groups_map.items()):
+        summary = _accounting_summary(items, "participant")
+        by_participant.append({
+            "id": participant_id,
+            **_flatten_accounting_summary(summary),
+        })
+
+    by_date = []
+    date_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in accounting_rows:
+        date_groups[row["activity_date"]].append(row)
+    for day, items in sorted(date_groups.items()):
+        summary = _accounting_summary(items, "date")
+        by_date.append({
+            "activity_date": day,
+            **_flatten_accounting_summary(summary),
+        })
+
+    boundary_scenarios = {}
+    scenario_rows = {
+        "all_matched_dates": accounting_rows,
+        "exclude_2016_04_12": [
+            row for row in accounting_rows if row["activity_date"] != "2016-04-12"
+        ],
+        "exclude_2016_04_11_and_2016_04_12": [
+            row for row in accounting_rows
+            if row["activity_date"] not in {"2016-04-11", "2016-04-12"}
+        ],
+    }
+    for name, items in scenario_rows.items():
+        boundary_scenarios[name] = _accounting_summary(items, name)
+
+    participant_activity_means = [
+        row["mean_activity_minutes"] for row in by_participant
+    ]
+    participant_sleep_means = [
+        row["mean_recorded_sleep_minutes"] for row in by_participant
+    ]
+    participant_mean_correlation = {
+        "grain": "one equal-weight mean per participant",
+        "n_pairs": len(by_participant),
+        "participants": len(by_participant),
+        "pearson": pearson(participant_activity_means, participant_sleep_means),
+        "spearman": pearson(
+            average_ranks(participant_activity_means),
+            average_ranks(participant_sleep_means),
+        ),
+    }
+    metrics = {
+        "question": (
+            "Do four recorded activity-minute fields plus uniquely matched "
+            "sleep-log row counts sum to 1,440?"
+        ),
+        "input_counts": {
+            "daily_activity_rows": len(daily_rows),
+            "daily_activity_participants": len({row["id"] for row in daily_rows}),
+            "sleep_activity_alignment_rows": len(sleep_activity_rows),
+            "unique_matched_participant_days": len(accounting_rows),
+            "matched_participants": len(participant_groups_map),
+            "unmatched_or_ambiguous_rows_not_accounted": sum(nonmatched_statuses.values()),
+            "nonmatched_status_counts": dict(nonmatched_statuses),
+        },
+        "method": (
+            "Sum very_active_minutes + fairly_active_minutes + "
+            "lightly_active_minutes + sedentary_minutes, verify against the "
+            "stored Phase 2 total, then add the recorded rows in one unique "
+            "eligible sleep episode. Difference is combined minus 1,440."
+        ),
+        "primary_summary": _accounting_summary(accounting_rows, "all_matched_dates"),
+        "boundary_sensitivity": boundary_scenarios,
+        "participant_mean_activity_vs_recorded_sleep_correlation": participant_mean_correlation,
+        "participant_summaries": by_participant,
+        "date_summaries": by_date,
+        "preserved_phase2_completeness_rule": "unchanged; total_recorded_minutes == 1440",
+        "phase2_flags_changed": False,
+        "interpretation_limitations": [
+            "A sum near 1,440 is arithmetic compatibility, not proof of verified 24-hour coverage.",
+            "Recorded sleep rows are not validated actual minutes asleep; sleep and activity interval semantics may differ or overlap.",
+            "A short recorded activity total does not establish device non-wear or explain why minutes are absent.",
+            "The April 11-12 exclusions are sensitivity checks only; primary matched-date results retain all dates.",
+            "No inferential p-values are calculated; repeated days and small participant-specific samples remain descriptive.",
+        ],
+    }
+    return accounting_rows, metrics, by_participant, by_date
+
+
 def outlier_candidates(
     rows: list[dict[str, Any]],
     episodes: list[dict],
@@ -1058,6 +1277,55 @@ def run() -> int:
         "Association is descriptive; recorded sleep-minute count is not actual time asleep and does not imply causation.",
     )
 
+    accounting_rows, time_metrics, participant_accounting, date_accounting = (
+        time_accounting_analysis(rows, matched_rows)
+    )
+    time_metrics["input_counts"]["processed_sleep_minute_rows"] = sleep_metrics["distinct_rows"]
+    time_metrics["input_counts"]["processed_sleep_participants"] = sleep_metrics["participants"]
+    accounting_columns = [
+        "id", "activity_date", "sleep_log_id", "activity_minutes",
+        "phase2_total_recorded_minutes", "recorded_sleep_minutes",
+        "combined_recorded_minutes", "difference_from_1440_minutes",
+        "combined_equals_1440", "within_15_minutes", "within_30_minutes",
+        "within_60_minutes", "phase2_is_complete_day",
+        "activity_components_match_phase2_total",
+    ]
+    write_csv(TABLE_DIR / "time_accounting.csv", accounting_rows, accounting_columns)
+    write_csv(
+        TABLE_DIR / "time_accounting_by_participant.csv", participant_accounting
+    )
+    write_csv(TABLE_DIR / "time_accounting_by_date.csv", date_accounting)
+    write_json(EVIDENCE_DIR / "time_accounting_metrics.json", time_metrics)
+    primary_accounting = time_metrics["primary_summary"]
+    print_proof(
+        "P3-H-TIME-ACCOUNTING",
+        "Do recorded activity and matched sleep rows reconcile to 1,440 minutes?",
+        "unique matched participant-day, participant, and date",
+        f"daily={len(rows)} rows/{len(participants)} participants; "
+        f"sleep={sleep_metrics['distinct_rows']} rows/{sleep_metrics['participants']} participants; "
+        f"matched={primary_accounting['participant_days']} days/"
+        f"{primary_accounting['participants']} participants/{primary_accounting['dates']} dates",
+        "Sum the four Phase 2 activity-minute fields, verify against their stored total, "
+        "then add recorded rows from one unique eligible sleep log",
+        "The arithmetic tests a possible complementarity but does not validate interval semantics",
+        f"exact={primary_accounting['exact_1440_count']}; "
+        f"within15={primary_accounting['within_thresholds']['15']['count']}; "
+        f"within30={primary_accounting['within_thresholds']['30']['count']}; "
+        f"within60={primary_accounting['within_thresholds']['60']['count']}; "
+        f"mean_difference={primary_accounting['difference_from_1440_minutes']['mean']:.2f}; "
+        f"Pearson(activity,sleep)={primary_accounting['activity_vs_recorded_sleep_correlation']['pearson']:.3f}; "
+        f"Spearman={primary_accounting['activity_vs_recorded_sleep_correlation']['spearman']:.3f}; "
+        f"participant-mean Pearson={time_metrics['participant_mean_activity_vs_recorded_sleep_correlation']['pearson']:.3f}; "
+        f"Spearman={time_metrics['participant_mean_activity_vs_recorded_sleep_correlation']['spearman']:.3f}",
+        "four components equal Phase 2 total; phase2 completeness flags preserved; "
+        "ambiguous/unmatched sleep excluded; date-window sensitivity computed",
+        "reports/evidence/P3/time_accounting_metrics.json; "
+        "reports/generated/eda/tables/time_accounting.csv; "
+        "reports/generated/eda/tables/time_accounting_by_participant.csv; "
+        "reports/generated/eda/tables/time_accounting_by_date.csv",
+        "A near-1,440 sum is not verified 24-hour coverage; recorded sleep rows may not mean actual sleep minutes or be disjoint from activity intervals.",
+    )
+
     candidates, outlier_metrics = outlier_candidates(rows, sleep_rows)
     write_csv(
         TABLE_DIR / "anomaly_candidates.csv",
@@ -1091,6 +1359,7 @@ def run() -> int:
         correlations=correlations,
         sleep_episodes=sleep_rows,
         matched_rows=matched_rows,
+        time_accounting_rows=accounting_rows,
         output_dir=FIGURE_DIR,
     )
     figures_index = {

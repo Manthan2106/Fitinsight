@@ -151,3 +151,26 @@
   anomalies.
 - Files: `src/eda_analysis.py`,
   `reports/generated/eda/tables/anomaly_candidates.csv`.
+
+## D-011 — Treat activity-plus-sleep totals as an accounting diagnostic
+
+- Date: 2026-11-12
+- Question: Does adding the four recorded activity-minute fields to matched
+  sleep-log row counts establish a complete 24-hour day?
+- Choices: Redefine Phase 2 completeness; infer device non-wear from a short
+  activity total; or report the arithmetic as a sensitivity diagnostic while
+  preserving source fields and the existing flag.
+- Selected: Keep the Phase 2 completeness rule unchanged and compare the
+  combined count with 1,440 minutes only as descriptive evidence.
+- Why: The arithmetic frequently approaches 1,440, but the repository does not
+  establish whether the fields describe disjoint intervals or actual sleep
+  duration.
+- Evidence: 45/161 exact sums; 91/161 within 30 minutes; all 161 retain the
+  original incomplete flag. April 12 has seven matched sums from 607 to 833
+  minutes. Boundary-date results are reported as sensitivity checks.
+- Trade-off: This identifies a meaningful data-definition question without
+  treating arithmetic agreement as validated 24-hour coverage or treating
+  missing activity as device non-wear.
+- Files: `src/eda_analysis.py`, `src/eda_figures.py`,
+  `reports/evidence/P3/time_accounting_metrics.json`,
+  `docs/EDA_FINDINGS.md`.

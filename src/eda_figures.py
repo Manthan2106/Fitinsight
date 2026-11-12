@@ -542,6 +542,84 @@ def sleep_activity_scatter(matched_rows: list[dict], output_dir: Path) -> dict:
     }
 
 
+def time_accounting_scatter(time_accounting_rows: list[dict], output_dir: Path) -> dict:
+    rows = sorted(
+        time_accounting_rows,
+        key=lambda row: (row["activity_date"], row["id"]),
+    )
+    dates = sorted({row["activity_date"] for row in rows})
+    date_index = {day: index for index, day in enumerate(dates)}
+    by_date: dict[str, list[dict]] = {}
+    for row in rows:
+        by_date.setdefault(row["activity_date"], []).append(row)
+    values = [float(row["combined_recorded_minutes"]) for row in rows]
+    minimum = 0
+    maximum = max(1600, math.ceil(max(values, default=1440) / 200) * 200)
+    exact_count = sum(row["combined_equals_1440"] for row in rows)
+    within_30 = sum(row["within_30_minutes"] for row in rows)
+    svg = Svg(
+        "Activity and sleep rows sometimes sum near 1,440",
+        "One point per unique eligible participant-waking date",
+        f"n={len(rows)} matched days; exact={exact_count}; within 30 minutes={within_30}. "
+        "Recorded sleep rows are not validated sleep duration or verified 24-hour coverage.",
+    )
+    x, y, width, height = 120, 155, 900, 410
+    y_axis(svg, x, y, width, height, maximum)
+    target_y = y + height - height * 1440 / maximum
+    svg.parts.append(
+        f'<line x1="{x:.2f}" y1="{target_y:.2f}" x2="{x + width:.2f}" '
+        f'y2="{target_y:.2f}" stroke="{PALETTE["red"]}" stroke-width="2" '
+        'stroke-dasharray="7 5" data-reference-minutes="1440"/>'
+    )
+    svg.text(x + width - 4, target_y - 8, "Reference: 1,440", 12,
+             anchor="end", color=PALETTE["red"], weight="700")
+    for date_position in range(len(dates)):
+        xx = x + width * date_position / max(len(dates) - 1, 1)
+        svg.line(xx, y + height, xx, y + height + 5, PALETTE["muted"], 1)
+    label_positions = sorted(set((0, len(dates) // 2, len(dates) - 1)))
+    for position in label_positions:
+        xx = x + width * position / max(len(dates) - 1, 1)
+        day = dates[position]
+        svg.text(xx, y + height + 23, day, 11,
+                 anchor="middle" if position != 0 else "start")
+    for day, items in by_date.items():
+        position = date_index[day]
+        group = sorted(items, key=lambda row: row["id"])
+        for index, row in enumerate(group):
+            jitter = (
+                (index + 0.5) / len(group) - 0.5
+            ) * min(0.7, 10 / max(len(group), 1))
+            xx = x + width * (position + jitter) / max(len(dates) - 1, 1)
+            value = float(row["combined_recorded_minutes"])
+            yy = y + height - height * (value - minimum) / (maximum - minimum)
+            color = PALETTE["red"] if day == "2016-04-12" else PALETTE["cyan"]
+            svg.parts.append(
+                f'<circle cx="{xx:.2f}" cy="{yy:.2f}" r="4" fill="{color}" '
+                f'fill-opacity="0.78" data-date="{esc(day)}" '
+                f'data-combined-minutes="{value:.0f}"/>'
+            )
+    svg.text(x + width / 2, y + height + 51, "Activity waking date", 14, anchor="middle")
+    svg.text(36, y + height / 2, "Activity + recorded sleep minutes", 13,
+             rotate=-90, anchor="middle")
+    path = output_dir / "09_time_accounting_by_date.svg"
+    path.write_text(svg.footer(), encoding="utf-8")
+    return {
+        "file": path.name,
+        "title": "Activity and sleep rows sometimes sum near 1,440",
+        "sample_count": len(rows),
+        "plotted_rows": len(rows),
+        "target_minutes": 1440,
+        "exact_1440_count": exact_count,
+        "within_30_minutes_count": within_30,
+        "highlighted_boundary_date": "2016-04-12",
+        "interpretation": (
+            "The reference is arithmetic only; April 12 is highlighted as a "
+            "boundary-date sensitivity, not automatically excluded."
+        ),
+        "size_bytes": path.stat().st_size,
+    }
+
+
 def generate_figures(
     *,
     rows: list[dict],
@@ -549,6 +627,7 @@ def generate_figures(
     correlations: dict,
     sleep_episodes: list[dict],
     matched_rows: list[dict],
+    time_accounting_rows: list[dict],
     output_dir: Path,
 ) -> list[dict]:
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -564,4 +643,5 @@ def generate_figures(
         correlation_heatmap(correlations, output_dir),
         sleep_episode_histogram(sleep_episodes, output_dir),
         sleep_activity_scatter(matched_rows, output_dir),
+        time_accounting_scatter(time_accounting_rows, output_dir),
     ]
