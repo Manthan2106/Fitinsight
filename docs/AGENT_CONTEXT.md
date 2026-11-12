@@ -160,12 +160,13 @@ history. PR #2 was merged into `main` at
   including Phase 2 generated-reference checks and Phase 3 analysis tests.
 - Generated tables, figures, and machine-readable proofs are under
   `reports/generated/activity_clustering/` and `reports/evidence/P4/`.
-- The branch is ready for its review PR; it has not been merged. Keep Phase 5
-  and the dashboard unstarted.
+- GitHub PR #4 is open against `main` for review and remains unmerged. Keep
+  Phase 5 and the dashboard unstarted.
 
 ## Next three tasks
 
-1. Push Phase 4, open a review PR against `main`, and verify its head/base/state.
+1. Review [Phase 4 PR #4](https://github.com/Manthan2106/Fitinsight/pull/4);
+   keep it unmerged until explicitly approved.
 2. Keep `phase-4-activity-clustering` unchanged as historical work.
 3. Do not merge Phase 4 or start Phase 5/dashboard work in this phase.
 
@@ -185,6 +186,9 @@ history. PR #2 was merged into `main` at
   packages.
 - Final full-suite regression run — 59 PASS, zero failures/errors/skips; Phase 2
   and Phase 3 generated integration artifacts were present.
+- GitHub confirms [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4)
+  targets `main`, is open and unmerged; its branch is
+  `phase-4-validated-clustering`.
 - GitHub now confirms PR #2 is merged at `2e233a1`; main includes its head.
 - `git fetch origin main && git merge --ff-only origin/main` advanced the
   workspace from `a6170a2` to `2e233a1`; the P3 branch is based there.

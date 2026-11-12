@@ -2,10 +2,10 @@
 
 ## Current state
 
-- Phase 4 implementation is complete locally on
-  `phase-4-validated-clustering`, created from verified `main` at
-  `77abf8354db99cb48e84ff931e335e2ec2f4c73a`.
-- PR submission is the next step. Phase 4 must remain unmerged until reviewed.
+- Phase 4 implementation is on `phase-4-validated-clustering`, created from
+  verified `main` at `77abf8354db99cb48e84ff931e335e2ec2f4c73a`.
+- [PR #4](https://github.com/Manthan2106/Fitinsight/pull/4) is open against
+  `main` for review and remains unmerged.
 - Historical `phase-4-activity-clustering` remains separate and unchanged.
 - Phases 5–7 have not started.
 
@@ -60,6 +60,5 @@ The full suite expects the documented Phase 2 and Phase 3 generated outputs.
 
 ## Next action
 
-Push the Phase 4 branch and open a review-only pull request against `main`.
-Verify the pushed head and PR base/state on GitHub. Do not merge it, alter the
-historical branch, or start Phase 5/dashboard work.
+Review PR #4. Do not merge it, alter the historical branch, or start Phase 5 or
+dashboard work until separately authorized.
