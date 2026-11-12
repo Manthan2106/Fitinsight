@@ -1152,9 +1152,13 @@ def run() -> int:
                 for item in figure_entries
             ],
             "evidence": [
-                str(path.relative_to(ROOT))
-                for path in sorted(EVIDENCE_DIR.glob("*.json"))
-            ] + ["reports/evidence/P3/run_manifest.json"],
+                *sorted(
+                    str(path.relative_to(ROOT))
+                    for path in EVIDENCE_DIR.glob("*.json")
+                    if path.name != "run_manifest.json"
+                ),
+                "reports/evidence/P3/run_manifest.json",
+            ],
         },
         "raw_and_reference_files_modified": False,
         "notebooks_modified": False,

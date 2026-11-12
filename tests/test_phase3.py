@@ -236,6 +236,11 @@ class Phase3OutputTests(unittest.TestCase):
         self.assertFalse(manifest["source_working_tree_dirty"])
         self.assertEqual(len(index["figures"]), 8)
         self.assertEqual(len(manifest["outputs"]["figures"]), 8)
+        self.assertEqual(
+            len(manifest["outputs"]["evidence"]),
+            len(set(manifest["outputs"]["evidence"])),
+        )
+        self.assertIn("reports/evidence/P3/run_manifest.json", manifest["outputs"]["evidence"])
         for item in index["figures"]:
             figure = ROOT / "reports" / "generated" / "eda" / "figures" / item["file"]
             self.assertTrue(figure.is_file(), item["file"])
