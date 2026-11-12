@@ -10,8 +10,8 @@ medical classifier, or a source of health recommendations.
   `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
 - The current `phase-notebook-conversion` branch converts Phases 1–5 into
   reproducible, step-by-step notebooks and provides an interactive Phase 6
-  evidence browser. The conversion is being prepared for review; it is not
-  merged.
+  evidence browser. [PR #6 is open against `main`](https://github.com/Manthan2106/Fitinsight/pull/6)
+  and is intentionally unmerged pending review.
 - The original audit and EDA notebooks are preserved under `notebooks/`.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.

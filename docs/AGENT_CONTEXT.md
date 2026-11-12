@@ -56,6 +56,8 @@ historical `phase-4-activity-clustering` branch remains at
 
 - The `phase-notebook-conversion` branch was created from verified `main`
   `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
+- [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is open against
+  `main` and intentionally unmerged pending review.
 - It adds six notebooks under `notebooks/phases/`: independent Phase 1–5
   reproductions and the interactive Phase 6 notebook. The three original
   notebooks remain preserved unchanged.

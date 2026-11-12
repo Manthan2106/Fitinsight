@@ -47,5 +47,6 @@ shell-launch calls.
 - Output parity verifies reproduction of the committed project results; it
   does not establish that historical sensor values are correct.
 
-Machine-readable details are in `run_manifest.json`. The conversion remains a
-review branch and is not merged.
+Machine-readable details are in `run_manifest.json`. [PR #6 is open against
+`main`](https://github.com/Manthan2106/Fitinsight/pull/6); the conversion is
+intentionally unmerged.
