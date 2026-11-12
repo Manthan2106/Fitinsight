@@ -27,8 +27,9 @@
 - Duplicate check: Confirmed all 525 repeated sleep keys have identical values;
   removed those repeats to reproduce the existing 198,034-row reference.
 - Result: All six generated outputs matched their committed references with
-  zero row mismatches. The original notebooks, raw files, and processed
-  references were not modified.
+  zero row mismatches. The original notebook contents, raw files, and processed
+  references were preserved; the three historical notebooks now live in
+  `notebooks/archive/`.
 - Reproducibility: 22 automated tests passed, including full generated-output
   comparisons against all six references. No packages or paid services were
   used.
@@ -159,3 +160,31 @@
   small historical tracker sample; they are not causal findings, predictive
   validation, device-wear verification, diagnoses, or health advice.
 - Evidence: P5-ASSOCIATION-ANOMALIES.
+
+## P6 — Explore the validated evidence without refitting
+
+- Deliverable: An eight-tab Jupyter evidence browser for overview, activity,
+  cohort-specific cluster assignments, stored PCA coordinates, DBSCAN
+  sensitivity, association rules, anomaly candidates, and sleep/time records.
+- Interactive behavior: Activity filters participant and recorded-day
+  completeness; cluster choices update when the cohort changes; PCA highlights
+  a participant without refitting; DBSCAN controls select saved grid results;
+  association filters include support, confidence, lift, eligibility, and
+  antecedent/consequent text; anomaly filters distinguish the 217 flagged rows
+  from all 457 records; sleep/time exposes 23 activity dates.
+- Interpretation: The dashboard reads stored CSV/JSON results and never
+  refits models. The all-days K-Means assignments are 35 participants across
+  three clusters; complete-day assignments are 24 participants across two
+  clusters, excluding blank assignments. Cluster IDs are arbitrary and
+  cohort-specific.
+- Reproducibility: All six phase notebooks run from fresh kernels without
+  importing or launching `src/`; Phase 1–5 evidence is compared with committed
+  results. The Phase 3, 4, and 5 notebooks display all 9, 12, and 8 generated
+  SVGs from the current notebook computation. Widget observers are tested
+  against known row counts.
+- Limits: Widgets need a Jupyter frontend. Stored associations, clusters,
+  PCA, and anomaly flags remain descriptive; they are not causal, clinical, or
+  population-generalizable results. Phase 7 has not started.
+- Zero-cost policy: Local files, standard-library analyses, pinned free
+  notebook dependencies, and local tests only; no paid APIs, hosted compute,
+  or deployment.

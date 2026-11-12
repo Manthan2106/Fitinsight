@@ -1,0 +1,89 @@
+{
+  "record": "Final self-contained notebook corrections",
+  "date": "2026-11-13",
+  "branch": "phase-notebook-final-corrections",
+  "verified_main_baseline": "b43f0530bab8944b331544cef7dd100b7f5ee87c",
+  "historical_phase4_branch": {
+    "name": "phase-4-activity-clustering",
+    "verified_head": "cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad",
+    "changed": false
+  },
+  "notebook_results": {
+    "01_Data_Audit.ipynb": {
+      "raw_files": 11,
+      "rows": 7206142,
+      "hash_and_row_parity": "PASS"
+    },
+    "02_Data_Preprocessing.ipynb": {
+      "outputs": 6,
+      "reference_parity": "PASS",
+      "alignment_and_output_key_checks": "temporary disk-backed SQLite",
+      "latest_fresh_kernel_run": "PASS"
+    },
+    "03_Exploratory_Data_Analysis.ipynb": {
+      "analysis_csv_tables": 13,
+      "inline_svg_figures": 9,
+      "stored_output_errors": 0
+    },
+    "04_Clustering_and_PCA.ipynb": {
+      "analysis_csv_tables": 9,
+      "inline_svg_figures": 12,
+      "two_person_cluster_limit": "disclosed",
+      "stored_output_errors": 0
+    },
+    "05_Association_and_Anomalies.ipynb": {
+      "association_csv_tables": 8,
+      "anomaly_csv_tables": 13,
+      "inline_svg_figures": 8,
+      "stored_output_errors": 0
+    },
+    "06_Interactive_Dashboard.ipynb": {
+      "interactive_panels": 8,
+      "anomaly_union": "217/457",
+      "all_days_assignments": 35,
+      "complete_day_assignments": 24,
+      "activity_dates": 23,
+      "latest_fresh_kernel_widget_smoke": "PASS",
+      "model_refit": false
+    }
+  },
+  "tests": {
+    "standard_repository_suite": {
+      "total": 92,
+      "passed": 91,
+      "skipped": 1,
+      "failures": 0,
+      "skip_reason": "Fresh-kernel notebook execution is an explicit opt-in check."
+    },
+    "complete_fresh_kernel_suite_before_final_resource_refinements": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "scope": "All six phase notebooks in isolated kernels without src."
+    },
+    "final_phase2_and_phase6_fresh_kernel_reruns": "PASS separately; updated proof outputs saved.",
+    "combined_rerun_after_final_refinements": "Interrupted by workspace restart during the Phase 1 raw-file scan; not counted as complete."
+  },
+  "preservation": {
+    "raw_datasets": "unchanged",
+    "processed_references": "unchanged",
+    "analysis_scripts": "unchanged",
+    "generated_analysis_results": "unchanged",
+    "original_notebook_contents": "unchanged; archived file hashes match baseline",
+    "src_gitkeep": "removed",
+    "app_gitkeep": "retained",
+    "phase7_started": false
+  },
+  "resource_policy": {
+    "paid_services": false,
+    "hosted_compute": false,
+    "deployment": false,
+    "packages_installed_for_this_correction": [],
+    "analysis_runtime": "Existing local Python and notebook packages; standard-library analysis."
+  },
+  "pull_request": {
+    "status": "to be opened for review",
+    "base": "main",
+    "automatic_merge": false
+  }
+}

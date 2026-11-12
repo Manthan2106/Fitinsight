@@ -10,7 +10,24 @@ the observation grain, retain zero-step records, avoid causal/clinical claims,
 and use only verified outputs. Work in Free mode with zero-cost local tools;
 no paid model, API, add-on, deployment, or compute.
 
-## Verified repository state
+## Current verified repository state (2026-11-13)
+
+- GitHub `main` is at `b43f0530bab8944b331544cef7dd100b7f5ee87c`; PR #6 is
+  merged.
+- The current correction branch, `phase-notebook-final-corrections`, was
+  created directly from that verified `main` commit.
+- The historical Phase 4 branch remains
+  `phase-4-activity-clustering` at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`; it is not the branch being
+  changed.
+- Raw datasets, processed references, analytical source files, generated
+  results, and original notebook contents are preserved. The three original
+  notebooks are now located in `notebooks/archive/`.
+- The notebooks under `notebooks/phases/` are the independent reproducible
+  workflow. The optional web app is still paused; `app/.gitkeep` remains as its
+  placeholder, while `src/.gitkeep` was unnecessary and removed.
+
+## Prior verified repository checkpoints
 
 - Remote: `https://github.com/Manthan2106/Fitinsight.git`
 - `main`: `8172c55865d7b77d3bf193f541220d4e741ce91d`
@@ -52,23 +69,25 @@ historical `phase-4-activity-clustering` branch remains at
 `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`. PR #5 was merged at
 `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`; P5 is complete.
 
-## Notebook conversion (2026-11-13)
+## Initial notebook conversion snapshot (before final corrections)
 
 - The `phase-notebook-conversion` branch was created from verified `main`
   `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
-- [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is open against
-  `main` and intentionally unmerged pending review.
+- At this snapshot, [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6)
+  was open against `main`; it was later merged at the current baseline
+  `b43f0530bab8944b331544cef7dd100b7f5ee87c`.
 - It adds six notebooks under `notebooks/phases/`: independent Phase 1–5
   reproductions and the interactive Phase 6 notebook. The three original
-  notebooks remain preserved unchanged.
+  notebooks' contents remain preserved unchanged under `notebooks/archive/`.
 - Phase 1 validates all 11 raw-file hashes and row counts (7,206,142 rows);
   Phase 2 regenerates and compares all six processed references; Phase 3
   matches 13 analysis CSVs and nine SVG figures; Phase 4 matches nine CSVs
   and 12 SVG figures; Phase 5 matches eight association and 13 anomaly CSVs.
   Phase 5's notebook also generates three representative SVGs from computed
-  notebook results; it does not reproduce all eight historical Phase 5
-  figures.
-- Phase 6 provides six interactive panels over stored evidence. A fresh
+  notebook results; it did not reproduce all eight historical Phase 5
+  figures. The current correction generates and displays all eight.
+- Phase 6 initially provided six interactive panels over stored evidence. The
+  current correction expands this to eight. A fresh
   kernel exposed 23 date options, and widget smoke checks exercised activity,
   cluster, rule, candidate, and sleep/time observers. No model is refit by a
   filter.
@@ -78,6 +97,45 @@ historical `phase-4-activity-clustering` branch remains at
 - Phase 6's separate web dashboard remains paused pending notebook review.
   The historical Phase 4 branch and the local Phase 6 planning WIP remain
   unchanged.
+
+## Final notebook correction snapshot (current)
+
+- The correction branch `phase-notebook-final-corrections` starts at verified
+  `main` commit `b43f0530bab8944b331544cef7dd100b7f5ee87c`; the separate
+  historical Phase 4 branch remains at
+  `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
+- The Phase 1–5 notebooks run independently of `src/`. Phase 3 has 13 analysis
+  CSV tables and nine inline SVGs; Phase 4 has nine CSV tables and 12 inline
+  SVGs; Phase 5 has eight association CSVs, 13 anomaly CSVs, and eight inline
+  SVGs generated from its computed results.
+- Phase 3's reviewed time-accounting remains descriptive: 45/161 matched days
+  sum to 1,440 minutes, 91/161 are within 30 minutes, and the mean gap is
+  −58.48 minutes. It does not change the Phase 2 completeness flag or establish
+  true 24-hour coverage.
+- Phase 4's two-person cluster remains explicitly exploratory. Phase 6 now
+  has eight panels over stored evidence, with 217/457 flagged days, 35
+  all-days assignments versus 24 complete-day assignments, and 23 dates; its
+  filters do not refit models.
+- Phase 2's final notebook uses temporary disk-backed SQLite tables for
+  high-volume key-uniqueness checks, avoiding large in-memory digest sets while
+  retaining exact reference comparisons.
+- The standard repository suite passes 92 tests (91 passed, one intentionally
+  skipped opt-in fresh-kernel test). The earlier complete isolated
+  notebook-workflow run passed 3/3. After final notebook refinements, Phase 2
+  and Phase 6 each passed a separate isolated fresh-kernel run and their latest
+  proof outputs were saved. A redundant combined rerun was interrupted by a
+  workspace restart during Phase 1's full raw-file scan; it is not counted as
+  complete.
+- The three archived original notebooks match their baseline SHA-256 hashes.
+  Raw datasets, processed references, analysis scripts, generated analysis
+  results, and the historical Phase 4 branch remain unchanged. `src/.gitkeep`
+  was removed; `app/.gitkeep` remains.
+- No paid services, hosted compute, deployment, or package installation was
+  used. The review PR is not yet open; do not merge this branch or begin Phase
+  7.
+- Full results and the precise verification caveat are recorded in
+  `reports/evidence/notebook_conversion/final_corrections_report.md` and
+  `final_corrections_manifest.json`.
 
 ## Phase 2 findings so far
 
@@ -112,7 +170,7 @@ historical `phase-4-activity-clustering` branch remains at
 
 ## Phase 3 implementation
 
-- `notebooks/EDA_analysis.ipynb` covers participant profiles and coverage,
+- `notebooks/archive/EDA_analysis.ipynb` covers participant profiles and coverage,
   complete-day sensitivity, daily step distributions and trends,
   weekday/weekend patterns, and activity-duration composition. It has no
   correlation analysis or sleep episode/alignment analysis.

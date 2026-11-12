@@ -370,3 +370,63 @@
 - Artifacts: `notebooks/phases/02_Data_Preprocessing.ipynb`,
   `notebooks/phases/06_Interactive_Dashboard.ipynb`,
   `reports/evidence/notebook_conversion/`.
+
+## C-018 — Make notebook outputs independently reviewable
+
+- Phase/task: Final notebook correction and Phase 6 evidence browser
+- Observable symptom: The initial conversion still tied several notebooks to
+  the presence of `src/`, showed only three of eight Phase 5 figures, and
+  exposed six Phase 6 panels with candidate/assignment counts that could be
+  misread across scopes.
+- Root cause: The first conversion prioritized wrapping the verified pipelines;
+  it did not finish transferring all figure rendering or the Phase 6 cohort
+  and candidate controls into the notebooks.
+- Implemented solution: Use notebook-local code and notebook-specific hashes,
+  generate and display all 9 Phase 3, 12 Phase 4, and 8 Phase 5 SVGs inline,
+  and make Phase 6 filter stored records through eight panels. Cohort options
+  update with the selected model, blank assignments are excluded, and flagged
+  candidates are counted using the union field. Archive the original notebooks
+  without changing their content.
+- Verification: All six notebooks passed fresh-kernel execution from an
+  isolated project tree without `src/`. Phase 1 matched 11 raw-file hashes and
+  row counts; Phase 2 matched all six processed references; Phase 3 and Phase 4
+  outputs matched 13/9 and 9/12 table/figure references; Phase 5 matched all
+  21 CSV tables and produced eight parseable inline SVGs. Phase 6 interaction
+  checks confirmed 217 flagged rows of 457, 35 all-days assignments, 24
+  complete-day assignments, and 23 activity dates.
+- Remaining limitation: Interactive controls require a widget-enabled Jupyter
+  frontend. The dashboard filters stored analysis and does not refit models;
+  the two-person Phase 4 group and all other findings remain exploratory.
+- Presentation takeaway: Review the sample, cohort, and stored result behind
+  each view; chart count or filter output does not make a small observational
+  sample more representative.
+- Artifacts: `reports/evidence/notebook_conversion/`,
+  `notebooks/phases/`, and `tests/test_notebook_workflow.py`.
+
+## C-019 — Keep notebook validation within local memory limits
+
+- Phase/task: Final fresh-kernel notebook validation
+- Observable symptom: A six-notebook run's Phase 2 kernel died during its
+  minute-level uniqueness audit; Phase 6 output-widget smoke checks also
+  stalled in a headless kernel.
+- Root cause: Phase 2 retained millions of key digests in in-memory sets, and
+  Phase 6 relied on output comms that do not complete reliably without a live
+  notebook frontend.
+- Investigation: The kernel reported `DeadKernelError` and the cgroup recorded
+  an OOM kill. The Phase 2 validation path uses in-memory sets for both source
+  alignment and generated-output uniqueness; the Phase 6 smoke test isolated
+  the output-widget waits.
+- Resolution: Move only temporary key digests to local disk-backed SQLite
+  tables with bounded cache, and return panel markup through `widgets.HTML`
+  values. Raw data, processed references, and analytical outputs are unchanged.
+- Verification: The standalone Phase 2 fresh-kernel run completed with all six
+  references matching; the Phase 6 eight-panel interaction smoke test passed.
+  The final six-notebook and standard-suite results are recorded in the final
+  correction report.
+- Remaining limitation: Temporary SQLite checks add local disk I/O; actual
+  interactive controls still require a widget-enabled Jupyter frontend.
+- Presentation takeaway: Reproducibility checks should fit the same resource
+  limits as the workflow and must fail closed if interrupted.
+- Artifacts: `notebooks/phases/02_Data_Preprocessing.ipynb`,
+  `notebooks/phases/06_Interactive_Dashboard.ipynb`,
+  `reports/evidence/notebook_conversion/`.

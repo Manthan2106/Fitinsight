@@ -1,6 +1,6 @@
-# Notebook conversion verification
+# Notebook conversion and correction verification
 
-## Scope and baseline
+## Initial PR #6 conversion snapshot (historical)
 
 The six notebooks in `notebooks/phases/` are the Phase 1–5 reproducibility
 workflow and the initial interactive Phase 6 artifact. They were built on the
@@ -47,6 +47,54 @@ shell-launch calls.
 - Output parity verifies reproduction of the committed project results; it
   does not establish that historical sensor values are correct.
 
-Machine-readable details are in `run_manifest.json`. [PR #6 is open against
-`main`](https://github.com/Manthan2106/Fitinsight/pull/6); the conversion is
-intentionally unmerged.
+Machine-readable details for this initial snapshot are in `run_manifest.json`.
+[PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) was open when this
+record was written and was later merged into `main` at
+`b43f0530bab8944b331544cef7dd100b7f5ee87c`. Its initial chart and panel counts
+are retained here as historical evidence; the final corrections are recorded
+below.
+
+## Final notebook corrections
+
+The correction branch `phase-notebook-final-corrections` starts at the verified
+`main` commit `b43f0530bab8944b331544cef7dd100b7f5ee87c`. The separate
+historical Phase 4 branch remains at `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`.
+This work changes the independent phase notebooks, tests, and documentation;
+the analysis scripts, raw datasets, processed references, generated Phase 1–5
+results, archived notebook contents, and historical Phase 4 branch are
+preserved.
+
+| Notebook | Final verified output |
+| --- | --- |
+| `01_Data_Audit.ipynb` | 11 raw CSVs, 7,206,142 rows; all file hashes and row counts match. |
+| `02_Data_Preprocessing.ipynb` | Six generated outputs match the committed references. Source alignment and output uniqueness use temporary disk-backed SQLite digests to keep the free local kernel's memory bounded. |
+| `03_Exploratory_Data_Analysis.ipynb` | 13 analysis CSV tables and all nine Phase 3 SVG figures; reviewed time-accounting conclusions are shown in notebook cells. |
+| `04_Clustering_and_PCA.ipynb` | Nine analysis CSV tables and all 12 Phase 4 SVG figures; the two-person cluster limitation remains explicit. |
+| `05_Association_and_Anomalies.ipynb` | Eight association CSVs, 13 anomaly CSVs, and all eight SVG figures generated from computed results. |
+| `06_Interactive_Dashboard.ipynb` | Eight panels over stored results; fresh-kernel interaction checks cover the 217/457 anomaly union, 35/24 cohort assignments, PCA/DBSCAN controls, association filters, and 23 dates. No model is refit. |
+
+## Final checks
+
+- `python -m unittest discover -s tests -v`: 92 tests run, 91 passed, one
+  intentionally skipped. The skipped check is the separate, expensive
+  fresh-kernel notebook run, enabled by `FITINSIGHT_RUN_NOTEBOOK_KERNELS=1`.
+- A complete earlier isolated run passed all three notebook-workflow tests and
+  executed all six notebooks without `src/`. After the final resource/UI
+  refinements, Phase 2 and Phase 6 were rerun separately in isolated fresh
+  kernels; both passed, and their latest proof outputs were saved. Static
+  self-containment/syntax checks and stored-output checks pass for all six.
+- A redundant combined rerun after those refinements was interrupted when the
+  workspace restarted during Phase 1's full raw-file scan. It is not counted as
+  a completed run; the separate final Phase 2 and Phase 6 reruns and the earlier
+  complete six-notebook run are the supporting execution evidence.
+- `git diff --check` and staged diff checks pass. The archived originals match
+  the Git-baseline SHA-256 hashes byte-for-byte. Only the unnecessary
+  `src/.gitkeep` is removed from protected script/data paths; `app/.gitkeep`
+  remains.
+- All work used the existing Python/Jupyter runtime and local standard-library
+  code. No packages were installed for the correction, and no paid API,
+  hosted compute, deployment, or Phase 7 work was used.
+
+The current branch is prepared for a review-only pull request against `main`;
+it must not be merged automatically. The PR number, remote head, and open/
+unmerged verification are recorded in the branch's final update.
