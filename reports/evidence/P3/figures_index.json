@@ -1,0 +1,75 @@
+{
+  "figure_count": 9,
+  "figures": [
+    {
+      "file": "01_daily_steps_distribution.svg",
+      "interpretation": "Most recorded days fall in lower step-count bins with a right tail.",
+      "sample_count": 457,
+      "size_bytes": 4927,
+      "title": "Daily step counts are right-skewed"
+    },
+    {
+      "file": "02_steps_by_completeness.svg",
+      "interpretation": "The two day groups have different distributions; the filter is a sensitivity comparison.",
+      "sample_count": 457,
+      "size_bytes": 6131,
+      "title": "Step-count distributions differ by completeness"
+    },
+    {
+      "file": "03_daily_steps_and_coverage.svg",
+      "interpretation": "Date-level means should be read alongside the changing participant count.",
+      "sample_count": 457,
+      "size_bytes": 7847,
+      "title": "Daily step averages need their coverage context"
+    },
+    {
+      "file": "04_weekday_weekend_paired_steps.svg",
+      "interpretation": "Weekend mean higher for 17; weekday higher for 17; equal for 1.",
+      "sample_count": 35,
+      "size_bytes": 12444,
+      "title": "Weekend and weekday means vary by participant"
+    },
+    {
+      "file": "05_activity_minute_composition.svg",
+      "interpretation": "The composition denominator is the sum of four recorded minute fields; sedentary share is 88.1% for complete and 75.9% for incomplete days.",
+      "sample_count": 457,
+      "size_bytes": 4442,
+      "title": "Recorded-time composition differs by completeness"
+    },
+    {
+      "file": "06_activity_correlation_heatmap.svg",
+      "interpretation": "The matrix reports rank associations and per-cell sample sizes.",
+      "sample_count": 457,
+      "size_bytes": 18405,
+      "title": "Activity measures show varied rank associations"
+    },
+    {
+      "file": "07_recorded_sleep_log_sizes.svg",
+      "interpretation": "Session row counts vary; they are not labeled as actual minutes asleep.",
+      "sample_count": 556,
+      "size_bytes": 4924,
+      "title": "Recorded sleep-log sizes vary"
+    },
+    {
+      "file": "08_sleep_records_vs_waking_steps.svg",
+      "interpretation": "Each point is a unique matched waking date; the chart is descriptive only.",
+      "sample_count": 161,
+      "size_bytes": 16946,
+      "title": "Recorded sleep-log rows and waking-day steps"
+    },
+    {
+      "exact_1440_count": 45,
+      "file": "09_time_accounting_by_date.svg",
+      "highlighted_boundary_date": "2016-04-12",
+      "interpretation": "The reference is arithmetic only; April 12 is highlighted as a boundary-date sensitivity, not automatically excluded.",
+      "plotted_rows": 161,
+      "sample_count": 161,
+      "size_bytes": 26326,
+      "target_minutes": 1440,
+      "title": "Activity and sleep rows sometimes sum near 1,440",
+      "within_30_minutes_count": 91
+    }
+  ],
+  "format": "SVG",
+  "reproduction_command": "python src/eda_analysis.py"
+}

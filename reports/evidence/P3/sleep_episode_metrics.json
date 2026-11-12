@@ -1,0 +1,28 @@
+{
+  "conflicting_duplicate_rows": 0,
+  "cross_midnight_logs": 263,
+  "distinct_log_id_values": 556,
+  "distinct_rows": 198034,
+  "duplicate_key_rows_after_preprocessing": 0,
+  "input_file": "data/processed/minute_sleep_clean.csv",
+  "input_rows": 198034,
+  "interpretation": "Value categories are reported as their stored codes only; their sleep-state meaning is not established by repository documentation.",
+  "log_ids_reused_across_participants": 0,
+  "logs_over_12_hours": 6,
+  "logs_with_non_60_second_intervals": 0,
+  "logs_with_timestamp_gap_over_60_seconds": 0,
+  "multiple_overnight_waking_dates": 37,
+  "overlapping_log_count": 0,
+  "overnight_candidate_count": 437,
+  "participant_log_groups": 556,
+  "participants": 23,
+  "potential_afternoon_start_logs": 29,
+  "primary_eligible_episode_count": 359,
+  "sessions_on_multiple_overnight_waking_dates": 78,
+  "timestamp_to_calendar_date_mismatches": 0,
+  "value_category_counts": {
+    "1": 183038,
+    "2": 12983,
+    "3": 2013
+  }
+}

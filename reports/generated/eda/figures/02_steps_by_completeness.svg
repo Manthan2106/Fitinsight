@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-label="Step-count distributions differ by completeness">
+<title>Step-count distributions differ by completeness</title>
+<desc>Participant-day counts by recorded-step bin. Complete n=233; incomplete n=224; completeness means 1,440 recorded minutes, not valid/invalid behavior.</desc>
+<rect x="0" y="0" width="1120" height="720" fill="#FFFFFF"/>
+<text x="72" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D">Step-count distributions differ by completeness</text>
+<text x="72" y="91" font-family="Arial, sans-serif" font-size="15" fill="#5E7184">Participant-day counts by recorded-step bin</text>
+<line x1="112.00" y1="550.00" x2="1022.00" y2="550.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="554.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">0</text>
+<line x1="112.00" y1="470.00" x2="1022.00" y2="470.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="474.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">20</text>
+<line x1="112.00" y1="390.00" x2="1022.00" y2="390.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="394.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">40</text>
+<line x1="112.00" y1="310.00" x2="1022.00" y2="310.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="314.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">60</text>
+<line x1="112.00" y1="230.00" x2="1022.00" y2="230.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="234.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">80</text>
+<line x1="112.00" y1="150.00" x2="1022.00" y2="150.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="100.00" y="154.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="end" fill="#5E7184">100</text>
+<line x1="112.00" y1="150.00" x2="112.00" y2="550.00" stroke="#5E7184" stroke-width="1"/>
+<line x1="112.00" y1="550.00" x2="1022.00" y2="550.00" stroke="#5E7184" stroke-width="1"/>
+<rect x="124.74" y="150.00" width="30.76" height="400.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="157.50" y="350.00" width="30.76" height="200.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="157.50" y="573.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">0k</text>
+<rect x="215.74" y="402.00" width="30.76" height="148.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="248.50" y="382.00" width="30.76" height="168.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<rect x="306.74" y="406.00" width="30.76" height="144.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="339.50" y="362.00" width="30.76" height="188.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="339.50" y="573.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">6k</text>
+<rect x="397.74" y="438.00" width="30.76" height="112.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="430.50" y="378.00" width="30.76" height="172.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<rect x="488.74" y="510.00" width="30.76" height="40.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="521.50" y="418.00" width="30.76" height="132.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="521.50" y="573.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">12k</text>
+<rect x="579.74" y="506.00" width="30.76" height="44.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="612.50" y="522.00" width="30.76" height="28.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<rect x="670.74" y="526.00" width="30.76" height="24.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="703.50" y="542.00" width="30.76" height="8.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="703.50" y="573.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">18k</text>
+<rect x="761.74" y="546.00" width="30.76" height="4.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="794.50" y="550.00" width="30.76" height="0.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<rect x="852.74" y="542.00" width="30.76" height="8.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="885.50" y="550.00" width="30.76" height="0.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="885.50" y="573.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184">24k</text>
+<rect x="943.74" y="542.00" width="30.76" height="8.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<rect x="976.50" y="550.00" width="30.76" height="0.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<rect x="770.00" y="115.00" width="14.00" height="14.00" rx="3.00" fill="#1F74AD" stroke="none"/>
+<text x="792.00" y="127.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#5E7184">Complete</text>
+<rect x="915.00" y="115.00" width="14.00" height="14.00" rx="3.00" fill="#E98E2E" stroke="none"/>
+<text x="937.00" y="127.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#5E7184">Incomplete</text>
+<text x="567.00" y="600.00" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#5E7184">Recorded steps per participant-day</text>
+<text x="34.00" y="350.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-90.0 34.00 350.00)">Participant-day records</text>
+<line x1="72.00" y1="662.00" x2="1048.00" y2="662.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="72.00" y="688.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#5E7184">Complete n=233; incomplete n=224; completeness means 1,440 recorded minutes, not valid/invalid behavior.</text>
+</svg>

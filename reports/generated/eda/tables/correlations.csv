@@ -1,0 +1,15 @@
+grain,x,y,n_pairs,participants,missing_pairs,pearson,spearman
+participant_day_pooled,total_steps,calories,457,35,0,0.5813801894994014,0.5835652672523831
+participant_day_pooled,total_steps,total_distance,457,35,0,0.9867888602118602,0.995696389464238
+participant_day_pooled,total_steps,total_active_minutes,457,35,0,0.7756686290686811,0.8588209988026716
+participant_day_pooled,total_active_minutes,calories,457,35,0,0.5218299058236159,0.5201751707351677
+participant_day_pooled,sedentary_minutes,total_active_minutes,457,35,0,-0.41611651117466486,-0.5107281582771708
+participant_day_pooled,is_complete_day_numeric,total_steps,457,35,0,-0.13515875113004025,-0.2123211632026748
+participant_day_pooled,is_complete_day_numeric,total_active_minutes,457,35,0,-0.21038892446299198,-0.22097842361423561
+participant_means,total_steps,calories,35,35,0,0.4848311274921042,0.35378151260504204
+participant_means,total_steps,total_distance,35,35,0,0.9913068578002738,0.988515406162465
+participant_means,total_steps,total_active_minutes,35,35,0,0.8011277275838777,0.8389355742296919
+participant_means,total_active_minutes,calories,35,35,0,0.3552561738414931,0.3299719887955182
+participant_means,sedentary_minutes,total_active_minutes,35,35,0,-0.5856109089812582,-0.5033613445378151
+participant_means,complete_day_rate,total_steps,35,35,0,-0.2055110414741667,-0.25786016497117037
+participant_means,complete_day_rate,total_active_minutes,35,35,0,-0.27863824740178494,-0.20262454493363005

@@ -1,0 +1,59 @@
+{
+  "daily_candidate_rows": 140,
+  "daily_flag_counts": {
+    "calories_above_1_5_iqr_fence": 12,
+    "calories_below_1_5_iqr_fence": 10,
+    "phase2_numpy_isclose_distance_flag": 65,
+    "total_active_minutes_above_1_5_iqr_fence": 2,
+    "total_distance_above_1_5_iqr_fence": 7,
+    "total_recorded_minutes_below_1_5_iqr_fence": 10,
+    "total_steps_above_1_5_iqr_fence": 5,
+    "zero_steps_positive_active_minutes": 3,
+    "zero_steps_positive_calories": 56
+  },
+  "daily_iqr_fences": {
+    "calories": {
+      "lower_fence": 439.5,
+      "q1": 1776.0,
+      "q3": 2667.0,
+      "upper_fence": 4003.5
+    },
+    "sedentary_minutes": {
+      "lower_fence": -107.5,
+      "q1": 728.0,
+      "q3": 1285.0,
+      "upper_fence": 2120.5
+    },
+    "total_active_minutes": {
+      "lower_fence": -266.5,
+      "q1": 74.0,
+      "q3": 301.0,
+      "upper_fence": 641.5
+    },
+    "total_distance": {
+      "lower_fence": -7.214999854564666,
+      "q1": 1.4099999666214,
+      "q3": 7.15999984741211,
+      "upper_fence": 15.784999668598175
+    },
+    "total_recorded_minutes": {
+      "lower_fence": 302.5,
+      "q1": 985.0,
+      "q3": 1440.0,
+      "upper_fence": 2122.5
+    },
+    "total_steps": {
+      "lower_fence": -10327.0,
+      "q1": 1988.0,
+      "q3": 10198.0,
+      "upper_fence": 22513.0
+    }
+  },
+  "screening_rule": "1.5×IQR fences plus observed zero-step/activity and Phase 2 distance flags; candidates are retained and are not diagnoses.",
+  "sleep_episode_candidate_rows": 111,
+  "sleep_flag_counts": {
+    "afternoon_start_candidate": 29,
+    "elapsed_span_over_12_hours": 6,
+    "multiple_overnight_logs_same_waking_date": 78
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "daily": {
+    "complete_days": 233,
+    "incomplete_days": 224,
+    "key_duplicates": 0,
+    "missing_counts": {
+      "calories": 0,
+      "sedentary_minutes": 0,
+      "total_active_minutes": 0,
+      "total_distance": 0,
+      "total_recorded_minutes": 0,
+      "total_steps": 0
+    },
+    "participants": 35,
+    "rows": 457,
+    "schema_matches": true
+  },
+  "daily_file": "data/processed/daily_activity_clean.csv",
+  "source_data_commit": "2e233a1de22a7f808bdea3939b75d80e0848a483"
+}

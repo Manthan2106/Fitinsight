@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="800" viewBox="0 0 1120 800" role="img" aria-label="Activity measures show varied rank associations">
+<title>Activity measures show varied rank associations</title>
+<desc>Spearman correlations across participant-days. Each tile shows Spearman rho and valid pair count; associations are descriptive and repeated days are not independent people.</desc>
+<rect x="0" y="0" width="1120" height="800" fill="#FFFFFF"/>
+<text x="72" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324D">Activity measures show varied rank associations</text>
+<text x="72" y="91" font-family="Arial, sans-serif" font-size="15" fill="#5E7184">Spearman correlations across participant-days</text>
+<text x="337.00" y="214.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Steps</text>
+<text x="390.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 390.00 157.00)">Steps</text>
+<text x="337.00" y="294.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Calories</text>
+<text x="470.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 470.00 157.00)">Calories</text>
+<text x="337.00" y="374.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Distance</text>
+<text x="550.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 550.00 157.00)">Distance</text>
+<text x="337.00" y="454.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Active min</text>
+<text x="630.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 630.00 157.00)">Active min</text>
+<text x="337.00" y="534.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Sedentary min</text>
+<text x="710.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 710.00 157.00)">Sedentary min</text>
+<text x="337.00" y="614.00" font-family="Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="#5E7184">Complete flag</text>
+<text x="790.00" y="157.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#5E7184" transform="rotate(-40.0 790.00 157.00)">Complete flag</text>
+<rect x="350.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="389.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="389.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="469.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.58</text>
+<text x="469.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="549.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="549.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="629.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.86</text>
+<text x="629.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="709.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.43</text>
+<text x="709.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="170.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="789.00" y="212.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.21</text>
+<text x="789.00" y="234.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="350.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="389.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.58</text>
+<text x="389.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="469.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="469.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="549.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.62</text>
+<text x="549.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="629.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.52</text>
+<text x="629.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="709.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.10</text>
+<text x="709.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="250.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="789.00" y="292.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.03</text>
+<text x="789.00" y="314.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="350.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="389.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="389.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="469.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.62</text>
+<text x="469.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="549.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="549.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="629.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.85</text>
+<text x="629.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="709.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.43</text>
+<text x="709.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="330.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="789.00" y="372.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.21</text>
+<text x="789.00" y="394.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="350.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="389.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.86</text>
+<text x="389.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="469.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.52</text>
+<text x="469.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="549.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.85</text>
+<text x="549.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="629.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="629.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#2672A6" stroke="#FFFFFF"/>
+<text x="709.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.51</text>
+<text x="709.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="410.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="789.00" y="452.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.22</text>
+<text x="789.00" y="474.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="350.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="389.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.43</text>
+<text x="389.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="469.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.10</text>
+<text x="469.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="549.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.43</text>
+<text x="549.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#2672A6" stroke="#FFFFFF"/>
+<text x="629.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.51</text>
+<text x="629.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="709.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="709.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="490.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="789.00" y="532.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.83</text>
+<text x="789.00" y="554.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="350.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="389.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.21</text>
+<text x="389.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="430.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="469.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.03</text>
+<text x="469.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="510.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="549.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.21</text>
+<text x="549.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="590.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#8AB1CC" stroke="#FFFFFF"/>
+<text x="629.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">-0.22</text>
+<text x="629.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="670.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="709.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">0.83</text>
+<text x="709.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="750.00" y="570.00" width="78.00" height="78.00" rx="5.00" fill="#E99F2E" stroke="#FFFFFF"/>
+<text x="789.00" y="612.00" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#17324D">1.00</text>
+<text x="789.00" y="634.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#5E7184">n=457</text>
+<rect x="270.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#2672A6" stroke="#E5ECF1"/>
+<text x="299.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">≤ −0.5</text>
+<rect x="380.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#8AB1CC" stroke="#E5ECF1"/>
+<text x="409.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">−0.5 to 0</text>
+<rect x="490.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#FFFFFF" stroke="#E5ECF1"/>
+<text x="519.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">0</text>
+<rect x="600.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#FAB770" stroke="#E5ECF1"/>
+<text x="629.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">0 to 0.5</text>
+<rect x="710.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#E99F2E" stroke="#E5ECF1"/>
+<text x="739.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">≥ 0.5</text>
+<rect x="820.00" y="668.00" width="22.00" height="18.00" rx="2.00" fill="#D9E0E5" stroke="#E5ECF1"/>
+<text x="849.00" y="682.00" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start" fill="#5E7184">Missing</text>
+<line x1="72.00" y1="742.00" x2="1048.00" y2="742.00" stroke="#E5ECF1" stroke-width="1"/>
+<text x="72.00" y="768.00" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#5E7184">Each tile shows Spearman rho and valid pair count; associations are descriptive and repeated days are not independent people.</text>
+</svg>

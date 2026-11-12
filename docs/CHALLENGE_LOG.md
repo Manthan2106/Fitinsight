@@ -56,3 +56,71 @@
   input revisions must rerun the alignment check.
 - Presentation takeaway: A cheap streaming key proof made a low-memory join
   defensible rather than relying on matching row counts.
+
+## C-004 — Sleep logs do not form a complete matched panel
+
+- Phase/task: P3 sleep episode reconstruction and waking-date alignment
+- Observable symptom: Only 161 daily activity rows have a unique eligible
+  overnight log; 17 activity dates have multiple candidate sessions, and none
+  of the matched activity days meet the 1,440-minute complete-day rule.
+- Root cause: The sleep file has 556 participant-log groups, varying session
+  times, and repeated candidate logs on some waking dates; activity coverage
+  is incomplete across the same dates.
+- Solution: Keep sleep codes neutral; screen overnight timing and intervals;
+  exclude ambiguous dates; match the episode end date; preserve unmatched sleep
+  as missing and maintain one row per activity participant-day.
+- Verification: 359 individually eligible episodes, 161 matched days across
+  18 participants, 17 ambiguous activity dates, 198 eligible episodes without
+  an activity row, and 457 unique output activity rows.
+- Remaining limitation: All 161 matched days are incomplete, so the
+  complete-day sleep/activity sensitivity has no observations. Recorded log
+  rows are not validated actual sleep duration.
+- Presentation takeaway: The join is cardinality-safe, but its strict coverage
+  leaves no matched complete-day sample for a sleep sensitivity comparison.
+
+## C-005 — Build interpretable figures without a plotting dependency
+
+- Phase/task: P3 reproducible visualization
+- Observable constraint: The available Python environment has no Matplotlib,
+  Seaborn, NumPy, pandas, or SciPy.
+- Root cause: A package-based chart pipeline would require installation and
+  would no longer use only already-verified local resources.
+- Solution: The initial Phase 3 analysis generated eight accessible,
+  deterministic SVG figures using Python standard-library string and
+  XML-compatible output. The later time-accounting review added a ninth figure
+  for combined activity and recorded sleep-row minutes by date.
+- Verification: The initial figure index recorded eight figures; the final
+  index records nine. Tests parse all SVGs and compare the ninth figure's
+  plotted date/value points with the computed time-accounting CSV.
+- Remaining limitation: Charts are static and need maintenance alongside the
+  analysis code.
+- Presentation takeaway: The EDA figures can be regenerated locally without
+  paid tools or external services.
+
+## C-006 — Determine whether activity and sleep rows complement each other
+
+- Phase/task: P3 analytical review
+- Observable symptom: Every one of the 161 unique sleep-matched waking dates is
+  incomplete under Phase 2, while an independent arithmetic check suggested
+  activity minutes plus recorded sleep rows may approach 1,440.
+- Root cause: Unverified. The repository does not define whether activity and
+  sleep fields cover the same or separate intervals, or whether their
+  timestamps overlap.
+- Investigation: Sum all four recorded activity-minute fields, verify that
+  total against the Phase 2 stored total, then add minute rows from only a
+  unique eligible sleep log. Preserve the original 1,440-minute completeness
+  flag and compare all dates with April 12 and April 11–12 sensitivity windows.
+- Evidence: 45/161 sums equal 1,440; 74/161 are within 15 minutes; 91/161
+  within 30; 110/161 within 60. April 12 has seven matched dates, each 607–833
+  combined minutes. Excluding April 12 gives n=154 and mean difference −25.96;
+  excluding April 11–12 gives n=143 and mean difference −21.72.
+- Resolution: Arithmetic supports a complementary-accounting possibility for
+  many rows, not verified 24-hour coverage. Sleep counts remain recorded-row
+  counts; ambiguous or unmatched sleep is not assigned a duration.
+- Remaining limitation: Measurement semantics, interval overlap, device wear,
+  and the meaning of missing activity minutes are unverified. Sensitivity
+  exclusions do not replace the all-date primary analysis.
+- Presentation takeaway: Many activity-plus-sleep totals approach a day, but
+  the sum is a diagnostic clue—not evidence of full coverage or non-wear.
+- Artifacts: `reports/evidence/P3/time_accounting_metrics.json`;
+  `reports/generated/eda/tables/time_accounting*.csv`.
