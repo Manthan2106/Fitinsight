@@ -6,14 +6,15 @@ medical classifier, or a source of health recommendations.
 
 ## Current state
 
-- The notebook conversion was merged into `main`; verified `main` baseline for
-  the current corrections is `b43f0530bab8944b331544cef7dd100b7f5ee87c`.
-- Branch `phase-notebook-final-corrections` makes the six phase notebooks
-  independently runnable, completes all Phase 3–5 inline SVG outputs, and
-  improves the eight-panel interactive Phase 6 evidence browser.
-- [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is merged. The
-  current notebook corrections are in [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7),
-  open against `main` for review; it must not be merged automatically.
+- The notebook conversion and final corrections are merged into `main`;
+  verified baseline for the current polish is
+  `4ddd796ed60e275b057ce11267f986d5859987dd`.
+- Branch `phase-notebook-final-polish` places saved Phase 3–5 figures beside
+  their analysis stages, manages temporary outputs outside the checkout, and
+  keeps the full cohort visible in Phase 6 PCA plots.
+- [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is merged. The
+  latest review-only work is in [PR #8](https://github.com/Manthan2106/Fitinsight/pull/8),
+  open against `main`; do not merge it automatically.
 - The original audit, preprocessing, and EDA notebooks are preserved under
   `notebooks/archive/`; their source content and execution history remain
   historical.
@@ -72,11 +73,13 @@ unchanged alongside the phase-specific workflow notebooks below.
 
 `notebooks/phases/` contains six notebooks designed to run in order from a
 fresh Python 3 kernel. Phases 1–5 include separate reasoning, implementation,
-proof, and result cells; they write regenerated outputs to scratch paths and
-compare them with committed evidence where applicable. Phase 6 provides eight
-interactive panels over stored results and does not refit models. The separate
-web dashboard remains paused; the interactive notebook is the current Phase 6
-deliverable.
+proof, and result cells; temporary scratch output is written outside the
+checkout, removed after successful validation, and retained on failure for
+diagnosis. Phase 3–5 figures appear immediately after their analysis stages.
+Phase 6 provides eight interactive panels over stored results and does not
+refit models; PCA filters highlight one participant without zooming out the
+rest of the selected cohort. The separate web dashboard remains paused; the
+interactive notebook is the current Phase 6 deliverable.
 
 Install the pinned notebook runtime and run the notebooks from the repository
 root:

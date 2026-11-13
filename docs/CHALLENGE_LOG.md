@@ -371,6 +371,33 @@
   `notebooks/phases/06_Interactive_Dashboard.ipynb`,
   `reports/evidence/notebook_conversion/`.
 
+## C-020 — Keep staged figures and temporary outputs reproducible
+
+- Phase/task: Final notebook polish and isolated validation
+- Observable symptom: Saved Phase 3–5 figures were grouped at notebook ends,
+  scratch paths could accumulate, and Phase 5's staged kNN chart changed the
+  row order of its later CSV export.
+- Root cause: Presentation code sorted the shared kNN summary in place, and a
+  scratch cleanup call ran before the final table-parity check.
+- Investigation: A fresh Phase 5 kernel isolated a single `knn_summary.csv`
+  ordering difference (pooled rows versus alphabetical cohort order). Moving
+  cleanup after the parity check exposed and fixed the premature deletion.
+- Resolution: Render saved figures immediately after their analysis proofs,
+  sort a chart-only copy of the kNN summary, and remove external temporary
+  scratch only after all CSV/SVG validation succeeds. Keep failed scratch for
+  diagnosis. Phase 6 PCA keeps every eligible point in view while highlighting
+  the selected participant.
+- Verification: All six notebooks pass isolated fresh-kernel execution;
+  Phase 1–5 outputs match their references; figure payload hashes per title
+  remain unchanged; tracked notebook hashes stay unchanged; 94 repository
+  tests run (93 pass, one opt-in skip).
+- Remaining limitation: Reproducing the recorded values does not validate
+  sensor semantics, device wear, or the representativeness of the small sample.
+- Presentation takeaway: Put each figure beside the calculation it summarizes
+  without changing the export that supports it.
+- Artifacts: `notebooks/phases/`, `tests/test_notebook_workflow.py`,
+  `reports/evidence/notebook_conversion/final_notebook_polish_report.md`.
+
 ## C-018 — Make notebook outputs independently reviewable
 
 - Phase/task: Final notebook correction and Phase 6 evidence browser

@@ -444,3 +444,26 @@
 - Files: `notebooks/phases/02_Data_Preprocessing.ipynb`,
   `notebooks/phases/06_Interactive_Dashboard.ipynb`,
   `reports/evidence/notebook_conversion/`.
+
+## D-024 — Separate staged figures from analytical export ordering
+
+- Date: 2026-11-13
+- Question: How can the notebooks place every figure beside its analysis while
+  keeping output parity exact and temporary files out of the repository?
+- Choices: Keep charts at the end; regenerate saved outputs wholesale; or move
+  each saved figure card to its calculation stage and keep chart ordering local.
+- Selected: Render figures immediately after their proof cells, preserve the
+  saved SVG payloads, sort a separate kNN chart view, and keep scratch in an
+  external temporary directory until the final CSV/SVG checks pass. Retain
+  scratch only when execution fails. In PCA, keep the entire selected cohort
+  visible and use participant selection only as a highlight.
+- Why: Reviewers can connect the calculation, its proof, and the displayed
+  figure without the presentation layer reordering a CSV or hiding context.
+- Evidence: All six notebooks passed isolated fresh-kernel execution; Phase
+  1–5 outputs match references; saved SVG hashes per title are unchanged;
+  tracked notebook hashes are unchanged; 94 tests run, 93 passed and one
+  opt-in test skipped.
+- Trade-off: A failed notebook run may intentionally leave a temporary
+  diagnostic directory; a successful run removes it.
+- Files: `notebooks/phases/`, `tests/test_notebook_workflow.py`,
+  `reports/evidence/notebook_conversion/final_notebook_polish_report.md`.

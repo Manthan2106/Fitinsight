@@ -1,0 +1,104 @@
+{
+  "record": "Final notebook polish verification",
+  "date": "2026-11-13",
+  "branch": "phase-notebook-final-polish",
+  "verified_main_baseline": "4ddd796ed60e275b057ce11267f986d5859987dd",
+  "implementation_commit": "82b6bee1bf27eaeaed23025787cd406e8bba1d61",
+  "notebook_results": {
+    "01_Data_Audit.ipynb": {
+      "fresh_kernel": "PASS",
+      "raw_files": 11,
+      "rows": 7206142,
+      "hash_and_row_parity": "PASS"
+    },
+    "02_Data_Preprocessing.ipynb": {
+      "fresh_kernel": "PASS",
+      "processed_outputs": 6,
+      "reference_parity": "PASS",
+      "large_key_checks": "temporary disk-backed SQLite"
+    },
+    "03_Exploratory_Data_Analysis.ipynb": {
+      "fresh_kernel": "PASS",
+      "analysis_csv_tables": 13,
+      "inline_svg_figures": 9,
+      "time_accounting": {
+        "matched_days": 161,
+        "sums_equal_1440_minutes": 45,
+        "within_30_minutes": 91,
+        "mean_gap_minutes": -58.48,
+        "interpretation": "descriptive only; does not establish complete 24-hour coverage"
+      }
+    },
+    "04_Clustering_and_PCA.ipynb": {
+      "fresh_kernel": "PASS",
+      "analysis_csv_tables": 9,
+      "inline_svg_figures": 12,
+      "two_person_cluster": "exploratory and unstable when those participants are excluded"
+    },
+    "05_Association_and_Anomalies.ipynb": {
+      "fresh_kernel": "PASS",
+      "association_csv_tables": 8,
+      "anomaly_csv_tables": 13,
+      "inline_svg_figures": 8,
+      "csv_reference_parity": "PASS",
+      "chart_sort_changes_export_order": false,
+      "scratch_cleanup_after_parity": "PASS"
+    },
+    "06_Interactive_Dashboard.ipynb": {
+      "fresh_kernel": "PASS",
+      "widget_smoke": "PASS",
+      "interactive_panels": 8,
+      "all_days_pca_points": 35,
+      "complete_days_pca_points": 24,
+      "participant_selection": "highlight only; cohort remains visible",
+      "model_refit": false
+    }
+  },
+  "tests": {
+    "isolated_notebook_workflow": {
+      "command": "FITINSIGHT_RUN_NOTEBOOK_KERNELS=1 python -m unittest discover -s tests -p 'test_notebook_workflow.py' -v",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "notebooks_executed": 6,
+      "logical_hardlinked_bytes": 603575668,
+      "tracked_notebook_hashes_unchanged": true
+    },
+    "standard_repository_suite": {
+      "command": "python -m unittest discover -s tests -v",
+      "total": 94,
+      "passed": 93,
+      "skipped": 1,
+      "failures": 0,
+      "skip_reason": "Isolated fresh-kernel execution is an explicit opt-in check."
+    },
+    "git_diff_check": "PASS",
+    "notebook_json_schema": "PASS",
+    "notebook_python_ast": "PASS",
+    "saved_svg_payload_hashes_by_title_unchanged": true
+  },
+  "preservation": {
+    "raw_datasets": "unchanged",
+    "processed_references": "unchanged",
+    "analysis_scripts": "unchanged",
+    "generated_reference_results": "unchanged",
+    "archived_original_notebooks": "unchanged",
+    "historical_phase4_branch": "unchanged",
+    "phase7_started": false
+  },
+  "resource_policy": {
+    "paid_services": false,
+    "hosted_compute": false,
+    "deployment": false,
+    "packages_installed": [],
+    "analysis_runtime": "Existing local Python and notebook runtime"
+  },
+  "pull_request": {
+    "number": 8,
+    "url": "https://github.com/Manthan2106/Fitinsight/pull/8",
+    "status": "open",
+    "base": "main",
+    "merged": false,
+    "automatic_merge": false
+  }
+}

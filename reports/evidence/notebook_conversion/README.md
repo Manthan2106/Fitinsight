@@ -54,7 +54,7 @@ record was written and was later merged into `main` at
 are retained here as historical evidence; the final corrections are recorded
 below.
 
-## Final notebook corrections
+## Final notebook corrections (historical PR #7 snapshot)
 
 The correction branch `phase-notebook-final-corrections` starts at the verified
 `main` commit `b43f0530bab8944b331544cef7dd100b7f5ee87c`. The separate
@@ -73,7 +73,7 @@ preserved.
 | `05_Association_and_Anomalies.ipynb` | Eight association CSVs, 13 anomaly CSVs, and all eight SVG figures generated from computed results. |
 | `06_Interactive_Dashboard.ipynb` | Eight panels over stored results; fresh-kernel interaction checks cover the 217/457 anomaly union, 35/24 cohort assignments, PCA/DBSCAN controls, association filters, and 23 dates. No model is refit. |
 
-## Final checks
+## Final checks at the PR #7 review snapshot
 
 - `python -m unittest discover -s tests -v`: 92 tests run, 91 passed, one
   intentionally skipped. The skipped check is the separate, expensive
@@ -99,3 +99,46 @@ The review-only [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is
 open against `main` and remains unmerged. Its latest remote head and base were
 verified after the final documentation update; do not merge automatically or
 start Phase 7.
+
+This was the verified state when the PR #7 correction report was written.
+PR #7 later merged into `main` at
+`4ddd796ed60e275b057ce11267f986d5859987dd`; the current polish results are
+recorded below.
+
+## Final notebook polish (current)
+
+The `phase-notebook-final-polish` branch starts from verified `main` at
+`4ddd796ed60e275b057ce11267f986d5859987dd`. Implementation commit
+`82b6bee1bf27eaeaed23025787cd406e8bba1d61` is in the review-only
+[PR #8](https://github.com/Manthan2106/Fitinsight/pull/8), open against `main`.
+The PR must not be merged automatically.
+
+| Notebook | Fresh-kernel result |
+| --- | --- |
+| `01_Data_Audit.ipynb` | All 11 raw CSVs and 7,206,142 rows match saved hashes and row counts. |
+| `02_Data_Preprocessing.ipynb` | All six processed outputs match their references; large key checks use temporary disk-backed SQLite. |
+| `03_Exploratory_Data_Analysis.ipynb` | 13 analysis CSVs and nine inline SVGs match; reviewed time accounting remains descriptive. |
+| `04_Clustering_and_PCA.ipynb` | Nine analysis CSVs and 12 inline SVGs match; two-person cluster remains exploratory. |
+| `05_Association_and_Anomalies.ipynb` | Eight association CSVs, 13 anomaly CSVs, and all eight SVGs match; chart ordering does not alter CSV row order. |
+| `06_Interactive_Dashboard.ipynb` | Eight panels pass interaction smoke checks; PCA participant selection highlights without removing other eligible points. |
+
+## Final polish verification
+
+- The isolated fresh-kernel workflow passed all six notebooks without `src/`.
+  The runner staged 603,575,668 logical bytes using same-volume hard links;
+  tracked notebook hashes were unchanged.
+- `python -m unittest discover -s tests -v`: **94 tests**, 93 passed, one
+  intentionally skipped opt-in fresh-kernel test. Running
+  `FITINSIGHT_RUN_NOTEBOOK_KERNELS=1 python -m unittest discover -s tests -p
+  'test_notebook_workflow.py' -v` passed all five workflow tests, including the
+  six-kernel execution.
+- `git diff --check`, notebook JSON/schema validation, and AST parsing of all
+  code cells passed. Existing SVG payload hashes are unchanged by title after
+  moving the saved graphics beside their analysis stages.
+- Scratch outputs stay outside the repository and are deleted only after
+  parity/figure checks succeed; diagnostic scratch is retained on failure.
+  Raw/processed data, analysis scripts, generated reference results, archived
+  original notebook contents, and the historical Phase 4 branch were not
+  changed.
+- No packages were installed; no paid API, hosted compute, deployment, merge,
+  or Phase 7 work was used.
