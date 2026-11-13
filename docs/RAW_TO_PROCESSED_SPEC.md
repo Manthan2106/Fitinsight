@@ -1,6 +1,6 @@
 # Raw-to-processed transformation specification
 
-Source reviewed: `notebooks/Data_preprocessing.ipynb`, its stored validation
+Source reviewed: `notebooks/archive/Data_preprocessing.ipynb`, its stored validation
 outputs, all six committed processed CSVs, and the raw input headers. Notebook
 outputs are historical; the new pipeline must regenerate and compare them.
 

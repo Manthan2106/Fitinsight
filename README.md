@@ -6,18 +6,24 @@ medical classifier, or a source of health recommendations.
 
 ## Current state
 
-- Phases 1–5 are merged into `main` at
-  `a52cbaaf4d447ef36013b1cb343a1af1cdafa7ba`.
-- The current `phase-notebook-conversion` branch converts Phases 1–5 into
-  reproducible, step-by-step notebooks and provides an interactive Phase 6
-  evidence browser. [PR #6 is open against `main`](https://github.com/Manthan2106/Fitinsight/pull/6)
-  and is intentionally unmerged pending review.
-- The original audit and EDA notebooks are preserved under `notebooks/`.
+- The notebook conversion was merged into `main`; verified `main` baseline for
+  the current corrections is `b43f0530bab8944b331544cef7dd100b7f5ee87c`.
+- Branch `phase-notebook-final-corrections` makes the six phase notebooks
+  independently runnable, completes all Phase 3–5 inline SVG outputs, and
+  improves the eight-panel interactive Phase 6 evidence browser.
+- [PR #6](https://github.com/Manthan2106/Fitinsight/pull/6) is merged. The
+  current notebook corrections are in [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7),
+  open against `main` for review; it must not be merged automatically.
+- The original audit, preprocessing, and EDA notebooks are preserved under
+  `notebooks/archive/`; their source content and execution history remain
+  historical.
 - The raw archive is in `data/raw/`; existing processed exports are in
   `data/processed/`.
 - The Phase 1 streaming audit uses only the Python standard library.
 - Phase 4 produced nine analysis tables, 12 SVG figures, and machine-readable
   validation evidence; its small-sample cluster findings remain exploratory.
+- The notebooks under `notebooks/phases/` do not import or launch `src/`
+  scripts. The scripts remain available as a separate command-line workflow.
 
 ## Run the raw-data audit
 
@@ -51,25 +57,26 @@ library; raw files and committed reference outputs are never overwritten.
 
 ## Existing notebooks
 
-The original notebooks contain executed analysis results and are retained as
-research artifacts:
+The original notebooks contain historical executed analysis results and are
+retained as research artifacts in `notebooks/archive/`:
 
-- `notebooks/notebook_1.ipynb` — raw-data audit and quality investigation.
-- `notebooks/Data_preprocessing.ipynb` — six processed exports.
-- `notebooks/EDA_analysis.ipynb` — descriptive activity analysis.
+- `notebooks/archive/notebook_1.ipynb` — raw-data audit and quality investigation.
+- `notebooks/archive/Data_preprocessing.ipynb` — six processed exports.
+- `notebooks/archive/EDA_analysis.ipynb` — descriptive activity analysis.
 
 Their original package environment is not pinned; notebook outputs remain
-historical. They are retained unchanged alongside the phase-specific workflow
-notebooks below.
+historical. The source content and saved execution outputs are preserved
+unchanged alongside the phase-specific workflow notebooks below.
 
 ## Phase notebooks
 
 `notebooks/phases/` contains six notebooks designed to run in order from a
 fresh Python 3 kernel. Phases 1–5 include separate reasoning, implementation,
 proof, and result cells; they write regenerated outputs to scratch paths and
-compare them with committed evidence where applicable. Phase 6 provides
-interactive filters over stored results and does not refit models. The web
-dashboard remains paused until the notebook conversion is reviewed.
+compare them with committed evidence where applicable. Phase 6 provides eight
+interactive panels over stored results and does not refit models. The separate
+web dashboard remains paused; the interactive notebook is the current Phase 6
+deliverable.
 
 Install the pinned notebook runtime and run the notebooks from the repository
 root:
@@ -80,9 +87,25 @@ jupyter lab notebooks/phases/
 ```
 
 The analysis logic in Phases 1–5 uses the Python standard library; the pinned
-packages provide Jupyter execution and free `ipywidgets` controls. See
-`reports/evidence/notebook_conversion/README.md` for clean-kernel results and
-parity checks.
+packages provide Jupyter execution and free `ipywidgets` controls. Run the
+standard repository suite with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The isolated six-notebook kernel pass is a separate, longer check:
+
+```bash
+FITINSIGHT_RUN_NOTEBOOK_KERNELS=1 python -m unittest discover -s tests -p 'test_notebook_workflow.py' -v
+```
+
+See `reports/evidence/notebook_conversion/README.md` for the verification
+record and historical sequence.
+
+`src/.gitkeep` was removed because the source directory already contains
+analysis scripts. `app/.gitkeep` remains as the placeholder for the separately
+paused optional web app.
 
 ## Phase 4 clustering and PCA
 

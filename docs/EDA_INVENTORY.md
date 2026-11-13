@@ -2,7 +2,8 @@
 
 ## Source and execution status
 
-- Source: `notebooks/EDA_analysis.ipynb` (74 cells; executed outputs are stored).
+- Historical source: `notebooks/archive/EDA_analysis.ipynb` (74 cells;
+  executed outputs are preserved).
 - The notebook loads daily, sleep, weight, hourly, minute, and heart-rate
   processed exports. Its analysis cells operate on daily activity only.
 - The notebook is preserved as a research artifact. Its saved outputs were
