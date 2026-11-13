@@ -1,6 +1,11 @@
-# Final notebook correction report
+# Final notebook correction report (historical PR #7 snapshot)
 
 **Date:** 2026-11-13 · **Branch:** `phase-notebook-final-corrections` · **Base:** verified `main` at `b43f0530bab8944b331544cef7dd100b7f5ee87c`
+
+This report records PR #7's review-time state. PR #7 later merged into `main`
+at `4ddd796ed60e275b057ce11267f986d5859987dd`. The subsequent notebook polish
+and current verification are recorded in
+`final_notebook_polish_report.md`.
 
 ## Outcome
 

@@ -12,10 +12,11 @@ no paid model, API, add-on, deployment, or compute.
 
 ## Current verified repository state (2026-11-13)
 
-- GitHub `main` is at `b43f0530bab8944b331544cef7dd100b7f5ee87c`; PR #6 is
-  merged.
-- The current correction branch, `phase-notebook-final-corrections`, was
-  created directly from that verified `main` commit.
+- GitHub `main` is at `4ddd796ed60e275b057ce11267f986d5859987dd`; PR #7 is
+  merged at this commit.
+- The current branch, `phase-notebook-final-polish`, starts at that verified
+  `main` commit. [PR #8](https://github.com/Manthan2106/Fitinsight/pull/8) is
+  open against `main` for review and remains unmerged.
 - The historical Phase 4 branch remains
   `phase-4-activity-clustering` at
   `cdf5c33502cbe08a4885a9f4bd7de4cad19c24ad`; it is not the branch being
@@ -98,7 +99,7 @@ historical `phase-4-activity-clustering` branch remains at
   The historical Phase 4 branch and the local Phase 6 planning WIP remain
   unchanged.
 
-## Final notebook correction snapshot (current)
+## Final notebook correction snapshot (historical PR #7)
 
 - The correction branch `phase-notebook-final-corrections` starts at verified
   `main` commit `b43f0530bab8944b331544cef7dd100b7f5ee87c`; the separate
@@ -131,12 +132,46 @@ historical `phase-4-activity-clustering` branch remains at
   results, and the historical Phase 4 branch remain unchanged. `src/.gitkeep`
   was removed; `app/.gitkeep` remains.
 - No paid services, hosted compute, deployment, or package installation was
-  used. [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7) is open
-  against `main` and remains unmerged; do not merge this branch or begin Phase
-  7.
+  used. At the time of this snapshot, [PR #7](https://github.com/Manthan2106/Fitinsight/pull/7)
+  was open against `main`; it later merged at
+  `4ddd796ed60e275b057ce11267f986d5859987dd`.
 - Full results and the precise verification caveat are recorded in
   `reports/evidence/notebook_conversion/final_corrections_report.md` and
   `final_corrections_manifest.json`.
+
+## Final notebook polish snapshot (current)
+
+- Branch `phase-notebook-final-polish` starts from verified `main`
+  `4ddd796ed60e275b057ce11267f986d5859987dd`; implementation commit
+  `82b6bee1bf27eaeaed23025787cd406e8bba1d61` was pushed to
+  [PR #8](https://github.com/Manthan2106/Fitinsight/pull/8), which is open
+  against `main` and must remain unmerged pending review.
+- All six notebooks passed the isolated fresh-kernel workflow without `src/`.
+  The staged test tree used hard links for 603,575,668 logical bytes, and all
+  tracked notebook hashes remained unchanged.
+- Phase 1 matched 11 raw-file hashes and row counts (7,206,142 rows). Phase 2
+  reproduced all six processed references. Phase 3 matched 13 analysis CSVs
+  and nine SVGs; Phase 4 matched nine CSVs and 12 SVGs; Phase 5 matched eight
+  association CSVs, 13 anomaly CSVs, and eight SVGs. Phase 6 passed its
+  eight-panel interaction smoke test.
+- Existing Phase 3–5 SVG payloads were retained byte-for-byte by title and are
+  now stored beside their calculation stages. Scratch outputs use external
+  temporary directories, are removed after successful validation, and remain
+  available after failure for diagnosis.
+- Phase 3 time-accounting remains descriptive: 45/161 matched days sum to
+  1,440 minutes, 91/161 are within 30 minutes, and the mean gap is −58.48
+  minutes. This does not establish complete 24-hour coverage. The Phase 4
+  two-person cluster remains exploratory; Phase 6 PCA keeps every eligible
+  participant in view and uses selection only to highlight.
+- The standard repository suite passes 94 tests (93 passed; one intentionally
+  skipped opt-in fresh-kernel test). Notebook schemas, code-cell syntax, and
+  `git diff --check` pass. No raw or processed data, analysis scripts,
+  generated reference results, original notebook contents, or historical
+  Phase 4 branch changed. No packages, paid services, hosted compute, or
+  deployment were used; Phase 7 remains unstarted.
+- Detailed evidence is in
+  `reports/evidence/notebook_conversion/final_notebook_polish_report.md` and
+  `final_notebook_polish_manifest.json`.
 
 ## Phase 2 findings so far
 
